@@ -27,27 +27,27 @@ msa_zhvi <- read_csv('~/Documents/zillow/thesis/data/msa_zhvi.csv') %>%
 
 ##############################################
 #ZORI
-m0 <- lm(post_rent_change ~ pre_pct_change + log(density2019) + log(deaths_capita+1),
+m0 <- lm(post_rent_change ~ pre_pct_change + log(density2019),
              data = msa_zori, weights = msa_zori$`2019 Population`)
-m1 <- lm(post_rent_change ~ pre_pct_change + log(density2019) + log(wfh_emp) + log(deaths_capita+1),
+m1 <- lm(post_rent_change ~ pre_pct_change + log(density2019) + log(wfh_emp),
              data = msa_zori, weights = msa_zori$`2019 Population`)
 
 #ZHVI
-m2 <- lm(post_price_change ~ pre_pct_change + log(density2019) + log(deaths_capita+1),
+m2 <- lm(post_price_change ~ pre_pct_change + log(density2019),
              data = msa_zhvi, weights = msa_zhvi$`2019 Population`)
-m3 <- lm(post_price_change ~ pre_pct_change + log(density2019) + log(wfh_emp) + log(deaths_capita+1),
+m3 <- lm(post_price_change ~ pre_pct_change + log(density2019) + log(wfh_emp),
              data = msa_zhvi, weights = msa_zhvi$`2019 Population`)
 
 #USPS pop
-m4 <- lm(post_pop ~ pre_pop + log(density2019) + log(deaths_capita+1),
+m4 <- lm(post_pop ~ pre_pop + log(density2019),
              data = msa_usps, weights = msa_usps$`2019 Population`)
-m5 <- lm(post_pop ~ pre_pop + log(density2019) + log(wfh_emp) + log(deaths_capita+1),
+m5 <- lm(post_pop ~ pre_pop + log(density2019) + log(wfh_emp),
              data = msa_usps, weights = msa_usps$`2019 Population`)
 
 #USPS bus
-m6 <- lm(post_bus ~ pre_bus + log(density2019) + log(deaths_capita+1),
+m6 <- lm(post_bus ~ pre_bus + log(density2019),
              data = msa_usps, weights = msa_usps$`2019 Population`)
-m7 <- lm(post_bus ~ pre_bus + log(density2019) + log(wfh_emp) + log(deaths_capita+1),
+m7 <- lm(post_bus ~ pre_bus + log(density2019) + log(wfh_emp),
              data = msa_usps, weights = msa_usps$`2019 Population`)
 
 ###Create tables###
@@ -56,13 +56,8 @@ rse <- function(reg) {
   return(as.vector(summary(reg, robust = T)$coefficients[,"Std. Error"]))
 } 
 
-## Latex tables
-stargazer(m0, m1, m2, m3,
-          se = list(rse(m0), rse(m1), rse(m2), rse(m3)),
+## Table
+stargazer(m0, m1, m2, m3, m4, m5, m6, m7,
+          se = list(rse(m0), rse(m1), rse(m2), rse(m3), rse(m4), rse(m5), rse(m6), rse(m7)), type = "html",
           omit = "MetroShort", omit.stat=c("adj.rsq", "ser","f"),
-          out="~/Documents/zillow/thesis/tables/metro_zillow.tex")
-
-stargazer(m4, m5, m6, m7, 
-          se = list(rse(m4), rse(m5), rse(m6), rse(m7)),
-          omit = "MetroShort", omit.stat=c("adj.rsq", "ser","f"),
-          out="~/Documents/zillow/thesis/tables/metro_usps.tex")
+          out="~/Documents/zillow/thesis/tables/metro_all.doc")

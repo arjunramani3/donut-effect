@@ -14,8 +14,8 @@ binscatter post_pct_change log_density [fweight = population2], controls(pre_pct
 	legend(off) ///
 	xtitle("Persons per sq mile") ///
 	ytitle("Percent change home value index") ///
-	yscale(range(6 11)) ///
-	ylabel(6 7 8 9 10 11) ///
+	yscale(range(6 12)) ///
+	ylabel(6 7 8 9 10 11 12) ///
 	xscale(range(2 5)) ///
 	xlabel(2 "100" 3 "1,000" 4 "10,000" 5 "100,000") ///
 	xsize(5) ysize(5) ///
@@ -65,7 +65,8 @@ binscatter post_bus log_density [fweight = population2], controls(pre_bus) absor
 	legend(off) ///
 	xtitle("Persons per sq mile") ///
 	ytitle("Net inflow as a percent of stock")  ///
-	yscale(range(-5 5)) ///
+	yscale(range(-4 4)) ///
+	ylabel(-4 -2 0 2 4) ///
 	xscale(range(2 5)) ///
 	xlabel(2 "100" 3 "1,000" 4 "10,000" 5 "100,000") ///
 	xsize(5) ysize(5) ///
@@ -88,8 +89,8 @@ gen log_density = log10(density2019)
 binscatter post_pct_change log_density [fweight = population2], controls(pre_pct_change)	///
 	xtitle("Persons per sq mile") ///
 	ytitle("Percent change home value index") ///
-	yscale(range(6 11)) ///
-	ylabel(6 7 8 9 10 11) ///
+	yscale(range(6 12)) ///
+	ylabel(6 7 8 9 10 11 12) ///
 	xscale(range(2 3)) ///
 	xlabel(2 "100" 3 "1,000") ///
 	xsize(5) ysize(5) ///
@@ -158,11 +159,10 @@ import delimited "/Users/arjun/Documents/zillow/thesis/data/zori_sfh_panel_zips_
 rename v13 population2
 gen log_density = log10(density2019)
 
-binscatter post_pct_change wfh_emp [fweight=population2], controls(pre_pct_change log_density) absorb(metroshort)	///
+binscatter post_pct_change wfh_emp [fweight=population2], controls(log_density pre_pct_change) absorb(metroshort)	///
 	legend(off) ///
 	xtitle("WFH share of residents") ///
 	ytitle("YoY Percent change in rent") ///
-	xsize(5) ysize(5) ///
 	graphregion(margin(medlarge))
 graph export "$out/appendixA2_a.png", replace
 
@@ -180,10 +180,11 @@ rename v13 population2
 gen log_density = log10(density2019)
 gen log_deaths_capita = log10(deaths_capita+1)
 
-binscatter post_pct_change wfh_emp [fweight = population2], controls(pre_pct_change log_density) absorb(metroshort)	///
+binscatter post_pct_change wfh_emp [fweight = population2], controls(log_density pre_pct_change) absorb(metroshort)	///
 	legend(off) ///
 	xtitle("WFH share of residents") ///
-	ytitle("YoY Percent change in price")
+	ytitle("YoY Percent change in price") ///
+	graphregion(margin(medlarge))
 graph export "$out/appendixA2_b.png", replace
 
 ///////////////////////////////
@@ -202,6 +203,8 @@ gen log_density = log10(density2019)
 binscatter post_pct_change post_pop [fweight = population2], controls(pre_pct_change log_density) absorb(metroshort) ///
 	xtitle("Net inflow as a percent of population") ///
 	ytitle("Percent change rental index") ///
+	xsize(5) ysize(5) ///
+	graphregion(margin(medlarge))
 
 graph export "$out/fig7a.png", replace
  
@@ -221,7 +224,9 @@ gen log_density = log10(density2019)
 
 binscatter post_pct_change post_pop [fweight = population2], controls(pre_pct_change log_density) absorb(metroshort)	///
 	xtitle("Net inflow as a percent of population") ///
-	ytitle("Percent change home value index")
+	ytitle("Percent change home value index") ///
+	xsize(5) ysize(5) ///
+	graphregion(margin(medlarge))
 graph export "$out/fig7b.png", replace
  
 
