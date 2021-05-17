@@ -13,7 +13,7 @@ To replicate all figures and tables using intermediate data stores in the `data`
 
 
 To create the intermediate datasets used for the figures and tables from scratch, run
--`create_all_datasets.R` to create the Zillow and USPS datasets
+- `create_all_datasets.R` to create the Zillow and USPS datasets
   - Some of the datasets used in this process must be downloaded from various locations. To ease this process, we have stored each of these datasets in the `data/external_data` folder. The locations of all datasets can be found in the files inside the `scripts` folder.
 
 
