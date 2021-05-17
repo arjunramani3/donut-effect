@@ -6,7 +6,7 @@ Click here for the most recent draft of our working paper:
 ## Replication file instructions
 This repository contains all data and scripts necessary to replicate the figures and tables found in the paper. 
 
-To replicate all figures and tables using intermediate data stores in the `data` folder, run:
+To replicate all figures and tables using intermediate data stored in the `data` folder, run:
   - `all_R_figures.R` to create all figures that use R
   - `all_stata_figures.do` to create all figures that use Stata
   - `tables.R` to create all regression tables
