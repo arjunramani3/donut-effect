@@ -64,7 +64,7 @@ df6 <- df6 %>% filter(!is.na(deaths_capita))
 stargazer(m0, m1, m2, m3, m4, m5, m6, m7, 
           se = list(rse(m1), rse(m2), rse(m3), rse(m4), rse(m5), rse(m6), rse(m7)),
           omit = c("MetroShort", 'pre_pct_change'),
-          omit.stat=c("adj.rsq", "ser","f"), type="html", out="./figures-tables/zori_zhvi.doc")
+          omit.stat=c("adj.rsq", "ser","f"), type="html", out="./figures-tables/tab1.doc")
 
 
 
@@ -90,7 +90,7 @@ m7 <- lm(post_bus ~ pre_bus + log(density2019) + log(dist_to_cbd) + log(wfh_emp)
 stargazer(m0, m1, m2, m3, m4, m5, m6, m7, 
           se = list(rse(m1), rse(m2), rse(m3), rse(m4), rse(m5), rse(m6), rse(m7)),
           omit = c("MetroShort", 'pre_pct_change'),
-          omit.stat=c("adj.rsq", "ser","f"), type="html", out="./figures-tables/usps_main.doc")
+          omit.stat=c("adj.rsq", "ser","f"), type="html", out="./figures-tables/tab2.doc")
 
 
 

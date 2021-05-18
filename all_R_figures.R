@@ -167,7 +167,7 @@ ggsave('./figures-tables/fig1b.png', plot = last_plot(), width = 10, height = 8)
 
 chars <- read_csv('./data/zip_all_chars_cbd.csv', 
                   col_types = cols('zip' = col_integer())) %>% select(!estab_count)
-bus_chars <- read_csv('./zbp_wfh.csv',
+bus_chars <- read_csv('./data/zbp_wfh.csv',
                       col_types = cols('zip' = col_integer()))
 chars <- chars %>% inner_join(bus_chars, by = 'zip')
 
@@ -277,7 +277,7 @@ chars %>% filter(MetroShort %in% cities) %>%
 ggsave('./figures-tables/fig2b.png', plot = last_plot(), width = 10, height = 8)
 
 ###########################################
-## Fig 3 and Appendix A7: USPS heat maps
+## Fig 3 and Appendix A6: USPS heat maps
 ###########################################
 
 #https://arilamstein.com/documentation/choroplethrZip/reference/zip_choropleth.html
@@ -316,7 +316,7 @@ choro = ZipChoropleth$new(df_choro)
 choro$ggplot_scale = scale_fill_brewer(name="Net inflows/pop (%)", palette = 'RdYlGn')
 choro$set_zoom_zip(state_zoom=NULL, county_zoom=NULL, msa_zoom='Boston-Cambridge-Newton, MA-NH', zip_zoom=NULL)
 choro$render()
-ggsave('./figures-tables/appendixa7_a.png', plot = last_plot(), width = 10, height = 8)
+ggsave('./figures-tables/appendixa6_a.png', plot = last_plot(), width = 10, height = 8)
 
 ## Los Angeles
 df_choro <- df5
@@ -325,7 +325,7 @@ choro = ZipChoropleth$new(df_choro)
 choro$ggplot_scale = scale_fill_brewer(name="Net inflows/pop (%)", palette = 'RdYlGn')
 choro$set_zoom_zip(state_zoom=NULL, county_zoom=c('6037', '6059'), msa_zoom=NULL, zip_zoom=NULL)
 choro$render()
-ggsave('./figures-tables/appendixa7_b.png', plot = last_plot(), width = 10, height = 8)
+ggsave('./figures-tables/appendixa6_b.png', plot = last_plot(), width = 10, height = 8)
 
 
 ###########################################
@@ -416,6 +416,84 @@ plot_grid(a, NULL, b, NULL, c, NULL, rel_widths = c(1, .1, 1, .1, 1, .13),
           rel_heights = c(1, .1, 1, .1, 1, .1), nrow = 1, ncol = 6)
 ggsave('./figures-tables/fig4.png', plot = last_plot(), width = 15, height = 6)
 
+
+###########################################
+## Figure 5: heterogeneity in population flows
+###########################################
+chars <- read_csv('./data/zip_all_chars_cbd.csv', 
+                  col_types = cols('zip' = col_integer())) %>% select(!estab_count)
+bus_chars <- read_csv('./data/zbp_wfh.csv',
+                      col_types = cols('zip' = col_integer()))
+chars <- chars %>% inner_join(bus_chars, by = 'zip')
+
+usps <- read_csv('./data/USPS_zips.csv')
+
+msa_chars <- msa_chars <- read_csv('./data/msa_all_chars.csv') %>% filter(!is.na(MsaName)) %>%
+  mutate(msa_pop_rank = dense_rank(desc(`2019 Population`)),
+         msa_pop_group = case_when(msa_pop_rank %in% c(1:12) ~ 'top12',
+                                   msa_pop_rank %in% c(13:50) ~ 'mid',
+                                   TRUE ~ 'low'))
+#@param: msa_group = which msa-level variable we want to break plot down by
+#@param: msa_level = which level of the msa_group variable we want to create the plot for
+#@param: zip_group = the zip code level grouping variable to break down time series by
+
+grid_plot <- function (msa_group, msa_level, zip_group) {
+  options(repr.plot.width=12, repr.plot.height=5)
+  return (msa_chars %>% filter(get(msa_group) == msa_level) %>%
+            select(MetroShort, msa_pop_rank) %>%
+            inner_join(chars, by = 'MetroShort') %>% 
+            filter(!is.na(`2019 Population`), !is.na(dist_to_cbd)) %>%
+            mutate(quantile_rank = ntile(get(zip_group), 10),
+                   category = if_else(dist_to_cbd <2000, 'cbd', 
+                                      case_when(quantile_rank == 10 ~ 'high',
+                                                quantile_rank %in% c(6:9) ~ 'mid',
+                                                TRUE ~ 'low'))) %>%
+            inner_join(usps, by = 'zip') %>% 
+            mutate(date = as.Date(date)) %>%
+            filter(date >= as.Date('2018-01-01')) %>%
+            group_by(zip) %>% mutate(net_pop = na.approx(net_pop, na.rm=FALSE)) %>%
+            group_by(category, date) %>%
+            summarise(net_pop = sum(net_pop, na.rm = TRUE)/sum(`2019 Population`)*100) %>% 
+            group_by(category) %>% mutate(net_pop = net_pop - net_pop[date == as.Date('2020-02-15')]) %>%
+            mutate(emph="b", val = net_pop, name = category) %>%
+            ggplot(
+              aes(x=date, y = val, color = name, linetype = as.factor(emph), 
+                  alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
+            scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
+            geom_line()+
+            xlim(as.Date('2018-01-01'), as.Date('2021-04-15')) + 
+            ylim(-1.75, .25) + 
+            geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
+            geom_dl(aes(label = name), method = list(cex = 1,'last.bumpup')) +   
+            scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
+            scale_size_manual(values = c(1.5, 0.8), guide="none")+
+            scale_alpha_manual(values = c(1, 0.8), guide="none")+
+            scale_linetype(guide='none') +
+            labs(title = ifelse(msa_level == 'top12', 'Top 12 Metros', ifelse(msa_level=='mid', 'Metros 13-50', 'Metros 51-365')), 
+                 x  = "", 
+                 y = ifelse(msa_level=='top12', 'Deviations from Feb 2020 (% points)', '')
+            )+
+            geom_text(label="Feb 2020", x=as.Date('2019-08-01'), y=105, size = 5, color = 'black') +
+            coord_cartesian(clip = "off") + 
+            theme_minimal()+
+            theme(text = element_text(size=16),
+                  plot.title= element_text(hjust = 0.5, family = "serif"),
+                  plot.caption = element_text(size = 8),
+                  plot.margin = margin(t = 0, r = 10, b = 0, l = 5, unit = "pt"),
+                  axis.text.x = element_text(size = 16),
+                  axis.text.y = element_text(size = 16)
+            )
+  )
+}
+
+a <- grid_plot('msa_pop_group', 'top12', 'density2019')
+b <- grid_plot('msa_pop_group', 'mid', 'density2019')
+c <- grid_plot('msa_pop_group', 'low', 'density2019')
+
+plot_grid(a, NULL, b, NULL, c, NULL, rel_widths = c(1, .1, 1, .1, 1, .13), 
+          rel_heights = c(1, .1, 1, .1, 1, .1), nrow = 1, ncol = 6)
+ggsave('./figures-tables/fig5.png', plot = last_plot(), width = 15, height = 6)
+
 ###########################################
 ## Appendix A1: Heterogeneity in rents
 ###########################################
@@ -501,87 +579,8 @@ plot_grid(a, NULL, b, NULL, c, NULL, rel_widths = c(1, .1, 1, .1, 1, .13),
           rel_heights = c(1, .1, 1, .1, 1, .1), nrow = 1, ncol = 6)
 ggsave('./figures-tables/appendix_a1.png', plot = last_plot(), width = 15, height = 6)
 
-
 ###########################################
-## Appendix A2: heterogeneity in population flows
-###########################################
-chars <- read_csv('./data/zip_all_chars_cbd.csv', 
-                  col_types = cols('zip' = col_integer())) %>% select(!estab_count)
-bus_chars <- read_csv('./data/zbp_wfh.csv',
-                      col_types = cols('zip' = col_integer()))
-chars <- chars %>% inner_join(bus_chars, by = 'zip')
-
-usps <- read_csv('./data/USPS_zips.csv')
-
-msa_chars <- msa_chars <- read_csv('./data/msa_all_chars.csv') %>% filter(!is.na(MsaName)) %>%
-  mutate(msa_pop_rank = dense_rank(desc(`2019 Population`)),
-         msa_pop_group = case_when(msa_pop_rank %in% c(1:12) ~ 'top12',
-                                   msa_pop_rank %in% c(13:50) ~ 'mid',
-                                   TRUE ~ 'low'))
-#@param: msa_group = which msa-level variable we want to break plot down by
-#@param: msa_level = which level of the msa_group variable we want to create the plot for
-#@param: zip_group = the zip code level grouping variable to break down time series by
-
-grid_plot <- function (msa_group, msa_level, zip_group) {
-  options(repr.plot.width=12, repr.plot.height=5)
-  return (msa_chars %>% filter(get(msa_group) == msa_level) %>%
-            select(MetroShort, msa_pop_rank) %>%
-            inner_join(chars, by = 'MetroShort') %>% 
-            filter(!is.na(`2019 Population`), !is.na(dist_to_cbd)) %>%
-            mutate(quantile_rank = ntile(get(zip_group), 10),
-                   category = if_else(dist_to_cbd <2000, 'cbd', 
-                                      case_when(quantile_rank == 10 ~ 'high',
-                                                quantile_rank %in% c(6:9) ~ 'mid',
-                                                TRUE ~ 'low'))) %>%
-            inner_join(usps, by = 'zip') %>% 
-            mutate(date = as.Date(date)) %>%
-            filter(date >= as.Date('2018-01-01')) %>%
-            group_by(zip) %>% mutate(net_pop = na.approx(net_pop, na.rm=FALSE)) %>%
-            group_by(category, date) %>%
-            summarise(net_pop = sum(net_pop, na.rm = TRUE)/sum(`2019 Population`)*100) %>% 
-            group_by(category) %>% mutate(net_pop = net_pop - net_pop[date == as.Date('2020-02-15')]) %>%
-            mutate(emph="b", val = net_pop, name = category) %>%
-            ggplot(
-              aes(x=date, y = val, color = name, linetype = as.factor(emph), 
-                  alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
-            scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
-            geom_line()+
-            xlim(as.Date('2018-01-01'), as.Date('2021-04-15')) + 
-            ylim(-1.75, .25) + 
-            geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
-            geom_dl(aes(label = name), method = list(cex = 1,'last.bumpup')) +   
-            scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
-            scale_size_manual(values = c(1.5, 0.8), guide="none")+
-            scale_alpha_manual(values = c(1, 0.8), guide="none")+
-            scale_linetype(guide='none') +
-            labs(title = ifelse(msa_level == 'top12', 'Top 12 Metros', ifelse(msa_level=='mid', 'Metros 13-50', 'Metros 51-365')), 
-                 x  = "", 
-                 y = ifelse(msa_level=='top12', 'Deviations from Feb 2020 (% points)', '')
-            )+
-            geom_text(label="Feb 2020", x=as.Date('2019-08-01'), y=105, size = 5, color = 'black') +
-            coord_cartesian(clip = "off") + 
-            theme_minimal()+
-            theme(text = element_text(size=16),
-                  plot.title= element_text(hjust = 0.5, family = "serif"),
-                  plot.caption = element_text(size = 8),
-                  plot.margin = margin(t = 0, r = 10, b = 0, l = 5, unit = "pt"),
-                  axis.text.x = element_text(size = 16),
-                  axis.text.y = element_text(size = 16)
-            )
-  )
-}
-
-a <- grid_plot('msa_pop_group', 'top12', 'density2019')
-b <- grid_plot('msa_pop_group', 'mid', 'density2019')
-c <- grid_plot('msa_pop_group', 'low', 'density2019')
-
-plot_grid(a, NULL, b, NULL, c, NULL, rel_widths = c(1, .1, 1, .1, 1, .13), 
-          rel_heights = c(1, .1, 1, .1, 1, .1), nrow = 1, ncol = 6)
-ggsave('./figures-tables/appendix_a2.png', plot = last_plot(), width = 15, height = 6)
-
-
-###########################################
-## Appendix A4: equal weighting
+## Appendix A3: equal weighting
 ###########################################
 ## Part A. rental index
 df <- read_csv('https://files.zillowstatic.com/research/public_v2/zori/Zip_ZORI_AllHomesPlusMultifamily_Smoothed.csv', 
@@ -638,7 +637,7 @@ chars %>% filter(MetroShort %in% cities, !is.na(dist_to_cbd)) %>%
         axis.text.x = element_text(size = 24)
   )
 #legend.position=c(.85, .5)
-ggsave('./figures-tables/appendix_a4a.png', plot = last_plot(), width = 10, height = 8)
+ggsave('./figures-tables/appendix_a3a.png', plot = last_plot(), width = 10, height = 8)
 
 
 ## Part B. home value index
@@ -705,11 +704,11 @@ chars %>% filter(MetroShort %in% cities, !is.na(density2019), !is.na(dist_to_cbd
         axis.text.x = element_text(size = 24)
   )
 #legend.position=c(.85, .5)
-ggsave('./figures-tables/appendix_a4b.png', plot = last_plot(), width = 10, height = 8)
+ggsave('./figures-tables/appendix_a3b.png', plot = last_plot(), width = 10, height = 8)
 
 
 ###########################################
-## Appendix A5: Past macro shocks
+## Appendix A4: Past macro shocks
 ###########################################
 ## A. 9/11
 df2 <- read_csv('https://files.zillowstatic.com/research/public_v2/zhvi/Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_mon.csv?t=1620068499', 
@@ -768,7 +767,7 @@ chars %>% filter(MetroShort %in% cities, !is.na(`2010 Population`), !is.na(dist_
         axis.text.y = element_text(size = 20)
   )
 #legend.position=c(.85, .5)
-ggsave('./figures-tables/appendix_a5a.png', plot = last_plot(), width = 10, height = 8)
+ggsave('./figures-tables/appendix_a4a.png', plot = last_plot(), width = 10, height = 8)
 
 ## B. Great Recession
 chars %>% filter(MetroShort %in% cities, !is.na(`2010 Population`), !is.na(dist_to_cbd)) %>%
@@ -818,15 +817,15 @@ chars %>% filter(MetroShort %in% cities, !is.na(`2010 Population`), !is.na(dist_
         axis.text.y = element_text(size = 20)
   )
 #legend.position=c(.85, .5)
-ggsave('./figures-tables/appendix_a5b.png', plot = last_plot(), width = 10, height = 8)
+ggsave('./figures-tables/appendix_a4b.png', plot = last_plot(), width = 10, height = 8)
 
 
 ###########################################
-## Appendix A6: Cumulative flows
+## Appendix A5: Cumulative flows
 ###########################################
 chars <- read_csv('./data/zip_all_chars_cbd.csv', 
                   col_types = cols('zip' = col_integer())) %>% select(!estab_count)
-bus_chars <- read_csv('./zbp_wfh.csv',
+bus_chars <- read_csv('./data/zbp_wfh.csv',
                       col_types = cols('zip' = col_integer()))
 chars <- chars %>% inner_join(bus_chars, by = 'zip')
 
@@ -892,7 +891,7 @@ chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`)) %>%
         axis.text.y = element_text(size = 20)
   )
 #legend.position=c(.85, .5)
-ggsave('./figures-tables/appendix_a7a.png', plot = last_plot(), width = 10, height = 8)
+ggsave('./figures-tables/appendix_a5a.png', plot = last_plot(), width = 10, height = 8)
 
 ## B. business flows
 chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`)) %>%
@@ -951,7 +950,7 @@ chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`)) %>%
         axis.text.y = element_text(size = 20)
   )
 #legend.position=c(.85, .5)
-ggsave('./figures-tables/appendix_a7b.png', plot = last_plot(), width = 10, height = 8)
+ggsave('./figures-tables/appendix_a5b.png', plot = last_plot(), width = 10, height = 8)
 
 
 
