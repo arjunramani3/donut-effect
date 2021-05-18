@@ -12,7 +12,9 @@ setwd('~/Documents/zillow/thesis/donut-effect/')
 ## and stored in './data/external_data/' Please see the README for details.
 
 source('./scripts/lodes_rac.R')
-source('./scripts/zip_bus_patterns.R')
+source('./scripts/zip_bus_patterns.R') #This script takes several minutes to run and relies
+                                       #on having a Census API key. Running this can be skipped
+                                       #since 'zbp_wfh.csv' is in the 'data' folder.
 source('./scripts/zip_all_chars.R')
 source('./scripts/CBD_holian.R')
 source('./scripts/msa_chars.R')
