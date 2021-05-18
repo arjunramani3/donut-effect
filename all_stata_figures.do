@@ -20,7 +20,7 @@ binscatter post_pct_change log_density [fweight = population2], controls(pre_pct
 	xlabel(2 "100" 3 "1,000" 4 "10,000" 5 "100,000") ///
 	xsize(5) ysize(5) ///
 	graphregion(margin(medlarge))
-graph export "./figures-tables/fig5a.png", replace
+graph export "./figures-tables/fig6a.png", replace
 
 
 ///////////////////////////////
@@ -46,7 +46,7 @@ binscatter post_pop log_density [fweight = population2], controls(pre_pop) absor
 	xlabel(2 "100" 3 "1,000" 4 "10,000" 5 "100,000") ///
 	xsize(5) ysize(5) ///
 	graphregion(margin(medlarge))
-	graph export "./figures-tables/fig5b.png", replace
+	graph export "./figures-tables/fig6b.png", replace
 
 
 ///////////////////////////////
@@ -71,7 +71,7 @@ binscatter post_bus log_density [fweight = population2], controls(pre_bus) absor
 	xlabel(2 "100" 3 "1,000" 4 "10,000" 5 "100,000") ///
 	xsize(5) ysize(5) ///
 	graphregion(margin(medlarge))
-	graph export "./figures-tables/fig5c.png", replace
+	graph export "./figures-tables/fig6c.png", replace
 	
 ///////////////////////////////
 //binscatter of YoY Price Change on density MSA
@@ -94,7 +94,7 @@ binscatter post_pct_change log_density [fweight = population2], controls(pre_pct
 	xlabel(2 "100" 3 "1,000") ///
 	xsize(5) ysize(5) ///
 	graphregion(margin(medlarge))
-graph export "./figures-tables/fig6a.png", replace
+graph export "./figures-tables/fig7a.png", replace
 
 ///////////////////////////////
 //NBER Figure 6b
@@ -117,7 +117,7 @@ binscatter post_pop log_density [fweight = population2], controls(pre_pop) ///
 	xlabel(2 "100" 3 "1,000" 4 "10,000") ///
 	xsize(5) ysize(5) ///
 	graphregion(margin(medlarge))
-graph export "./figures-tables/fig6b.png", replace
+graph export "./figures-tables/fig7b.png", replace
 
 
 ///////////////////////////////
@@ -141,46 +141,7 @@ binscatter post_bus log_density [fweight = population2], controls(pre_bus)	///
 	xlabel(2 "100" 3 "1,000" 4 "10,000") ///
 	xsize(5) ysize(5) ///
 	graphregion(margin(medlarge))
-graph export "./figures-tables/fig6c.png", replace
-
-///////////////////////////////
-//NBER Appendix A2 (a)
-//binscatter of YoY Rent Change on WFH exposure
-///////////////////////////////
-
-clear
-cd "/Users/arjun/Documents/zillow/thesis/donut-effect"
-
-import delimited "./data/zori_sfh_panel_zips_top12.csv", numericcols(1 2)
-rename v13 population2
-gen log_density = log10(density2019)
-
-binscatter post_pct_change wfh_emp [fweight=population2], controls(log_density pre_pct_change) absorb(metroshort)	///
-	legend(off) ///
-	xtitle("WFH share of residents") ///
-	ytitle("YoY Percent change in rent") ///
-	graphregion(margin(medlarge))
-graph export "./figures-tables/appendixA2_a.png", replace
-
-///////////////////////////////
-//NBER Appendix A2 (b)
-//binscatter of YoY Price Change on WFH exposure
-///////////////////////////////
-
-clear
-cd "/Users/arjun/Documents/zillow/thesis/donut-effect"
-
-import delimited "./data/zhvi_sfh_panel_zips_top12.csv", stringcols(12) numericcols(6 7 8 9 10 20) 
-rename v13 population2
-gen log_density = log10(density2019)
-gen log_deaths_capita = log10(deaths_capita+1)
-
-binscatter post_pct_change wfh_emp [fweight = population2], controls(log_density pre_pct_change) absorb(metroshort)	///
-	legend(off) ///
-	xtitle("WFH share of residents") ///
-	ytitle("YoY Percent change in price") ///
-	graphregion(margin(medlarge))
-graph export "./figures-tables/appendixA2_b.png", replace
+graph export "./figures-tables/fig7c.png", replace
 
 ///////////////////////////////
 //NBER Appendix A3 (a)
@@ -200,7 +161,7 @@ binscatter post_pct_change post_pop [fweight = population2], controls(pre_pct_ch
 	xsize(5) ysize(5) ///
 	graphregion(margin(medlarge))
 
-graph export "./figures-tables/fig7a.png", replace
+graph export "./figures-tables/appendix_a3a.png", replace
  
 
 ///////////////////////////////
@@ -220,7 +181,7 @@ binscatter post_pct_change post_pop [fweight = population2], controls(pre_pct_ch
 	ytitle("Percent change home value index") ///
 	xsize(5) ysize(5) ///
 	graphregion(margin(medlarge))
-graph export "./figures-tables/fig7b.png", replace
+graph export "./figures-tables/appendix_a3b.png", replace
  
 
  
