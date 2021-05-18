@@ -14,5 +14,6 @@ To replicate all figures and tables using intermediate data stored in the `data`
 
 Some of the datasets used in this process must be downloaded from various locations. To ease this process, we have stored each of these datasets in the `data/external_data` folder. The locations of all datasets can be found in the files inside the `scripts` folder. To create the intermediate datasets used for the figures and tables from scratch, run
 - `create_all_datasets.R` to create the Zillow and USPS datasets
+  - `create_all_datasets.R` has a dependency on `zip_bus_patterns.R` which sources from `scripts/census-api.R`. You must obtain a Census API key from https://www.census.gov/data/developers/guidance/api-user-guide.html and store the key in `scripts/census-api.R` by including a line as follows: `key = "INSERT_YOUR_KEY_HERE`
 
 
