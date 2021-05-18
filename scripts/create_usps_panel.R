@@ -145,7 +145,7 @@ df6 <- df3 %>% select(zip, post_net, post_bus, post_pop, post_temp, post_perm) %
 
 ## Limit to top 12 and write to csv
 df6 %>% filter(MetroShort %in% cities) %>%
-  write_csv('./usps_panel_zips_top12.csv')
+  write_csv('./data/usps_panel_zips_top12.csv')
 
 ###########################################
 # Create MSA pct change file from panel
