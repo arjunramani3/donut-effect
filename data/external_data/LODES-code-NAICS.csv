@@ -1,0 +1,21 @@
+Pos,Variable,Type,NAICS,Explanation
+9,CNS01,Num,11,"Number of jobs in NAICS sector 11 (Agriculture, Forestry, Fishing and Hunting)"
+10,CNS02,Num,21,"Number of jobs in NAICS sector 21 (Mining, Quarrying, and Oil and Gas Extraction)"
+11,CNS03,Num,22,Number of jobs in NAICS sector 22 (Utilities)
+12,CNS04,Num,23,Number of jobs in NAICS sector 23 (Construction)
+13,CNS05,Num,31-33,Number of jobs in NAICS sector 31-33 (Manufacturing)
+14,CNS06,Num,42,Number of jobs in NAICS sector 42 (Wholesale Trade)
+15,CNS07,Num,44-45,Number of jobs in NAICS sector 44-45 (Retail Trade)
+16,CNS08,Num,48-49,Number of jobs in NAICS sector 48-49 (Transportation and Warehousing)
+17,CNS09,Num,51,Number of jobs in NAICS sector 51 (Information)
+18,CNS10,Num,52,Number of jobs in NAICS sector 52 (Finance and Insurance)
+19,CNS11,Num,53,Number of jobs in NAICS sector 53 (Real Estate and Rental and Leasing)
+20,CNS12,Num,54,"Number of jobs in NAICS sector 54 (Professional, Scientific, and Technical Services)"
+21,CNS13,Num,55,Number of jobs in NAICS sector 55 (Management of Companies and Enterprises)
+22,CNS14,Num,56,Number of jobs in NAICS sector 56 (Administrative and Support and Waste Management and Remediation Services)
+23,CNS15,Num,61,Number of jobs in NAICS sector 61 (Educational Services)
+24,CNS16,Num,62,Number of jobs in NAICS sector 62 (Health Care and Social Assistance)
+25,CNS17,Num,71,"Number of jobs in NAICS sector 71 (Arts, Entertainment, and Recreation)"
+26,CNS18,Num,72,Number of jobs in NAICS sector 72 (Accommodation and Food Services)
+27,CNS19,Num,81,Number of jobs in NAICS sector 81 (Other Services [except Public Administration])
+28,CNS20,Num,92,Number of jobs in NAICS sector 92 (Public Administration)

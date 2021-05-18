@@ -1,0 +1,939 @@
+GISJOIN,YEAR,STUSAB,REGIONA,DIVISIONA,STATEA,COUNTYA,COUSUBA,PLACEA,TRACTA,BLKGRPA,CONCITA,AIANHHA,RES_ONLYA,TRUSTA,AIHHTLI,AITS,ANRCA,CBSA,CBSAA,CSAA,METDIVA,MEMI,NECTAA,CNECTAA,NECTADIVA,UAA,CDCURRA,SLDUA,SLDLA,ZCTA5A,SUBMCDA,SDELMA,SDSECA,SDUNIA,UR,PCI,PUMA5A,GEOID,BTTRA,BTBGA,NAME_E,ALUBE001,NAME_M,ALUBM001
+"G10100","2015-2019","US",,,,,,,,,,,,,,,,"Aberdeen, SD Micro Area","10100",,,,,,,,,,,,,,,,,,,"31000US10100",,,"Aberdeen, SD Micro Area",42824,"Aberdeen, SD Micro Area",0
+"G10140","2015-2019","US",,,,,,,,,,,,,,,,"Aberdeen, WA Micro Area","10140",,,,,,,,,,,,,,,,,,,"31000US10140",,,"Aberdeen, WA Micro Area",72779,"Aberdeen, WA Micro Area",0
+"G10180","2015-2019","US",,,,,,,,,,,,,,,,"Abilene, TX Metro Area","10180",,,,,,,,,,,,,,,,,,,"31000US10180",,,"Abilene, TX Metro Area",170669,"Abilene, TX Metro Area",0
+"G10220","2015-2019","US",,,,,,,,,,,,,,,,"Ada, OK Micro Area","10220",,,,,,,,,,,,,,,,,,,"31000US10220",,,"Ada, OK Micro Area",38355,"Ada, OK Micro Area",0
+"G10300","2015-2019","US",,,,,,,,,,,,,,,,"Adrian, MI Micro Area","10300",,,,,,,,,,,,,,,,,,,"31000US10300",,,"Adrian, MI Micro Area",98381,"Adrian, MI Micro Area",0
+"G10380","2015-2019","PR",,,,,,,,,,,,,,,,"Aguadilla-Isabela, PR Metro Area","10380",,,,,,,,,,,,,,,,,,,"31000US10380",,,"Aguadilla-Isabela, PR Metro Area",301107,"Aguadilla-Isabela, PR Metro Area",0
+"G10420","2015-2019","US",,,,,,,,,,,,,,,,"Akron, OH Metro Area","10420",,,,,,,,,,,,,,,,,,,"31000US10420",,,"Akron, OH Metro Area",703845,"Akron, OH Metro Area",0
+"G10460","2015-2019","US",,,,,,,,,,,,,,,,"Alamogordo, NM Micro Area","10460",,,,,,,,,,,,,,,,,,,"31000US10460",,,"Alamogordo, NM Micro Area",66137,"Alamogordo, NM Micro Area",0
+"G10500","2015-2019","US",,,,,,,,,,,,,,,,"Albany, GA Metro Area","10500",,,,,,,,,,,,,,,,,,,"31000US10500",,,"Albany, GA Metro Area",148436,"Albany, GA Metro Area",0
+"G10540","2015-2019","US",,,,,,,,,,,,,,,,"Albany-Lebanon, OR Metro Area","10540",,,,,,,,,,,,,,,,,,,"31000US10540",,,"Albany-Lebanon, OR Metro Area",125048,"Albany-Lebanon, OR Metro Area",0
+"G10580","2015-2019","US",,,,,,,,,,,,,,,,"Albany-Schenectady-Troy, NY Metro Area","10580",,,,,,,,,,,,,,,,,,,"31000US10580",,,"Albany-Schenectady-Troy, NY Metro Area",880736,"Albany-Schenectady-Troy, NY Metro Area",0
+"G10620","2015-2019","US",,,,,,,,,,,,,,,,"Albemarle, NC Micro Area; Charlotte-Concord, NC-SC CSA","10620",,,,,,,,,,,,,,,,,,,"31000US10620",,,"Albemarle, NC Micro Area",61588,"Albemarle, NC Micro Area",0
+"G10660","2015-2019","US",,,,,,,,,,,,,,,,"Albert Lea, MN Micro Area","10660",,,,,,,,,,,,,,,,,,,"31000US10660",,,"Albert Lea, MN Micro Area",30463,"Albert Lea, MN Micro Area",0
+"G10700","2015-2019","US",,,,,,,,,,,,,,,,"Albertville, AL Micro Area","10700",,,,,,,,,,,,,,,,,,,"31000US10700",,,"Albertville, AL Micro Area",95643,"Albertville, AL Micro Area",0
+"G10740","2015-2019","US",,,,,,,,,,,,,,,,"Albuquerque, NM Metro Area","10740",,,,,,,,,,,,,,,,,,,"31000US10740",,,"Albuquerque, NM Metro Area",912108,"Albuquerque, NM Metro Area",0
+"G10760","2015-2019","US",,,,,,,,,,,,,,,,"Alexander City, AL Micro Area; Montgomery-Selma-Alexander City, AL CSA","10760",,,,,,,,,,,,,,,,,,,"31000US10760",,,"Alexander City, AL Micro Area",51298,"Alexander City, AL Micro Area",0
+"G10780","2015-2019","US",,,,,,,,,,,,,,,,"Alexandria, LA Metro Area","10780",,,,,,,,,,,,,,,,,,,"31000US10780",,,"Alexandria, LA Metro Area",153310,"Alexandria, LA Metro Area",0
+"G10820","2015-2019","US",,,,,,,,,,,,,,,,"Alexandria, MN Micro Area","10820",,,,,,,,,,,,,,,,,,,"31000US10820",,,"Alexandria, MN Micro Area",37513,"Alexandria, MN Micro Area",0
+"G10860","2015-2019","US",,,,,,,,,,,,,,,,"Alice, TX Micro Area; Corpus Christi-Kingsville-Alice, TX CSA","10860",,,,,,,,,,,,,,,,,,,"31000US10860",,,"Alice, TX Micro Area",52240,"Alice, TX Micro Area",0
+"G10900","2015-2019","US",,,,,,,,,,,,,,,,"Allentown-Bethlehem-Easton, PA-NJ Metro Area","10900",,,,,,,,,,,,,,,,,,,"31000US10900",,,"Allentown-Bethlehem-Easton, PA-NJ Metro Area",837610,"Allentown-Bethlehem-Easton, PA-NJ Metro Area",0
+"G10940","2015-2019","US",,,,,,,,,,,,,,,,"Alma, MI Micro Area; Mount Pleasant-Alma, MI CSA","10940",,,,,,,,,,,,,,,,,,,"31000US10940",,,"Alma, MI Micro Area",40916,"Alma, MI Micro Area",0
+"G10980","2015-2019","US",,,,,,,,,,,,,,,,"Alpena, MI Micro Area","10980",,,,,,,,,,,,,,,,,,,"31000US10980",,,"Alpena, MI Micro Area",28520,"Alpena, MI Micro Area",0
+"G11020","2015-2019","US",,,,,,,,,,,,,,,,"Altoona, PA Metro Area","11020",,,,,,,,,,,,,,,,,,,"31000US11020",,,"Altoona, PA Metro Area",123157,"Altoona, PA Metro Area",0
+"G11060","2015-2019","US",,,,,,,,,,,,,,,,"Altus, OK Micro Area","11060",,,,,,,,,,,,,,,,,,,"31000US11060",,,"Altus, OK Micro Area",25063,"Altus, OK Micro Area",0
+"G11100","2015-2019","US",,,,,,,,,,,,,,,,"Amarillo, TX Metro Area","11100",,,,,,,,,,,,,,,,,,,"31000US11100",,,"Amarillo, TX Metro Area",263776,"Amarillo, TX Metro Area",102
+"G11140","2015-2019","US",,,,,,,,,,,,,,,,"Americus, GA Micro Area","11140",,,,,,,,,,,,,,,,,,,"31000US11140",,,"Americus, GA Micro Area",35285,"Americus, GA Micro Area",0
+"G11180","2015-2019","US",,,,,,,,,,,,,,,,"Ames, IA Metro Area","11180",,,,,,,,,,,,,,,,,,,"31000US11180",,,"Ames, IA Metro Area",123311,"Ames, IA Metro Area",0
+"G11220","2015-2019","US",,,,,,,,,,,,,,,,"Amsterdam, NY Micro Area; Albany-Schenectady, NY CSA","11220",,,,,,,,,,,,,,,,,,,"31000US11220",,,"Amsterdam, NY Micro Area",49302,"Amsterdam, NY Micro Area",0
+"G11260","2015-2019","US",,,,,,,,,,,,,,,,"Anchorage, AK Metro Area","11260",,,,,,,,,,,,,,,,,,,"31000US11260",,,"Anchorage, AK Metro Area",398900,"Anchorage, AK Metro Area",0
+"G11380","2015-2019","US",,,,,,,,,,,,,,,,"Andrews, TX Micro Area","11380",,,,,,,,,,,,,,,,,,,"31000US11380",,,"Andrews, TX Micro Area",18036,"Andrews, TX Micro Area",0
+"G11420","2015-2019","US",,,,,,,,,,,,,,,,"Angola, IN Micro Area; Fort Wayne-Huntington-Auburn, IN CSA","11420",,,,,,,,,,,,,,,,,,,"31000US11420",,,"Angola, IN Micro Area",34453,"Angola, IN Micro Area",0
+"G11460","2015-2019","US",,,,,,,,,,,,,,,,"Ann Arbor, MI Metro Area","11460",,,,,,,,,,,,,,,,,,,"31000US11460",,,"Ann Arbor, MI Metro Area",367000,"Ann Arbor, MI Metro Area",0
+"G11500","2015-2019","US",,,,,,,,,,,,,,,,"Anniston-Oxford, AL Metro Area","11500",,,,,,,,,,,,,,,,,,,"31000US11500",,,"Anniston-Oxford, AL Metro Area",114618,"Anniston-Oxford, AL Metro Area",0
+"G11540","2015-2019","US",,,,,,,,,,,,,,,,"Appleton, WI Metro Area","11540",,,,,,,,,,,,,,,,,,,"31000US11540",,,"Appleton, WI Metro Area",235628,"Appleton, WI Metro Area",0
+"G11580","2015-2019","US",,,,,,,,,,,,,,,,"Arcadia, FL Micro Area; North Port-Sarasota, FL CSA","11580",,,,,,,,,,,,,,,,,,,"31000US11580",,,"Arcadia, FL Micro Area",36903,"Arcadia, FL Micro Area",0
+"G11620","2015-2019","US",,,,,,,,,,,,,,,,"Ardmore, OK Micro Area","11620",,,,,,,,,,,,,,,,,,,"31000US11620",,,"Ardmore, OK Micro Area",58382,"Ardmore, OK Micro Area",0
+"G11640","2015-2019","PR",,,,,,,,,,,,,,,,"Arecibo, PR Metro Area","11640",,,,,,,,,,,,,,,,,,,"31000US11640",,,"Arecibo, PR Metro Area",180567,"Arecibo, PR Metro Area",0
+"G11660","2015-2019","US",,,,,,,,,,,,,,,,"Arkadelphia, AR Micro Area","11660",,,,,,,,,,,,,,,,,,,"31000US11660",,,"Arkadelphia, AR Micro Area",22386,"Arkadelphia, AR Micro Area",0
+"G11700","2015-2019","US",,,,,,,,,,,,,,,,"Asheville, NC Metro Area","11700",,,,,,,,,,,,,,,,,,,"31000US11700",,,"Asheville, NC Metro Area",454351,"Asheville, NC Metro Area",0
+"G11740","2015-2019","US",,,,,,,,,,,,,,,,"Ashland, OH Micro Area; Mansfield-Ashland-Bucyrus, OH CSA","11740",,,,,,,,,,,,,,,,,,,"31000US11740",,,"Ashland, OH Micro Area",53536,"Ashland, OH Micro Area",0
+"G11780","2015-2019","US",,,,,,,,,,,,,,,,"Ashtabula, OH Micro Area","11780",,,,,,,,,,,,,,,,,,,"31000US11780",,,"Ashtabula, OH Micro Area",97830,"Ashtabula, OH Micro Area",0
+"G11820","2015-2019","US",,,,,,,,,,,,,,,,"Astoria, OR Micro Area","11820",,,,,,,,,,,,,,,,,,,"31000US11820",,,"Astoria, OR Micro Area",39102,"Astoria, OR Micro Area",0
+"G11860","2015-2019","US",,,,,,,,,,,,,,,,"Atchison, KS Micro Area; Kansas City-Overland Park-Kansas City, MO-KS CSA","11860",,,,,,,,,,,,,,,,,,,"31000US11860",,,"Atchison, KS Micro Area",16268,"Atchison, KS Micro Area",0
+"G11900","2015-2019","US",,,,,,,,,,,,,,,,"Athens, OH Micro Area","11900",,,,,,,,,,,,,,,,,,,"31000US11900",,,"Athens, OH Micro Area",65917,"Athens, OH Micro Area",0
+"G11940","2015-2019","US",,,,,,,,,,,,,,,,"Athens, TN Micro Area; Chattanooga-Cleveland-Dalton, TN-GA CSA","11940",,,,,,,,,,,,,,,,,,,"31000US11940",,,"Athens, TN Micro Area",53053,"Athens, TN Micro Area",0
+"G11980","2015-2019","US",,,,,,,,,,,,,,,,"Athens, TX Micro Area","11980",,,,,,,,,,,,,,,,,,,"31000US11980",,,"Athens, TX Micro Area",81070,"Athens, TX Micro Area",0
+"G12020","2015-2019","US",,,,,,,,,,,,,,,,"Athens-Clarke County, GA Metro Area","12020",,,,,,,,,,,,,,,,,,,"31000US12020",,,"Athens-Clarke County, GA Metro Area",208457,"Athens-Clarke County, GA Metro Area",0
+"G12060","2015-2019","US",,,,,,,,,,,,,,,,"Atlanta-Sandy Springs-Alpharetta, GA Metro Area","12060",,,,,,,,,,,,,,,,,,,"31000US12060",,,"Atlanta-Sandy Springs-Alpharetta, GA Metro Area",5862424,"Atlanta-Sandy Springs-Alpharetta, GA Metro Area",0
+"G12100","2015-2019","US",,,,,,,,,,,,,,,,"Atlantic City-Hammonton, NJ Metro Area","12100",,,,,,,,,,,,,,,,,,,"31000US12100",,,"Atlantic City-Hammonton, NJ Metro Area",266105,"Atlantic City-Hammonton, NJ Metro Area",0
+"G12120","2015-2019","US",,,,,,,,,,,,,,,,"Atmore, AL Micro Area; Pensacola-Ferry Pass, FL-AL CSA","12120",,,,,,,,,,,,,,,,,,,"31000US12120",,,"Atmore, AL Micro Area",37057,"Atmore, AL Micro Area",0
+"G12140","2015-2019","US",,,,,,,,,,,,,,,,"Auburn, IN Micro Area; Fort Wayne-Huntington-Auburn, IN CSA","12140",,,,,,,,,,,,,,,,,,,"31000US12140",,,"Auburn, IN Micro Area",42927,"Auburn, IN Micro Area",0
+"G12180","2015-2019","US",,,,,,,,,,,,,,,,"Auburn, NY Micro Area","12180",,,,,,,,,,,,,,,,,,,"31000US12180",,,"Auburn, NY Micro Area",77425,"Auburn, NY Micro Area",0
+"G12220","2015-2019","US",,,,,,,,,,,,,,,,"Auburn-Opelika, AL Metro Area","12220",,,,,,,,,,,,,,,,,,,"31000US12220",,,"Auburn-Opelika, AL Metro Area",161152,"Auburn-Opelika, AL Metro Area",0
+"G12260","2015-2019","US",,,,,,,,,,,,,,,,"Augusta-Richmond County, GA-SC Metro Area","12260",,,,,,,,,,,,,,,,,,,"31000US12260",,,"Augusta-Richmond County, GA-SC Metro Area",599616,"Augusta-Richmond County, GA-SC Metro Area",0
+"G12300","2015-2019","US",,,,,,,,,,,,,,,,"Augusta-Waterville, ME Micro Area","12300",,,,,,,,,,,,,,,,,,,"31000US12300",,,"Augusta-Waterville, ME Micro Area",121753,"Augusta-Waterville, ME Micro Area",0
+"G12380","2015-2019","US",,,,,,,,,,,,,,,,"Austin, MN Micro Area; Rochester-Austin, MN CSA","12380",,,,,,,,,,,,,,,,,,,"31000US12380",,,"Austin, MN Micro Area",39807,"Austin, MN Micro Area",0
+"G12420","2015-2019","US",,,,,,,,,,,,,,,,"Austin-Round Rock-Georgetown, TX Metro Area","12420",,,,,,,,,,,,,,,,,,,"31000US12420",,,"Austin-Round Rock-Georgetown, TX Metro Area",2114441,"Austin-Round Rock-Georgetown, TX Metro Area",0
+"G12460","2015-2019","US",,,,,,,,,,,,,,,,"Bainbridge, GA Micro Area","12460",,,,,,,,,,,,,,,,,,,"31000US12460",,,"Bainbridge, GA Micro Area",26682,"Bainbridge, GA Micro Area",0
+"G12540","2015-2019","US",,,,,,,,,,,,,,,,"Bakersfield, CA Metro Area","12540",,,,,,,,,,,,,,,,,,,"31000US12540",,,"Bakersfield, CA Metro Area",887641,"Bakersfield, CA Metro Area",0
+"G12580","2015-2019","US",,,,,,,,,,,,,,,,"Baltimore-Columbia-Towson, MD Metro Area","12580",,,,,,,,,,,,,,,,,,,"31000US12580",,,"Baltimore-Columbia-Towson, MD Metro Area",2796733,"Baltimore-Columbia-Towson, MD Metro Area",0
+"G12620","2015-2019","US",,,,,,,,,,,,,,,,"Bangor, ME Metro Area","12620",,,,,,,,,,,,,,,,,,,"31000US12620",,,"Bangor, ME Metro Area",151774,"Bangor, ME Metro Area",0
+"G12660","2015-2019","US",,,,,,,,,,,,,,,,"Baraboo, WI Micro Area; Madison-Janesville-Beloit, WI CSA","12660",,,,,,,,,,,,,,,,,,,"31000US12660",,,"Baraboo, WI Micro Area",63922,"Baraboo, WI Micro Area",0
+"G12680","2015-2019","US",,,,,,,,,,,,,,,,"Bardstown, KY Micro Area; Louisville/Jefferson County--Elizabethtown--Bardstown, KY-IN CSA","12680",,,,,,,,,,,,,,,,,,,"31000US12680",,,"Bardstown, KY Micro Area",45650,"Bardstown, KY Micro Area",0
+"G12700","2015-2019","US",,,,,,,,,,,,,,,,"Barnstable Town, MA Metro Area","12700",,,,,,,,,,,,,,,,,,,"31000US12700",,,"Barnstable Town, MA Metro Area",213496,"Barnstable Town, MA Metro Area",0
+"G12740","2015-2019","US",,,,,,,,,,,,,,,,"Barre, VT Micro Area; Burlington-South Burlington-Barre, VT CSA","12740",,,,,,,,,,,,,,,,,,,"31000US12740",,,"Barre, VT Micro Area",58350,"Barre, VT Micro Area",0
+"G12780","2015-2019","US",,,,,,,,,,,,,,,,"Bartlesville, OK Micro Area; Tulsa-Muskogee-Bartlesville, OK CSA","12780",,,,,,,,,,,,,,,,,,,"31000US12780",,,"Bartlesville, OK Micro Area",51886,"Bartlesville, OK Micro Area",0
+"G12860","2015-2019","US",,,,,,,,,,,,,,,,"Batavia, NY Micro Area; Rochester-Batavia-Seneca Falls, NY CSA","12860",,,,,,,,,,,,,,,,,,,"31000US12860",,,"Batavia, NY Micro Area",57808,"Batavia, NY Micro Area",0
+"G12900","2015-2019","US",,,,,,,,,,,,,,,,"Batesville, AR Micro Area","12900",,,,,,,,,,,,,,,,,,,"31000US12900",,,"Batesville, AR Micro Area",54566,"Batesville, AR Micro Area",0
+"G12940","2015-2019","US",,,,,,,,,,,,,,,,"Baton Rouge, LA Metro Area","12940",,,,,,,,,,,,,,,,,,,"31000US12940",,,"Baton Rouge, LA Metro Area",854318,"Baton Rouge, LA Metro Area",0
+"G12980","2015-2019","US",,,,,,,,,,,,,,,,"Battle Creek, MI Metro Area","12980",,,,,,,,,,,,,,,,,,,"31000US12980",,,"Battle Creek, MI Metro Area",134212,"Battle Creek, MI Metro Area",0
+"G13020","2015-2019","US",,,,,,,,,,,,,,,,"Bay City, MI Metro Area","13020",,,,,,,,,,,,,,,,,,,"31000US13020",,,"Bay City, MI Metro Area",104104,"Bay City, MI Metro Area",0
+"G13060","2015-2019","US",,,,,,,,,,,,,,,,"Bay City, TX Micro Area; Houston-The Woodlands, TX CSA","13060",,,,,,,,,,,,,,,,,,,"31000US13060",,,"Bay City, TX Micro Area",36774,"Bay City, TX Micro Area",0
+"G13100","2015-2019","US",,,,,,,,,,,,,,,,"Beatrice, NE Micro Area; Lincoln-Beatrice, NE CSA","13100",,,,,,,,,,,,,,,,,,,"31000US13100",,,"Beatrice, NE Micro Area",21594,"Beatrice, NE Micro Area",0
+"G13140","2015-2019","US",,,,,,,,,,,,,,,,"Beaumont-Port Arthur, TX Metro Area","13140",,,,,,,,,,,,,,,,,,,"31000US13140",,,"Beaumont-Port Arthur, TX Metro Area",395174,"Beaumont-Port Arthur, TX Metro Area",0
+"G13180","2015-2019","US",,,,,,,,,,,,,,,,"Beaver Dam, WI Micro Area","13180",,,,,,,,,,,,,,,,,,,"31000US13180",,,"Beaver Dam, WI Micro Area",87715,"Beaver Dam, WI Micro Area",0
+"G13220","2015-2019","US",,,,,,,,,,,,,,,,"Beckley, WV Metro Area","13220",,,,,,,,,,,,,,,,,,,"31000US13220",,,"Beckley, WV Metro Area",118828,"Beckley, WV Metro Area",0
+"G13260","2015-2019","US",,,,,,,,,,,,,,,,"Bedford, IN Micro Area; Bloomington-Bedford, IN CSA","13260",,,,,,,,,,,,,,,,,,,"31000US13260",,,"Bedford, IN Micro Area",45548,"Bedford, IN Micro Area",0
+"G13300","2015-2019","US",,,,,,,,,,,,,,,,"Beeville, TX Micro Area","13300",,,,,,,,,,,,,,,,,,,"31000US13300",,,"Beeville, TX Micro Area",32611,"Beeville, TX Micro Area",0
+"G13340","2015-2019","US",,,,,,,,,,,,,,,,"Bellefontaine, OH Micro Area; Columbus-Marion-Zanesville, OH CSA","13340",,,,,,,,,,,,,,,,,,,"31000US13340",,,"Bellefontaine, OH Micro Area",45316,"Bellefontaine, OH Micro Area",0
+"G13380","2015-2019","US",,,,,,,,,,,,,,,,"Bellingham, WA Metro Area","13380",,,,,,,,,,,,,,,,,,,"31000US13380",,,"Bellingham, WA Metro Area",220821,"Bellingham, WA Metro Area",0
+"G13420","2015-2019","US",,,,,,,,,,,,,,,,"Bemidji, MN Micro Area","13420",,,,,,,,,,,,,,,,,,,"31000US13420",,,"Bemidji, MN Micro Area",46403,"Bemidji, MN Micro Area",0
+"G13460","2015-2019","US",,,,,,,,,,,,,,,,"Bend, OR Metro Area","13460",,,,,,,,,,,,,,,,,,,"31000US13460",,,"Bend, OR Metro Area",186251,"Bend, OR Metro Area",0
+"G13500","2015-2019","US",,,,,,,,,,,,,,,,"Bennettsville, SC Micro Area","13500",,,,,,,,,,,,,,,,,,,"31000US13500",,,"Bennettsville, SC Micro Area",26753,"Bennettsville, SC Micro Area",0
+"G13540","2015-2019","US",,,,,,,,,,,,,,,,"Bennington, VT Micro Area","13540",,,,,,,,,,,,,,,,,,,"31000US13540",,,"Bennington, VT Micro Area",35746,"Bennington, VT Micro Area",0
+"G13620","2015-2019","US",,,,,,,,,,,,,,,,"Berlin, NH Micro Area","13620",,,,,,,,,,,,,,,,,,,"31000US13620",,,"Berlin, NH Micro Area",31741,"Berlin, NH Micro Area",0
+"G13660","2015-2019","US",,,,,,,,,,,,,,,,"Big Rapids, MI Micro Area; Grand Rapids-Kentwood-Muskegon, MI CSA","13660",,,,,,,,,,,,,,,,,,,"31000US13660",,,"Big Rapids, MI Micro Area",43251,"Big Rapids, MI Micro Area",0
+"G13700","2015-2019","US",,,,,,,,,,,,,,,,"Big Spring, TX Micro Area","13700",,,,,,,,,,,,,,,,,,,"31000US13700",,,"Big Spring, TX Micro Area",36349,"Big Spring, TX Micro Area",0
+"G13720","2015-2019","US",,,,,,,,,,,,,,,,"Big Stone Gap, VA Micro Area","13720",,,,,,,,,,,,,,,,,,,"31000US13720",,,"Big Stone Gap, VA Micro Area",42456,"Big Stone Gap, VA Micro Area",0
+"G13740","2015-2019","US",,,,,,,,,,,,,,,,"Billings, MT Metro Area","13740",,,,,,,,,,,,,,,,,,,"31000US13740",,,"Billings, MT Metro Area",179071,"Billings, MT Metro Area",0
+"G13780","2015-2019","US",,,,,,,,,,,,,,,,"Binghamton, NY Metro Area","13780",,,,,,,,,,,,,,,,,,,"31000US13780",,,"Binghamton, NY Metro Area",241874,"Binghamton, NY Metro Area",0
+"G13820","2015-2019","US",,,,,,,,,,,,,,,,"Birmingham-Hoover, AL Metro Area","13820",,,,,,,,,,,,,,,,,,,"31000US13820",,,"Birmingham-Hoover, AL Metro Area",1085330,"Birmingham-Hoover, AL Metro Area",0
+"G13900","2015-2019","US",,,,,,,,,,,,,,,,"Bismarck, ND Metro Area","13900",,,,,,,,,,,,,,,,,,,"31000US13900",,,"Bismarck, ND Metro Area",127503,"Bismarck, ND Metro Area",105
+"G13940","2015-2019","US",,,,,,,,,,,,,,,,"Blackfoot, ID Micro Area; Idaho Falls-Rexburg-Blackfoot, ID CSA","13940",,,,,,,,,,,,,,,,,,,"31000US13940",,,"Blackfoot, ID Micro Area",45839,"Blackfoot, ID Micro Area",0
+"G13980","2015-2019","US",,,,,,,,,,,,,,,,"Blacksburg-Christiansburg, VA Metro Area","13980",,,,,,,,,,,,,,,,,,,"31000US13980",,,"Blacksburg-Christiansburg, VA Metro Area",166785,"Blacksburg-Christiansburg, VA Metro Area",0
+"G14010","2015-2019","US",,,,,,,,,,,,,,,,"Bloomington, IL Metro Area","14010",,,,,,,,,,,,,,,,,,,"31000US14010",,,"Bloomington, IL Metro Area",172578,"Bloomington, IL Metro Area",0
+"G14020","2015-2019","US",,,,,,,,,,,,,,,,"Bloomington, IN Metro Area","14020",,,,,,,,,,,,,,,,,,,"31000US14020",,,"Bloomington, IN Metro Area",167296,"Bloomington, IN Metro Area",0
+"G14100","2015-2019","US",,,,,,,,,,,,,,,,"Bloomsburg-Berwick, PA Metro Area","14100",,,,,,,,,,,,,,,,,,,"31000US14100",,,"Bloomsburg-Berwick, PA Metro Area",83974,"Bloomsburg-Berwick, PA Metro Area",0
+"G14140","2015-2019","US",,,,,,,,,,,,,,,,"Bluefield, WV-VA Micro Area","14140",,,,,,,,,,,,,,,,,,,"31000US14140",,,"Bluefield, WV-VA Micro Area",107910,"Bluefield, WV-VA Micro Area",0
+"G14180","2015-2019","US",,,,,,,,,,,,,,,,"Blytheville, AR Micro Area","14180",,,,,,,,,,,,,,,,,,,"31000US14180",,,"Blytheville, AR Micro Area",42126,"Blytheville, AR Micro Area",0
+"G14220","2015-2019","US",,,,,,,,,,,,,,,,"Bogalusa, LA Micro Area; New Orleans-Metairie-Hammond, LA-MS CSA","14220",,,,,,,,,,,,,,,,,,,"31000US14220",,,"Bogalusa, LA Micro Area",46435,"Bogalusa, LA Micro Area",0
+"G14260","2015-2019","US",,,,,,,,,,,,,,,,"Boise City, ID Metro Area","14260",,,,,,,,,,,,,,,,,,,"31000US14260",,,"Boise City, ID Metro Area",710743,"Boise City, ID Metro Area",0
+"G14300","2015-2019","US",,,,,,,,,,,,,,,,"Bonham, TX Micro Area; Dallas-Fort Worth, TX-OK CSA","14300",,,,,,,,,,,,,,,,,,,"31000US14300",,,"Bonham, TX Micro Area",34537,"Bonham, TX Micro Area",0
+"G14380","2015-2019","US",,,,,,,,,,,,,,,,"Boone, NC Micro Area","14380",,,,,,,,,,,,,,,,,,,"31000US14380",,,"Boone, NC Micro Area",54925,"Boone, NC Micro Area",0
+"G14420","2015-2019","US",,,,,,,,,,,,,,,,"Borger, TX Micro Area; Amarillo-Pampa-Borger, TX CSA","14420",,,,,,,,,,,,,,,,,,,"31000US14420",,,"Borger, TX Micro Area",21344,"Borger, TX Micro Area",0
+"G14460","2015-2019","US",,,,,,,,,,,,,,,,"Boston-Cambridge-Newton, MA-NH Metro Area","14460",,,,,,,,,,,,,,,,,,,"31000US14460",,,"Boston-Cambridge-Newton, MA-NH Metro Area",4832346,"Boston-Cambridge-Newton, MA-NH Metro Area",0
+"G14500","2015-2019","US",,,,,,,,,,,,,,,,"Boulder, CO Metro Area","14500",,,,,,,,,,,,,,,,,,,"31000US14500",,,"Boulder, CO Metro Area",322510,"Boulder, CO Metro Area",0
+"G14540","2015-2019","US",,,,,,,,,,,,,,,,"Bowling Green, KY Metro Area","14540",,,,,,,,,,,,,,,,,,,"31000US14540",,,"Bowling Green, KY Metro Area",174498,"Bowling Green, KY Metro Area",0
+"G14580","2015-2019","US",,,,,,,,,,,,,,,,"Bozeman, MT Micro Area","14580",,,,,,,,,,,,,,,,,,,"31000US14580",,,"Bozeman, MT Micro Area",108063,"Bozeman, MT Micro Area",0
+"G14620","2015-2019","US",,,,,,,,,,,,,,,,"Bradford, PA Micro Area","14620",,,,,,,,,,,,,,,,,,,"31000US14620",,,"Bradford, PA Micro Area",41401,"Bradford, PA Micro Area",0
+"G14660","2015-2019","US",,,,,,,,,,,,,,,,"Brainerd, MN Micro Area","14660",,,,,,,,,,,,,,,,,,,"31000US14660",,,"Brainerd, MN Micro Area",93485,"Brainerd, MN Micro Area",0
+"G14700","2015-2019","US",,,,,,,,,,,,,,,,"Branson, MO Micro Area","14700",,,,,,,,,,,,,,,,,,,"31000US14700",,,"Branson, MO Micro Area",55114,"Branson, MO Micro Area",0
+"G14720","2015-2019","US",,,,,,,,,,,,,,,,"Breckenridge, CO Micro Area","14720",,,,,,,,,,,,,,,,,,,"31000US14720",,,"Breckenridge, CO Micro Area",30649,"Breckenridge, CO Micro Area",0
+"G14740","2015-2019","US",,,,,,,,,,,,,,,,"Bremerton-Silverdale-Port Orchard, WA Metro Area","14740",,,,,,,,,,,,,,,,,,,"31000US14740",,,"Bremerton-Silverdale-Port Orchard, WA Metro Area",265882,"Bremerton-Silverdale-Port Orchard, WA Metro Area",0
+"G14780","2015-2019","US",,,,,,,,,,,,,,,,"Brenham, TX Micro Area; Houston-The Woodlands, TX CSA","14780",,,,,,,,,,,,,,,,,,,"31000US14780",,,"Brenham, TX Micro Area",35163,"Brenham, TX Micro Area",0
+"G14820","2015-2019","US",,,,,,,,,,,,,,,,"Brevard, NC Micro Area; Asheville-Marion-Brevard, NC CSA","14820",,,,,,,,,,,,,,,,,,,"31000US14820",,,"Brevard, NC Micro Area",33775,"Brevard, NC Micro Area",0
+"G14860","2015-2019","US",,,,,,,,,,,,,,,,"Bridgeport-Stamford-Norwalk, CT Metro Area","14860",,,,,,,,,,,,,,,,,,,"31000US14860",,,"Bridgeport-Stamford-Norwalk, CT Metro Area",943926,"Bridgeport-Stamford-Norwalk, CT Metro Area",0
+"G15020","2015-2019","US",,,,,,,,,,,,,,,,"Brookhaven, MS Micro Area; Jackson-Vicksburg-Brookhaven, MS CSA","15020",,,,,,,,,,,,,,,,,,,"31000US15020",,,"Brookhaven, MS Micro Area",34320,"Brookhaven, MS Micro Area",0
+"G15060","2015-2019","US",,,,,,,,,,,,,,,,"Brookings, OR Micro Area","15060",,,,,,,,,,,,,,,,,,,"31000US15060",,,"Brookings, OR Micro Area",22650,"Brookings, OR Micro Area",0
+"G15100","2015-2019","US",,,,,,,,,,,,,,,,"Brookings, SD Micro Area","15100",,,,,,,,,,,,,,,,,,,"31000US15100",,,"Brookings, SD Micro Area",34601,"Brookings, SD Micro Area",0
+"G15140","2015-2019","US",,,,,,,,,,,,,,,,"Brownsville, TN Micro Area; Jackson-Brownsville, TN CSA","15140",,,,,,,,,,,,,,,,,,,"31000US15140",,,"Brownsville, TN Micro Area",17623,"Brownsville, TN Micro Area",0
+"G15180","2015-2019","US",,,,,,,,,,,,,,,,"Brownsville-Harlingen, TX Metro Area","15180",,,,,,,,,,,,,,,,,,,"31000US15180",,,"Brownsville-Harlingen, TX Metro Area",421666,"Brownsville-Harlingen, TX Metro Area",0
+"G15220","2015-2019","US",,,,,,,,,,,,,,,,"Brownwood, TX Micro Area","15220",,,,,,,,,,,,,,,,,,,"31000US15220",,,"Brownwood, TX Micro Area",37855,"Brownwood, TX Micro Area",0
+"G15260","2015-2019","US",,,,,,,,,,,,,,,,"Brunswick, GA Metro Area","15260",,,,,,,,,,,,,,,,,,,"31000US15260",,,"Brunswick, GA Metro Area",117400,"Brunswick, GA Metro Area",0
+"G15340","2015-2019","US",,,,,,,,,,,,,,,,"Bucyrus-Galion, OH Micro Area; Mansfield-Ashland-Bucyrus, OH CSA","15340",,,,,,,,,,,,,,,,,,,"31000US15340",,,"Bucyrus-Galion, OH Micro Area",41821,"Bucyrus-Galion, OH Micro Area",0
+"G15380","2015-2019","US",,,,,,,,,,,,,,,,"Buffalo-Cheektowaga, NY Metro Area","15380",,,,,,,,,,,,,,,,,,,"31000US15380",,,"Buffalo-Cheektowaga, NY Metro Area",1130175,"Buffalo-Cheektowaga, NY Metro Area",0
+"G15420","2015-2019","US",,,,,,,,,,,,,,,,"Burley, ID Micro Area","15420",,,,,,,,,,,,,,,,,,,"31000US15420",,,"Burley, ID Micro Area",44395,"Burley, ID Micro Area",0
+"G15460","2015-2019","US",,,,,,,,,,,,,,,,"Burlington, IA-IL Micro Area; Burlington-Fort Madison-Keokuk, IA-IL-MO CSA","15460",,,,,,,,,,,,,,,,,,,"31000US15460",,,"Burlington, IA-IL Micro Area",46195,"Burlington, IA-IL Micro Area",0
+"G15500","2015-2019","US",,,,,,,,,,,,,,,,"Burlington, NC Metro Area","15500",,,,,,,,,,,,,,,,,,,"31000US15500",,,"Burlington, NC Metro Area",163324,"Burlington, NC Metro Area",0
+"G15540","2015-2019","US",,,,,,,,,,,,,,,,"Burlington-South Burlington, VT Metro Area","15540",,,,,,,,,,,,,,,,,,,"31000US15540",,,"Burlington-South Burlington, VT Metro Area",218784,"Burlington-South Burlington, VT Metro Area",0
+"G15580","2015-2019","US",,,,,,,,,,,,,,,,"Butte-Silver Bow, MT Micro Area","15580",,,,,,,,,,,,,,,,,,,"31000US15580",,,"Butte-Silver Bow, MT Micro Area",34770,"Butte-Silver Bow, MT Micro Area",0
+"G15620","2015-2019","US",,,,,,,,,,,,,,,,"Cadillac, MI Micro Area","15620",,,,,,,,,,,,,,,,,,,"31000US15620",,,"Cadillac, MI Micro Area",48284,"Cadillac, MI Micro Area",0
+"G15660","2015-2019","US",,,,,,,,,,,,,,,,"Calhoun, GA Micro Area; Chattanooga-Cleveland-Dalton, TN-GA CSA","15660",,,,,,,,,,,,,,,,,,,"31000US15660",,,"Calhoun, GA Micro Area",57202,"Calhoun, GA Micro Area",0
+"G15680","2015-2019","US",,,,,,,,,,,,,,,,"California-Lexington Park, MD Metro Area","15680",,,,,,,,,,,,,,,,,,,"31000US15680",,,"California-Lexington Park, MD Metro Area",112290,"California-Lexington Park, MD Metro Area",0
+"G15700","2015-2019","US",,,,,,,,,,,,,,,,"Cambridge, MD Micro Area; Salisbury-Cambridge, MD-DE CSA","15700",,,,,,,,,,,,,,,,,,,"31000US15700",,,"Cambridge, MD Micro Area",32138,"Cambridge, MD Micro Area",0
+"G15740","2015-2019","US",,,,,,,,,,,,,,,,"Cambridge, OH Micro Area; Columbus-Marion-Zanesville, OH CSA","15740",,,,,,,,,,,,,,,,,,,"31000US15740",,,"Cambridge, OH Micro Area",39111,"Cambridge, OH Micro Area",0
+"G15780","2015-2019","US",,,,,,,,,,,,,,,,"Camden, AR Micro Area","15780",,,,,,,,,,,,,,,,,,,"31000US15780",,,"Camden, AR Micro Area",29022,"Camden, AR Micro Area",0
+"G15820","2015-2019","US",,,,,,,,,,,,,,,,"Campbellsville, KY Micro Area","15820",,,,,,,,,,,,,,,,,,,"31000US15820",,,"Campbellsville, KY Micro Area",36550,"Campbellsville, KY Micro Area",0
+"G15860","2015-2019","US",,,,,,,,,,,,,,,,"Cañon City, CO Micro Area; Pueblo-Cañon City, CO CSA","15860",,,,,,,,,,,,,,,,,,,"31000US15860",,,"Cañon City, CO Micro Area",47321,"Cañon City, CO Micro Area",0
+"G15940","2015-2019","US",,,,,,,,,,,,,,,,"Canton-Massillon, OH Metro Area","15940",,,,,,,,,,,,,,,,,,,"31000US15940",,,"Canton-Massillon, OH Metro Area",399736,"Canton-Massillon, OH Metro Area",0
+"G15980","2015-2019","US",,,,,,,,,,,,,,,,"Cape Coral-Fort Myers, FL Metro Area","15980",,,,,,,,,,,,,,,,,,,"31000US15980",,,"Cape Coral-Fort Myers, FL Metro Area",737468,"Cape Coral-Fort Myers, FL Metro Area",0
+"G16020","2015-2019","US",,,,,,,,,,,,,,,,"Cape Girardeau, MO-IL Metro Area","16020",,,,,,,,,,,,,,,,,,,"31000US16020",,,"Cape Girardeau, MO-IL Metro Area",96976,"Cape Girardeau, MO-IL Metro Area",0
+"G16060","2015-2019","US",,,,,,,,,,,,,,,,"Carbondale-Marion, IL Metro Area","16060",,,,,,,,,,,,,,,,,,,"31000US16060",,,"Carbondale-Marion, IL Metro Area",137573,"Carbondale-Marion, IL Metro Area",0
+"G16100","2015-2019","US",,,,,,,,,,,,,,,,"Carlsbad-Artesia, NM Micro Area","16100",,,,,,,,,,,,,,,,,,,"31000US16100",,,"Carlsbad-Artesia, NM Micro Area",57732,"Carlsbad-Artesia, NM Micro Area",0
+"G16140","2015-2019","US",,,,,,,,,,,,,,,,"Carroll, IA Micro Area","16140",,,,,,,,,,,,,,,,,,,"31000US16140",,,"Carroll, IA Micro Area",20281,"Carroll, IA Micro Area",0
+"G16180","2015-2019","US",,,,,,,,,,,,,,,,"Carson City, NV Metro Area","16180",,,,,,,,,,,,,,,,,,,"31000US16180",,,"Carson City, NV Metro Area",54773,"Carson City, NV Metro Area",0
+"G16220","2015-2019","US",,,,,,,,,,,,,,,,"Casper, WY Metro Area","16220",,,,,,,,,,,,,,,,,,,"31000US16220",,,"Casper, WY Metro Area",80333,"Casper, WY Metro Area",0
+"G16260","2015-2019","US",,,,,,,,,,,,,,,,"Cedar City, UT Micro Area","16260",,,,,,,,,,,,,,,,,,,"31000US16260",,,"Cedar City, UT Micro Area",51213,"Cedar City, UT Micro Area",0
+"G16300","2015-2019","US",,,,,,,,,,,,,,,,"Cedar Rapids, IA Metro Area","16300",,,,,,,,,,,,,,,,,,,"31000US16300",,,"Cedar Rapids, IA Metro Area",270056,"Cedar Rapids, IA Metro Area",0
+"G16340","2015-2019","US",,,,,,,,,,,,,,,,"Cedartown, GA Micro Area; Atlanta--Athens-Clarke County--Sandy Springs, GA-AL CSA","16340",,,,,,,,,,,,,,,,,,,"31000US16340",,,"Cedartown, GA Micro Area",41908,"Cedartown, GA Micro Area",0
+"G16380","2015-2019","US",,,,,,,,,,,,,,,,"Celina, OH Micro Area; Lima-Van Wert-Celina, OH CSA","16380",,,,,,,,,,,,,,,,,,,"31000US16380",,,"Celina, OH Micro Area",40884,"Celina, OH Micro Area",0
+"G16420","2015-2019","US",,,,,,,,,,,,,,,,"Central City, KY Micro Area","16420",,,,,,,,,,,,,,,,,,,"31000US16420",,,"Central City, KY Micro Area",30951,"Central City, KY Micro Area",0
+"G16460","2015-2019","US",,,,,,,,,,,,,,,,"Centralia, IL Micro Area; St. Louis-St. Charles-Farmington, MO-IL CSA","16460",,,,,,,,,,,,,,,,,,,"31000US16460",,,"Centralia, IL Micro Area",37743,"Centralia, IL Micro Area",0
+"G16500","2015-2019","US",,,,,,,,,,,,,,,,"Centralia, WA Micro Area","16500",,,,,,,,,,,,,,,,,,,"31000US16500",,,"Centralia, WA Micro Area",78145,"Centralia, WA Micro Area",0
+"G16540","2015-2019","US",,,,,,,,,,,,,,,,"Chambersburg-Waynesboro, PA Metro Area","16540",,,,,,,,,,,,,,,,,,,"31000US16540",,,"Chambersburg-Waynesboro, PA Metro Area",154147,"Chambersburg-Waynesboro, PA Metro Area",0
+"G16580","2015-2019","US",,,,,,,,,,,,,,,,"Champaign-Urbana, IL Metro Area","16580",,,,,,,,,,,,,,,,,,,"31000US16580",,,"Champaign-Urbana, IL Metro Area",226323,"Champaign-Urbana, IL Metro Area",0
+"G16620","2015-2019","US",,,,,,,,,,,,,,,,"Charleston, WV Metro Area","16620",,,,,,,,,,,,,,,,,,,"31000US16620",,,"Charleston, WV Metro Area",264113,"Charleston, WV Metro Area",0
+"G16660","2015-2019","US",,,,,,,,,,,,,,,,"Charleston-Mattoon, IL Micro Area","16660",,,,,,,,,,,,,,,,,,,"31000US16660",,,"Charleston-Mattoon, IL Micro Area",62189,"Charleston-Mattoon, IL Micro Area",0
+"G16700","2015-2019","US",,,,,,,,,,,,,,,,"Charleston-North Charleston, SC Metro Area","16700",,,,,,,,,,,,,,,,,,,"31000US16700",,,"Charleston-North Charleston, SC Metro Area",774508,"Charleston-North Charleston, SC Metro Area",0
+"G16740","2015-2019","US",,,,,,,,,,,,,,,,"Charlotte-Concord-Gastonia, NC-SC Metro Area","16740",,,,,,,,,,,,,,,,,,,"31000US16740",,,"Charlotte-Concord-Gastonia, NC-SC Metro Area",2545560,"Charlotte-Concord-Gastonia, NC-SC Metro Area",0
+"G16820","2015-2019","US",,,,,,,,,,,,,,,,"Charlottesville, VA Metro Area","16820",,,,,,,,,,,,,,,,,,,"31000US16820",,,"Charlottesville, VA Metro Area",215445,"Charlottesville, VA Metro Area",0
+"G16860","2015-2019","US",,,,,,,,,,,,,,,,"Chattanooga, TN-GA Metro Area","16860",,,,,,,,,,,,,,,,,,,"31000US16860",,,"Chattanooga, TN-GA Metro Area",556209,"Chattanooga, TN-GA Metro Area",0
+"G16940","2015-2019","US",,,,,,,,,,,,,,,,"Cheyenne, WY Metro Area","16940",,,,,,,,,,,,,,,,,,,"31000US16940",,,"Cheyenne, WY Metro Area",98320,"Cheyenne, WY Metro Area",0
+"G16980","2015-2019","US",,,,,,,,,,,,,,,,"Chicago-Naperville-Elgin, IL-IN-WI Metro Area","16980",,,,,,,,,,,,,,,,,,,"31000US16980",,,"Chicago-Naperville-Elgin, IL-IN-WI Metro Area",9508605,"Chicago-Naperville-Elgin, IL-IN-WI Metro Area",0
+"G17020","2015-2019","US",,,,,,,,,,,,,,,,"Chico, CA Metro Area","17020",,,,,,,,,,,,,,,,,,,"31000US17020",,,"Chico, CA Metro Area",225817,"Chico, CA Metro Area",0
+"G17060","2015-2019","US",,,,,,,,,,,,,,,,"Chillicothe, OH Micro Area","17060",,,,,,,,,,,,,,,,,,,"31000US17060",,,"Chillicothe, OH Micro Area",76948,"Chillicothe, OH Micro Area",0
+"G17140","2015-2019","US",,,,,,,,,,,,,,,,"Cincinnati, OH-KY-IN Metro Area","17140",,,,,,,,,,,,,,,,,,,"31000US17140",,,"Cincinnati, OH-KY-IN Metro Area",2201741,"Cincinnati, OH-KY-IN Metro Area",0
+"G17220","2015-2019","US",,,,,,,,,,,,,,,,"Clarksburg, WV Micro Area","17220",,,,,,,,,,,,,,,,,,,"31000US17220",,,"Clarksburg, WV Micro Area",93332,"Clarksburg, WV Micro Area",0
+"G17260","2015-2019","US",,,,,,,,,,,,,,,,"Clarksdale, MS Micro Area","17260",,,,,,,,,,,,,,,,,,,"31000US17260",,,"Clarksdale, MS Micro Area",23255,"Clarksdale, MS Micro Area",0
+"G17300","2015-2019","US",,,,,,,,,,,,,,,,"Clarksville, TN-KY Metro Area","17300",,,,,,,,,,,,,,,,,,,"31000US17300",,,"Clarksville, TN-KY Metro Area",299470,"Clarksville, TN-KY Metro Area",0
+"G17340","2015-2019","US",,,,,,,,,,,,,,,,"Clearlake, CA Micro Area","17340",,,,,,,,,,,,,,,,,,,"31000US17340",,,"Clearlake, CA Micro Area",64195,"Clearlake, CA Micro Area",0
+"G17380","2015-2019","US",,,,,,,,,,,,,,,,"Cleveland, MS Micro Area; Cleveland-Indianola, MS CSA","17380",,,,,,,,,,,,,,,,,,,"31000US17380",,,"Cleveland, MS Micro Area",31848,"Cleveland, MS Micro Area",0
+"G17420","2015-2019","US",,,,,,,,,,,,,,,,"Cleveland, TN Metro Area","17420",,,,,,,,,,,,,,,,,,,"31000US17420",,,"Cleveland, TN Metro Area",122563,"Cleveland, TN Metro Area",0
+"G17460","2015-2019","US",,,,,,,,,,,,,,,,"Cleveland-Elyria, OH Metro Area","17460",,,,,,,,,,,,,,,,,,,"31000US17460",,,"Cleveland-Elyria, OH Metro Area",2056898,"Cleveland-Elyria, OH Metro Area",0
+"G17500","2015-2019","US",,,,,,,,,,,,,,,,"Clewiston, FL Micro Area; Cape Coral-Fort Myers-Naples, FL CSA","17500",,,,,,,,,,,,,,,,,,,"31000US17500",,,"Clewiston, FL Micro Area",40732,"Clewiston, FL Micro Area",0
+"G17540","2015-2019","US",,,,,,,,,,,,,,,,"Clinton, IA Micro Area; Davenport-Moline, IA-IL CSA","17540",,,,,,,,,,,,,,,,,,,"31000US17540",,,"Clinton, IA Micro Area",46909,"Clinton, IA Micro Area",0
+"G17580","2015-2019","US",,,,,,,,,,,,,,,,"Clovis, NM Micro Area; Clovis-Portales, NM CSA","17580",,,,,,,,,,,,,,,,,,,"31000US17580",,,"Clovis, NM Micro Area",49732,"Clovis, NM Micro Area",0
+"G17620","2015-2019","PR",,,,,,,,,,,,,,,,"Coamo, PR Micro Area; Ponce-Yauco-Coamo, PR CSA","17620",,,,,,,,,,,,,,,,,,,"31000US17620",,,"Coamo, PR Micro Area",38906,"Coamo, PR Micro Area",0
+"G17640","2015-2019","PR",,,,,,,,,,,,,,,,"Coco, PR Micro Area; San Juan-Carolina, PR CSA","17640",,,,,,,,,,,,,,,,,,,"31000US17640",,,"Coco, PR Micro Area",28109,"Coco, PR Micro Area",0
+"G17660","2015-2019","US",,,,,,,,,,,,,,,,"Coeur d'Alene, ID Metro Area","17660",,,,,,,,,,,,,,,,,,,"31000US17660",,,"Coeur d'Alene, ID Metro Area",157322,"Coeur d'Alene, ID Metro Area",0
+"G17700","2015-2019","US",,,,,,,,,,,,,,,,"Coffeyville, KS Micro Area","17700",,,,,,,,,,,,,,,,,,,"31000US17700",,,"Coffeyville, KS Micro Area",32521,"Coffeyville, KS Micro Area",0
+"G17740","2015-2019","US",,,,,,,,,,,,,,,,"Coldwater, MI Micro Area; Kalamazoo-Battle Creek-Portage, MI CSA","17740",,,,,,,,,,,,,,,,,,,"31000US17740",,,"Coldwater, MI Micro Area",43513,"Coldwater, MI Micro Area",0
+"G17780","2015-2019","US",,,,,,,,,,,,,,,,"College Station-Bryan, TX Metro Area","17780",,,,,,,,,,,,,,,,,,,"31000US17780",,,"College Station-Bryan, TX Metro Area",258029,"College Station-Bryan, TX Metro Area",0
+"G17820","2015-2019","US",,,,,,,,,,,,,,,,"Colorado Springs, CO Metro Area","17820",,,,,,,,,,,,,,,,,,,"31000US17820",,,"Colorado Springs, CO Metro Area",723498,"Colorado Springs, CO Metro Area",0
+"G17860","2015-2019","US",,,,,,,,,,,,,,,,"Columbia, MO Metro Area","17860",,,,,,,,,,,,,,,,,,,"31000US17860",,,"Columbia, MO Metro Area",205369,"Columbia, MO Metro Area",0
+"G17900","2015-2019","US",,,,,,,,,,,,,,,,"Columbia, SC Metro Area","17900",,,,,,,,,,,,,,,,,,,"31000US17900",,,"Columbia, SC Metro Area",824278,"Columbia, SC Metro Area",0
+"G17980","2015-2019","US",,,,,,,,,,,,,,,,"Columbus, GA-AL Metro Area","17980",,,,,,,,,,,,,,,,,,,"31000US17980",,,"Columbus, GA-AL Metro Area",319402,"Columbus, GA-AL Metro Area",0
+"G18020","2015-2019","US",,,,,,,,,,,,,,,,"Columbus, IN Metro Area","18020",,,,,,,,,,,,,,,,,,,"31000US18020",,,"Columbus, IN Metro Area",82481,"Columbus, IN Metro Area",0
+"G18060","2015-2019","US",,,,,,,,,,,,,,,,"Columbus, MS Micro Area; Columbus-West Point, MS CSA","18060",,,,,,,,,,,,,,,,,,,"31000US18060",,,"Columbus, MS Micro Area",59150,"Columbus, MS Micro Area",0
+"G18100","2015-2019","US",,,,,,,,,,,,,,,,"Columbus, NE Micro Area","18100",,,,,,,,,,,,,,,,,,,"31000US18100",,,"Columbus, NE Micro Area",33174,"Columbus, NE Micro Area",0
+"G18140","2015-2019","US",,,,,,,,,,,,,,,,"Columbus, OH Metro Area","18140",,,,,,,,,,,,,,,,,,,"31000US18140",,,"Columbus, OH Metro Area",2077761,"Columbus, OH Metro Area",0
+"G18180","2015-2019","US",,,,,,,,,,,,,,,,"Concord, NH Micro Area","18180",,,,,,,,,,,,,,,,,,,"31000US18180",,,"Concord, NH Micro Area",149917,"Concord, NH Micro Area",0
+"G18220","2015-2019","US",,,,,,,,,,,,,,,,"Connersville, IN Micro Area; Richmond-Connersville, IN CSA","18220",,,,,,,,,,,,,,,,,,,"31000US18220",,,"Connersville, IN Micro Area",23194,"Connersville, IN Micro Area",0
+"G18260","2015-2019","US",,,,,,,,,,,,,,,,"Cookeville, TN Micro Area","18260",,,,,,,,,,,,,,,,,,,"31000US18260",,,"Cookeville, TN Micro Area",111197,"Cookeville, TN Micro Area",0
+"G18300","2015-2019","US",,,,,,,,,,,,,,,,"Coos Bay, OR Micro Area","18300",,,,,,,,,,,,,,,,,,,"31000US18300",,,"Coos Bay, OR Micro Area",63686,"Coos Bay, OR Micro Area",0
+"G18380","2015-2019","US",,,,,,,,,,,,,,,,"Cordele, GA Micro Area","18380",,,,,,,,,,,,,,,,,,,"31000US18380",,,"Cordele, GA Micro Area",22713,"Cordele, GA Micro Area",0
+"G18420","2015-2019","US",,,,,,,,,,,,,,,,"Corinth, MS Micro Area; Tupelo-Corinth, MS CSA","18420",,,,,,,,,,,,,,,,,,,"31000US18420",,,"Corinth, MS Micro Area",37090,"Corinth, MS Micro Area",0
+"G18460","2015-2019","US",,,,,,,,,,,,,,,,"Cornelia, GA Micro Area; Atlanta--Athens-Clarke County--Sandy Springs, GA-AL CSA","18460",,,,,,,,,,,,,,,,,,,"31000US18460",,,"Cornelia, GA Micro Area",44626,"Cornelia, GA Micro Area",0
+"G18500","2015-2019","US",,,,,,,,,,,,,,,,"Corning, NY Micro Area","18500",,,,,,,,,,,,,,,,,,,"31000US18500",,,"Corning, NY Micro Area",96422,"Corning, NY Micro Area",0
+"G18580","2015-2019","US",,,,,,,,,,,,,,,,"Corpus Christi, TX Metro Area","18580",,,,,,,,,,,,,,,,,,,"31000US18580",,,"Corpus Christi, TX Metro Area",428548,"Corpus Christi, TX Metro Area",0
+"G18620","2015-2019","US",,,,,,,,,,,,,,,,"Corsicana, TX Micro Area; Dallas-Fort Worth, TX-OK CSA","18620",,,,,,,,,,,,,,,,,,,"31000US18620",,,"Corsicana, TX Micro Area",48995,"Corsicana, TX Micro Area",0
+"G18660","2015-2019","US",,,,,,,,,,,,,,,,"Cortland, NY Micro Area; Ithaca-Cortland, NY CSA","18660",,,,,,,,,,,,,,,,,,,"31000US18660",,,"Cortland, NY Micro Area",47865,"Cortland, NY Micro Area",0
+"G18700","2015-2019","US",,,,,,,,,,,,,,,,"Corvallis, OR Metro Area","18700",,,,,,,,,,,,,,,,,,,"31000US18700",,,"Corvallis, OR Metro Area",91107,"Corvallis, OR Metro Area",0
+"G18740","2015-2019","US",,,,,,,,,,,,,,,,"Coshocton, OH Micro Area","18740",,,,,,,,,,,,,,,,,,,"31000US18740",,,"Coshocton, OH Micro Area",36585,"Coshocton, OH Micro Area",0
+"G18780","2015-2019","US",,,,,,,,,,,,,,,,"Craig, CO Micro Area; Steamboat Springs-Craig, CO CSA","18780",,,,,,,,,,,,,,,,,,,"31000US18780",,,"Craig, CO Micro Area",13127,"Craig, CO Micro Area",0
+"G18820","2015-2019","US",,,,,,,,,,,,,,,,"Crawfordsville, IN Micro Area; Indianapolis-Carmel-Muncie, IN CSA","18820",,,,,,,,,,,,,,,,,,,"31000US18820",,,"Crawfordsville, IN Micro Area",38287,"Crawfordsville, IN Micro Area",0
+"G18860","2015-2019","US",,,,,,,,,,,,,,,,"Crescent City, CA Micro Area","18860",,,,,,,,,,,,,,,,,,,"31000US18860",,,"Crescent City, CA Micro Area",27495,"Crescent City, CA Micro Area",0
+"G18880","2015-2019","US",,,,,,,,,,,,,,,,"Crestview-Fort Walton Beach-Destin, FL Metro Area","18880",,,,,,,,,,,,,,,,,,,"31000US18880",,,"Crestview-Fort Walton Beach-Destin, FL Metro Area",272056,"Crestview-Fort Walton Beach-Destin, FL Metro Area",0
+"G18900","2015-2019","US",,,,,,,,,,,,,,,,"Crossville, TN Micro Area","18900",,,,,,,,,,,,,,,,,,,"31000US18900",,,"Crossville, TN Micro Area",59216,"Crossville, TN Micro Area",0
+"G18980","2015-2019","US",,,,,,,,,,,,,,,,"Cullman, AL Micro Area","18980",,,,,,,,,,,,,,,,,,,"31000US18980",,,"Cullman, AL Micro Area",82853,"Cullman, AL Micro Area",0
+"G19000","2015-2019","US",,,,,,,,,,,,,,,,"Cullowhee, NC Micro Area","19000",,,,,,,,,,,,,,,,,,,"31000US19000",,,"Cullowhee, NC Micro Area",57198,"Cullowhee, NC Micro Area",0
+"G19060","2015-2019","US",,,,,,,,,,,,,,,,"Cumberland, MD-WV Metro Area","19060",,,,,,,,,,,,,,,,,,,"31000US19060",,,"Cumberland, MD-WV Metro Area",98612,"Cumberland, MD-WV Metro Area",0
+"G19100","2015-2019","US",,,,,,,,,,,,,,,,"Dallas-Fort Worth-Arlington, TX Metro Area","19100",,,,,,,,,,,,,,,,,,,"31000US19100",,,"Dallas-Fort Worth-Arlington, TX Metro Area",7320663,"Dallas-Fort Worth-Arlington, TX Metro Area",0
+"G19140","2015-2019","US",,,,,,,,,,,,,,,,"Dalton, GA Metro Area","19140",,,,,,,,,,,,,,,,,,,"31000US19140",,,"Dalton, GA Metro Area",143961,"Dalton, GA Metro Area",0
+"G19180","2015-2019","US",,,,,,,,,,,,,,,,"Danville, IL Metro Area","19180",,,,,,,,,,,,,,,,,,,"31000US19180",,,"Danville, IL Metro Area",77563,"Danville, IL Metro Area",0
+"G19220","2015-2019","US",,,,,,,,,,,,,,,,"Danville, KY Micro Area","19220",,,,,,,,,,,,,,,,,,,"31000US19220",,,"Danville, KY Micro Area",54448,"Danville, KY Micro Area",0
+"G19260","2015-2019","US",,,,,,,,,,,,,,,,"Danville, VA Micro Area","19260",,,,,,,,,,,,,,,,,,,"31000US19260",,,"Danville, VA Micro Area",102326,"Danville, VA Micro Area",0
+"G19300","2015-2019","US",,,,,,,,,,,,,,,,"Daphne-Fairhope-Foley, AL Metro Area","19300",,,,,,,,,,,,,,,,,,,"31000US19300",,,"Daphne-Fairhope-Foley, AL Metro Area",212830,"Daphne-Fairhope-Foley, AL Metro Area",0
+"G19340","2015-2019","US",,,,,,,,,,,,,,,,"Davenport-Moline-Rock Island, IA-IL Metro Area","19340",,,,,,,,,,,,,,,,,,,"31000US19340",,,"Davenport-Moline-Rock Island, IA-IL Metro Area",381175,"Davenport-Moline-Rock Island, IA-IL Metro Area",0
+"G19420","2015-2019","US",,,,,,,,,,,,,,,,"Dayton, TN Micro Area; Chattanooga-Cleveland-Dalton, TN-GA CSA","19420",,,,,,,,,,,,,,,,,,,"31000US19420",,,"Dayton, TN Micro Area",32719,"Dayton, TN Micro Area",0
+"G19430","2015-2019","US",,,,,,,,,,,,,,,,"Dayton-Kettering, OH Metro Area","19430",,,,,,,,,,,,,,,,,,,"31000US19430",,,"Dayton-Kettering, OH Metro Area",803543,"Dayton-Kettering, OH Metro Area",0
+"G19460","2015-2019","US",,,,,,,,,,,,,,,,"Decatur, AL Metro Area","19460",,,,,,,,,,,,,,,,,,,"31000US19460",,,"Decatur, AL Metro Area",152271,"Decatur, AL Metro Area",0
+"G19500","2015-2019","US",,,,,,,,,,,,,,,,"Decatur, IL Metro Area","19500",,,,,,,,,,,,,,,,,,,"31000US19500",,,"Decatur, IL Metro Area",105528,"Decatur, IL Metro Area",0
+"G19540","2015-2019","US",,,,,,,,,,,,,,,,"Decatur, IN Micro Area; Fort Wayne-Huntington-Auburn, IN CSA","19540",,,,,,,,,,,,,,,,,,,"31000US19540",,,"Decatur, IN Micro Area",35376,"Decatur, IN Micro Area",0
+"G19580","2015-2019","US",,,,,,,,,,,,,,,,"Defiance, OH Micro Area","19580",,,,,,,,,,,,,,,,,,,"31000US19580",,,"Defiance, OH Micro Area",38160,"Defiance, OH Micro Area",0
+"G19620","2015-2019","US",,,,,,,,,,,,,,,,"Del Rio, TX Micro Area","19620",,,,,,,,,,,,,,,,,,,"31000US19620",,,"Del Rio, TX Micro Area",48969,"Del Rio, TX Micro Area",0
+"G19660","2015-2019","US",,,,,,,,,,,,,,,,"Deltona-Daytona Beach-Ormond Beach, FL Metro Area","19660",,,,,,,,,,,,,,,,,,,"31000US19660",,,"Deltona-Daytona Beach-Ormond Beach, FL Metro Area",646288,"Deltona-Daytona Beach-Ormond Beach, FL Metro Area",0
+"G19700","2015-2019","US",,,,,,,,,,,,,,,,"Deming, NM Micro Area","19700",,,,,,,,,,,,,,,,,,,"31000US19700",,,"Deming, NM Micro Area",24083,"Deming, NM Micro Area",0
+"G19740","2015-2019","US",,,,,,,,,,,,,,,,"Denver-Aurora-Lakewood, CO Metro Area","19740",,,,,,,,,,,,,,,,,,,"31000US19740",,,"Denver-Aurora-Lakewood, CO Metro Area",2892066,"Denver-Aurora-Lakewood, CO Metro Area",0
+"G19760","2015-2019","US",,,,,,,,,,,,,,,,"DeRidder, LA Micro Area; DeRidder-Fort Polk South, LA CSA","19760",,,,,,,,,,,,,,,,,,,"31000US19760",,,"DeRidder, LA Micro Area",37043,"DeRidder, LA Micro Area",0
+"G19780","2015-2019","US",,,,,,,,,,,,,,,,"Des Moines-West Des Moines, IA Metro Area","19780",,,,,,,,,,,,,,,,,,,"31000US19780",,,"Des Moines-West Des Moines, IA Metro Area",680439,"Des Moines-West Des Moines, IA Metro Area",0
+"G19820","2015-2019","US",,,,,,,,,,,,,,,,"Detroit-Warren-Dearborn, MI Metro Area","19820",,,,,,,,,,,,,,,,,,,"31000US19820",,,"Detroit-Warren-Dearborn, MI Metro Area",4317848,"Detroit-Warren-Dearborn, MI Metro Area",0
+"G19860","2015-2019","US",,,,,,,,,,,,,,,,"Dickinson, ND Micro Area","19860",,,,,,,,,,,,,,,,,,,"31000US19860",,,"Dickinson, ND Micro Area",32003,"Dickinson, ND Micro Area",84
+"G19940","2015-2019","US",,,,,,,,,,,,,,,,"Dixon, IL Micro Area; Dixon-Sterling, IL CSA","19940",,,,,,,,,,,,,,,,,,,"31000US19940",,,"Dixon, IL Micro Area",34389,"Dixon, IL Micro Area",0
+"G19980","2015-2019","US",,,,,,,,,,,,,,,,"Dodge City, KS Micro Area","19980",,,,,,,,,,,,,,,,,,,"31000US19980",,,"Dodge City, KS Micro Area",34179,"Dodge City, KS Micro Area",0
+"G20020","2015-2019","US",,,,,,,,,,,,,,,,"Dothan, AL Metro Area","20020",,,,,,,,,,,,,,,,,,,"31000US20020",,,"Dothan, AL Metro Area",148252,"Dothan, AL Metro Area",0
+"G20060","2015-2019","US",,,,,,,,,,,,,,,,"Douglas, GA Micro Area","20060",,,,,,,,,,,,,,,,,,,"31000US20060",,,"Douglas, GA Micro Area",51260,"Douglas, GA Micro Area",0
+"G20100","2015-2019","US",,,,,,,,,,,,,,,,"Dover, DE Metro Area","20100",,,,,,,,,,,,,,,,,,,"31000US20100",,,"Dover, DE Metro Area",176699,"Dover, DE Metro Area",0
+"G20140","2015-2019","US",,,,,,,,,,,,,,,,"Dublin, GA Micro Area","20140",,,,,,,,,,,,,,,,,,,"31000US20140",,,"Dublin, GA Micro Area",63891,"Dublin, GA Micro Area",0
+"G20180","2015-2019","US",,,,,,,,,,,,,,,,"DuBois, PA Micro Area","20180",,,,,,,,,,,,,,,,,,,"31000US20180",,,"DuBois, PA Micro Area",79908,"DuBois, PA Micro Area",0
+"G20220","2015-2019","US",,,,,,,,,,,,,,,,"Dubuque, IA Metro Area","20220",,,,,,,,,,,,,,,,,,,"31000US20220",,,"Dubuque, IA Metro Area",96982,"Dubuque, IA Metro Area",0
+"G20260","2015-2019","US",,,,,,,,,,,,,,,,"Duluth, MN-WI Metro Area","20260",,,,,,,,,,,,,,,,,,,"31000US20260",,,"Duluth, MN-WI Metro Area",289247,"Duluth, MN-WI Metro Area",0
+"G20300","2015-2019","US",,,,,,,,,,,,,,,,"Dumas, TX Micro Area","20300",,,,,,,,,,,,,,,,,,,"31000US20300",,,"Dumas, TX Micro Area",21399,"Dumas, TX Micro Area",0
+"G20340","2015-2019","US",,,,,,,,,,,,,,,,"Duncan, OK Micro Area","20340",,,,,,,,,,,,,,,,,,,"31000US20340",,,"Duncan, OK Micro Area",43647,"Duncan, OK Micro Area",0
+"G20420","2015-2019","US",,,,,,,,,,,,,,,,"Durango, CO Micro Area","20420",,,,,,,,,,,,,,,,,,,"31000US20420",,,"Durango, CO Micro Area",55617,"Durango, CO Micro Area",0
+"G20460","2015-2019","US",,,,,,,,,,,,,,,,"Durant, OK Micro Area; Dallas-Fort Worth, TX-OK CSA","20460",,,,,,,,,,,,,,,,,,,"31000US20460",,,"Durant, OK Micro Area",46457,"Durant, OK Micro Area",0
+"G20500","2015-2019","US",,,,,,,,,,,,,,,,"Durham-Chapel Hill, NC Metro Area","20500",,,,,,,,,,,,,,,,,,,"31000US20500",,,"Durham-Chapel Hill, NC Metro Area",626695,"Durham-Chapel Hill, NC Metro Area",0
+"G20540","2015-2019","US",,,,,,,,,,,,,,,,"Dyersburg, TN Micro Area","20540",,,,,,,,,,,,,,,,,,,"31000US20540",,,"Dyersburg, TN Micro Area",37416,"Dyersburg, TN Micro Area",0
+"G20580","2015-2019","US",,,,,,,,,,,,,,,,"Eagle Pass, TX Micro Area","20580",,,,,,,,,,,,,,,,,,,"31000US20580",,,"Eagle Pass, TX Micro Area",58174,"Eagle Pass, TX Micro Area",0
+"G20660","2015-2019","US",,,,,,,,,,,,,,,,"Easton, MD Micro Area; Washington-Baltimore-Arlington, DC-MD-VA-WV-PA CSA","20660",,,,,,,,,,,,,,,,,,,"31000US20660",,,"Easton, MD Micro Area",37167,"Easton, MD Micro Area",0
+"G20700","2015-2019","US",,,,,,,,,,,,,,,,"East Stroudsburg, PA Metro Area","20700",,,,,,,,,,,,,,,,,,,"31000US20700",,,"East Stroudsburg, PA Metro Area",168032,"East Stroudsburg, PA Metro Area",0
+"G20740","2015-2019","US",,,,,,,,,,,,,,,,"Eau Claire, WI Metro Area","20740",,,,,,,,,,,,,,,,,,,"31000US20740",,,"Eau Claire, WI Metro Area",167406,"Eau Claire, WI Metro Area",0
+"G20780","2015-2019","US",,,,,,,,,,,,,,,,"Edwards, CO Micro Area; Edwards-Glenwood Springs, CO CSA","20780",,,,,,,,,,,,,,,,,,,"31000US20780",,,"Edwards, CO Micro Area",54681,"Edwards, CO Micro Area",0
+"G20820","2015-2019","US",,,,,,,,,,,,,,,,"Effingham, IL Micro Area","20820",,,,,,,,,,,,,,,,,,,"31000US20820",,,"Effingham, IL Micro Area",34137,"Effingham, IL Micro Area",0
+"G20900","2015-2019","US",,,,,,,,,,,,,,,,"El Campo, TX Micro Area; Houston-The Woodlands, TX CSA","20900",,,,,,,,,,,,,,,,,,,"31000US20900",,,"El Campo, TX Micro Area",41577,"El Campo, TX Micro Area",0
+"G20940","2015-2019","US",,,,,,,,,,,,,,,,"El Centro, CA Metro Area","20940",,,,,,,,,,,,,,,,,,,"31000US20940",,,"El Centro, CA Metro Area",180701,"El Centro, CA Metro Area",0
+"G20980","2015-2019","US",,,,,,,,,,,,,,,,"El Dorado, AR Micro Area","20980",,,,,,,,,,,,,,,,,,,"31000US20980",,,"El Dorado, AR Micro Area",39449,"El Dorado, AR Micro Area",0
+"G21020","2015-2019","US",,,,,,,,,,,,,,,,"Elizabeth City, NC Micro Area; Virginia Beach-Norfolk, VA-NC CSA","21020",,,,,,,,,,,,,,,,,,,"31000US21020",,,"Elizabeth City, NC Micro Area",52944,"Elizabeth City, NC Micro Area",0
+"G21060","2015-2019","US",,,,,,,,,,,,,,,,"Elizabethtown-Fort Knox, KY Metro Area","21060",,,,,,,,,,,,,,,,,,,"31000US21060",,,"Elizabethtown-Fort Knox, KY Metro Area",150913,"Elizabethtown-Fort Knox, KY Metro Area",0
+"G21120","2015-2019","US",,,,,,,,,,,,,,,,"Elk City, OK Micro Area","21120",,,,,,,,,,,,,,,,,,,"31000US21120",,,"Elk City, OK Micro Area",22268,"Elk City, OK Micro Area",0
+"G21140","2015-2019","US",,,,,,,,,,,,,,,,"Elkhart-Goshen, IN Metro Area","21140",,,,,,,,,,,,,,,,,,,"31000US21140",,,"Elkhart-Goshen, IN Metro Area",204558,"Elkhart-Goshen, IN Metro Area",0
+"G21180","2015-2019","US",,,,,,,,,,,,,,,,"Elkins, WV Micro Area","21180",,,,,,,,,,,,,,,,,,,"31000US21180",,,"Elkins, WV Micro Area",28930,"Elkins, WV Micro Area",0
+"G21220","2015-2019","US",,,,,,,,,,,,,,,,"Elko, NV Micro Area","21220",,,,,,,,,,,,,,,,,,,"31000US21220",,,"Elko, NV Micro Area",54156,"Elko, NV Micro Area",151
+"G21260","2015-2019","US",,,,,,,,,,,,,,,,"Ellensburg, WA Micro Area","21260",,,,,,,,,,,,,,,,,,,"31000US21260",,,"Ellensburg, WA Micro Area",45897,"Ellensburg, WA Micro Area",0
+"G21300","2015-2019","US",,,,,,,,,,,,,,,,"Elmira, NY Metro Area","21300",,,,,,,,,,,,,,,,,,,"31000US21300",,,"Elmira, NY Metro Area",84895,"Elmira, NY Metro Area",0
+"G21340","2015-2019","US",,,,,,,,,,,,,,,,"El Paso, TX Metro Area","21340",,,,,,,,,,,,,,,,,,,"31000US21340",,,"El Paso, TX Metro Area",840477,"El Paso, TX Metro Area",0
+"G21380","2015-2019","US",,,,,,,,,,,,,,,,"Emporia, KS Micro Area","21380",,,,,,,,,,,,,,,,,,,"31000US21380",,,"Emporia, KS Micro Area",35888,"Emporia, KS Micro Area",0
+"G21420","2015-2019","US",,,,,,,,,,,,,,,,"Enid, OK Metro Area","21420",,,,,,,,,,,,,,,,,,,"31000US21420",,,"Enid, OK Metro Area",61898,"Enid, OK Metro Area",0
+"G21460","2015-2019","US",,,,,,,,,,,,,,,,"Enterprise, AL Micro Area","21460",,,,,,,,,,,,,,,,,,,"31000US21460",,,"Enterprise, AL Micro Area",51662,"Enterprise, AL Micro Area",0
+"G21500","2015-2019","US",,,,,,,,,,,,,,,,"Erie, PA Metro Area","21500",,,,,,,,,,,,,,,,,,,"31000US21500",,,"Erie, PA Metro Area",273835,"Erie, PA Metro Area",0
+"G21540","2015-2019","US",,,,,,,,,,,,,,,,"Escanaba, MI Micro Area","21540",,,,,,,,,,,,,,,,,,,"31000US21540",,,"Escanaba, MI Micro Area",36026,"Escanaba, MI Micro Area",0
+"G21580","2015-2019","US",,,,,,,,,,,,,,,,"Española, NM Micro Area; Albuquerque-Santa Fe-Las Vegas, NM CSA","21580",,,,,,,,,,,,,,,,,,,"31000US21580",,,"Española, NM Micro Area",39159,"Española, NM Micro Area",0
+"G21640","2015-2019","US",,,,,,,,,,,,,,,,"Eufaula, AL-GA Micro Area","21640",,,,,,,,,,,,,,,,,,,"31000US21640",,,"Eufaula, AL-GA Micro Area",27650,"Eufaula, AL-GA Micro Area",180
+"G21660","2015-2019","US",,,,,,,,,,,,,,,,"Eugene-Springfield, OR Metro Area","21660",,,,,,,,,,,,,,,,,,,"31000US21660",,,"Eugene-Springfield, OR Metro Area",373340,"Eugene-Springfield, OR Metro Area",0
+"G21700","2015-2019","US",,,,,,,,,,,,,,,,"Eureka-Arcata, CA Micro Area","21700",,,,,,,,,,,,,,,,,,,"31000US21700",,,"Eureka-Arcata, CA Micro Area",135940,"Eureka-Arcata, CA Micro Area",0
+"G21740","2015-2019","US",,,,,,,,,,,,,,,,"Evanston, WY Micro Area","21740",,,,,,,,,,,,,,,,,,,"31000US21740",,,"Evanston, WY Micro Area",20479,"Evanston, WY Micro Area",0
+"G21780","2015-2019","US",,,,,,,,,,,,,,,,"Evansville, IN-KY Metro Area","21780",,,,,,,,,,,,,,,,,,,"31000US21780",,,"Evansville, IN-KY Metro Area",314960,"Evansville, IN-KY Metro Area",0
+"G21820","2015-2019","US",,,,,,,,,,,,,,,,"Fairbanks, AK Metro Area","21820",,,,,,,,,,,,,,,,,,,"31000US21820",,,"Fairbanks, AK Metro Area",99072,"Fairbanks, AK Metro Area",0
+"G21840","2015-2019","US",,,,,,,,,,,,,,,,"Fairfield, IA Micro Area","21840",,,,,,,,,,,,,,,,,,,"31000US21840",,,"Fairfield, IA Micro Area",18148,"Fairfield, IA Micro Area",0
+"G21860","2015-2019","US",,,,,,,,,,,,,,,,"Fairmont, MN Micro Area","21860",,,,,,,,,,,,,,,,,,,"31000US21860",,,"Fairmont, MN Micro Area",19852,"Fairmont, MN Micro Area",0
+"G21900","2015-2019","US",,,,,,,,,,,,,,,,"Fairmont, WV Micro Area; Morgantown-Fairmont, WV CSA","21900",,,,,,,,,,,,,,,,,,,"31000US21900",,,"Fairmont, WV Micro Area",56355,"Fairmont, WV Micro Area",0
+"G21980","2015-2019","US",,,,,,,,,,,,,,,,"Fallon, NV Micro Area","21980",,,,,,,,,,,,,,,,,,,"31000US21980",,,"Fallon, NV Micro Area",24259,"Fallon, NV Micro Area",0
+"G22020","2015-2019","US",,,,,,,,,,,,,,,,"Fargo, ND-MN Metro Area","22020",,,,,,,,,,,,,,,,,,,"31000US22020",,,"Fargo, ND-MN Metro Area",240421,"Fargo, ND-MN Metro Area",0
+"G22060","2015-2019","US",,,,,,,,,,,,,,,,"Faribault-Northfield, MN Micro Area","22060",,,,,,,,,,,,,,,,,,,"31000US22060",,,"Faribault-Northfield, MN Micro Area",66185,"Faribault-Northfield, MN Micro Area",0
+"G22100","2015-2019","US",,,,,,,,,,,,,,,,"Farmington, MO Micro Area","22100",,,,,,,,,,,,,,,,,,,"31000US22100",,,"Farmington, MO Micro Area",66643,"Farmington, MO Micro Area",0
+"G22140","2015-2019","US",,,,,,,,,,,,,,,,"Farmington, NM Metro Area","22140",,,,,,,,,,,,,,,,,,,"31000US22140",,,"Farmington, NM Metro Area",126515,"Farmington, NM Metro Area",0
+"G22180","2015-2019","US",,,,,,,,,,,,,,,,"Fayetteville, NC Metro Area","22180",,,,,,,,,,,,,,,,,,,"31000US22180",,,"Fayetteville, NC Metro Area",519101,"Fayetteville, NC Metro Area",0
+"G22220","2015-2019","US",,,,,,,,,,,,,,,,"Fayetteville-Springdale-Rogers, AR Metro Area","22220",,,,,,,,,,,,,,,,,,,"31000US22220",,,"Fayetteville-Springdale-Rogers, AR Metro Area",514259,"Fayetteville-Springdale-Rogers, AR Metro Area",0
+"G22260","2015-2019","US",,,,,,,,,,,,,,,,"Fergus Falls, MN Micro Area","22260",,,,,,,,,,,,,,,,,,,"31000US22260",,,"Fergus Falls, MN Micro Area",58195,"Fergus Falls, MN Micro Area",0
+"G22280","2015-2019","US",,,,,,,,,,,,,,,,"Fernley, NV Micro Area; Reno-Carson City-Fernley, NV CSA","22280",,,,,,,,,,,,,,,,,,,"31000US22280",,,"Fernley, NV Micro Area",54380,"Fernley, NV Micro Area",0
+"G22300","2015-2019","US",,,,,,,,,,,,,,,,"Findlay, OH Micro Area","22300",,,,,,,,,,,,,,,,,,,"31000US22300",,,"Findlay, OH Micro Area",75837,"Findlay, OH Micro Area",0
+"G22340","2015-2019","US",,,,,,,,,,,,,,,,"Fitzgerald, GA Micro Area","22340",,,,,,,,,,,,,,,,,,,"31000US22340",,,"Fitzgerald, GA Micro Area",17033,"Fitzgerald, GA Micro Area",0
+"G22380","2015-2019","US",,,,,,,,,,,,,,,,"Flagstaff, AZ Metro Area","22380",,,,,,,,,,,,,,,,,,,"31000US22380",,,"Flagstaff, AZ Metro Area",141274,"Flagstaff, AZ Metro Area",0
+"G22420","2015-2019","US",,,,,,,,,,,,,,,,"Flint, MI Metro Area","22420",,,,,,,,,,,,,,,,,,,"31000US22420",,,"Flint, MI Metro Area",407875,"Flint, MI Metro Area",0
+"G22500","2015-2019","US",,,,,,,,,,,,,,,,"Florence, SC Metro Area","22500",,,,,,,,,,,,,,,,,,,"31000US22500",,,"Florence, SC Metro Area",205502,"Florence, SC Metro Area",0
+"G22520","2015-2019","US",,,,,,,,,,,,,,,,"Florence-Muscle Shoals, AL Metro Area","22520",,,,,,,,,,,,,,,,,,,"31000US22520",,,"Florence-Muscle Shoals, AL Metro Area",147327,"Florence-Muscle Shoals, AL Metro Area",0
+"G22540","2015-2019","US",,,,,,,,,,,,,,,,"Fond du Lac, WI Metro Area","22540",,,,,,,,,,,,,,,,,,,"31000US22540",,,"Fond du Lac, WI Metro Area",102597,"Fond du Lac, WI Metro Area",0
+"G22580","2015-2019","US",,,,,,,,,,,,,,,,"Forest City, NC Micro Area","22580",,,,,,,,,,,,,,,,,,,"31000US22580",,,"Forest City, NC Micro Area",66599,"Forest City, NC Micro Area",0
+"G22620","2015-2019","US",,,,,,,,,,,,,,,,"Forrest City, AR Micro Area; Memphis-Forrest City, TN-MS-AR CSA","22620",,,,,,,,,,,,,,,,,,,"31000US22620",,,"Forrest City, AR Micro Area",25900,"Forrest City, AR Micro Area",0
+"G22660","2015-2019","US",,,,,,,,,,,,,,,,"Fort Collins, CO Metro Area","22660",,,,,,,,,,,,,,,,,,,"31000US22660",,,"Fort Collins, CO Metro Area",344786,"Fort Collins, CO Metro Area",0
+"G22700","2015-2019","US",,,,,,,,,,,,,,,,"Fort Dodge, IA Micro Area","22700",,,,,,,,,,,,,,,,,,,"31000US22700",,,"Fort Dodge, IA Micro Area",36545,"Fort Dodge, IA Micro Area",0
+"G22780","2015-2019","US",,,,,,,,,,,,,,,,"Fort Leonard Wood, MO Micro Area","22780",,,,,,,,,,,,,,,,,,,"31000US22780",,,"Fort Leonard Wood, MO Micro Area",52425,"Fort Leonard Wood, MO Micro Area",0
+"G22800","2015-2019","US",,,,,,,,,,,,,,,,"Fort Madison-Keokuk, IA-IL-MO Micro Area; Burlington-Fort Madison-Keokuk, IA-IL-MO CSA","22800",,,,,,,,,,,,,,,,,,,"31000US22800",,,"Fort Madison-Keokuk, IA-IL-MO Micro Area",58989,"Fort Madison-Keokuk, IA-IL-MO Micro Area",0
+"G22820","2015-2019","US",,,,,,,,,,,,,,,,"Fort Morgan, CO Micro Area","22820",,,,,,,,,,,,,,,,,,,"31000US22820",,,"Fort Morgan, CO Micro Area",28517,"Fort Morgan, CO Micro Area",0
+"G22840","2015-2019","US",,,,,,,,,,,,,,,,"Fort Payne, AL Micro Area","22840",,,,,,,,,,,,,,,,,,,"31000US22840",,,"Fort Payne, AL Micro Area",71310,"Fort Payne, AL Micro Area",0
+"G22860","2015-2019","US",,,,,,,,,,,,,,,,"Fort Polk South, LA Micro Area; DeRidder-Fort Polk South, LA CSA","22860",,,,,,,,,,,,,,,,,,,"31000US22860",,,"Fort Polk South, LA Micro Area",49646,"Fort Polk South, LA Micro Area",0
+"G22900","2015-2019","US",,,,,,,,,,,,,,,,"Fort Smith, AR-OK Metro Area","22900",,,,,,,,,,,,,,,,,,,"31000US22900",,,"Fort Smith, AR-OK Metro Area",249777,"Fort Smith, AR-OK Metro Area",0
+"G23060","2015-2019","US",,,,,,,,,,,,,,,,"Fort Wayne, IN Metro Area","23060",,,,,,,,,,,,,,,,,,,"31000US23060",,,"Fort Wayne, IN Metro Area",406305,"Fort Wayne, IN Metro Area",0
+"G23140","2015-2019","US",,,,,,,,,,,,,,,,"Frankfort, IN Micro Area; Lafayette-West Lafayette-Frankfort, IN CSA","23140",,,,,,,,,,,,,,,,,,,"31000US23140",,,"Frankfort, IN Micro Area",32273,"Frankfort, IN Micro Area",0
+"G23180","2015-2019","US",,,,,,,,,,,,,,,,"Frankfort, KY Micro Area","23180",,,,,,,,,,,,,,,,,,,"31000US23180",,,"Frankfort, KY Micro Area",72938,"Frankfort, KY Micro Area",0
+"G23240","2015-2019","US",,,,,,,,,,,,,,,,"Fredericksburg, TX Micro Area; Kerrville-Fredericksburg, TX CSA","23240",,,,,,,,,,,,,,,,,,,"31000US23240",,,"Fredericksburg, TX Micro Area",26459,"Fredericksburg, TX Micro Area",0
+"G23300","2015-2019","US",,,,,,,,,,,,,,,,"Freeport, IL Micro Area; Rockford-Freeport-Rochelle, IL CSA","23300",,,,,,,,,,,,,,,,,,,"31000US23300",,,"Freeport, IL Micro Area",45093,"Freeport, IL Micro Area",0
+"G23340","2015-2019","US",,,,,,,,,,,,,,,,"Fremont, NE Micro Area; Omaha-Council Bluffs-Fremont, NE-IA CSA","23340",,,,,,,,,,,,,,,,,,,"31000US23340",,,"Fremont, NE Micro Area",36665,"Fremont, NE Micro Area",0
+"G23380","2015-2019","US",,,,,,,,,,,,,,,,"Fremont, OH Micro Area; Toledo-Findlay-Tiffin, OH CSA","23380",,,,,,,,,,,,,,,,,,,"31000US23380",,,"Fremont, OH Micro Area",59029,"Fremont, OH Micro Area",0
+"G23420","2015-2019","US",,,,,,,,,,,,,,,,"Fresno, CA Metro Area","23420",,,,,,,,,,,,,,,,,,,"31000US23420",,,"Fresno, CA Metro Area",984521,"Fresno, CA Metro Area",0
+"G23460","2015-2019","US",,,,,,,,,,,,,,,,"Gadsden, AL Metro Area","23460",,,,,,,,,,,,,,,,,,,"31000US23460",,,"Gadsden, AL Metro Area",102748,"Gadsden, AL Metro Area",0
+"G23500","2015-2019","US",,,,,,,,,,,,,,,,"Gaffney, SC Micro Area; Greenville-Spartanburg-Anderson, SC CSA","23500",,,,,,,,,,,,,,,,,,,"31000US23500",,,"Gaffney, SC Micro Area",56895,"Gaffney, SC Micro Area",0
+"G23540","2015-2019","US",,,,,,,,,,,,,,,,"Gainesville, FL Metro Area","23540",,,,,,,,,,,,,,,,,,,"31000US23540",,,"Gainesville, FL Metro Area",323799,"Gainesville, FL Metro Area",0
+"G23580","2015-2019","US",,,,,,,,,,,,,,,,"Gainesville, GA Metro Area","23580",,,,,,,,,,,,,,,,,,,"31000US23580",,,"Gainesville, GA Metro Area",198667,"Gainesville, GA Metro Area",0
+"G23620","2015-2019","US",,,,,,,,,,,,,,,,"Gainesville, TX Micro Area; Dallas-Fort Worth, TX-OK CSA","23620",,,,,,,,,,,,,,,,,,,"31000US23620",,,"Gainesville, TX Micro Area",40041,"Gainesville, TX Micro Area",0
+"G23660","2015-2019","US",,,,,,,,,,,,,,,,"Galesburg, IL Micro Area","23660",,,,,,,,,,,,,,,,,,,"31000US23660",,,"Galesburg, IL Micro Area",50508,"Galesburg, IL Micro Area",0
+"G23700","2015-2019","US",,,,,,,,,,,,,,,,"Gallup, NM Micro Area","23700",,,,,,,,,,,,,,,,,,,"31000US23700",,,"Gallup, NM Micro Area",72438,"Gallup, NM Micro Area",0
+"G23780","2015-2019","US",,,,,,,,,,,,,,,,"Garden City, KS Micro Area","23780",,,,,,,,,,,,,,,,,,,"31000US23780",,,"Garden City, KS Micro Area",40657,"Garden City, KS Micro Area",0
+"G23820","2015-2019","US",,,,,,,,,,,,,,,,"Gardnerville Ranchos, NV Micro Area; Reno-Carson City-Fernley, NV CSA","23820",,,,,,,,,,,,,,,,,,,"31000US23820",,,"Gardnerville Ranchos, NV Micro Area",48132,"Gardnerville Ranchos, NV Micro Area",0
+"G23860","2015-2019","US",,,,,,,,,,,,,,,,"Georgetown, SC Micro Area; Myrtle Beach-Conway, SC-NC CSA","23860",,,,,,,,,,,,,,,,,,,"31000US23860",,,"Georgetown, SC Micro Area",61952,"Georgetown, SC Micro Area",0
+"G23900","2015-2019","US",,,,,,,,,,,,,,,,"Gettysburg, PA Metro Area","23900",,,,,,,,,,,,,,,,,,,"31000US23900",,,"Gettysburg, PA Metro Area",102470,"Gettysburg, PA Metro Area",0
+"G23940","2015-2019","US",,,,,,,,,,,,,,,,"Gillette, WY Micro Area","23940",,,,,,,,,,,,,,,,,,,"31000US23940",,,"Gillette, WY Micro Area",61930,"Gillette, WY Micro Area",0
+"G23980","2015-2019","US",,,,,,,,,,,,,,,,"Glasgow, KY Micro Area; Bowling Green-Glasgow, KY CSA","23980",,,,,,,,,,,,,,,,,,,"31000US23980",,,"Glasgow, KY Micro Area",53920,"Glasgow, KY Micro Area",0
+"G24020","2015-2019","US",,,,,,,,,,,,,,,,"Glens Falls, NY Metro Area","24020",,,,,,,,,,,,,,,,,,,"31000US24020",,,"Glens Falls, NY Metro Area",125892,"Glens Falls, NY Metro Area",0
+"G24060","2015-2019","US",,,,,,,,,,,,,,,,"Glenwood Springs, CO Micro Area","24060",,,,,,,,,,,,,,,,,,,"31000US24060",,,"Glenwood Springs, CO Micro Area",76981,"Glenwood Springs, CO Micro Area",0
+"G24100","2015-2019","US",,,,,,,,,,,,,,,,"Gloversville, NY Micro Area; Albany-Schenectady, NY CSA","24100",,,,,,,,,,,,,,,,,,,"31000US24100",,,"Gloversville, NY Micro Area",53646,"Gloversville, NY Micro Area",0
+"G24140","2015-2019","US",,,,,,,,,,,,,,,,"Goldsboro, NC Metro Area","24140",,,,,,,,,,,,,,,,,,,"31000US24140",,,"Goldsboro, NC Metro Area",123603,"Goldsboro, NC Metro Area",0
+"G24180","2015-2019","US",,,,,,,,,,,,,,,,"Granbury, TX Micro Area; Dallas-Fort Worth, TX-OK CSA","24180",,,,,,,,,,,,,,,,,,,"31000US24180",,,"Granbury, TX Micro Area",58318,"Granbury, TX Micro Area",0
+"G24220","2015-2019","US",,,,,,,,,,,,,,,,"Grand Forks, ND-MN Metro Area","24220",,,,,,,,,,,,,,,,,,,"31000US24220",,,"Grand Forks, ND-MN Metro Area",101745,"Grand Forks, ND-MN Metro Area",0
+"G24260","2015-2019","US",,,,,,,,,,,,,,,,"Grand Island, NE Metro Area","24260",,,,,,,,,,,,,,,,,,,"31000US24260",,,"Grand Island, NE Metro Area",75480,"Grand Island, NE Metro Area",0
+"G24300","2015-2019","US",,,,,,,,,,,,,,,,"Grand Junction, CO Metro Area","24300",,,,,,,,,,,,,,,,,,,"31000US24300",,,"Grand Junction, CO Metro Area",151218,"Grand Junction, CO Metro Area",0
+"G24330","2015-2019","US",,,,,,,,,,,,,,,,"Grand Rapids, MN Micro Area","24330",,,,,,,,,,,,,,,,,,,"31000US24330",,,"Grand Rapids, MN Micro Area",45141,"Grand Rapids, MN Micro Area",0
+"G24340","2015-2019","US",,,,,,,,,,,,,,,,"Grand Rapids-Kentwood, MI Metro Area","24340",,,,,,,,,,,,,,,,,,,"31000US24340",,,"Grand Rapids-Kentwood, MI Metro Area",1062392,"Grand Rapids-Kentwood, MI Metro Area",0
+"G24380","2015-2019","US",,,,,,,,,,,,,,,,"Grants, NM Micro Area","24380",,,,,,,,,,,,,,,,,,,"31000US24380",,,"Grants, NM Micro Area",26891,"Grants, NM Micro Area",0
+"G24420","2015-2019","US",,,,,,,,,,,,,,,,"Grants Pass, OR Metro Area","24420",,,,,,,,,,,,,,,,,,,"31000US24420",,,"Grants Pass, OR Metro Area",86251,"Grants Pass, OR Metro Area",0
+"G24460","2015-2019","US",,,,,,,,,,,,,,,,"Great Bend, KS Micro Area","24460",,,,,,,,,,,,,,,,,,,"31000US24460",,,"Great Bend, KS Micro Area",26453,"Great Bend, KS Micro Area",0
+"G24500","2015-2019","US",,,,,,,,,,,,,,,,"Great Falls, MT Metro Area","24500",,,,,,,,,,,,,,,,,,,"31000US24500",,,"Great Falls, MT Metro Area",81625,"Great Falls, MT Metro Area",0
+"G24540","2015-2019","US",,,,,,,,,,,,,,,,"Greeley, CO Metro Area","24540",,,,,,,,,,,,,,,,,,,"31000US24540",,,"Greeley, CO Metro Area",305345,"Greeley, CO Metro Area",0
+"G24580","2015-2019","US",,,,,,,,,,,,,,,,"Green Bay, WI Metro Area","24580",,,,,,,,,,,,,,,,,,,"31000US24580",,,"Green Bay, WI Metro Area",319401,"Green Bay, WI Metro Area",0
+"G24620","2015-2019","US",,,,,,,,,,,,,,,,"Greeneville, TN Micro Area","24620",,,,,,,,,,,,,,,,,,,"31000US24620",,,"Greeneville, TN Micro Area",68834,"Greeneville, TN Micro Area",0
+"G24660","2015-2019","US",,,,,,,,,,,,,,,,"Greensboro-High Point, NC Metro Area","24660",,,,,,,,,,,,,,,,,,,"31000US24660",,,"Greensboro-High Point, NC Metro Area",762063,"Greensboro-High Point, NC Metro Area",0
+"G24700","2015-2019","US",,,,,,,,,,,,,,,,"Greensburg, IN Micro Area; Indianapolis-Carmel-Muncie, IN CSA","24700",,,,,,,,,,,,,,,,,,,"31000US24700",,,"Greensburg, IN Micro Area",26562,"Greensburg, IN Micro Area",0
+"G24740","2015-2019","US",,,,,,,,,,,,,,,,"Greenville, MS Micro Area","24740",,,,,,,,,,,,,,,,,,,"31000US24740",,,"Greenville, MS Micro Area",46057,"Greenville, MS Micro Area",0
+"G24780","2015-2019","US",,,,,,,,,,,,,,,,"Greenville, NC Metro Area","24780",,,,,,,,,,,,,,,,,,,"31000US24780",,,"Greenville, NC Metro Area",178433,"Greenville, NC Metro Area",0
+"G24820","2015-2019","US",,,,,,,,,,,,,,,,"Greenville, OH Micro Area; Dayton-Springfield-Kettering, OH CSA","24820",,,,,,,,,,,,,,,,,,,"31000US24820",,,"Greenville, OH Micro Area",51513,"Greenville, OH Micro Area",0
+"G24860","2015-2019","US",,,,,,,,,,,,,,,,"Greenville-Anderson, SC Metro Area","24860",,,,,,,,,,,,,,,,,,,"31000US24860",,,"Greenville-Anderson, SC Metro Area",895942,"Greenville-Anderson, SC Metro Area",0
+"G24900","2015-2019","US",,,,,,,,,,,,,,,,"Greenwood, MS Micro Area","24900",,,,,,,,,,,,,,,,,,,"31000US24900",,,"Greenwood, MS Micro Area",39292,"Greenwood, MS Micro Area",0
+"G24940","2015-2019","US",,,,,,,,,,,,,,,,"Greenwood, SC Micro Area","24940",,,,,,,,,,,,,,,,,,,"31000US24940",,,"Greenwood, SC Micro Area",70411,"Greenwood, SC Micro Area",0
+"G24980","2015-2019","US",,,,,,,,,,,,,,,,"Grenada, MS Micro Area","24980",,,,,,,,,,,,,,,,,,,"31000US24980",,,"Grenada, MS Micro Area",21088,"Grenada, MS Micro Area",0
+"G25020","2015-2019","PR",,,,,,,,,,,,,,,,"Guayama, PR Metro Area","25020",,,,,,,,,,,,,,,,,,,"31000US25020",,,"Guayama, PR Metro Area",75623,"Guayama, PR Metro Area",0
+"G25060","2015-2019","US",,,,,,,,,,,,,,,,"Gulfport-Biloxi, MS Metro Area","25060",,,,,,,,,,,,,,,,,,,"31000US25060",,,"Gulfport-Biloxi, MS Metro Area",412115,"Gulfport-Biloxi, MS Metro Area",0
+"G25100","2015-2019","US",,,,,,,,,,,,,,,,"Guymon, OK Micro Area","25100",,,,,,,,,,,,,,,,,,,"31000US25100",,,"Guymon, OK Micro Area",20805,"Guymon, OK Micro Area",0
+"G25180","2015-2019","US",,,,,,,,,,,,,,,,"Hagerstown-Martinsburg, MD-WV Metro Area","25180",,,,,,,,,,,,,,,,,,,"31000US25180",,,"Hagerstown-Martinsburg, MD-WV Metro Area",283147,"Hagerstown-Martinsburg, MD-WV Metro Area",0
+"G25200","2015-2019","US",,,,,,,,,,,,,,,,"Hailey, ID Micro Area","25200",,,,,,,,,,,,,,,,,,,"31000US25200",,,"Hailey, ID Micro Area",23421,"Hailey, ID Micro Area",125
+"G25220","2015-2019","US",,,,,,,,,,,,,,,,"Hammond, LA Metro Area","25220",,,,,,,,,,,,,,,,,,,"31000US25220",,,"Hammond, LA Metro Area",132057,"Hammond, LA Metro Area",0
+"G25260","2015-2019","US",,,,,,,,,,,,,,,,"Hanford-Corcoran, CA Metro Area","25260",,,,,,,,,,,,,,,,,,,"31000US25260",,,"Hanford-Corcoran, CA Metro Area",150691,"Hanford-Corcoran, CA Metro Area",0
+"G25300","2015-2019","US",,,,,,,,,,,,,,,,"Hannibal, MO Micro Area; Quincy-Hannibal, IL-MO CSA","25300",,,,,,,,,,,,,,,,,,,"31000US25300",,,"Hannibal, MO Micro Area",38842,"Hannibal, MO Micro Area",0
+"G25420","2015-2019","US",,,,,,,,,,,,,,,,"Harrisburg-Carlisle, PA Metro Area","25420",,,,,,,,,,,,,,,,,,,"31000US25420",,,"Harrisburg-Carlisle, PA Metro Area",571013,"Harrisburg-Carlisle, PA Metro Area",0
+"G25460","2015-2019","US",,,,,,,,,,,,,,,,"Harrison, AR Micro Area","25460",,,,,,,,,,,,,,,,,,,"31000US25460",,,"Harrison, AR Micro Area",45143,"Harrison, AR Micro Area",0
+"G25500","2015-2019","US",,,,,,,,,,,,,,,,"Harrisonburg, VA Metro Area","25500",,,,,,,,,,,,,,,,,,,"31000US25500",,,"Harrisonburg, VA Metro Area",133557,"Harrisonburg, VA Metro Area",0
+"G25540","2015-2019","US",,,,,,,,,,,,,,,,"Hartford-East Hartford-Middletown, CT Metro Area","25540",,,,,,,,,,,,,,,,,,,"31000US25540",,,"Hartford-East Hartford-Middletown, CT Metro Area",1207677,"Hartford-East Hartford-Middletown, CT Metro Area",0
+"G25580","2015-2019","US",,,,,,,,,,,,,,,,"Hastings, NE Micro Area","25580",,,,,,,,,,,,,,,,,,,"31000US25580",,,"Hastings, NE Micro Area",31587,"Hastings, NE Micro Area",0
+"G25620","2015-2019","US",,,,,,,,,,,,,,,,"Hattiesburg, MS Metro Area","25620",,,,,,,,,,,,,,,,,,,"31000US25620",,,"Hattiesburg, MS Metro Area",168177,"Hattiesburg, MS Metro Area",0
+"G25700","2015-2019","US",,,,,,,,,,,,,,,,"Hays, KS Micro Area","25700",,,,,,,,,,,,,,,,,,,"31000US25700",,,"Hays, KS Micro Area",28775,"Hays, KS Micro Area",0
+"G25720","2015-2019","US",,,,,,,,,,,,,,,,"Heber, UT Micro Area","25720",,,,,,,,,,,,,,,,,,,"31000US25720",,,"Heber, UT Micro Area",72811,"Heber, UT Micro Area",0
+"G25740","2015-2019","US",,,,,,,,,,,,,,,,"Helena, MT Micro Area","25740",,,,,,,,,,,,,,,,,,,"31000US25740",,,"Helena, MT Micro Area",79722,"Helena, MT Micro Area",0
+"G25760","2015-2019","US",,,,,,,,,,,,,,,,"Helena-West Helena, AR Micro Area","25760",,,,,,,,,,,,,,,,,,,"31000US25760",,,"Helena-West Helena, AR Micro Area",18606,"Helena-West Helena, AR Micro Area",0
+"G25780","2015-2019","US",,,,,,,,,,,,,,,,"Henderson, NC Micro Area; Raleigh-Durham-Cary, NC CSA","25780",,,,,,,,,,,,,,,,,,,"31000US25780",,,"Henderson, NC Micro Area",44479,"Henderson, NC Micro Area",0
+"G25820","2015-2019","US",,,,,,,,,,,,,,,,"Hereford, TX Micro Area","25820",,,,,,,,,,,,,,,,,,,"31000US25820",,,"Hereford, TX Micro Area",18736,"Hereford, TX Micro Area",0
+"G25840","2015-2019","US",,,,,,,,,,,,,,,,"Hermiston-Pendleton, OR Micro Area","25840",,,,,,,,,,,,,,,,,,,"31000US25840",,,"Hermiston-Pendleton, OR Micro Area",88432,"Hermiston-Pendleton, OR Micro Area",0
+"G25860","2015-2019","US",,,,,,,,,,,,,,,,"Hickory-Lenoir-Morganton, NC Metro Area","25860",,,,,,,,,,,,,,,,,,,"31000US25860",,,"Hickory-Lenoir-Morganton, NC Metro Area",366678,"Hickory-Lenoir-Morganton, NC Metro Area",0
+"G25880","2015-2019","US",,,,,,,,,,,,,,,,"Hillsdale, MI Micro Area","25880",,,,,,,,,,,,,,,,,,,"31000US25880",,,"Hillsdale, MI Micro Area",45757,"Hillsdale, MI Micro Area",0
+"G25900","2015-2019","US",,,,,,,,,,,,,,,,"Hilo, HI Micro Area","25900",,,,,,,,,,,,,,,,,,,"31000US25900",,,"Hilo, HI Micro Area",199459,"Hilo, HI Micro Area",0
+"G25940","2015-2019","US",,,,,,,,,,,,,,,,"Hilton Head Island-Bluffton, SC Metro Area","25940",,,,,,,,,,,,,,,,,,,"31000US25940",,,"Hilton Head Island-Bluffton, SC Metro Area",214752,"Hilton Head Island-Bluffton, SC Metro Area",0
+"G25980","2015-2019","US",,,,,,,,,,,,,,,,"Hinesville, GA Metro Area","25980",,,,,,,,,,,,,,,,,,,"31000US25980",,,"Hinesville, GA Metro Area",80041,"Hinesville, GA Metro Area",0
+"G26020","2015-2019","US",,,,,,,,,,,,,,,,"Hobbs, NM Micro Area","26020",,,,,,,,,,,,,,,,,,,"31000US26020",,,"Hobbs, NM Micro Area",70277,"Hobbs, NM Micro Area",0
+"G26090","2015-2019","US",,,,,,,,,,,,,,,,"Holland, MI Micro Area","26090",,,,,,,,,,,,,,,,,,,"31000US26090",,,"Holland, MI Micro Area",116143,"Holland, MI Micro Area",0
+"G26140","2015-2019","US",,,,,,,,,,,,,,,,"Homosassa Springs, FL Metro Area","26140",,,,,,,,,,,,,,,,,,,"31000US26140",,,"Homosassa Springs, FL Metro Area",145169,"Homosassa Springs, FL Metro Area",0
+"G26220","2015-2019","US",,,,,,,,,,,,,,,,"Hood River, OR Micro Area","26220",,,,,,,,,,,,,,,,,,,"31000US26220",,,"Hood River, OR Micro Area",23209,"Hood River, OR Micro Area",0
+"G26260","2015-2019","US",,,,,,,,,,,,,,,,"Hope, AR Micro Area","26260",,,,,,,,,,,,,,,,,,,"31000US26260",,,"Hope, AR Micro Area",30193,"Hope, AR Micro Area",0
+"G26300","2015-2019","US",,,,,,,,,,,,,,,,"Hot Springs, AR Metro Area","26300",,,,,,,,,,,,,,,,,,,"31000US26300",,,"Hot Springs, AR Metro Area",98555,"Hot Springs, AR Metro Area",0
+"G26340","2015-2019","US",,,,,,,,,,,,,,,,"Houghton, MI Micro Area","26340",,,,,,,,,,,,,,,,,,,"31000US26340",,,"Houghton, MI Micro Area",38181,"Houghton, MI Micro Area",0
+"G26380","2015-2019","US",,,,,,,,,,,,,,,,"Houma-Thibodaux, LA Metro Area","26380",,,,,,,,,,,,,,,,,,,"31000US26380",,,"Houma-Thibodaux, LA Metro Area",210162,"Houma-Thibodaux, LA Metro Area",0
+"G26420","2015-2019","US",,,,,,,,,,,,,,,,"Houston-The Woodlands-Sugar Land, TX Metro Area","26420",,,,,,,,,,,,,,,,,,,"31000US26420",,,"Houston-The Woodlands-Sugar Land, TX Metro Area",6884138,"Houston-The Woodlands-Sugar Land, TX Metro Area",0
+"G26460","2015-2019","US",,,,,,,,,,,,,,,,"Hudson, NY Micro Area; Albany-Schenectady, NY CSA","26460",,,,,,,,,,,,,,,,,,,"31000US26460",,,"Hudson, NY Micro Area",60371,"Hudson, NY Micro Area",0
+"G26500","2015-2019","US",,,,,,,,,,,,,,,,"Huntingdon, PA Micro Area; Altoona-Huntingdon, PA CSA","26500",,,,,,,,,,,,,,,,,,,"31000US26500",,,"Huntingdon, PA Micro Area",45369,"Huntingdon, PA Micro Area",0
+"G26540","2015-2019","US",,,,,,,,,,,,,,,,"Huntington, IN Micro Area; Fort Wayne-Huntington-Auburn, IN CSA","26540",,,,,,,,,,,,,,,,,,,"31000US26540",,,"Huntington, IN Micro Area",36359,"Huntington, IN Micro Area",0
+"G26580","2015-2019","US",,,,,,,,,,,,,,,,"Huntington-Ashland, WV-KY-OH Metro Area","26580",,,,,,,,,,,,,,,,,,,"31000US26580",,,"Huntington-Ashland, WV-KY-OH Metro Area",361832,"Huntington-Ashland, WV-KY-OH Metro Area",0
+"G26620","2015-2019","US",,,,,,,,,,,,,,,,"Huntsville, AL Metro Area","26620",,,,,,,,,,,,,,,,,,,"31000US26620",,,"Huntsville, AL Metro Area",457003,"Huntsville, AL Metro Area",0
+"G26660","2015-2019","US",,,,,,,,,,,,,,,,"Huntsville, TX Micro Area","26660",,,,,,,,,,,,,,,,,,,"31000US26660",,,"Huntsville, TX Micro Area",72321,"Huntsville, TX Micro Area",0
+"G26700","2015-2019","US",,,,,,,,,,,,,,,,"Huron, SD Micro Area","26700",,,,,,,,,,,,,,,,,,,"31000US26700",,,"Huron, SD Micro Area",20364,"Huron, SD Micro Area",0
+"G26740","2015-2019","US",,,,,,,,,,,,,,,,"Hutchinson, KS Micro Area","26740",,,,,,,,,,,,,,,,,,,"31000US26740",,,"Hutchinson, KS Micro Area",62765,"Hutchinson, KS Micro Area",0
+"G26780","2015-2019","US",,,,,,,,,,,,,,,,"Hutchinson, MN Micro Area; Minneapolis-St. Paul, MN-WI CSA","26780",,,,,,,,,,,,,,,,,,,"31000US26780",,,"Hutchinson, MN Micro Area",35832,"Hutchinson, MN Micro Area",0
+"G26820","2015-2019","US",,,,,,,,,,,,,,,,"Idaho Falls, ID Metro Area","26820",,,,,,,,,,,,,,,,,,,"31000US26820",,,"Idaho Falls, ID Metro Area",145507,"Idaho Falls, ID Metro Area",0
+"G26860","2015-2019","US",,,,,,,,,,,,,,,,"Indiana, PA Micro Area","26860",,,,,,,,,,,,,,,,,,,"31000US26860",,,"Indiana, PA Micro Area",85032,"Indiana, PA Micro Area",0
+"G26900","2015-2019","US",,,,,,,,,,,,,,,,"Indianapolis-Carmel-Anderson, IN Metro Area","26900",,,,,,,,,,,,,,,,,,,"31000US26900",,,"Indianapolis-Carmel-Anderson, IN Metro Area",2029472,"Indianapolis-Carmel-Anderson, IN Metro Area",0
+"G26940","2015-2019","US",,,,,,,,,,,,,,,,"Indianola, MS Micro Area; Cleveland-Indianola, MS CSA","26940",,,,,,,,,,,,,,,,,,,"31000US26940",,,"Indianola, MS Micro Area",26168,"Indianola, MS Micro Area",0
+"G26980","2015-2019","US",,,,,,,,,,,,,,,,"Iowa City, IA Metro Area","26980",,,,,,,,,,,,,,,,,,,"31000US26980",,,"Iowa City, IA Metro Area",170677,"Iowa City, IA Metro Area",0
+"G27020","2015-2019","US",,,,,,,,,,,,,,,,"Iron Mountain, MI-WI Micro Area; Marinette-Iron Mountain, WI-MI CSA","27020",,,,,,,,,,,,,,,,,,,"31000US27020",,,"Iron Mountain, MI-WI Micro Area",29753,"Iron Mountain, MI-WI Micro Area",0
+"G27060","2015-2019","US",,,,,,,,,,,,,,,,"Ithaca, NY Metro Area","27060",,,,,,,,,,,,,,,,,,,"31000US27060",,,"Ithaca, NY Metro Area",102642,"Ithaca, NY Metro Area",0
+"G27100","2015-2019","US",,,,,,,,,,,,,,,,"Jackson, MI Metro Area","27100",,,,,,,,,,,,,,,,,,,"31000US27100",,,"Jackson, MI Metro Area",158636,"Jackson, MI Metro Area",0
+"G27140","2015-2019","US",,,,,,,,,,,,,,,,"Jackson, MS Metro Area","27140",,,,,,,,,,,,,,,,,,,"31000US27140",,,"Jackson, MS Metro Area",597727,"Jackson, MS Metro Area",0
+"G27160","2015-2019","US",,,,,,,,,,,,,,,,"Jackson, OH Micro Area","27160",,,,,,,,,,,,,,,,,,,"31000US27160",,,"Jackson, OH Micro Area",32450,"Jackson, OH Micro Area",0
+"G27180","2015-2019","US",,,,,,,,,,,,,,,,"Jackson, TN Metro Area","27180",,,,,,,,,,,,,,,,,,,"31000US27180",,,"Jackson, TN Metro Area",178442,"Jackson, TN Metro Area",0
+"G27220","2015-2019","US",,,,,,,,,,,,,,,,"Jackson, WY-ID Micro Area","27220",,,,,,,,,,,,,,,,,,,"31000US27220",,,"Jackson, WY-ID Micro Area",34706,"Jackson, WY-ID Micro Area",0
+"G27260","2015-2019","US",,,,,,,,,,,,,,,,"Jacksonville, FL Metro Area","27260",,,,,,,,,,,,,,,,,,,"31000US27260",,,"Jacksonville, FL Metro Area",1503574,"Jacksonville, FL Metro Area",0
+"G27300","2015-2019","US",,,,,,,,,,,,,,,,"Jacksonville, IL Micro Area; Springfield-Jacksonville-Lincoln, IL CSA","27300",,,,,,,,,,,,,,,,,,,"31000US27300",,,"Jacksonville, IL Micro Area",39252,"Jacksonville, IL Micro Area",0
+"G27340","2015-2019","US",,,,,,,,,,,,,,,,"Jacksonville, NC Metro Area","27340",,,,,,,,,,,,,,,,,,,"31000US27340",,,"Jacksonville, NC Metro Area",195069,"Jacksonville, NC Metro Area",0
+"G27380","2015-2019","US",,,,,,,,,,,,,,,,"Jacksonville, TX Micro Area; Tyler-Jacksonville, TX CSA","27380",,,,,,,,,,,,,,,,,,,"31000US27380",,,"Jacksonville, TX Micro Area",52118,"Jacksonville, TX Micro Area",0
+"G27420","2015-2019","US",,,,,,,,,,,,,,,,"Jamestown, ND Micro Area","27420",,,,,,,,,,,,,,,,,,,"31000US27420",,,"Jamestown, ND Micro Area",20965,"Jamestown, ND Micro Area",0
+"G27460","2015-2019","US",,,,,,,,,,,,,,,,"Jamestown-Dunkirk-Fredonia, NY Micro Area","27460",,,,,,,,,,,,,,,,,,,"31000US27460",,,"Jamestown-Dunkirk-Fredonia, NY Micro Area",128496,"Jamestown-Dunkirk-Fredonia, NY Micro Area",0
+"G27500","2015-2019","US",,,,,,,,,,,,,,,,"Janesville-Beloit, WI Metro Area","27500",,,,,,,,,,,,,,,,,,,"31000US27500",,,"Janesville-Beloit, WI Metro Area",162152,"Janesville-Beloit, WI Metro Area",0
+"G27530","2015-2019","US",,,,,,,,,,,,,,,,"Jasper, AL Micro Area; Birmingham-Hoover-Talladega, AL CSA","27530",,,,,,,,,,,,,,,,,,,"31000US27530",,,"Jasper, AL Micro Area",64110,"Jasper, AL Micro Area",0
+"G27540","2015-2019","US",,,,,,,,,,,,,,,,"Jasper, IN Micro Area","27540",,,,,,,,,,,,,,,,,,,"31000US27540",,,"Jasper, IN Micro Area",54921,"Jasper, IN Micro Area",0
+"G27580","2015-2019","PR",,,,,,,,,,,,,,,,"Jayuya, PR Micro Area","27580",,,,,,,,,,,,,,,,,,,"31000US27580",,,"Jayuya, PR Micro Area",14539,"Jayuya, PR Micro Area",0
+"G27600","2015-2019","US",,,,,,,,,,,,,,,,"Jefferson, GA Micro Area","27600",,,,,,,,,,,,,,,,,,,"31000US27600",,,"Jefferson, GA Micro Area",67885,"Jefferson, GA Micro Area",0
+"G27620","2015-2019","US",,,,,,,,,,,,,,,,"Jefferson City, MO Metro Area","27620",,,,,,,,,,,,,,,,,,,"31000US27620",,,"Jefferson City, MO Metro Area",151273,"Jefferson City, MO Metro Area",0
+"G27660","2015-2019","US",,,,,,,,,,,,,,,,"Jennings, LA Micro Area; Lake Charles-Jennings, LA CSA","27660",,,,,,,,,,,,,,,,,,,"31000US27660",,,"Jennings, LA Micro Area",31441,"Jennings, LA Micro Area",0
+"G27700","2015-2019","US",,,,,,,,,,,,,,,,"Jesup, GA Micro Area; Savannah-Hinesville-Statesboro, GA CSA","27700",,,,,,,,,,,,,,,,,,,"31000US27700",,,"Jesup, GA Micro Area",29788,"Jesup, GA Micro Area",0
+"G27740","2015-2019","US",,,,,,,,,,,,,,,,"Johnson City, TN Metro Area","27740",,,,,,,,,,,,,,,,,,,"31000US27740",,,"Johnson City, TN Metro Area",202049,"Johnson City, TN Metro Area",0
+"G27780","2015-2019","US",,,,,,,,,,,,,,,,"Johnstown, PA Metro Area","27780",,,,,,,,,,,,,,,,,,,"31000US27780",,,"Johnstown, PA Metro Area",133009,"Johnstown, PA Metro Area",0
+"G27860","2015-2019","US",,,,,,,,,,,,,,,,"Jonesboro, AR Metro Area","27860",,,,,,,,,,,,,,,,,,,"31000US27860",,,"Jonesboro, AR Metro Area",131241,"Jonesboro, AR Metro Area",0
+"G27900","2015-2019","US",,,,,,,,,,,,,,,,"Joplin, MO Metro Area","27900",,,,,,,,,,,,,,,,,,,"31000US27900",,,"Joplin, MO Metro Area",178100,"Joplin, MO Metro Area",0
+"G27940","2015-2019","US",,,,,,,,,,,,,,,,"Juneau, AK Micro Area","27940",,,,,,,,,,,,,,,,,,,"31000US27940",,,"Juneau, AK Micro Area",32227,"Juneau, AK Micro Area",0
+"G27980","2015-2019","US",,,,,,,,,,,,,,,,"Kahului-Wailuku-Lahaina, HI Metro Area","27980",,,,,,,,,,,,,,,,,,,"31000US27980",,,"Kahului-Wailuku-Lahaina, HI Metro Area",165979,"Kahului-Wailuku-Lahaina, HI Metro Area",15
+"G28020","2015-2019","US",,,,,,,,,,,,,,,,"Kalamazoo-Portage, MI Metro Area","28020",,,,,,,,,,,,,,,,,,,"31000US28020",,,"Kalamazoo-Portage, MI Metro Area",262745,"Kalamazoo-Portage, MI Metro Area",0
+"G28060","2015-2019","US",,,,,,,,,,,,,,,,"Kalispell, MT Micro Area","28060",,,,,,,,,,,,,,,,,,,"31000US28060",,,"Kalispell, MT Micro Area",99899,"Kalispell, MT Micro Area",0
+"G28100","2015-2019","US",,,,,,,,,,,,,,,,"Kankakee, IL Metro Area","28100",,,,,,,,,,,,,,,,,,,"31000US28100",,,"Kankakee, IL Metro Area",110637,"Kankakee, IL Metro Area",0
+"G28140","2015-2019","US",,,,,,,,,,,,,,,,"Kansas City, MO-KS Metro Area","28140",,,,,,,,,,,,,,,,,,,"31000US28140",,,"Kansas City, MO-KS Metro Area",2124518,"Kansas City, MO-KS Metro Area",0
+"G28180","2015-2019","US",,,,,,,,,,,,,,,,"Kapaa, HI Micro Area","28180",,,,,,,,,,,,,,,,,,,"31000US28180",,,"Kapaa, HI Micro Area",71769,"Kapaa, HI Micro Area",0
+"G28260","2015-2019","US",,,,,,,,,,,,,,,,"Kearney, NE Micro Area","28260",,,,,,,,,,,,,,,,,,,"31000US28260",,,"Kearney, NE Micro Area",55738,"Kearney, NE Micro Area",0
+"G28300","2015-2019","US",,,,,,,,,,,,,,,,"Keene, NH Micro Area","28300",,,,,,,,,,,,,,,,,,,"31000US28300",,,"Keene, NH Micro Area",76042,"Keene, NH Micro Area",0
+"G28340","2015-2019","US",,,,,,,,,,,,,,,,"Kendallville, IN Micro Area; Fort Wayne-Huntington-Auburn, IN CSA","28340",,,,,,,,,,,,,,,,,,,"31000US28340",,,"Kendallville, IN Micro Area",47506,"Kendallville, IN Micro Area",0
+"G28380","2015-2019","US",,,,,,,,,,,,,,,,"Kennett, MO Micro Area","28380",,,,,,,,,,,,,,,,,,,"31000US28380",,,"Kennett, MO Micro Area",30027,"Kennett, MO Micro Area",0
+"G28420","2015-2019","US",,,,,,,,,,,,,,,,"Kennewick-Richland, WA Metro Area","28420",,,,,,,,,,,,,,,,,,,"31000US28420",,,"Kennewick-Richland, WA Metro Area",289527,"Kennewick-Richland, WA Metro Area",0
+"G28500","2015-2019","US",,,,,,,,,,,,,,,,"Kerrville, TX Micro Area; Kerrville-Fredericksburg, TX CSA","28500",,,,,,,,,,,,,,,,,,,"31000US28500",,,"Kerrville, TX Micro Area",51843,"Kerrville, TX Micro Area",0
+"G28540","2015-2019","US",,,,,,,,,,,,,,,,"Ketchikan, AK Micro Area","28540",,,,,,,,,,,,,,,,,,,"31000US28540",,,"Ketchikan, AK Micro Area",13800,"Ketchikan, AK Micro Area",0
+"G28580","2015-2019","US",,,,,,,,,,,,,,,,"Key West, FL Micro Area","28580",,,,,,,,,,,,,,,,,,,"31000US28580",,,"Key West, FL Micro Area",75798,"Key West, FL Micro Area",0
+"G28620","2015-2019","US",,,,,,,,,,,,,,,,"Kill Devil Hills, NC Micro Area; Virginia Beach-Norfolk, VA-NC CSA","28620",,,,,,,,,,,,,,,,,,,"31000US28620",,,"Kill Devil Hills, NC Micro Area",36222,"Kill Devil Hills, NC Micro Area",0
+"G28660","2015-2019","US",,,,,,,,,,,,,,,,"Killeen-Temple, TX Metro Area","28660",,,,,,,,,,,,,,,,,,,"31000US28660",,,"Killeen-Temple, TX Metro Area",444716,"Killeen-Temple, TX Metro Area",0
+"G28700","2015-2019","US",,,,,,,,,,,,,,,,"Kingsport-Bristol, TN-VA Metro Area","28700",,,,,,,,,,,,,,,,,,,"31000US28700",,,"Kingsport-Bristol, TN-VA Metro Area",306546,"Kingsport-Bristol, TN-VA Metro Area",0
+"G28740","2015-2019","US",,,,,,,,,,,,,,,,"Kingston, NY Metro Area","28740",,,,,,,,,,,,,,,,,,,"31000US28740",,,"Kingston, NY Metro Area",178665,"Kingston, NY Metro Area",0
+"G28780","2015-2019","US",,,,,,,,,,,,,,,,"Kingsville, TX Micro Area; Corpus Christi-Kingsville-Alice, TX CSA","28780",,,,,,,,,,,,,,,,,,,"31000US28780",,,"Kingsville, TX Micro Area",31542,"Kingsville, TX Micro Area",224
+"G28820","2015-2019","US",,,,,,,,,,,,,,,,"Kinston, NC Micro Area; Greenville-Kinston-Washington, NC CSA","28820",,,,,,,,,,,,,,,,,,,"31000US28820",,,"Kinston, NC Micro Area",56756,"Kinston, NC Micro Area",0
+"G28860","2015-2019","US",,,,,,,,,,,,,,,,"Kirksville, MO Micro Area","28860",,,,,,,,,,,,,,,,,,,"31000US28860",,,"Kirksville, MO Micro Area",29924,"Kirksville, MO Micro Area",0
+"G28900","2015-2019","US",,,,,,,,,,,,,,,,"Klamath Falls, OR Micro Area","28900",,,,,,,,,,,,,,,,,,,"31000US28900",,,"Klamath Falls, OR Micro Area",66921,"Klamath Falls, OR Micro Area",0
+"G28940","2015-2019","US",,,,,,,,,,,,,,,,"Knoxville, TN Metro Area","28940",,,,,,,,,,,,,,,,,,,"31000US28940",,,"Knoxville, TN Metro Area",853337,"Knoxville, TN Metro Area",0
+"G29020","2015-2019","US",,,,,,,,,,,,,,,,"Kokomo, IN Metro Area","29020",,,,,,,,,,,,,,,,,,,"31000US29020",,,"Kokomo, IN Metro Area",82331,"Kokomo, IN Metro Area",0
+"G29060","2015-2019","US",,,,,,,,,,,,,,,,"Laconia, NH Micro Area; Boston-Worcester-Providence, MA-RI-NH-CT CSA","29060",,,,,,,,,,,,,,,,,,,"31000US29060",,,"Laconia, NH Micro Area",60887,"Laconia, NH Micro Area",0
+"G29100","2015-2019","US",,,,,,,,,,,,,,,,"La Crosse-Onalaska, WI-MN Metro Area","29100",,,,,,,,,,,,,,,,,,,"31000US29100",,,"La Crosse-Onalaska, WI-MN Metro Area",136542,"La Crosse-Onalaska, WI-MN Metro Area",0
+"G29180","2015-2019","US",,,,,,,,,,,,,,,,"Lafayette, LA Metro Area","29180",,,,,,,,,,,,,,,,,,,"31000US29180",,,"Lafayette, LA Metro Area",489914,"Lafayette, LA Metro Area",0
+"G29200","2015-2019","US",,,,,,,,,,,,,,,,"Lafayette-West Lafayette, IN Metro Area","29200",,,,,,,,,,,,,,,,,,,"31000US29200",,,"Lafayette-West Lafayette, IN Metro Area",228541,"Lafayette-West Lafayette, IN Metro Area",0
+"G29260","2015-2019","US",,,,,,,,,,,,,,,,"La Grande, OR Micro Area","29260",,,,,,,,,,,,,,,,,,,"31000US29260",,,"La Grande, OR Micro Area",26337,"La Grande, OR Micro Area",0
+"G29300","2015-2019","US",,,,,,,,,,,,,,,,"LaGrange, GA-AL Micro Area","29300",,,,,,,,,,,,,,,,,,,"31000US29300",,,"LaGrange, GA-AL Micro Area",103579,"LaGrange, GA-AL Micro Area",0
+"G29340","2015-2019","US",,,,,,,,,,,,,,,,"Lake Charles, LA Metro Area","29340",,,,,,,,,,,,,,,,,,,"31000US29340",,,"Lake Charles, LA Metro Area",208549,"Lake Charles, LA Metro Area",0
+"G29380","2015-2019","US",,,,,,,,,,,,,,,,"Lake City, FL Micro Area","29380",,,,,,,,,,,,,,,,,,,"31000US29380",,,"Lake City, FL Micro Area",69968,"Lake City, FL Micro Area",0
+"G29420","2015-2019","US",,,,,,,,,,,,,,,,"Lake Havasu City-Kingman, AZ Metro Area","29420",,,,,,,,,,,,,,,,,,,"31000US29420",,,"Lake Havasu City-Kingman, AZ Metro Area",207695,"Lake Havasu City-Kingman, AZ Metro Area",0
+"G29460","2015-2019","US",,,,,,,,,,,,,,,,"Lakeland-Winter Haven, FL Metro Area","29460",,,,,,,,,,,,,,,,,,,"31000US29460",,,"Lakeland-Winter Haven, FL Metro Area",686218,"Lakeland-Winter Haven, FL Metro Area",0
+"G29500","2015-2019","US",,,,,,,,,,,,,,,,"Lamesa, TX Micro Area","29500",,,,,,,,,,,,,,,,,,,"31000US29500",,,"Lamesa, TX Micro Area",12813,"Lamesa, TX Micro Area",0
+"G29540","2015-2019","US",,,,,,,,,,,,,,,,"Lancaster, PA Metro Area","29540",,,,,,,,,,,,,,,,,,,"31000US29540",,,"Lancaster, PA Metro Area",540999,"Lancaster, PA Metro Area",0
+"G29620","2015-2019","US",,,,,,,,,,,,,,,,"Lansing-East Lansing, MI Metro Area","29620",,,,,,,,,,,,,,,,,,,"31000US29620",,,"Lansing-East Lansing, MI Metro Area",546772,"Lansing-East Lansing, MI Metro Area",0
+"G29660","2015-2019","US",,,,,,,,,,,,,,,,"Laramie, WY Micro Area","29660",,,,,,,,,,,,,,,,,,,"31000US29660",,,"Laramie, WY Micro Area",38390,"Laramie, WY Micro Area",0
+"G29700","2015-2019","US",,,,,,,,,,,,,,,,"Laredo, TX Metro Area","29700",,,,,,,,,,,,,,,,,,,"31000US29700",,,"Laredo, TX Metro Area",273526,"Laredo, TX Metro Area",0
+"G29740","2015-2019","US",,,,,,,,,,,,,,,,"Las Cruces, NM Metro Area","29740",,,,,,,,,,,,,,,,,,,"31000US29740",,,"Las Cruces, NM Metro Area",216069,"Las Cruces, NM Metro Area",0
+"G29780","2015-2019","US",,,,,,,,,,,,,,,,"Las Vegas, NM Micro Area; Albuquerque-Santa Fe-Las Vegas, NM CSA","29780",,,,,,,,,,,,,,,,,,,"31000US29780",,,"Las Vegas, NM Micro Area",32274,"Las Vegas, NM Micro Area",0
+"G29820","2015-2019","US",,,,,,,,,,,,,,,,"Las Vegas-Henderson-Paradise, NV Metro Area","29820",,,,,,,,,,,,,,,,,,,"31000US29820",,,"Las Vegas-Henderson-Paradise, NV Metro Area",2182004,"Las Vegas-Henderson-Paradise, NV Metro Area",0
+"G29860","2015-2019","US",,,,,,,,,,,,,,,,"Laurel, MS Micro Area","29860",,,,,,,,,,,,,,,,,,,"31000US29860",,,"Laurel, MS Micro Area",84857,"Laurel, MS Micro Area",0
+"G29900","2015-2019","US",,,,,,,,,,,,,,,,"Laurinburg, NC Micro Area; Fayetteville-Sanford-Lumberton, NC CSA","29900",,,,,,,,,,,,,,,,,,,"31000US29900",,,"Laurinburg, NC Micro Area",35076,"Laurinburg, NC Micro Area",0
+"G29940","2015-2019","US",,,,,,,,,,,,,,,,"Lawrence, KS Metro Area","29940",,,,,,,,,,,,,,,,,,,"31000US29940",,,"Lawrence, KS Metro Area",120290,"Lawrence, KS Metro Area",0
+"G29980","2015-2019","US",,,,,,,,,,,,,,,,"Lawrenceburg, TN Micro Area; Nashville-Davidson--Murfreesboro, TN CSA","29980",,,,,,,,,,,,,,,,,,,"31000US29980",,,"Lawrenceburg, TN Micro Area",43390,"Lawrenceburg, TN Micro Area",0
+"G30020","2015-2019","US",,,,,,,,,,,,,,,,"Lawton, OK Metro Area","30020",,,,,,,,,,,,,,,,,,,"31000US30020",,,"Lawton, OK Metro Area",127620,"Lawton, OK Metro Area",0
+"G30060","2015-2019","US",,,,,,,,,,,,,,,,"Lebanon, MO Micro Area","30060",,,,,,,,,,,,,,,,,,,"31000US30060",,,"Lebanon, MO Micro Area",35531,"Lebanon, MO Micro Area",0
+"G30100","2015-2019","US",,,,,,,,,,,,,,,,"Lebanon, NH-VT Micro Area","30100",,,,,,,,,,,,,,,,,,,"31000US30100",,,"Lebanon, NH-VT Micro Area",217064,"Lebanon, NH-VT Micro Area",0
+"G30140","2015-2019","US",,,,,,,,,,,,,,,,"Lebanon, PA Metro Area","30140",,,,,,,,,,,,,,,,,,,"31000US30140",,,"Lebanon, PA Metro Area",139729,"Lebanon, PA Metro Area",0
+"G30220","2015-2019","US",,,,,,,,,,,,,,,,"Levelland, TX Micro Area; Lubbock-Plainview-Levelland, TX CSA","30220",,,,,,,,,,,,,,,,,,,"31000US30220",,,"Levelland, TX Micro Area",23064,"Levelland, TX Micro Area",0
+"G30260","2015-2019","US",,,,,,,,,,,,,,,,"Lewisburg, PA Micro Area; Bloomsburg-Berwick-Sunbury, PA CSA","30260",,,,,,,,,,,,,,,,,,,"31000US30260",,,"Lewisburg, PA Micro Area",45111,"Lewisburg, PA Micro Area",0
+"G30280","2015-2019","US",,,,,,,,,,,,,,,,"Lewisburg, TN Micro Area; Nashville-Davidson--Murfreesboro, TN CSA","30280",,,,,,,,,,,,,,,,,,,"31000US30280",,,"Lewisburg, TN Micro Area",32965,"Lewisburg, TN Micro Area",0
+"G30300","2015-2019","US",,,,,,,,,,,,,,,,"Lewiston, ID-WA Metro Area","30300",,,,,,,,,,,,,,,,,,,"31000US30300",,,"Lewiston, ID-WA Metro Area",62638,"Lewiston, ID-WA Metro Area",0
+"G30340","2015-2019","US",,,,,,,,,,,,,,,,"Lewiston-Auburn, ME Metro Area","30340",,,,,,,,,,,,,,,,,,,"31000US30340",,,"Lewiston-Auburn, ME Metro Area",107602,"Lewiston-Auburn, ME Metro Area",0
+"G30380","2015-2019","US",,,,,,,,,,,,,,,,"Lewistown, PA Micro Area","30380",,,,,,,,,,,,,,,,,,,"31000US30380",,,"Lewistown, PA Micro Area",46276,"Lewistown, PA Micro Area",0
+"G30420","2015-2019","US",,,,,,,,,,,,,,,,"Lexington, NE Micro Area","30420",,,,,,,,,,,,,,,,,,,"31000US30420",,,"Lexington, NE Micro Area",25746,"Lexington, NE Micro Area",0
+"G30460","2015-2019","US",,,,,,,,,,,,,,,,"Lexington-Fayette, KY Metro Area","30460",,,,,,,,,,,,,,,,,,,"31000US30460",,,"Lexington-Fayette, KY Metro Area",510647,"Lexington-Fayette, KY Metro Area",0
+"G30580","2015-2019","US",,,,,,,,,,,,,,,,"Liberal, KS Micro Area","30580",,,,,,,,,,,,,,,,,,,"31000US30580",,,"Liberal, KS Micro Area",22349,"Liberal, KS Micro Area",0
+"G30620","2015-2019","US",,,,,,,,,,,,,,,,"Lima, OH Metro Area","30620",,,,,,,,,,,,,,,,,,,"31000US30620",,,"Lima, OH Metro Area",103175,"Lima, OH Metro Area",0
+"G30660","2015-2019","US",,,,,,,,,,,,,,,,"Lincoln, IL Micro Area; Springfield-Jacksonville-Lincoln, IL CSA","30660",,,,,,,,,,,,,,,,,,,"31000US30660",,,"Lincoln, IL Micro Area",29003,"Lincoln, IL Micro Area",0
+"G30700","2015-2019","US",,,,,,,,,,,,,,,,"Lincoln, NE Metro Area","30700",,,,,,,,,,,,,,,,,,,"31000US30700",,,"Lincoln, NE Metro Area",330329,"Lincoln, NE Metro Area",0
+"G30780","2015-2019","US",,,,,,,,,,,,,,,,"Little Rock-North Little Rock-Conway, AR Metro Area","30780",,,,,,,,,,,,,,,,,,,"31000US30780",,,"Little Rock-North Little Rock-Conway, AR Metro Area",737015,"Little Rock-North Little Rock-Conway, AR Metro Area",0
+"G30820","2015-2019","US",,,,,,,,,,,,,,,,"Lock Haven, PA Micro Area; Williamsport-Lock Haven, PA CSA","30820",,,,,,,,,,,,,,,,,,,"31000US30820",,,"Lock Haven, PA Micro Area",38915,"Lock Haven, PA Micro Area",0
+"G30860","2015-2019","US",,,,,,,,,,,,,,,,"Logan, UT-ID Metro Area","30860",,,,,,,,,,,,,,,,,,,"31000US30860",,,"Logan, UT-ID Metro Area",137629,"Logan, UT-ID Metro Area",0
+"G30900","2015-2019","US",,,,,,,,,,,,,,,,"Logansport, IN Micro Area","30900",,,,,,,,,,,,,,,,,,,"31000US30900",,,"Logansport, IN Micro Area",37880,"Logansport, IN Micro Area",0
+"G30940","2015-2019","US",,,,,,,,,,,,,,,,"London, KY Micro Area","30940",,,,,,,,,,,,,,,,,,,"31000US30940",,,"London, KY Micro Area",148221,"London, KY Micro Area",0
+"G30980","2015-2019","US",,,,,,,,,,,,,,,,"Longview, TX Metro Area","30980",,,,,,,,,,,,,,,,,,,"31000US30980",,,"Longview, TX Metro Area",284796,"Longview, TX Metro Area",0
+"G31020","2015-2019","US",,,,,,,,,,,,,,,,"Longview, WA Metro Area","31020",,,,,,,,,,,,,,,,,,,"31000US31020",,,"Longview, WA Metro Area",106778,"Longview, WA Metro Area",0
+"G31060","2015-2019","US",,,,,,,,,,,,,,,,"Los Alamos, NM Micro Area; Albuquerque-Santa Fe-Las Vegas, NM CSA","31060",,,,,,,,,,,,,,,,,,,"31000US31060",,,"Los Alamos, NM Micro Area",18625,"Los Alamos, NM Micro Area",0
+"G31080","2015-2019","US",,,,,,,,,,,,,,,,"Los Angeles-Long Beach-Anaheim, CA Metro Area","31080",,,,,,,,,,,,,,,,,,,"31000US31080",,,"Los Angeles-Long Beach-Anaheim, CA Metro Area",13249614,"Los Angeles-Long Beach-Anaheim, CA Metro Area",0
+"G31140","2015-2019","US",,,,,,,,,,,,,,,,"Louisville/Jefferson County, KY-IN Metro Area","31140",,,,,,,,,,,,,,,,,,,"31000US31140",,,"Louisville/Jefferson County, KY-IN Metro Area",1257088,"Louisville/Jefferson County, KY-IN Metro Area",0
+"G31180","2015-2019","US",,,,,,,,,,,,,,,,"Lubbock, TX Metro Area","31180",,,,,,,,,,,,,,,,,,,"31000US31180",,,"Lubbock, TX Metro Area",316474,"Lubbock, TX Metro Area",0
+"G31220","2015-2019","US",,,,,,,,,,,,,,,,"Ludington, MI Micro Area","31220",,,,,,,,,,,,,,,,,,,"31000US31220",,,"Ludington, MI Micro Area",28954,"Ludington, MI Micro Area",0
+"G31260","2015-2019","US",,,,,,,,,,,,,,,,"Lufkin, TX Micro Area","31260",,,,,,,,,,,,,,,,,,,"31000US31260",,,"Lufkin, TX Micro Area",87322,"Lufkin, TX Micro Area",0
+"G31300","2015-2019","US",,,,,,,,,,,,,,,,"Lumberton, NC Micro Area","31300",,,,,,,,,,,,,,,,,,,"31000US31300",,,"Lumberton, NC Micro Area",132596,"Lumberton, NC Micro Area",0
+"G31340","2015-2019","US",,,,,,,,,,,,,,,,"Lynchburg, VA Metro Area","31340",,,,,,,,,,,,,,,,,,,"31000US31340",,,"Lynchburg, VA Metro Area",261652,"Lynchburg, VA Metro Area",0
+"G31380","2015-2019","US",,,,,,,,,,,,,,,,"Macomb, IL Micro Area","31380",,,,,,,,,,,,,,,,,,,"31000US31380",,,"Macomb, IL Micro Area",30479,"Macomb, IL Micro Area",0
+"G31420","2015-2019","US",,,,,,,,,,,,,,,,"Macon-Bibb County, GA Metro Area","31420",,,,,,,,,,,,,,,,,,,"31000US31420",,,"Macon-Bibb County, GA Metro Area",229504,"Macon-Bibb County, GA Metro Area",0
+"G31460","2015-2019","US",,,,,,,,,,,,,,,,"Madera, CA Metro Area","31460",,,,,,,,,,,,,,,,,,,"31000US31460",,,"Madera, CA Metro Area",155433,"Madera, CA Metro Area",0
+"G31500","2015-2019","US",,,,,,,,,,,,,,,,"Madison, IN Micro Area","31500",,,,,,,,,,,,,,,,,,,"31000US31500",,,"Madison, IN Micro Area",32201,"Madison, IN Micro Area",0
+"G31540","2015-2019","US",,,,,,,,,,,,,,,,"Madison, WI Metro Area","31540",,,,,,,,,,,,,,,,,,,"31000US31540",,,"Madison, WI Metro Area",653725,"Madison, WI Metro Area",0
+"G31580","2015-2019","US",,,,,,,,,,,,,,,,"Madisonville, KY Micro Area","31580",,,,,,,,,,,,,,,,,,,"31000US31580",,,"Madisonville, KY Micro Area",45331,"Madisonville, KY Micro Area",0
+"G31620","2015-2019","US",,,,,,,,,,,,,,,,"Magnolia, AR Micro Area","31620",,,,,,,,,,,,,,,,,,,"31000US31620",,,"Magnolia, AR Micro Area",23776,"Magnolia, AR Micro Area",0
+"G31660","2015-2019","US",,,,,,,,,,,,,,,,"Malone, NY Micro Area","31660",,,,,,,,,,,,,,,,,,,"31000US31660",,,"Malone, NY Micro Area",50477,"Malone, NY Micro Area",0
+"G31680","2015-2019","US",,,,,,,,,,,,,,,,"Malvern, AR Micro Area; Hot Springs-Malvern, AR CSA","31680",,,,,,,,,,,,,,,,,,,"31000US31680",,,"Malvern, AR Micro Area",33597,"Malvern, AR Micro Area",0
+"G31700","2015-2019","US",,,,,,,,,,,,,,,,"Manchester-Nashua, NH Metro Area","31700",,,,,,,,,,,,,,,,,,,"31000US31700",,,"Manchester-Nashua, NH Metro Area",413035,"Manchester-Nashua, NH Metro Area",0
+"G31740","2015-2019","US",,,,,,,,,,,,,,,,"Manhattan, KS Metro Area","31740",,,,,,,,,,,,,,,,,,,"31000US31740",,,"Manhattan, KS Metro Area",132928,"Manhattan, KS Metro Area",0
+"G31820","2015-2019","US",,,,,,,,,,,,,,,,"Manitowoc, WI Micro Area","31820",,,,,,,,,,,,,,,,,,,"31000US31820",,,"Manitowoc, WI Micro Area",79185,"Manitowoc, WI Micro Area",0
+"G31860","2015-2019","US",,,,,,,,,,,,,,,,"Mankato, MN Metro Area","31860",,,,,,,,,,,,,,,,,,,"31000US31860",,,"Mankato, MN Metro Area",100749,"Mankato, MN Metro Area",0
+"G31900","2015-2019","US",,,,,,,,,,,,,,,,"Mansfield, OH Metro Area","31900",,,,,,,,,,,,,,,,,,,"31000US31900",,,"Mansfield, OH Metro Area",121100,"Mansfield, OH Metro Area",0
+"G31930","2015-2019","US",,,,,,,,,,,,,,,,"Marietta, OH Micro Area; Parkersburg-Marietta-Vienna, WV-OH CSA","31930",,,,,,,,,,,,,,,,,,,"31000US31930",,,"Marietta, OH Micro Area",60426,"Marietta, OH Micro Area",0
+"G31940","2015-2019","US",,,,,,,,,,,,,,,,"Marinette, WI-MI Micro Area","31940",,,,,,,,,,,,,,,,,,,"31000US31940",,,"Marinette, WI-MI Micro Area",63465,"Marinette, WI-MI Micro Area",0
+"G31980","2015-2019","US",,,,,,,,,,,,,,,,"Marion, IN Micro Area","31980",,,,,,,,,,,,,,,,,,,"31000US31980",,,"Marion, IN Micro Area",66452,"Marion, IN Micro Area",0
+"G32000","2015-2019","US",,,,,,,,,,,,,,,,"Marion, NC Micro Area; Asheville-Marion-Brevard, NC CSA","32000",,,,,,,,,,,,,,,,,,,"31000US32000",,,"Marion, NC Micro Area",45227,"Marion, NC Micro Area",0
+"G32020","2015-2019","US",,,,,,,,,,,,,,,,"Marion, OH Micro Area","32020",,,,,,,,,,,,,,,,,,,"31000US32020",,,"Marion, OH Micro Area",65299,"Marion, OH Micro Area",0
+"G32100","2015-2019","US",,,,,,,,,,,,,,,,"Marquette, MI Micro Area","32100",,,,,,,,,,,,,,,,,,,"31000US32100",,,"Marquette, MI Micro Area",66686,"Marquette, MI Micro Area",0
+"G32140","2015-2019","US",,,,,,,,,,,,,,,,"Marshall, MN Micro Area","32140",,,,,,,,,,,,,,,,,,,"31000US32140",,,"Marshall, MN Micro Area",25758,"Marshall, MN Micro Area",0
+"G32180","2015-2019","US",,,,,,,,,,,,,,,,"Marshall, MO Micro Area","32180",,,,,,,,,,,,,,,,,,,"31000US32180",,,"Marshall, MO Micro Area",22976,"Marshall, MO Micro Area",0
+"G32260","2015-2019","US",,,,,,,,,,,,,,,,"Marshalltown, IA Micro Area","32260",,,,,,,,,,,,,,,,,,,"31000US32260",,,"Marshalltown, IA Micro Area",39964,"Marshalltown, IA Micro Area",0
+"G32280","2015-2019","US",,,,,,,,,,,,,,,,"Martin, TN Micro Area; Martin-Union City, TN CSA","32280",,,,,,,,,,,,,,,,,,,"31000US32280",,,"Martin, TN Micro Area",33510,"Martin, TN Micro Area",0
+"G32300","2015-2019","US",,,,,,,,,,,,,,,,"Martinsville, VA Micro Area","32300",,,,,,,,,,,,,,,,,,,"31000US32300",,,"Martinsville, VA Micro Area",64160,"Martinsville, VA Micro Area",0
+"G32340","2015-2019","US",,,,,,,,,,,,,,,,"Maryville, MO Micro Area","32340",,,,,,,,,,,,,,,,,,,"31000US32340",,,"Maryville, MO Micro Area",22359,"Maryville, MO Micro Area",0
+"G32380","2015-2019","US",,,,,,,,,,,,,,,,"Mason City, IA Micro Area","32380",,,,,,,,,,,,,,,,,,,"31000US32380",,,"Mason City, IA Micro Area",50279,"Mason City, IA Micro Area",0
+"G32420","2015-2019","PR",,,,,,,,,,,,,,,,"Mayagüez, PR Metro Area","32420",,,,,,,,,,,,,,,,,,,"31000US32420",,,"Mayagüez, PR Metro Area",99545,"Mayagüez, PR Metro Area",0
+"G32460","2015-2019","US",,,,,,,,,,,,,,,,"Mayfield, KY Micro Area; Paducah-Mayfield, KY-IL CSA","32460",,,,,,,,,,,,,,,,,,,"31000US32460",,,"Mayfield, KY Micro Area",37248,"Mayfield, KY Micro Area",0
+"G32500","2015-2019","US",,,,,,,,,,,,,,,,"Maysville, KY Micro Area; Cincinnati-Wilmington-Maysville, OH-KY-IN CSA","32500",,,,,,,,,,,,,,,,,,,"31000US32500",,,"Maysville, KY Micro Area",17112,"Maysville, KY Micro Area",0
+"G32540","2015-2019","US",,,,,,,,,,,,,,,,"McAlester, OK Micro Area","32540",,,,,,,,,,,,,,,,,,,"31000US32540",,,"McAlester, OK Micro Area",44146,"McAlester, OK Micro Area",0
+"G32580","2015-2019","US",,,,,,,,,,,,,,,,"McAllen-Edinburg-Mission, TX Metro Area","32580",,,,,,,,,,,,,,,,,,,"31000US32580",,,"McAllen-Edinburg-Mission, TX Metro Area",855176,"McAllen-Edinburg-Mission, TX Metro Area",0
+"G32620","2015-2019","US",,,,,,,,,,,,,,,,"McComb, MS Micro Area","32620",,,,,,,,,,,,,,,,,,,"31000US32620",,,"McComb, MS Micro Area",39532,"McComb, MS Micro Area",0
+"G32660","2015-2019","US",,,,,,,,,,,,,,,,"McMinnville, TN Micro Area","32660",,,,,,,,,,,,,,,,,,,"31000US32660",,,"McMinnville, TN Micro Area",40702,"McMinnville, TN Micro Area",0
+"G32700","2015-2019","US",,,,,,,,,,,,,,,,"McPherson, KS Micro Area","32700",,,,,,,,,,,,,,,,,,,"31000US32700",,,"McPherson, KS Micro Area",28567,"McPherson, KS Micro Area",0
+"G32740","2015-2019","US",,,,,,,,,,,,,,,,"Meadville, PA Micro Area","32740",,,,,,,,,,,,,,,,,,,"31000US32740",,,"Meadville, PA Micro Area",85665,"Meadville, PA Micro Area",0
+"G32780","2015-2019","US",,,,,,,,,,,,,,,,"Medford, OR Metro Area","32780",,,,,,,,,,,,,,,,,,,"31000US32780",,,"Medford, OR Metro Area",216574,"Medford, OR Metro Area",0
+"G32820","2015-2019","US",,,,,,,,,,,,,,,,"Memphis, TN-MS-AR Metro Area","32820",,,,,,,,,,,,,,,,,,,"31000US32820",,,"Memphis, TN-MS-AR Metro Area",1339623,"Memphis, TN-MS-AR Metro Area",0
+"G32860","2015-2019","US",,,,,,,,,,,,,,,,"Menomonie, WI Micro Area; Eau Claire-Menomonie, WI CSA","32860",,,,,,,,,,,,,,,,,,,"31000US32860",,,"Menomonie, WI Micro Area",44759,"Menomonie, WI Micro Area",0
+"G32900","2015-2019","US",,,,,,,,,,,,,,,,"Merced, CA Metro Area","32900",,,,,,,,,,,,,,,,,,,"31000US32900",,,"Merced, CA Metro Area",271382,"Merced, CA Metro Area",0
+"G32940","2015-2019","US",,,,,,,,,,,,,,,,"Meridian, MS Micro Area","32940",,,,,,,,,,,,,,,,,,,"31000US32940",,,"Meridian, MS Micro Area",101992,"Meridian, MS Micro Area",0
+"G33020","2015-2019","US",,,,,,,,,,,,,,,,"Mexico, MO Micro Area; Columbia-Moberly-Mexico, MO CSA","33020",,,,,,,,,,,,,,,,,,,"31000US33020",,,"Mexico, MO Micro Area",25644,"Mexico, MO Micro Area",0
+"G33060","2015-2019","US",,,,,,,,,,,,,,,,"Miami, OK Micro Area; Joplin-Miami, MO-OK CSA","33060",,,,,,,,,,,,,,,,,,,"31000US33060",,,"Miami, OK Micro Area",31454,"Miami, OK Micro Area",0
+"G33100","2015-2019","US",,,,,,,,,,,,,,,,"Miami-Fort Lauderdale-Pompano Beach, FL Metro Area","33100",,,,,,,,,,,,,,,,,,,"31000US33100",,,"Miami-Fort Lauderdale-Pompano Beach, FL Metro Area",6090660,"Miami-Fort Lauderdale-Pompano Beach, FL Metro Area",0
+"G33140","2015-2019","US",,,,,,,,,,,,,,,,"Michigan City-La Porte, IN Metro Area","33140",,,,,,,,,,,,,,,,,,,"31000US33140",,,"Michigan City-La Porte, IN Metro Area",110154,"Michigan City-La Porte, IN Metro Area",0
+"G33180","2015-2019","US",,,,,,,,,,,,,,,,"Middlesborough, KY Micro Area","33180",,,,,,,,,,,,,,,,,,,"31000US33180",,,"Middlesborough, KY Micro Area",26791,"Middlesborough, KY Micro Area",0
+"G33220","2015-2019","US",,,,,,,,,,,,,,,,"Midland, MI Metro Area","33220",,,,,,,,,,,,,,,,,,,"31000US33220",,,"Midland, MI Metro Area",83355,"Midland, MI Metro Area",0
+"G33260","2015-2019","US",,,,,,,,,,,,,,,,"Midland, TX Metro Area","33260",,,,,,,,,,,,,,,,,,,"31000US33260",,,"Midland, TX Metro Area",173816,"Midland, TX Metro Area",0
+"G33300","2015-2019","US",,,,,,,,,,,,,,,,"Milledgeville, GA Micro Area","33300",,,,,,,,,,,,,,,,,,,"31000US33300",,,"Milledgeville, GA Micro Area",53626,"Milledgeville, GA Micro Area",0
+"G33340","2015-2019","US",,,,,,,,,,,,,,,,"Milwaukee-Waukesha, WI Metro Area","33340",,,,,,,,,,,,,,,,,,,"31000US33340",,,"Milwaukee-Waukesha, WI Metro Area",1575223,"Milwaukee-Waukesha, WI Metro Area",0
+"G33380","2015-2019","US",,,,,,,,,,,,,,,,"Minden, LA Micro Area; Shreveport-Bossier City-Minden, LA CSA","33380",,,,,,,,,,,,,,,,,,,"31000US33380",,,"Minden, LA Micro Area",39242,"Minden, LA Micro Area",0
+"G33420","2015-2019","US",,,,,,,,,,,,,,,,"Mineral Wells, TX Micro Area; Dallas-Fort Worth, TX-OK CSA","33420",,,,,,,,,,,,,,,,,,,"31000US33420",,,"Mineral Wells, TX Micro Area",28540,"Mineral Wells, TX Micro Area",0
+"G33460","2015-2019","US",,,,,,,,,,,,,,,,"Minneapolis-St. Paul-Bloomington, MN-WI Metro Area","33460",,,,,,,,,,,,,,,,,,,"31000US33460",,,"Minneapolis-St. Paul-Bloomington, MN-WI Metro Area",3573609,"Minneapolis-St. Paul-Bloomington, MN-WI Metro Area",0
+"G33500","2015-2019","US",,,,,,,,,,,,,,,,"Minot, ND Micro Area","33500",,,,,,,,,,,,,,,,,,,"31000US33500",,,"Minot, ND Micro Area",77132,"Minot, ND Micro Area",0
+"G33540","2015-2019","US",,,,,,,,,,,,,,,,"Missoula, MT Metro Area","33540",,,,,,,,,,,,,,,,,,,"31000US33540",,,"Missoula, MT Metro Area",117309,"Missoula, MT Metro Area",0
+"G33580","2015-2019","US",,,,,,,,,,,,,,,,"Mitchell, SD Micro Area","33580",,,,,,,,,,,,,,,,,,,"31000US33580",,,"Mitchell, SD Micro Area",23270,"Mitchell, SD Micro Area",0
+"G33620","2015-2019","US",,,,,,,,,,,,,,,,"Moberly, MO Micro Area; Columbia-Moberly-Mexico, MO CSA","33620",,,,,,,,,,,,,,,,,,,"31000US33620",,,"Moberly, MO Micro Area",24878,"Moberly, MO Micro Area",0
+"G33660","2015-2019","US",,,,,,,,,,,,,,,,"Mobile, AL Metro Area","33660",,,,,,,,,,,,,,,,,,,"31000US33660",,,"Mobile, AL Metro Area",430655,"Mobile, AL Metro Area",0
+"G33700","2015-2019","US",,,,,,,,,,,,,,,,"Modesto, CA Metro Area","33700",,,,,,,,,,,,,,,,,,,"31000US33700",,,"Modesto, CA Metro Area",543194,"Modesto, CA Metro Area",0
+"G33740","2015-2019","US",,,,,,,,,,,,,,,,"Monroe, LA Metro Area","33740",,,,,,,,,,,,,,,,,,,"31000US33740",,,"Monroe, LA Metro Area",203457,"Monroe, LA Metro Area",0
+"G33780","2015-2019","US",,,,,,,,,,,,,,,,"Monroe, MI Metro Area","33780",,,,,,,,,,,,,,,,,,,"31000US33780",,,"Monroe, MI Metro Area",149727,"Monroe, MI Metro Area",0
+"G33860","2015-2019","US",,,,,,,,,,,,,,,,"Montgomery, AL Metro Area","33860",,,,,,,,,,,,,,,,,,,"31000US33860",,,"Montgomery, AL Metro Area",373544,"Montgomery, AL Metro Area",0
+"G33940","2015-2019","US",,,,,,,,,,,,,,,,"Montrose, CO Micro Area","33940",,,,,,,,,,,,,,,,,,,"31000US33940",,,"Montrose, CO Micro Area",46482,"Montrose, CO Micro Area",0
+"G33980","2015-2019","US",,,,,,,,,,,,,,,,"Morehead City, NC Micro Area","33980",,,,,,,,,,,,,,,,,,,"31000US33980",,,"Morehead City, NC Micro Area",69070,"Morehead City, NC Micro Area",0
+"G34020","2015-2019","US",,,,,,,,,,,,,,,,"Morgan City, LA Micro Area; Lafayette-Opelousas-Morgan City, LA CSA","34020",,,,,,,,,,,,,,,,,,,"31000US34020",,,"Morgan City, LA Micro Area",50968,"Morgan City, LA Micro Area",0
+"G34060","2015-2019","US",,,,,,,,,,,,,,,,"Morgantown, WV Metro Area","34060",,,,,,,,,,,,,,,,,,,"31000US34060",,,"Morgantown, WV Metro Area",139157,"Morgantown, WV Metro Area",0
+"G34100","2015-2019","US",,,,,,,,,,,,,,,,"Morristown, TN Metro Area","34100",,,,,,,,,,,,,,,,,,,"31000US34100",,,"Morristown, TN Metro Area",140912,"Morristown, TN Metro Area",0
+"G34140","2015-2019","US",,,,,,,,,,,,,,,,"Moscow, ID Micro Area; Pullman-Moscow, WA-ID CSA","34140",,,,,,,,,,,,,,,,,,,"31000US34140",,,"Moscow, ID Micro Area",39505,"Moscow, ID Micro Area",0
+"G34180","2015-2019","US",,,,,,,,,,,,,,,,"Moses Lake, WA Micro Area","34180",,,,,,,,,,,,,,,,,,,"31000US34180",,,"Moses Lake, WA Micro Area",95502,"Moses Lake, WA Micro Area",0
+"G34220","2015-2019","US",,,,,,,,,,,,,,,,"Moultrie, GA Micro Area","34220",,,,,,,,,,,,,,,,,,,"31000US34220",,,"Moultrie, GA Micro Area",45486,"Moultrie, GA Micro Area",0
+"G34260","2015-2019","US",,,,,,,,,,,,,,,,"Mountain Home, AR Micro Area","34260",,,,,,,,,,,,,,,,,,,"31000US34260",,,"Mountain Home, AR Micro Area",41427,"Mountain Home, AR Micro Area",0
+"G34300","2015-2019","US",,,,,,,,,,,,,,,,"Mountain Home, ID Micro Area; Boise City-Mountain Home-Ontario, ID-OR CSA","34300",,,,,,,,,,,,,,,,,,,"31000US34300",,,"Mountain Home, ID Micro Area",26743,"Mountain Home, ID Micro Area",0
+"G34340","2015-2019","US",,,,,,,,,,,,,,,,"Mount Airy, NC Micro Area","34340",,,,,,,,,,,,,,,,,,,"31000US34340",,,"Mount Airy, NC Micro Area",71971,"Mount Airy, NC Micro Area",0
+"G34350","2015-2019","US",,,,,,,,,,,,,,,,"Mount Gay-Shamrock, WV Micro Area; Charleston-Huntington-Ashland, WV-OH-KY CSA","34350",,,,,,,,,,,,,,,,,,,"31000US34350",,,"Mount Gay-Shamrock, WV Micro Area",33154,"Mount Gay-Shamrock, WV Micro Area",0
+"G34380","2015-2019","US",,,,,,,,,,,,,,,,"Mount Pleasant, MI Micro Area","34380",,,,,,,,,,,,,,,,,,,"31000US34380",,,"Mount Pleasant, MI Micro Area",70688,"Mount Pleasant, MI Micro Area",0
+"G34420","2015-2019","US",,,,,,,,,,,,,,,,"Mount Pleasant, TX Micro Area","34420",,,,,,,,,,,,,,,,,,,"31000US34420",,,"Mount Pleasant, TX Micro Area",45518,"Mount Pleasant, TX Micro Area",0
+"G34460","2015-2019","US",,,,,,,,,,,,,,,,"Mount Sterling, KY Micro Area; Lexington-Fayette--Richmond--Frankfort, KY CSA","34460",,,,,,,,,,,,,,,,,,,"31000US34460",,,"Mount Sterling, KY Micro Area",46682,"Mount Sterling, KY Micro Area",0
+"G34500","2015-2019","US",,,,,,,,,,,,,,,,"Mount Vernon, IL Micro Area","34500",,,,,,,,,,,,,,,,,,,"31000US34500",,,"Mount Vernon, IL Micro Area",37985,"Mount Vernon, IL Micro Area",0
+"G34540","2015-2019","US",,,,,,,,,,,,,,,,"Mount Vernon, OH Micro Area; Columbus-Marion-Zanesville, OH CSA","34540",,,,,,,,,,,,,,,,,,,"31000US34540",,,"Mount Vernon, OH Micro Area",61481,"Mount Vernon, OH Micro Area",0
+"G34580","2015-2019","US",,,,,,,,,,,,,,,,"Mount Vernon-Anacortes, WA Metro Area","34580",,,,,,,,,,,,,,,,,,,"31000US34580",,,"Mount Vernon-Anacortes, WA Metro Area",125612,"Mount Vernon-Anacortes, WA Metro Area",0
+"G34620","2015-2019","US",,,,,,,,,,,,,,,,"Muncie, IN Metro Area","34620",,,,,,,,,,,,,,,,,,,"31000US34620",,,"Muncie, IN Metro Area",115020,"Muncie, IN Metro Area",0
+"G34660","2015-2019","US",,,,,,,,,,,,,,,,"Murray, KY Micro Area","34660",,,,,,,,,,,,,,,,,,,"31000US34660",,,"Murray, KY Micro Area",38837,"Murray, KY Micro Area",0
+"G34700","2015-2019","US",,,,,,,,,,,,,,,,"Muscatine, IA Micro Area; Davenport-Moline, IA-IL CSA","34700",,,,,,,,,,,,,,,,,,,"31000US34700",,,"Muscatine, IA Micro Area",42889,"Muscatine, IA Micro Area",0
+"G34740","2015-2019","US",,,,,,,,,,,,,,,,"Muskegon, MI Metro Area","34740",,,,,,,,,,,,,,,,,,,"31000US34740",,,"Muskegon, MI Metro Area",173297,"Muskegon, MI Metro Area",0
+"G34780","2015-2019","US",,,,,,,,,,,,,,,,"Muskogee, OK Micro Area","34780",,,,,,,,,,,,,,,,,,,"31000US34780",,,"Muskogee, OK Micro Area",68736,"Muskogee, OK Micro Area",0
+"G34820","2015-2019","US",,,,,,,,,,,,,,,,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC Metro Area","34820",,,,,,,,,,,,,,,,,,,"31000US34820",,,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC Metro Area",463987,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC Metro Area",0
+"G34860","2015-2019","US",,,,,,,,,,,,,,,,"Nacogdoches, TX Micro Area","34860",,,,,,,,,,,,,,,,,,,"31000US34860",,,"Nacogdoches, TX Micro Area",65339,"Nacogdoches, TX Micro Area",0
+"G34900","2015-2019","US",,,,,,,,,,,,,,,,"Napa, CA Metro Area","34900",,,,,,,,,,,,,,,,,,,"31000US34900",,,"Napa, CA Metro Area",139623,"Napa, CA Metro Area",0
+"G34940","2015-2019","US",,,,,,,,,,,,,,,,"Naples-Marco Island, FL Metro Area","34940",,,,,,,,,,,,,,,,,,,"31000US34940",,,"Naples-Marco Island, FL Metro Area",371453,"Naples-Marco Island, FL Metro Area",0
+"G34980","2015-2019","US",,,,,,,,,,,,,,,,"Nashville-Davidson--Murfreesboro--Franklin, TN Metro Area","34980",,,,,,,,,,,,,,,,,,,"31000US34980",,,"Nashville-Davidson--Murfreesboro--Franklin, TN Metro Area",1871903,"Nashville-Davidson--Murfreesboro--Franklin, TN Metro Area",0
+"G35020","2015-2019","US",,,,,,,,,,,,,,,,"Natchez, MS-LA Micro Area","35020",,,,,,,,,,,,,,,,,,,"31000US35020",,,"Natchez, MS-LA Micro Area",51044,"Natchez, MS-LA Micro Area",0
+"G35060","2015-2019","US",,,,,,,,,,,,,,,,"Natchitoches, LA Micro Area","35060",,,,,,,,,,,,,,,,,,,"31000US35060",,,"Natchitoches, LA Micro Area",38769,"Natchitoches, LA Micro Area",0
+"G35100","2015-2019","US",,,,,,,,,,,,,,,,"New Bern, NC Metro Area","35100",,,,,,,,,,,,,,,,,,,"31000US35100",,,"New Bern, NC Metro Area",124786,"New Bern, NC Metro Area",0
+"G35140","2015-2019","US",,,,,,,,,,,,,,,,"Newberry, SC Micro Area; Columbia-Orangeburg-Newberry, SC CSA","35140",,,,,,,,,,,,,,,,,,,"31000US35140",,,"Newberry, SC Micro Area",38194,"Newberry, SC Micro Area",0
+"G35220","2015-2019","US",,,,,,,,,,,,,,,,"New Castle, IN Micro Area; Indianapolis-Carmel-Muncie, IN CSA","35220",,,,,,,,,,,,,,,,,,,"31000US35220",,,"New Castle, IN Micro Area",48255,"New Castle, IN Micro Area",0
+"G35260","2015-2019","US",,,,,,,,,,,,,,,,"New Castle, PA Micro Area","35260",,,,,,,,,,,,,,,,,,,"31000US35260",,,"New Castle, PA Micro Area",86727,"New Castle, PA Micro Area",0
+"G35300","2015-2019","US",,,,,,,,,,,,,,,,"New Haven-Milford, CT Metro Area","35300",,,,,,,,,,,,,,,,,,,"31000US35300",,,"New Haven-Milford, CT Metro Area",857513,"New Haven-Milford, CT Metro Area",0
+"G35380","2015-2019","US",,,,,,,,,,,,,,,,"New Orleans-Metairie, LA Metro Area","35380",,,,,,,,,,,,,,,,,,,"31000US35380",,,"New Orleans-Metairie, LA Metro Area",1267777,"New Orleans-Metairie, LA Metro Area",0
+"G35420","2015-2019","US",,,,,,,,,,,,,,,,"New Philadelphia-Dover, OH Micro Area","35420",,,,,,,,,,,,,,,,,,,"31000US35420",,,"New Philadelphia-Dover, OH Micro Area",92335,"New Philadelphia-Dover, OH Micro Area",0
+"G35440","2015-2019","US",,,,,,,,,,,,,,,,"Newport, OR Micro Area","35440",,,,,,,,,,,,,,,,,,,"31000US35440",,,"Newport, OR Micro Area",48547,"Newport, OR Micro Area",0
+"G35460","2015-2019","US",,,,,,,,,,,,,,,,"Newport, TN Micro Area; Knoxville-Morristown-Sevierville, TN CSA","35460",,,,,,,,,,,,,,,,,,,"31000US35460",,,"Newport, TN Micro Area",35552,"Newport, TN Micro Area",0
+"G35580","2015-2019","US",,,,,,,,,,,,,,,,"New Ulm, MN Micro Area; Mankato-New Ulm, MN CSA","35580",,,,,,,,,,,,,,,,,,,"31000US35580",,,"New Ulm, MN Micro Area",25163,"New Ulm, MN Micro Area",0
+"G35620","2015-2019","US",,,,,,,,,,,,,,,,"New York-Newark-Jersey City, NY-NJ-PA Metro Area","35620",,,,,,,,,,,,,,,,,,,"31000US35620",,,"New York-Newark-Jersey City, NY-NJ-PA Metro Area",19294236,"New York-Newark-Jersey City, NY-NJ-PA Metro Area",0
+"G35660","2015-2019","US",,,,,,,,,,,,,,,,"Niles, MI Metro Area","35660",,,,,,,,,,,,,,,,,,,"31000US35660",,,"Niles, MI Metro Area",154133,"Niles, MI Metro Area",0
+"G35700","2015-2019","US",,,,,,,,,,,,,,,,"Nogales, AZ Micro Area; Tucson-Nogales, AZ CSA","35700",,,,,,,,,,,,,,,,,,,"31000US35700",,,"Nogales, AZ Micro Area",46480,"Nogales, AZ Micro Area",0
+"G35740","2015-2019","US",,,,,,,,,,,,,,,,"Norfolk, NE Micro Area","35740",,,,,,,,,,,,,,,,,,,"31000US35740",,,"Norfolk, NE Micro Area",48181,"Norfolk, NE Micro Area",0
+"G35820","2015-2019","US",,,,,,,,,,,,,,,,"North Platte, NE Micro Area","35820",,,,,,,,,,,,,,,,,,,"31000US35820",,,"North Platte, NE Micro Area",36585,"North Platte, NE Micro Area",82
+"G35840","2015-2019","US",,,,,,,,,,,,,,,,"North Port-Sarasota-Bradenton, FL Metro Area","35840",,,,,,,,,,,,,,,,,,,"31000US35840",,,"North Port-Sarasota-Bradenton, FL Metro Area",803709,"North Port-Sarasota-Bradenton, FL Metro Area",0
+"G35860","2015-2019","US",,,,,,,,,,,,,,,,"North Vernon, IN Micro Area; Indianapolis-Carmel-Muncie, IN CSA","35860",,,,,,,,,,,,,,,,,,,"31000US35860",,,"North Vernon, IN Micro Area",27710,"North Vernon, IN Micro Area",0
+"G35900","2015-2019","US",,,,,,,,,,,,,,,,"North Wilkesboro, NC Micro Area","35900",,,,,,,,,,,,,,,,,,,"31000US35900",,,"North Wilkesboro, NC Micro Area",68469,"North Wilkesboro, NC Micro Area",0
+"G35940","2015-2019","US",,,,,,,,,,,,,,,,"Norwalk, OH Micro Area; Cleveland-Akron-Canton, OH CSA","35940",,,,,,,,,,,,,,,,,,,"31000US35940",,,"Norwalk, OH Micro Area",58339,"Norwalk, OH Micro Area",0
+"G35980","2015-2019","US",,,,,,,,,,,,,,,,"Norwich-New London, CT Metro Area","35980",,,,,,,,,,,,,,,,,,,"31000US35980",,,"Norwich-New London, CT Metro Area",267390,"Norwich-New London, CT Metro Area",0
+"G36020","2015-2019","US",,,,,,,,,,,,,,,,"Oak Harbor, WA Micro Area","36020",,,,,,,,,,,,,,,,,,,"31000US36020",,,"Oak Harbor, WA Micro Area",82866,"Oak Harbor, WA Micro Area",0
+"G36100","2015-2019","US",,,,,,,,,,,,,,,,"Ocala, FL Metro Area","36100",,,,,,,,,,,,,,,,,,,"31000US36100",,,"Ocala, FL Metro Area",353526,"Ocala, FL Metro Area",0
+"G36140","2015-2019","US",,,,,,,,,,,,,,,,"Ocean City, NJ Metro Area","36140",,,,,,,,,,,,,,,,,,,"31000US36140",,,"Ocean City, NJ Metro Area",93086,"Ocean City, NJ Metro Area",0
+"G36220","2015-2019","US",,,,,,,,,,,,,,,,"Odessa, TX Metro Area","36220",,,,,,,,,,,,,,,,,,,"31000US36220",,,"Odessa, TX Metro Area",160579,"Odessa, TX Metro Area",0
+"G36260","2015-2019","US",,,,,,,,,,,,,,,,"Ogden-Clearfield, UT Metro Area","36260",,,,,,,,,,,,,,,,,,,"31000US36260",,,"Ogden-Clearfield, UT Metro Area",662875,"Ogden-Clearfield, UT Metro Area",0
+"G36300","2015-2019","US",,,,,,,,,,,,,,,,"Ogdensburg-Massena, NY Micro Area","36300",,,,,,,,,,,,,,,,,,,"31000US36300",,,"Ogdensburg-Massena, NY Micro Area",108913,"Ogdensburg-Massena, NY Micro Area",0
+"G36340","2015-2019","US",,,,,,,,,,,,,,,,"Oil City, PA Micro Area","36340",,,,,,,,,,,,,,,,,,,"31000US36340",,,"Oil City, PA Micro Area",51818,"Oil City, PA Micro Area",0
+"G36380","2015-2019","US",,,,,,,,,,,,,,,,"Okeechobee, FL Micro Area","36380",,,,,,,,,,,,,,,,,,,"31000US36380",,,"Okeechobee, FL Micro Area",41144,"Okeechobee, FL Micro Area",0
+"G36420","2015-2019","US",,,,,,,,,,,,,,,,"Oklahoma City, OK Metro Area","36420",,,,,,,,,,,,,,,,,,,"31000US36420",,,"Oklahoma City, OK Metro Area",1382841,"Oklahoma City, OK Metro Area",0
+"G36460","2015-2019","US",,,,,,,,,,,,,,,,"Olean, NY Micro Area","36460",,,,,,,,,,,,,,,,,,,"31000US36460",,,"Olean, NY Micro Area",77121,"Olean, NY Micro Area",0
+"G36500","2015-2019","US",,,,,,,,,,,,,,,,"Olympia-Lacey-Tumwater, WA Metro Area","36500",,,,,,,,,,,,,,,,,,,"31000US36500",,,"Olympia-Lacey-Tumwater, WA Metro Area",279711,"Olympia-Lacey-Tumwater, WA Metro Area",0
+"G36540","2015-2019","US",,,,,,,,,,,,,,,,"Omaha-Council Bluffs, NE-IA Metro Area","36540",,,,,,,,,,,,,,,,,,,"31000US36540",,,"Omaha-Council Bluffs, NE-IA Metro Area",931779,"Omaha-Council Bluffs, NE-IA Metro Area",0
+"G36580","2015-2019","US",,,,,,,,,,,,,,,,"Oneonta, NY Micro Area","36580",,,,,,,,,,,,,,,,,,,"31000US36580",,,"Oneonta, NY Micro Area",59972,"Oneonta, NY Micro Area",0
+"G36620","2015-2019","US",,,,,,,,,,,,,,,,"Ontario, OR-ID Micro Area; Boise City-Mountain Home-Ontario, ID-OR CSA","36620",,,,,,,,,,,,,,,,,,,"31000US36620",,,"Ontario, OR-ID Micro Area",53672,"Ontario, OR-ID Micro Area",0
+"G36660","2015-2019","US",,,,,,,,,,,,,,,,"Opelousas, LA Micro Area","36660",,,,,,,,,,,,,,,,,,,"31000US36660",,,"Opelousas, LA Micro Area",83172,"Opelousas, LA Micro Area",0
+"G36700","2015-2019","US",,,,,,,,,,,,,,,,"Orangeburg, SC Micro Area","36700",,,,,,,,,,,,,,,,,,,"31000US36700",,,"Orangeburg, SC Micro Area",87687,"Orangeburg, SC Micro Area",0
+"G36740","2015-2019","US",,,,,,,,,,,,,,,,"Orlando-Kissimmee-Sanford, FL Metro Area","36740",,,,,,,,,,,,,,,,,,,"31000US36740",,,"Orlando-Kissimmee-Sanford, FL Metro Area",2508970,"Orlando-Kissimmee-Sanford, FL Metro Area",0
+"G36780","2015-2019","US",,,,,,,,,,,,,,,,"Oshkosh-Neenah, WI Metro Area","36780",,,,,,,,,,,,,,,,,,,"31000US36780",,,"Oshkosh-Neenah, WI Metro Area",170411,"Oshkosh-Neenah, WI Metro Area",0
+"G36820","2015-2019","US",,,,,,,,,,,,,,,,"Oskaloosa, IA Micro Area; Des Moines-Ames-West Des Moines, IA CSA","36820",,,,,,,,,,,,,,,,,,,"31000US36820",,,"Oskaloosa, IA Micro Area",22164,"Oskaloosa, IA Micro Area",0
+"G36830","2015-2019","US",,,,,,,,,,,,,,,,"Othello, WA Micro Area; Moses Lake-Othello, WA CSA","36830",,,,,,,,,,,,,,,,,,,"31000US36830",,,"Othello, WA Micro Area",19594,"Othello, WA Micro Area",0
+"G36837","2015-2019","US",,,,,,,,,,,,,,,,"Ottawa, IL Micro Area","36837",,,,,,,,,,,,,,,,,,,"31000US36837",,,"Ottawa, IL Micro Area",148580,"Ottawa, IL Micro Area",0
+"G36840","2015-2019","US",,,,,,,,,,,,,,,,"Ottawa, KS Micro Area; Kansas City-Overland Park-Kansas City, MO-KS CSA","36840",,,,,,,,,,,,,,,,,,,"31000US36840",,,"Ottawa, KS Micro Area",25558,"Ottawa, KS Micro Area",0
+"G36900","2015-2019","US",,,,,,,,,,,,,,,,"Ottumwa, IA Micro Area","36900",,,,,,,,,,,,,,,,,,,"31000US36900",,,"Ottumwa, IA Micro Area",35141,"Ottumwa, IA Micro Area",0
+"G36940","2015-2019","US",,,,,,,,,,,,,,,,"Owatonna, MN Micro Area; Minneapolis-St. Paul, MN-WI CSA","36940",,,,,,,,,,,,,,,,,,,"31000US36940",,,"Owatonna, MN Micro Area",36683,"Owatonna, MN Micro Area",0
+"G36980","2015-2019","US",,,,,,,,,,,,,,,,"Owensboro, KY Metro Area","36980",,,,,,,,,,,,,,,,,,,"31000US36980",,,"Owensboro, KY Metro Area",118477,"Owensboro, KY Metro Area",0
+"G37060","2015-2019","US",,,,,,,,,,,,,,,,"Oxford, MS Micro Area","37060",,,,,,,,,,,,,,,,,,,"31000US37060",,,"Oxford, MS Micro Area",53590,"Oxford, MS Micro Area",0
+"G37100","2015-2019","US",,,,,,,,,,,,,,,,"Oxnard-Thousand Oaks-Ventura, CA Metro Area","37100",,,,,,,,,,,,,,,,,,,"31000US37100",,,"Oxnard-Thousand Oaks-Ventura, CA Metro Area",847263,"Oxnard-Thousand Oaks-Ventura, CA Metro Area",0
+"G37120","2015-2019","US",,,,,,,,,,,,,,,,"Ozark, AL Micro Area; Dothan-Ozark, AL CSA","37120",,,,,,,,,,,,,,,,,,,"31000US37120",,,"Ozark, AL Micro Area",49277,"Ozark, AL Micro Area",0
+"G37140","2015-2019","US",,,,,,,,,,,,,,,,"Paducah, KY-IL Micro Area","37140",,,,,,,,,,,,,,,,,,,"31000US37140",,,"Paducah, KY-IL Micro Area",96754,"Paducah, KY-IL Micro Area",0
+"G37220","2015-2019","US",,,,,,,,,,,,,,,,"Pahrump, NV Micro Area; Las Vegas-Henderson, NV CSA","37220",,,,,,,,,,,,,,,,,,,"31000US37220",,,"Pahrump, NV Micro Area",44380,"Pahrump, NV Micro Area",0
+"G37260","2015-2019","US",,,,,,,,,,,,,,,,"Palatka, FL Micro Area","37260",,,,,,,,,,,,,,,,,,,"31000US37260",,,"Palatka, FL Micro Area",73252,"Palatka, FL Micro Area",0
+"G37300","2015-2019","US",,,,,,,,,,,,,,,,"Palestine, TX Micro Area","37300",,,,,,,,,,,,,,,,,,,"31000US37300",,,"Palestine, TX Micro Area",57810,"Palestine, TX Micro Area",0
+"G37340","2015-2019","US",,,,,,,,,,,,,,,,"Palm Bay-Melbourne-Titusville, FL Metro Area","37340",,,,,,,,,,,,,,,,,,,"31000US37340",,,"Palm Bay-Melbourne-Titusville, FL Metro Area",585507,"Palm Bay-Melbourne-Titusville, FL Metro Area",0
+"G37420","2015-2019","US",,,,,,,,,,,,,,,,"Pampa, TX Micro Area; Amarillo-Pampa-Borger, TX CSA","37420",,,,,,,,,,,,,,,,,,,"31000US37420",,,"Pampa, TX Micro Area",23215,"Pampa, TX Micro Area",102
+"G37460","2015-2019","US",,,,,,,,,,,,,,,,"Panama City, FL Metro Area","37460",,,,,,,,,,,,,,,,,,,"31000US37460",,,"Panama City, FL Metro Area",182161,"Panama City, FL Metro Area",0
+"G37500","2015-2019","US",,,,,,,,,,,,,,,,"Paragould, AR Micro Area; Jonesboro-Paragould, AR CSA","37500",,,,,,,,,,,,,,,,,,,"31000US37500",,,"Paragould, AR Micro Area",44937,"Paragould, AR Micro Area",0
+"G37540","2015-2019","US",,,,,,,,,,,,,,,,"Paris, TN Micro Area","37540",,,,,,,,,,,,,,,,,,,"31000US37540",,,"Paris, TN Micro Area",32284,"Paris, TN Micro Area",0
+"G37580","2015-2019","US",,,,,,,,,,,,,,,,"Paris, TX Micro Area","37580",,,,,,,,,,,,,,,,,,,"31000US37580",,,"Paris, TX Micro Area",49611,"Paris, TX Micro Area",0
+"G37620","2015-2019","US",,,,,,,,,,,,,,,,"Parkersburg-Vienna, WV Metro Area","37620",,,,,,,,,,,,,,,,,,,"31000US37620",,,"Parkersburg-Vienna, WV Metro Area",90758,"Parkersburg-Vienna, WV Metro Area",0
+"G37660","2015-2019","US",,,,,,,,,,,,,,,,"Parsons, KS Micro Area","37660",,,,,,,,,,,,,,,,,,,"31000US37660",,,"Parsons, KS Micro Area",20119,"Parsons, KS Micro Area",0
+"G37740","2015-2019","US",,,,,,,,,,,,,,,,"Payson, AZ Micro Area; Phoenix-Mesa, AZ CSA","37740",,,,,,,,,,,,,,,,,,,"31000US37740",,,"Payson, AZ Micro Area",53546,"Payson, AZ Micro Area",0
+"G37770","2015-2019","US",,,,,,,,,,,,,,,,"Pearsall, TX Micro Area; San Antonio-New Braunfels-Pearsall, TX CSA","37770",,,,,,,,,,,,,,,,,,,"31000US37770",,,"Pearsall, TX Micro Area",19871,"Pearsall, TX Micro Area",0
+"G37780","2015-2019","US",,,,,,,,,,,,,,,,"Pecos, TX Micro Area","37780",,,,,,,,,,,,,,,,,,,"31000US37780",,,"Pecos, TX Micro Area",15590,"Pecos, TX Micro Area",48
+"G37800","2015-2019","US",,,,,,,,,,,,,,,,"Pella, IA Micro Area; Des Moines-Ames-West Des Moines, IA CSA","37800",,,,,,,,,,,,,,,,,,,"31000US37800",,,"Pella, IA Micro Area",33172,"Pella, IA Micro Area",0
+"G37860","2015-2019","US",,,,,,,,,,,,,,,,"Pensacola-Ferry Pass-Brent, FL Metro Area","37860",,,,,,,,,,,,,,,,,,,"31000US37860",,,"Pensacola-Ferry Pass-Brent, FL Metro Area",488246,"Pensacola-Ferry Pass-Brent, FL Metro Area",0
+"G37900","2015-2019","US",,,,,,,,,,,,,,,,"Peoria, IL Metro Area","37900",,,,,,,,,,,,,,,,,,,"31000US37900",,,"Peoria, IL Metro Area",406883,"Peoria, IL Metro Area",0
+"G37940","2015-2019","US",,,,,,,,,,,,,,,,"Peru, IN Micro Area; Kokomo-Peru, IN CSA","37940",,,,,,,,,,,,,,,,,,,"31000US37940",,,"Peru, IN Micro Area",35815,"Peru, IN Micro Area",0
+"G37980","2015-2019","US",,,,,,,,,,,,,,,,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD Metro Area","37980",,,,,,,,,,,,,,,,,,,"31000US37980",,,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD Metro Area",6079130,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD Metro Area",0
+"G38060","2015-2019","US",,,,,,,,,,,,,,,,"Phoenix-Mesa-Chandler, AZ Metro Area","38060",,,,,,,,,,,,,,,,,,,"31000US38060",,,"Phoenix-Mesa-Chandler, AZ Metro Area",4761603,"Phoenix-Mesa-Chandler, AZ Metro Area",0
+"G38100","2015-2019","US",,,,,,,,,,,,,,,,"Picayune, MS Micro Area; New Orleans-Metairie-Hammond, LA-MS CSA","38100",,,,,,,,,,,,,,,,,,,"31000US38100",,,"Picayune, MS Micro Area",55219,"Picayune, MS Micro Area",0
+"G38180","2015-2019","US",,,,,,,,,,,,,,,,"Pierre, SD Micro Area","38180",,,,,,,,,,,,,,,,,,,"31000US38180",,,"Pierre, SD Micro Area",20625,"Pierre, SD Micro Area",0
+"G38220","2015-2019","US",,,,,,,,,,,,,,,,"Pine Bluff, AR Metro Area","38220",,,,,,,,,,,,,,,,,,,"31000US38220",,,"Pine Bluff, AR Metro Area",90865,"Pine Bluff, AR Metro Area",0
+"G38240","2015-2019","US",,,,,,,,,,,,,,,,"Pinehurst-Southern Pines, NC Micro Area","38240",,,,,,,,,,,,,,,,,,,"31000US38240",,,"Pinehurst-Southern Pines, NC Micro Area",97294,"Pinehurst-Southern Pines, NC Micro Area",0
+"G38260","2015-2019","US",,,,,,,,,,,,,,,,"Pittsburg, KS Micro Area","38260",,,,,,,,,,,,,,,,,,,"31000US38260",,,"Pittsburg, KS Micro Area",38968,"Pittsburg, KS Micro Area",0
+"G38300","2015-2019","US",,,,,,,,,,,,,,,,"Pittsburgh, PA Metro Area","38300",,,,,,,,,,,,,,,,,,,"31000US38300",,,"Pittsburgh, PA Metro Area",2331447,"Pittsburgh, PA Metro Area",0
+"G38340","2015-2019","US",,,,,,,,,,,,,,,,"Pittsfield, MA Metro Area","38340",,,,,,,,,,,,,,,,,,,"31000US38340",,,"Pittsfield, MA Metro Area",126425,"Pittsfield, MA Metro Area",0
+"G38380","2015-2019","US",,,,,,,,,,,,,,,,"Plainview, TX Micro Area; Lubbock-Plainview-Levelland, TX CSA","38380",,,,,,,,,,,,,,,,,,,"31000US38380",,,"Plainview, TX Micro Area",33826,"Plainview, TX Micro Area",0
+"G38420","2015-2019","US",,,,,,,,,,,,,,,,"Platteville, WI Micro Area","38420",,,,,,,,,,,,,,,,,,,"31000US38420",,,"Platteville, WI Micro Area",51733,"Platteville, WI Micro Area",0
+"G38460","2015-2019","US",,,,,,,,,,,,,,,,"Plattsburgh, NY Micro Area","38460",,,,,,,,,,,,,,,,,,,"31000US38460",,,"Plattsburgh, NY Micro Area",80583,"Plattsburgh, NY Micro Area",0
+"G38500","2015-2019","US",,,,,,,,,,,,,,,,"Plymouth, IN Micro Area; South Bend-Elkhart-Mishawaka, IN-MI CSA","38500",,,,,,,,,,,,,,,,,,,"31000US38500",,,"Plymouth, IN Micro Area",46461,"Plymouth, IN Micro Area",0
+"G38540","2015-2019","US",,,,,,,,,,,,,,,,"Pocatello, ID Metro Area","38540",,,,,,,,,,,,,,,,,,,"31000US38540",,,"Pocatello, ID Metro Area",93436,"Pocatello, ID Metro Area",0
+"G38580","2015-2019","US",,,,,,,,,,,,,,,,"Point Pleasant, WV-OH Micro Area; Charleston-Huntington-Ashland, WV-OH-KY CSA","38580",,,,,,,,,,,,,,,,,,,"31000US38580",,,"Point Pleasant, WV-OH Micro Area",56908,"Point Pleasant, WV-OH Micro Area",0
+"G38620","2015-2019","US",,,,,,,,,,,,,,,,"Ponca City, OK Micro Area","38620",,,,,,,,,,,,,,,,,,,"31000US38620",,,"Ponca City, OK Micro Area",44402,"Ponca City, OK Micro Area",0
+"G38660","2015-2019","PR",,,,,,,,,,,,,,,,"Ponce, PR Metro Area","38660",,,,,,,,,,,,,,,,,,,"31000US38660",,,"Ponce, PR Metro Area",226117,"Ponce, PR Metro Area",0
+"G38700","2015-2019","US",,,,,,,,,,,,,,,,"Pontiac, IL Micro Area; Bloomington-Pontiac, IL CSA","38700",,,,,,,,,,,,,,,,,,,"31000US38700",,,"Pontiac, IL Micro Area",36040,"Pontiac, IL Micro Area",0
+"G38740","2015-2019","US",,,,,,,,,,,,,,,,"Poplar Bluff, MO Micro Area","38740",,,,,,,,,,,,,,,,,,,"31000US38740",,,"Poplar Bluff, MO Micro Area",56223,"Poplar Bluff, MO Micro Area",0
+"G38780","2015-2019","US",,,,,,,,,,,,,,,,"Portales, NM Micro Area; Clovis-Portales, NM CSA","38780",,,,,,,,,,,,,,,,,,,"31000US38780",,,"Portales, NM Micro Area",18888,"Portales, NM Micro Area",0
+"G38820","2015-2019","US",,,,,,,,,,,,,,,,"Port Angeles, WA Micro Area","38820",,,,,,,,,,,,,,,,,,,"31000US38820",,,"Port Angeles, WA Micro Area",75392,"Port Angeles, WA Micro Area",0
+"G38860","2015-2019","US",,,,,,,,,,,,,,,,"Portland-South Portland, ME Metro Area","38860",,,,,,,,,,,,,,,,,,,"31000US38860",,,"Portland-South Portland, ME Metro Area",532075,"Portland-South Portland, ME Metro Area",0
+"G38900","2015-2019","US",,,,,,,,,,,,,,,,"Portland-Vancouver-Hillsboro, OR-WA Metro Area","38900",,,,,,,,,,,,,,,,,,,"31000US38900",,,"Portland-Vancouver-Hillsboro, OR-WA Metro Area",2445761,"Portland-Vancouver-Hillsboro, OR-WA Metro Area",0
+"G38920","2015-2019","US",,,,,,,,,,,,,,,,"Port Lavaca, TX Micro Area; Victoria-Port Lavaca, TX CSA","38920",,,,,,,,,,,,,,,,,,,"31000US38920",,,"Port Lavaca, TX Micro Area",21668,"Port Lavaca, TX Micro Area",0
+"G38940","2015-2019","US",,,,,,,,,,,,,,,,"Port St. Lucie, FL Metro Area","38940",,,,,,,,,,,,,,,,,,,"31000US38940",,,"Port St. Lucie, FL Metro Area",472012,"Port St. Lucie, FL Metro Area",0
+"G39020","2015-2019","US",,,,,,,,,,,,,,,,"Portsmouth, OH Micro Area","39020",,,,,,,,,,,,,,,,,,,"31000US39020",,,"Portsmouth, OH Micro Area",76040,"Portsmouth, OH Micro Area",0
+"G39060","2015-2019","US",,,,,,,,,,,,,,,,"Pottsville, PA Micro Area","39060",,,,,,,,,,,,,,,,,,,"31000US39060",,,"Pottsville, PA Micro Area",142674,"Pottsville, PA Micro Area",0
+"G39100","2015-2019","US",,,,,,,,,,,,,,,,"Poughkeepsie-Newburgh-Middletown, NY Metro Area","39100",,,,,,,,,,,,,,,,,,,"31000US39100",,,"Poughkeepsie-Newburgh-Middletown, NY Metro Area",673839,"Poughkeepsie-Newburgh-Middletown, NY Metro Area",0
+"G39150","2015-2019","US",,,,,,,,,,,,,,,,"Prescott Valley-Prescott, AZ Metro Area","39150",,,,,,,,,,,,,,,,,,,"31000US39150",,,"Prescott Valley-Prescott, AZ Metro Area",228067,"Prescott Valley-Prescott, AZ Metro Area",0
+"G39220","2015-2019","US",,,,,,,,,,,,,,,,"Price, UT Micro Area","39220",,,,,,,,,,,,,,,,,,,"31000US39220",,,"Price, UT Micro Area",20308,"Price, UT Micro Area",0
+"G39260","2015-2019","US",,,,,,,,,,,,,,,,"Prineville, OR Micro Area; Bend-Prineville, OR CSA","39260",,,,,,,,,,,,,,,,,,,"31000US39260",,,"Prineville, OR Micro Area",23011,"Prineville, OR Micro Area",0
+"G39300","2015-2019","US",,,,,,,,,,,,,,,,"Providence-Warwick, RI-MA Metro Area","39300",,,,,,,,,,,,,,,,,,,"31000US39300",,,"Providence-Warwick, RI-MA Metro Area",1618268,"Providence-Warwick, RI-MA Metro Area",0
+"G39340","2015-2019","US",,,,,,,,,,,,,,,,"Provo-Orem, UT Metro Area","39340",,,,,,,,,,,,,,,,,,,"31000US39340",,,"Provo-Orem, UT Metro Area",616791,"Provo-Orem, UT Metro Area",0
+"G39380","2015-2019","US",,,,,,,,,,,,,,,,"Pueblo, CO Metro Area","39380",,,,,,,,,,,,,,,,,,,"31000US39380",,,"Pueblo, CO Metro Area",165982,"Pueblo, CO Metro Area",0
+"G39420","2015-2019","US",,,,,,,,,,,,,,,,"Pullman, WA Micro Area; Pullman-Moscow, WA-ID CSA","39420",,,,,,,,,,,,,,,,,,,"31000US39420",,,"Pullman, WA Micro Area",49231,"Pullman, WA Micro Area",0
+"G39460","2015-2019","US",,,,,,,,,,,,,,,,"Punta Gorda, FL Metro Area","39460",,,,,,,,,,,,,,,,,,,"31000US39460",,,"Punta Gorda, FL Metro Area",181067,"Punta Gorda, FL Metro Area",0
+"G39500","2015-2019","US",,,,,,,,,,,,,,,,"Quincy, IL-MO Micro Area","39500",,,,,,,,,,,,,,,,,,,"31000US39500",,,"Quincy, IL-MO Micro Area",76040,"Quincy, IL-MO Micro Area",0
+"G39540","2015-2019","US",,,,,,,,,,,,,,,,"Racine, WI Metro Area","39540",,,,,,,,,,,,,,,,,,,"31000US39540",,,"Racine, WI Metro Area",195602,"Racine, WI Metro Area",0
+"G39580","2015-2019","US",,,,,,,,,,,,,,,,"Raleigh-Cary, NC Metro Area","39580",,,,,,,,,,,,,,,,,,,"31000US39580",,,"Raleigh-Cary, NC Metro Area",1332311,"Raleigh-Cary, NC Metro Area",0
+"G39660","2015-2019","US",,,,,,,,,,,,,,,,"Rapid City, SD Metro Area","39660",,,,,,,,,,,,,,,,,,,"31000US39660",,,"Rapid City, SD Metro Area",138402,"Rapid City, SD Metro Area",0
+"G39700","2015-2019","US",,,,,,,,,,,,,,,,"Raymondville, TX Micro Area; Brownsville-Harlingen-Raymondville, TX CSA","39700",,,,,,,,,,,,,,,,,,,"31000US39700",,,"Raymondville, TX Micro Area",21588,"Raymondville, TX Micro Area",0
+"G39740","2015-2019","US",,,,,,,,,,,,,,,,"Reading, PA Metro Area","39740",,,,,,,,,,,,,,,,,,,"31000US39740",,,"Reading, PA Metro Area",418025,"Reading, PA Metro Area",0
+"G39780","2015-2019","US",,,,,,,,,,,,,,,,"Red Bluff, CA Micro Area","39780",,,,,,,,,,,,,,,,,,,"31000US39780",,,"Red Bluff, CA Micro Area",63912,"Red Bluff, CA Micro Area",0
+"G39820","2015-2019","US",,,,,,,,,,,,,,,,"Redding, CA Metro Area","39820",,,,,,,,,,,,,,,,,,,"31000US39820",,,"Redding, CA Metro Area",179212,"Redding, CA Metro Area",0
+"G39860","2015-2019","US",,,,,,,,,,,,,,,,"Red Wing, MN Micro Area; Minneapolis-St. Paul, MN-WI CSA","39860",,,,,,,,,,,,,,,,,,,"31000US39860",,,"Red Wing, MN Micro Area",46246,"Red Wing, MN Micro Area",0
+"G39900","2015-2019","US",,,,,,,,,,,,,,,,"Reno, NV Metro Area","39900",,,,,,,,,,,,,,,,,,,"31000US39900",,,"Reno, NV Metro Area",460924,"Reno, NV Metro Area",0
+"G39940","2015-2019","US",,,,,,,,,,,,,,,,"Rexburg, ID Micro Area; Idaho Falls-Rexburg-Blackfoot, ID CSA","39940",,,,,,,,,,,,,,,,,,,"31000US39940",,,"Rexburg, ID Micro Area",52120,"Rexburg, ID Micro Area",0
+"G39980","2015-2019","US",,,,,,,,,,,,,,,,"Richmond, IN Micro Area","39980",,,,,,,,,,,,,,,,,,,"31000US39980",,,"Richmond, IN Micro Area",66342,"Richmond, IN Micro Area",0
+"G40060","2015-2019","US",,,,,,,,,,,,,,,,"Richmond, VA Metro Area","40060",,,,,,,,,,,,,,,,,,,"31000US40060",,,"Richmond, VA Metro Area",1269530,"Richmond, VA Metro Area",0
+"G40080","2015-2019","US",,,,,,,,,,,,,,,,"Richmond-Berea, KY Micro Area","40080",,,,,,,,,,,,,,,,,,,"31000US40080",,,"Richmond-Berea, KY Micro Area",105026,"Richmond-Berea, KY Micro Area",0
+"G40100","2015-2019","US",,,,,,,,,,,,,,,,"Rio Grande City-Roma, TX Micro Area; McAllen-Edinburg, TX CSA","40100",,,,,,,,,,,,,,,,,,,"31000US40100",,,"Rio Grande City-Roma, TX Micro Area",64078,"Rio Grande City-Roma, TX Micro Area",0
+"G40140","2015-2019","US",,,,,,,,,,,,,,,,"Riverside-San Bernardino-Ontario, CA Metro Area","40140",,,,,,,,,,,,,,,,,,,"31000US40140",,,"Riverside-San Bernardino-Ontario, CA Metro Area",4560470,"Riverside-San Bernardino-Ontario, CA Metro Area",0
+"G40180","2015-2019","US",,,,,,,,,,,,,,,,"Riverton, WY Micro Area","40180",,,,,,,,,,,,,,,,,,,"31000US40180",,,"Riverton, WY Micro Area",39812,"Riverton, WY Micro Area",0
+"G40220","2015-2019","US",,,,,,,,,,,,,,,,"Roanoke, VA Metro Area","40220",,,,,,,,,,,,,,,,,,,"31000US40220",,,"Roanoke, VA Metro Area",313009,"Roanoke, VA Metro Area",0
+"G40260","2015-2019","US",,,,,,,,,,,,,,,,"Roanoke Rapids, NC Micro Area","40260",,,,,,,,,,,,,,,,,,,"31000US40260",,,"Roanoke Rapids, NC Micro Area",71136,"Roanoke Rapids, NC Micro Area",0
+"G40300","2015-2019","US",,,,,,,,,,,,,,,,"Rochelle, IL Micro Area; Rockford-Freeport-Rochelle, IL CSA","40300",,,,,,,,,,,,,,,,,,,"31000US40300",,,"Rochelle, IL Micro Area",51025,"Rochelle, IL Micro Area",0
+"G40340","2015-2019","US",,,,,,,,,,,,,,,,"Rochester, MN Metro Area","40340",,,,,,,,,,,,,,,,,,,"31000US40340",,,"Rochester, MN Metro Area",217964,"Rochester, MN Metro Area",0
+"G40380","2015-2019","US",,,,,,,,,,,,,,,,"Rochester, NY Metro Area","40380",,,,,,,,,,,,,,,,,,,"31000US40380",,,"Rochester, NY Metro Area",1072877,"Rochester, NY Metro Area",0
+"G40420","2015-2019","US",,,,,,,,,,,,,,,,"Rockford, IL Metro Area","40420",,,,,,,,,,,,,,,,,,,"31000US40420",,,"Rockford, IL Metro Area",338356,"Rockford, IL Metro Area",0
+"G40460","2015-2019","US",,,,,,,,,,,,,,,,"Rockingham, NC Micro Area","40460",,,,,,,,,,,,,,,,,,,"31000US40460",,,"Rockingham, NC Micro Area",44997,"Rockingham, NC Micro Area",0
+"G40530","2015-2019","US",,,,,,,,,,,,,,,,"Rockport, TX Micro Area; Corpus Christi-Kingsville-Alice, TX CSA","40530",,,,,,,,,,,,,,,,,,,"31000US40530",,,"Rockport, TX Micro Area",24462,"Rockport, TX Micro Area",0
+"G40540","2015-2019","US",,,,,,,,,,,,,,,,"Rock Springs, WY Micro Area","40540",,,,,,,,,,,,,,,,,,,"31000US40540",,,"Rock Springs, WY Micro Area",43521,"Rock Springs, WY Micro Area",0
+"G40580","2015-2019","US",,,,,,,,,,,,,,,,"Rocky Mount, NC Metro Area","40580",,,,,,,,,,,,,,,,,,,"31000US40580",,,"Rocky Mount, NC Metro Area",146678,"Rocky Mount, NC Metro Area",0
+"G40620","2015-2019","US",,,,,,,,,,,,,,,,"Rolla, MO Micro Area","40620",,,,,,,,,,,,,,,,,,,"31000US40620",,,"Rolla, MO Micro Area",44630,"Rolla, MO Micro Area",0
+"G40660","2015-2019","US",,,,,,,,,,,,,,,,"Rome, GA Metro Area","40660",,,,,,,,,,,,,,,,,,,"31000US40660",,,"Rome, GA Metro Area",97369,"Rome, GA Metro Area",0
+"G40700","2015-2019","US",,,,,,,,,,,,,,,,"Roseburg, OR Micro Area","40700",,,,,,,,,,,,,,,,,,,"31000US40700",,,"Roseburg, OR Micro Area",109114,"Roseburg, OR Micro Area",0
+"G40740","2015-2019","US",,,,,,,,,,,,,,,,"Roswell, NM Micro Area","40740",,,,,,,,,,,,,,,,,,,"31000US40740",,,"Roswell, NM Micro Area",65144,"Roswell, NM Micro Area",0
+"G40760","2015-2019","US",,,,,,,,,,,,,,,,"Ruidoso, NM Micro Area","40760",,,,,,,,,,,,,,,,,,,"31000US40760",,,"Ruidoso, NM Micro Area",19461,"Ruidoso, NM Micro Area",0
+"G40780","2015-2019","US",,,,,,,,,,,,,,,,"Russellville, AR Micro Area","40780",,,,,,,,,,,,,,,,,,,"31000US40780",,,"Russellville, AR Micro Area",85225,"Russellville, AR Micro Area",0
+"G40820","2015-2019","US",,,,,,,,,,,,,,,,"Ruston, LA Micro Area; Monroe-Ruston, LA CSA","40820",,,,,,,,,,,,,,,,,,,"31000US40820",,,"Ruston, LA Micro Area",47246,"Ruston, LA Micro Area",0
+"G40860","2015-2019","US",,,,,,,,,,,,,,,,"Rutland, VT Micro Area","40860",,,,,,,,,,,,,,,,,,,"31000US40860",,,"Rutland, VT Micro Area",58892,"Rutland, VT Micro Area",0
+"G40900","2015-2019","US",,,,,,,,,,,,,,,,"Sacramento-Roseville-Folsom, CA Metro Area","40900",,,,,,,,,,,,,,,,,,,"31000US40900",,,"Sacramento-Roseville-Folsom, CA Metro Area",2315980,"Sacramento-Roseville-Folsom, CA Metro Area",0
+"G40940","2015-2019","US",,,,,,,,,,,,,,,,"Safford, AZ Micro Area","40940",,,,,,,,,,,,,,,,,,,"31000US40940",,,"Safford, AZ Micro Area",37996,"Safford, AZ Micro Area",0
+"G40980","2015-2019","US",,,,,,,,,,,,,,,,"Saginaw, MI Metro Area","40980",,,,,,,,,,,,,,,,,,,"31000US40980",,,"Saginaw, MI Metro Area",191821,"Saginaw, MI Metro Area",0
+"G41060","2015-2019","US",,,,,,,,,,,,,,,,"St. Cloud, MN Metro Area","41060",,,,,,,,,,,,,,,,,,,"31000US41060",,,"St. Cloud, MN Metro Area",198581,"St. Cloud, MN Metro Area",0
+"G41100","2015-2019","US",,,,,,,,,,,,,,,,"St. George, UT Metro Area","41100",,,,,,,,,,,,,,,,,,,"31000US41100",,,"St. George, UT Metro Area",165811,"St. George, UT Metro Area",0
+"G41140","2015-2019","US",,,,,,,,,,,,,,,,"St. Joseph, MO-KS Metro Area","41140",,,,,,,,,,,,,,,,,,,"31000US41140",,,"St. Joseph, MO-KS Metro Area",126173,"St. Joseph, MO-KS Metro Area",0
+"G41180","2015-2019","US",,,,,,,,,,,,,,,,"St. Louis, MO-IL Metro Area","41180",,,,,,,,,,,,,,,,,,,"31000US41180",,,"St. Louis, MO-IL Metro Area",2805190,"St. Louis, MO-IL Metro Area",0
+"G41220","2015-2019","US",,,,,,,,,,,,,,,,"St. Marys, GA Micro Area; Jacksonville-St. Marys-Palatka, FL-GA CSA","41220",,,,,,,,,,,,,,,,,,,"31000US41220",,,"St. Marys, GA Micro Area",53231,"St. Marys, GA Micro Area",0
+"G41260","2015-2019","US",,,,,,,,,,,,,,,,"St. Marys, PA Micro Area","41260",,,,,,,,,,,,,,,,,,,"31000US41260",,,"St. Marys, PA Micro Area",30340,"St. Marys, PA Micro Area",0
+"G41400","2015-2019","US",,,,,,,,,,,,,,,,"Salem, OH Micro Area","41400",,,,,,,,,,,,,,,,,,,"31000US41400",,,"Salem, OH Micro Area",103190,"Salem, OH Micro Area",0
+"G41420","2015-2019","US",,,,,,,,,,,,,,,,"Salem, OR Metro Area","41420",,,,,,,,,,,,,,,,,,,"31000US41420",,,"Salem, OR Metro Area",422678,"Salem, OR Metro Area",0
+"G41460","2015-2019","US",,,,,,,,,,,,,,,,"Salina, KS Micro Area","41460",,,,,,,,,,,,,,,,,,,"31000US41460",,,"Salina, KS Micro Area",60523,"Salina, KS Micro Area",0
+"G41500","2015-2019","US",,,,,,,,,,,,,,,,"Salinas, CA Metro Area","41500",,,,,,,,,,,,,,,,,,,"31000US41500",,,"Salinas, CA Metro Area",433410,"Salinas, CA Metro Area",0
+"G41540","2015-2019","US",,,,,,,,,,,,,,,,"Salisbury, MD-DE Metro Area","41540",,,,,,,,,,,,,,,,,,,"31000US41540",,,"Salisbury, MD-DE Metro Area",404417,"Salisbury, MD-DE Metro Area",0
+"G41620","2015-2019","US",,,,,,,,,,,,,,,,"Salt Lake City, UT Metro Area","41620",,,,,,,,,,,,,,,,,,,"31000US41620",,,"Salt Lake City, UT Metro Area",1201043,"Salt Lake City, UT Metro Area",0
+"G41660","2015-2019","US",,,,,,,,,,,,,,,,"San Angelo, TX Metro Area","41660",,,,,,,,,,,,,,,,,,,"31000US41660",,,"San Angelo, TX Metro Area",120837,"San Angelo, TX Metro Area",177
+"G41700","2015-2019","US",,,,,,,,,,,,,,,,"San Antonio-New Braunfels, TX Metro Area","41700",,,,,,,,,,,,,,,,,,,"31000US41700",,,"San Antonio-New Braunfels, TX Metro Area",2468193,"San Antonio-New Braunfels, TX Metro Area",0
+"G41740","2015-2019","US",,,,,,,,,,,,,,,,"San Diego-Chula Vista-Carlsbad, CA Metro Area","41740",,,,,,,,,,,,,,,,,,,"31000US41740",,,"San Diego-Chula Vista-Carlsbad, CA Metro Area",3316073,"San Diego-Chula Vista-Carlsbad, CA Metro Area",0
+"G41760","2015-2019","US",,,,,,,,,,,,,,,,"Sandpoint, ID Micro Area","41760",,,,,,,,,,,,,,,,,,,"31000US41760",,,"Sandpoint, ID Micro Area",43611,"Sandpoint, ID Micro Area",0
+"G41780","2015-2019","US",,,,,,,,,,,,,,,,"Sandusky, OH Micro Area","41780",,,,,,,,,,,,,,,,,,,"31000US41780",,,"Sandusky, OH Micro Area",74780,"Sandusky, OH Micro Area",0
+"G41820","2015-2019","US",,,,,,,,,,,,,,,,"Sanford, NC Micro Area; Fayetteville-Sanford-Lumberton, NC CSA","41820",,,,,,,,,,,,,,,,,,,"31000US41820",,,"Sanford, NC Micro Area",60481,"Sanford, NC Micro Area",0
+"G41860","2015-2019","US",,,,,,,,,,,,,,,,"San Francisco-Oakland-Berkeley, CA Metro Area","41860",,,,,,,,,,,,,,,,,,,"31000US41860",,,"San Francisco-Oakland-Berkeley, CA Metro Area",4701332,"San Francisco-Oakland-Berkeley, CA Metro Area",0
+"G41900","2015-2019","PR",,,,,,,,,,,,,,,,"San Germán, PR Metro Area","41900",,,,,,,,,,,,,,,,,,,"31000US41900",,,"San Germán, PR Metro Area",125324,"San Germán, PR Metro Area",0
+"G41940","2015-2019","US",,,,,,,,,,,,,,,,"San Jose-Sunnyvale-Santa Clara, CA Metro Area","41940",,,,,,,,,,,,,,,,,,,"31000US41940",,,"San Jose-Sunnyvale-Santa Clara, CA Metro Area",1987846,"San Jose-Sunnyvale-Santa Clara, CA Metro Area",0
+"G41980","2015-2019","PR",,,,,,,,,,,,,,,,"San Juan-Carolina-Caguas, PR Metro Area","41980",,,,,,,,,,,,,,,,,,,"31000US41980",,,"San Juan-Carolina-Caguas, PR Metro Area",2100207,"San Juan-Carolina-Caguas, PR Metro Area",0
+"G42020","2015-2019","US",,,,,,,,,,,,,,,,"San Luis Obispo-Paso Robles, CA Metro Area","42020",,,,,,,,,,,,,,,,,,,"31000US42020",,,"San Luis Obispo-Paso Robles, CA Metro Area",282165,"San Luis Obispo-Paso Robles, CA Metro Area",0
+"G42100","2015-2019","US",,,,,,,,,,,,,,,,"Santa Cruz-Watsonville, CA Metro Area","42100",,,,,,,,,,,,,,,,,,,"31000US42100",,,"Santa Cruz-Watsonville, CA Metro Area",273962,"Santa Cruz-Watsonville, CA Metro Area",0
+"G42140","2015-2019","US",,,,,,,,,,,,,,,,"Santa Fe, NM Metro Area","42140",,,,,,,,,,,,,,,,,,,"31000US42140",,,"Santa Fe, NM Metro Area",149293,"Santa Fe, NM Metro Area",0
+"G42180","2015-2019","PR",,,,,,,,,,,,,,,,"Santa Isabel, PR Micro Area; Ponce-Yauco-Coamo, PR CSA","42180",,,,,,,,,,,,,,,,,,,"31000US42180",,,"Santa Isabel, PR Micro Area",21757,"Santa Isabel, PR Micro Area",0
+"G42200","2015-2019","US",,,,,,,,,,,,,,,,"Santa Maria-Santa Barbara, CA Metro Area","42200",,,,,,,,,,,,,,,,,,,"31000US42200",,,"Santa Maria-Santa Barbara, CA Metro Area",444829,"Santa Maria-Santa Barbara, CA Metro Area",0
+"G42220","2015-2019","US",,,,,,,,,,,,,,,,"Santa Rosa-Petaluma, CA Metro Area","42220",,,,,,,,,,,,,,,,,,,"31000US42220",,,"Santa Rosa-Petaluma, CA Metro Area",499772,"Santa Rosa-Petaluma, CA Metro Area",0
+"G42300","2015-2019","US",,,,,,,,,,,,,,,,"Sault Ste. Marie, MI Micro Area","42300",,,,,,,,,,,,,,,,,,,"31000US42300",,,"Sault Ste. Marie, MI Micro Area",37629,"Sault Ste. Marie, MI Micro Area",0
+"G42340","2015-2019","US",,,,,,,,,,,,,,,,"Savannah, GA Metro Area","42340",,,,,,,,,,,,,,,,,,,"31000US42340",,,"Savannah, GA Metro Area",386036,"Savannah, GA Metro Area",0
+"G42380","2015-2019","US",,,,,,,,,,,,,,,,"Sayre, PA Micro Area","42380",,,,,,,,,,,,,,,,,,,"31000US42380",,,"Sayre, PA Micro Area",60963,"Sayre, PA Micro Area",0
+"G42420","2015-2019","US",,,,,,,,,,,,,,,,"Scottsbluff, NE Micro Area","42420",,,,,,,,,,,,,,,,,,,"31000US42420",,,"Scottsbluff, NE Micro Area",38015,"Scottsbluff, NE Micro Area",0
+"G42460","2015-2019","US",,,,,,,,,,,,,,,,"Scottsboro, AL Micro Area; Scottsboro-Fort Payne, AL CSA","42460",,,,,,,,,,,,,,,,,,,"31000US42460",,,"Scottsboro, AL Micro Area",51852,"Scottsboro, AL Micro Area",0
+"G42500","2015-2019","US",,,,,,,,,,,,,,,,"Scottsburg, IN Micro Area; Louisville/Jefferson County--Elizabethtown--Bardstown, KY-IN CSA","42500",,,,,,,,,,,,,,,,,,,"31000US42500",,,"Scottsburg, IN Micro Area",23759,"Scottsburg, IN Micro Area",0
+"G42540","2015-2019","US",,,,,,,,,,,,,,,,"Scranton--Wilkes-Barre, PA Metro Area","42540",,,,,,,,,,,,,,,,,,,"31000US42540",,,"Scranton--Wilkes-Barre, PA Metro Area",555642,"Scranton--Wilkes-Barre, PA Metro Area",0
+"G42620","2015-2019","US",,,,,,,,,,,,,,,,"Searcy, AR Micro Area","42620",,,,,,,,,,,,,,,,,,,"31000US42620",,,"Searcy, AR Micro Area",78762,"Searcy, AR Micro Area",0
+"G42660","2015-2019","US",,,,,,,,,,,,,,,,"Seattle-Tacoma-Bellevue, WA Metro Area","42660",,,,,,,,,,,,,,,,,,,"31000US42660",,,"Seattle-Tacoma-Bellevue, WA Metro Area",3871323,"Seattle-Tacoma-Bellevue, WA Metro Area",0
+"G42680","2015-2019","US",,,,,,,,,,,,,,,,"Sebastian-Vero Beach, FL Metro Area","42680",,,,,,,,,,,,,,,,,,,"31000US42680",,,"Sebastian-Vero Beach, FL Metro Area",153989,"Sebastian-Vero Beach, FL Metro Area",0
+"G42700","2015-2019","US",,,,,,,,,,,,,,,,"Sebring-Avon Park, FL Metro Area","42700",,,,,,,,,,,,,,,,,,,"31000US42700",,,"Sebring-Avon Park, FL Metro Area",103437,"Sebring-Avon Park, FL Metro Area",0
+"G42740","2015-2019","US",,,,,,,,,,,,,,,,"Sedalia, MO Micro Area","42740",,,,,,,,,,,,,,,,,,,"31000US42740",,,"Sedalia, MO Micro Area",42355,"Sedalia, MO Micro Area",0
+"G42780","2015-2019","US",,,,,,,,,,,,,,,,"Selinsgrove, PA Micro Area; Bloomsburg-Berwick-Sunbury, PA CSA","42780",,,,,,,,,,,,,,,,,,,"31000US42780",,,"Selinsgrove, PA Micro Area",40483,"Selinsgrove, PA Micro Area",0
+"G42820","2015-2019","US",,,,,,,,,,,,,,,,"Selma, AL Micro Area; Montgomery-Selma-Alexander City, AL CSA","42820",,,,,,,,,,,,,,,,,,,"31000US42820",,,"Selma, AL Micro Area",39149,"Selma, AL Micro Area",0
+"G42860","2015-2019","US",,,,,,,,,,,,,,,,"Seneca, SC Micro Area","42860",,,,,,,,,,,,,,,,,,,"31000US42860",,,"Seneca, SC Micro Area",77528,"Seneca, SC Micro Area",0
+"G42900","2015-2019","US",,,,,,,,,,,,,,,,"Seneca Falls, NY Micro Area; Rochester-Batavia-Seneca Falls, NY CSA","42900",,,,,,,,,,,,,,,,,,,"31000US42900",,,"Seneca Falls, NY Micro Area",34390,"Seneca Falls, NY Micro Area",0
+"G42940","2015-2019","US",,,,,,,,,,,,,,,,"Sevierville, TN Micro Area","42940",,,,,,,,,,,,,,,,,,,"31000US42940",,,"Sevierville, TN Micro Area",97068,"Sevierville, TN Micro Area",0
+"G42980","2015-2019","US",,,,,,,,,,,,,,,,"Seymour, IN Micro Area; Indianapolis-Carmel-Muncie, IN CSA","42980",,,,,,,,,,,,,,,,,,,"31000US42980",,,"Seymour, IN Micro Area",44025,"Seymour, IN Micro Area",0
+"G43020","2015-2019","US",,,,,,,,,,,,,,,,"Shawano, WI Micro Area; Green Bay-Shawano, WI CSA","43020",,,,,,,,,,,,,,,,,,,"31000US43020",,,"Shawano, WI Micro Area",45462,"Shawano, WI Micro Area",0
+"G43060","2015-2019","US",,,,,,,,,,,,,,,,"Shawnee, OK Micro Area","43060",,,,,,,,,,,,,,,,,,,"31000US43060",,,"Shawnee, OK Micro Area",72154,"Shawnee, OK Micro Area",0
+"G43100","2015-2019","US",,,,,,,,,,,,,,,,"Sheboygan, WI Metro Area","43100",,,,,,,,,,,,,,,,,,,"31000US43100",,,"Sheboygan, WI Metro Area",115178,"Sheboygan, WI Metro Area",0
+"G43140","2015-2019","US",,,,,,,,,,,,,,,,"Shelby, NC Micro Area","43140",,,,,,,,,,,,,,,,,,,"31000US43140",,,"Shelby, NC Micro Area",97282,"Shelby, NC Micro Area",0
+"G43180","2015-2019","US",,,,,,,,,,,,,,,,"Shelbyville, TN Micro Area; Nashville-Davidson--Murfreesboro, TN CSA","43180",,,,,,,,,,,,,,,,,,,"31000US43180",,,"Shelbyville, TN Micro Area",48292,"Shelbyville, TN Micro Area",0
+"G43220","2015-2019","US",,,,,,,,,,,,,,,,"Shelton, WA Micro Area","43220",,,,,,,,,,,,,,,,,,,"31000US43220",,,"Shelton, WA Micro Area",63804,"Shelton, WA Micro Area",0
+"G43260","2015-2019","US",,,,,,,,,,,,,,,,"Sheridan, WY Micro Area","43260",,,,,,,,,,,,,,,,,,,"31000US43260",,,"Sheridan, WY Micro Area",30140,"Sheridan, WY Micro Area",0
+"G43300","2015-2019","US",,,,,,,,,,,,,,,,"Sherman-Denison, TX Metro Area","43300",,,,,,,,,,,,,,,,,,,"31000US43300",,,"Sherman-Denison, TX Metro Area",131014,"Sherman-Denison, TX Metro Area",0
+"G43320","2015-2019","US",,,,,,,,,,,,,,,,"Show Low, AZ Micro Area","43320",,,,,,,,,,,,,,,,,,,"31000US43320",,,"Show Low, AZ Micro Area",109270,"Show Low, AZ Micro Area",0
+"G43340","2015-2019","US",,,,,,,,,,,,,,,,"Shreveport-Bossier City, LA Metro Area","43340",,,,,,,,,,,,,,,,,,,"31000US43340",,,"Shreveport-Bossier City, LA Metro Area",399619,"Shreveport-Bossier City, LA Metro Area",0
+"G43380","2015-2019","US",,,,,,,,,,,,,,,,"Sidney, OH Micro Area; Dayton-Springfield-Kettering, OH CSA","43380",,,,,,,,,,,,,,,,,,,"31000US43380",,,"Sidney, OH Micro Area",48749,"Sidney, OH Micro Area",0
+"G43420","2015-2019","US",,,,,,,,,,,,,,,,"Sierra Vista-Douglas, AZ Metro Area","43420",,,,,,,,,,,,,,,,,,,"31000US43420",,,"Sierra Vista-Douglas, AZ Metro Area",125867,"Sierra Vista-Douglas, AZ Metro Area",0
+"G43460","2015-2019","US",,,,,,,,,,,,,,,,"Sikeston, MO Micro Area; Cape Girardeau-Sikeston, MO-IL CSA","43460",,,,,,,,,,,,,,,,,,,"31000US43460",,,"Sikeston, MO Micro Area",38633,"Sikeston, MO Micro Area",0
+"G43500","2015-2019","US",,,,,,,,,,,,,,,,"Silver City, NM Micro Area","43500",,,,,,,,,,,,,,,,,,,"31000US43500",,,"Silver City, NM Micro Area",27669,"Silver City, NM Micro Area",0
+"G43580","2015-2019","US",,,,,,,,,,,,,,,,"Sioux City, IA-NE-SD Metro Area","43580",,,,,,,,,,,,,,,,,,,"31000US43580",,,"Sioux City, IA-NE-SD Metro Area",143846,"Sioux City, IA-NE-SD Metro Area",0
+"G43620","2015-2019","US",,,,,,,,,,,,,,,,"Sioux Falls, SD Metro Area","43620",,,,,,,,,,,,,,,,,,,"31000US43620",,,"Sioux Falls, SD Metro Area",259348,"Sioux Falls, SD Metro Area",0
+"G43660","2015-2019","US",,,,,,,,,,,,,,,,"Snyder, TX Micro Area","43660",,,,,,,,,,,,,,,,,,,"31000US43660",,,"Snyder, TX Micro Area",17096,"Snyder, TX Micro Area",0
+"G43700","2015-2019","US",,,,,,,,,,,,,,,,"Somerset, KY Micro Area","43700",,,,,,,,,,,,,,,,,,,"31000US43700",,,"Somerset, KY Micro Area",64350,"Somerset, KY Micro Area",0
+"G43740","2015-2019","US",,,,,,,,,,,,,,,,"Somerset, PA Micro Area","43740",,,,,,,,,,,,,,,,,,,"31000US43740",,,"Somerset, PA Micro Area",74361,"Somerset, PA Micro Area",0
+"G43760","2015-2019","US",,,,,,,,,,,,,,,,"Sonora, CA Micro Area","43760",,,,,,,,,,,,,,,,,,,"31000US43760",,,"Sonora, CA Micro Area",54045,"Sonora, CA Micro Area",0
+"G43780","2015-2019","US",,,,,,,,,,,,,,,,"South Bend-Mishawaka, IN-MI Metro Area","43780",,,,,,,,,,,,,,,,,,,"31000US43780",,,"South Bend-Mishawaka, IN-MI Metro Area",321739,"South Bend-Mishawaka, IN-MI Metro Area",0
+"G43900","2015-2019","US",,,,,,,,,,,,,,,,"Spartanburg, SC Metro Area","43900",,,,,,,,,,,,,,,,,,,"31000US43900",,,"Spartanburg, SC Metro Area",307617,"Spartanburg, SC Metro Area",0
+"G43940","2015-2019","US",,,,,,,,,,,,,,,,"Spearfish, SD Micro Area; Rapid City-Spearfish, SD CSA","43940",,,,,,,,,,,,,,,,,,,"31000US43940",,,"Spearfish, SD Micro Area",25478,"Spearfish, SD Micro Area",0
+"G43980","2015-2019","US",,,,,,,,,,,,,,,,"Spencer, IA Micro Area; Spencer-Spirit Lake, IA CSA","43980",,,,,,,,,,,,,,,,,,,"31000US43980",,,"Spencer, IA Micro Area",16211,"Spencer, IA Micro Area",0
+"G44020","2015-2019","US",,,,,,,,,,,,,,,,"Spirit Lake, IA Micro Area; Spencer-Spirit Lake, IA CSA","44020",,,,,,,,,,,,,,,,,,,"31000US44020",,,"Spirit Lake, IA Micro Area",17127,"Spirit Lake, IA Micro Area",0
+"G44060","2015-2019","US",,,,,,,,,,,,,,,,"Spokane-Spokane Valley, WA Metro Area","44060",,,,,,,,,,,,,,,,,,,"31000US44060",,,"Spokane-Spokane Valley, WA Metro Area",550160,"Spokane-Spokane Valley, WA Metro Area",0
+"G44100","2015-2019","US",,,,,,,,,,,,,,,,"Springfield, IL Metro Area","44100",,,,,,,,,,,,,,,,,,,"31000US44100",,,"Springfield, IL Metro Area",209167,"Springfield, IL Metro Area",0
+"G44140","2015-2019","US",,,,,,,,,,,,,,,,"Springfield, MA Metro Area","44140",,,,,,,,,,,,,,,,,,,"31000US44140",,,"Springfield, MA Metro Area",699480,"Springfield, MA Metro Area",0
+"G44180","2015-2019","US",,,,,,,,,,,,,,,,"Springfield, MO Metro Area","44180",,,,,,,,,,,,,,,,,,,"31000US44180",,,"Springfield, MO Metro Area",462434,"Springfield, MO Metro Area",0
+"G44220","2015-2019","US",,,,,,,,,,,,,,,,"Springfield, OH Metro Area","44220",,,,,,,,,,,,,,,,,,,"31000US44220",,,"Springfield, OH Metro Area",134726,"Springfield, OH Metro Area",0
+"G44260","2015-2019","US",,,,,,,,,,,,,,,,"Starkville, MS Micro Area","44260",,,,,,,,,,,,,,,,,,,"31000US44260",,,"Starkville, MS Micro Area",59280,"Starkville, MS Micro Area",0
+"G44300","2015-2019","US",,,,,,,,,,,,,,,,"State College, PA Metro Area","44300",,,,,,,,,,,,,,,,,,,"31000US44300",,,"State College, PA Metro Area",161960,"State College, PA Metro Area",0
+"G44340","2015-2019","US",,,,,,,,,,,,,,,,"Statesboro, GA Micro Area","44340",,,,,,,,,,,,,,,,,,,"31000US44340",,,"Statesboro, GA Micro Area",76120,"Statesboro, GA Micro Area",0
+"G44420","2015-2019","US",,,,,,,,,,,,,,,,"Staunton, VA Metro Area","44420",,,,,,,,,,,,,,,,,,,"31000US44420",,,"Staunton, VA Metro Area",121651,"Staunton, VA Metro Area",0
+"G44460","2015-2019","US",,,,,,,,,,,,,,,,"Steamboat Springs, CO Micro Area; Steamboat Springs-Craig, CO CSA","44460",,,,,,,,,,,,,,,,,,,"31000US44460",,,"Steamboat Springs, CO Micro Area",25072,"Steamboat Springs, CO Micro Area",0
+"G44500","2015-2019","US",,,,,,,,,,,,,,,,"Stephenville, TX Micro Area","44500",,,,,,,,,,,,,,,,,,,"31000US44500",,,"Stephenville, TX Micro Area",41841,"Stephenville, TX Micro Area",0
+"G44540","2015-2019","US",,,,,,,,,,,,,,,,"Sterling, CO Micro Area","44540",,,,,,,,,,,,,,,,,,,"31000US44540",,,"Sterling, CO Micro Area",22380,"Sterling, CO Micro Area",0
+"G44580","2015-2019","US",,,,,,,,,,,,,,,,"Sterling, IL Micro Area; Dixon-Sterling, IL CSA","44580",,,,,,,,,,,,,,,,,,,"31000US44580",,,"Sterling, IL Micro Area",56016,"Sterling, IL Micro Area",0
+"G44620","2015-2019","US",,,,,,,,,,,,,,,,"Stevens Point, WI Micro Area","44620",,,,,,,,,,,,,,,,,,,"31000US44620",,,"Stevens Point, WI Micro Area",70632,"Stevens Point, WI Micro Area",0
+"G44660","2015-2019","US",,,,,,,,,,,,,,,,"Stillwater, OK Micro Area","44660",,,,,,,,,,,,,,,,,,,"31000US44660",,,"Stillwater, OK Micro Area",81815,"Stillwater, OK Micro Area",0
+"G44700","2015-2019","US",,,,,,,,,,,,,,,,"Stockton, CA Metro Area","44700",,,,,,,,,,,,,,,,,,,"31000US44700",,,"Stockton, CA Metro Area",742603,"Stockton, CA Metro Area",0
+"G44740","2015-2019","US",,,,,,,,,,,,,,,,"Storm Lake, IA Micro Area","44740",,,,,,,,,,,,,,,,,,,"31000US44740",,,"Storm Lake, IA Micro Area",20058,"Storm Lake, IA Micro Area",0
+"G44780","2015-2019","US",,,,,,,,,,,,,,,,"Sturgis, MI Micro Area; Kalamazoo-Battle Creek-Portage, MI CSA","44780",,,,,,,,,,,,,,,,,,,"31000US44780",,,"Sturgis, MI Micro Area",60836,"Sturgis, MI Micro Area",0
+"G44860","2015-2019","US",,,,,,,,,,,,,,,,"Sulphur Springs, TX Micro Area","44860",,,,,,,,,,,,,,,,,,,"31000US44860",,,"Sulphur Springs, TX Micro Area",36486,"Sulphur Springs, TX Micro Area",0
+"G44900","2015-2019","US",,,,,,,,,,,,,,,,"Summerville, GA Micro Area; Chattanooga-Cleveland-Dalton, TN-GA CSA","44900",,,,,,,,,,,,,,,,,,,"31000US44900",,,"Summerville, GA Micro Area",24812,"Summerville, GA Micro Area",0
+"G44940","2015-2019","US",,,,,,,,,,,,,,,,"Sumter, SC Metro Area","44940",,,,,,,,,,,,,,,,,,,"31000US44940",,,"Sumter, SC Metro Area",140714,"Sumter, SC Metro Area",0
+"G44980","2015-2019","US",,,,,,,,,,,,,,,,"Sunbury, PA Micro Area","44980",,,,,,,,,,,,,,,,,,,"31000US44980",,,"Sunbury, PA Micro Area",91761,"Sunbury, PA Micro Area",0
+"G45000","2015-2019","US",,,,,,,,,,,,,,,,"Susanville, CA Micro Area","45000",,,,,,,,,,,,,,,,,,,"31000US45000",,,"Susanville, CA Micro Area",30818,"Susanville, CA Micro Area",0
+"G45020","2015-2019","US",,,,,,,,,,,,,,,,"Sweetwater, TX Micro Area","45020",,,,,,,,,,,,,,,,,,,"31000US45020",,,"Sweetwater, TX Micro Area",14904,"Sweetwater, TX Micro Area",0
+"G45060","2015-2019","US",,,,,,,,,,,,,,,,"Syracuse, NY Metro Area","45060",,,,,,,,,,,,,,,,,,,"31000US45060",,,"Syracuse, NY Metro Area",652416,"Syracuse, NY Metro Area",0
+"G45140","2015-2019","US",,,,,,,,,,,,,,,,"Tahlequah, OK Micro Area","45140",,,,,,,,,,,,,,,,,,,"31000US45140",,,"Tahlequah, OK Micro Area",48664,"Tahlequah, OK Micro Area",0
+"G45180","2015-2019","US",,,,,,,,,,,,,,,,"Talladega-Sylacauga, AL Micro Area","45180",,,,,,,,,,,,,,,,,,,"31000US45180",,,"Talladega-Sylacauga, AL Micro Area",80387,"Talladega-Sylacauga, AL Micro Area",0
+"G45220","2015-2019","US",,,,,,,,,,,,,,,,"Tallahassee, FL Metro Area","45220",,,,,,,,,,,,,,,,,,,"31000US45220",,,"Tallahassee, FL Metro Area",382197,"Tallahassee, FL Metro Area",0
+"G45300","2015-2019","US",,,,,,,,,,,,,,,,"Tampa-St. Petersburg-Clearwater, FL Metro Area","45300",,,,,,,,,,,,,,,,,,,"31000US45300",,,"Tampa-St. Petersburg-Clearwater, FL Metro Area",3097859,"Tampa-St. Petersburg-Clearwater, FL Metro Area",0
+"G45340","2015-2019","US",,,,,,,,,,,,,,,,"Taos, NM Micro Area","45340",,,,,,,,,,,,,,,,,,,"31000US45340",,,"Taos, NM Micro Area",32786,"Taos, NM Micro Area",0
+"G45380","2015-2019","US",,,,,,,,,,,,,,,,"Taylorville, IL Micro Area; Springfield-Jacksonville-Lincoln, IL CSA","45380",,,,,,,,,,,,,,,,,,,"31000US45380",,,"Taylorville, IL Micro Area",32931,"Taylorville, IL Micro Area",0
+"G45460","2015-2019","US",,,,,,,,,,,,,,,,"Terre Haute, IN Metro Area","45460",,,,,,,,,,,,,,,,,,,"31000US45460",,,"Terre Haute, IN Metro Area",186908,"Terre Haute, IN Metro Area",0
+"G45500","2015-2019","US",,,,,,,,,,,,,,,,"Texarkana, TX-AR Metro Area","45500",,,,,,,,,,,,,,,,,,,"31000US45500",,,"Texarkana, TX-AR Metro Area",149292,"Texarkana, TX-AR Metro Area",0
+"G45520","2015-2019","US",,,,,,,,,,,,,,,,"The Dalles, OR Micro Area","45520",,,,,,,,,,,,,,,,,,,"31000US45520",,,"The Dalles, OR Micro Area",26130,"The Dalles, OR Micro Area",0
+"G45540","2015-2019","US",,,,,,,,,,,,,,,,"The Villages, FL Metro Area","45540",,,,,,,,,,,,,,,,,,,"31000US45540",,,"The Villages, FL Metro Area",125044,"The Villages, FL Metro Area",0
+"G45580","2015-2019","US",,,,,,,,,,,,,,,,"Thomaston, GA Micro Area; Atlanta--Athens-Clarke County--Sandy Springs, GA-AL CSA","45580",,,,,,,,,,,,,,,,,,,"31000US45580",,,"Thomaston, GA Micro Area",26236,"Thomaston, GA Micro Area",0
+"G45620","2015-2019","US",,,,,,,,,,,,,,,,"Thomasville, GA Micro Area","45620",,,,,,,,,,,,,,,,,,,"31000US45620",,,"Thomasville, GA Micro Area",44630,"Thomasville, GA Micro Area",0
+"G45660","2015-2019","US",,,,,,,,,,,,,,,,"Tiffin, OH Micro Area; Toledo-Findlay-Tiffin, OH CSA","45660",,,,,,,,,,,,,,,,,,,"31000US45660",,,"Tiffin, OH Micro Area",55351,"Tiffin, OH Micro Area",0
+"G45700","2015-2019","US",,,,,,,,,,,,,,,,"Tifton, GA Micro Area","45700",,,,,,,,,,,,,,,,,,,"31000US45700",,,"Tifton, GA Micro Area",40541,"Tifton, GA Micro Area",0
+"G45740","2015-2019","US",,,,,,,,,,,,,,,,"Toccoa, GA Micro Area; Atlanta--Athens-Clarke County--Sandy Springs, GA-AL CSA","45740",,,,,,,,,,,,,,,,,,,"31000US45740",,,"Toccoa, GA Micro Area",25750,"Toccoa, GA Micro Area",0
+"G45780","2015-2019","US",,,,,,,,,,,,,,,,"Toledo, OH Metro Area","45780",,,,,,,,,,,,,,,,,,,"31000US45780",,,"Toledo, OH Metro Area",644137,"Toledo, OH Metro Area",0
+"G45820","2015-2019","US",,,,,,,,,,,,,,,,"Topeka, KS Metro Area","45820",,,,,,,,,,,,,,,,,,,"31000US45820",,,"Topeka, KS Metro Area",232778,"Topeka, KS Metro Area",0
+"G45860","2015-2019","US",,,,,,,,,,,,,,,,"Torrington, CT Micro Area","45860",,,,,,,,,,,,,,,,,,,"31000US45860",,,"Torrington, CT Micro Area",182002,"Torrington, CT Micro Area",0
+"G45900","2015-2019","US",,,,,,,,,,,,,,,,"Traverse City, MI Micro Area","45900",,,,,,,,,,,,,,,,,,,"31000US45900",,,"Traverse City, MI Micro Area",149033,"Traverse City, MI Micro Area",0
+"G45940","2015-2019","US",,,,,,,,,,,,,,,,"Trenton-Princeton, NJ Metro Area","45940",,,,,,,,,,,,,,,,,,,"31000US45940",,,"Trenton-Princeton, NJ Metro Area",367922,"Trenton-Princeton, NJ Metro Area",0
+"G45980","2015-2019","US",,,,,,,,,,,,,,,,"Troy, AL Micro Area","45980",,,,,,,,,,,,,,,,,,,"31000US45980",,,"Troy, AL Micro Area",33333,"Troy, AL Micro Area",0
+"G46020","2015-2019","US",,,,,,,,,,,,,,,,"Truckee-Grass Valley, CA Micro Area","46020",,,,,,,,,,,,,,,,,,,"31000US46020",,,"Truckee-Grass Valley, CA Micro Area",99244,"Truckee-Grass Valley, CA Micro Area",0
+"G46060","2015-2019","US",,,,,,,,,,,,,,,,"Tucson, AZ Metro Area","46060",,,,,,,,,,,,,,,,,,,"31000US46060",,,"Tucson, AZ Metro Area",1027207,"Tucson, AZ Metro Area",0
+"G46100","2015-2019","US",,,,,,,,,,,,,,,,"Tullahoma-Manchester, TN Micro Area","46100",,,,,,,,,,,,,,,,,,,"31000US46100",,,"Tullahoma-Manchester, TN Micro Area",103312,"Tullahoma-Manchester, TN Micro Area",0
+"G46140","2015-2019","US",,,,,,,,,,,,,,,,"Tulsa, OK Metro Area","46140",,,,,,,,,,,,,,,,,,,"31000US46140",,,"Tulsa, OK Metro Area",990544,"Tulsa, OK Metro Area",0
+"G46180","2015-2019","US",,,,,,,,,,,,,,,,"Tupelo, MS Micro Area","46180",,,,,,,,,,,,,,,,,,,"31000US46180",,,"Tupelo, MS Micro Area",165407,"Tupelo, MS Micro Area",0
+"G46220","2015-2019","US",,,,,,,,,,,,,,,,"Tuscaloosa, AL Metro Area","46220",,,,,,,,,,,,,,,,,,,"31000US46220",,,"Tuscaloosa, AL Metro Area",250681,"Tuscaloosa, AL Metro Area",0
+"G46300","2015-2019","US",,,,,,,,,,,,,,,,"Twin Falls, ID Metro Area","46300",,,,,,,,,,,,,,,,,,,"31000US46300",,,"Twin Falls, ID Metro Area",108599,"Twin Falls, ID Metro Area",0
+"G46340","2015-2019","US",,,,,,,,,,,,,,,,"Tyler, TX Metro Area","46340",,,,,,,,,,,,,,,,,,,"31000US46340",,,"Tyler, TX Metro Area",227449,"Tyler, TX Metro Area",0
+"G46380","2015-2019","US",,,,,,,,,,,,,,,,"Ukiah, CA Micro Area","46380",,,,,,,,,,,,,,,,,,,"31000US46380",,,"Ukiah, CA Micro Area",87224,"Ukiah, CA Micro Area",0
+"G46420","2015-2019","US",,,,,,,,,,,,,,,,"Union, SC Micro Area; Greenville-Spartanburg-Anderson, SC CSA","46420",,,,,,,,,,,,,,,,,,,"31000US46420",,,"Union, SC Micro Area",27490,"Union, SC Micro Area",0
+"G46460","2015-2019","US",,,,,,,,,,,,,,,,"Union City, TN Micro Area; Martin-Union City, TN CSA","46460",,,,,,,,,,,,,,,,,,,"31000US46460",,,"Union City, TN Micro Area",30365,"Union City, TN Micro Area",0
+"G46500","2015-2019","US",,,,,,,,,,,,,,,,"Urbana, OH Micro Area; Dayton-Springfield-Kettering, OH CSA","46500",,,,,,,,,,,,,,,,,,,"31000US46500",,,"Urbana, OH Micro Area",38845,"Urbana, OH Micro Area",0
+"G46520","2015-2019","US",,,,,,,,,,,,,,,,"Urban Honolulu, HI Metro Area","46520",,,,,,,,,,,,,,,,,,,"31000US46520",,,"Urban Honolulu, HI Metro Area",984821,"Urban Honolulu, HI Metro Area",0
+"G46540","2015-2019","US",,,,,,,,,,,,,,,,"Utica-Rome, NY Metro Area","46540",,,,,,,,,,,,,,,,,,,"31000US46540",,,"Utica-Rome, NY Metro Area",292016,"Utica-Rome, NY Metro Area",0
+"G46620","2015-2019","US",,,,,,,,,,,,,,,,"Uvalde, TX Micro Area","46620",,,,,,,,,,,,,,,,,,,"31000US46620",,,"Uvalde, TX Micro Area",26920,"Uvalde, TX Micro Area",0
+"G46660","2015-2019","US",,,,,,,,,,,,,,,,"Valdosta, GA Metro Area","46660",,,,,,,,,,,,,,,,,,,"31000US46660",,,"Valdosta, GA Metro Area",145315,"Valdosta, GA Metro Area",0
+"G46700","2015-2019","US",,,,,,,,,,,,,,,,"Vallejo, CA Metro Area","46700",,,,,,,,,,,,,,,,,,,"31000US46700",,,"Vallejo, CA Metro Area",441829,"Vallejo, CA Metro Area",0
+"G46780","2015-2019","US",,,,,,,,,,,,,,,,"Van Wert, OH Micro Area; Lima-Van Wert-Celina, OH CSA","46780",,,,,,,,,,,,,,,,,,,"31000US46780",,,"Van Wert, OH Micro Area",28261,"Van Wert, OH Micro Area",0
+"G46820","2015-2019","US",,,,,,,,,,,,,,,,"Vermillion, SD Micro Area","46820",,,,,,,,,,,,,,,,,,,"31000US46820",,,"Vermillion, SD Micro Area",13957,"Vermillion, SD Micro Area",0
+"G46860","2015-2019","US",,,,,,,,,,,,,,,,"Vernal, UT Micro Area","46860",,,,,,,,,,,,,,,,,,,"31000US46860",,,"Vernal, UT Micro Area",36084,"Vernal, UT Micro Area",0
+"G46900","2015-2019","US",,,,,,,,,,,,,,,,"Vernon, TX Micro Area","46900",,,,,,,,,,,,,,,,,,,"31000US46900",,,"Vernon, TX Micro Area",12833,"Vernon, TX Micro Area",0
+"G46980","2015-2019","US",,,,,,,,,,,,,,,,"Vicksburg, MS Micro Area; Jackson-Vicksburg-Brookhaven, MS CSA","46980",,,,,,,,,,,,,,,,,,,"31000US46980",,,"Vicksburg, MS Micro Area",46519,"Vicksburg, MS Micro Area",0
+"G47020","2015-2019","US",,,,,,,,,,,,,,,,"Victoria, TX Metro Area","47020",,,,,,,,,,,,,,,,,,,"31000US47020",,,"Victoria, TX Metro Area",99674,"Victoria, TX Metro Area",0
+"G47080","2015-2019","US",,,,,,,,,,,,,,,,"Vidalia, GA Micro Area","47080",,,,,,,,,,,,,,,,,,,"31000US47080",,,"Vidalia, GA Micro Area",36030,"Vidalia, GA Micro Area",0
+"G47180","2015-2019","US",,,,,,,,,,,,,,,,"Vincennes, IN Micro Area","47180",,,,,,,,,,,,,,,,,,,"31000US47180",,,"Vincennes, IN Micro Area",37065,"Vincennes, IN Micro Area",0
+"G47220","2015-2019","US",,,,,,,,,,,,,,,,"Vineland-Bridgeton, NJ Metro Area","47220",,,,,,,,,,,,,,,,,,,"31000US47220",,,"Vineland-Bridgeton, NJ Metro Area",151906,"Vineland-Bridgeton, NJ Metro Area",0
+"G47240","2015-2019","US",,,,,,,,,,,,,,,,"Vineyard Haven, MA Micro Area","47240",,,,,,,,,,,,,,,,,,,"31000US47240",,,"Vineyard Haven, MA Micro Area",17312,"Vineyard Haven, MA Micro Area",0
+"G47260","2015-2019","US",,,,,,,,,,,,,,,,"Virginia Beach-Norfolk-Newport News, VA-NC Metro Area","47260",,,,,,,,,,,,,,,,,,,"31000US47260",,,"Virginia Beach-Norfolk-Newport News, VA-NC Metro Area",1761729,"Virginia Beach-Norfolk-Newport News, VA-NC Metro Area",0
+"G47300","2015-2019","US",,,,,,,,,,,,,,,,"Visalia, CA Metro Area","47300",,,,,,,,,,,,,,,,,,,"31000US47300",,,"Visalia, CA Metro Area",461898,"Visalia, CA Metro Area",0
+"G47340","2015-2019","US",,,,,,,,,,,,,,,,"Wabash, IN Micro Area","47340",,,,,,,,,,,,,,,,,,,"31000US47340",,,"Wabash, IN Micro Area",31389,"Wabash, IN Micro Area",0
+"G47380","2015-2019","US",,,,,,,,,,,,,,,,"Waco, TX Metro Area","47380",,,,,,,,,,,,,,,,,,,"31000US47380",,,"Waco, TX Metro Area",268361,"Waco, TX Metro Area",0
+"G47420","2015-2019","US",,,,,,,,,,,,,,,,"Wahpeton, ND-MN Micro Area; Fargo-Wahpeton, ND-MN CSA","47420",,,,,,,,,,,,,,,,,,,"31000US47420",,,"Wahpeton, ND-MN Micro Area",22545,"Wahpeton, ND-MN Micro Area",0
+"G47460","2015-2019","US",,,,,,,,,,,,,,,,"Walla Walla, WA Metro Area","47460",,,,,,,,,,,,,,,,,,,"31000US47460",,,"Walla Walla, WA Metro Area",60365,"Walla Walla, WA Metro Area",0
+"G47540","2015-2019","US",,,,,,,,,,,,,,,,"Wapakoneta, OH Micro Area; Lima-Van Wert-Celina, OH CSA","47540",,,,,,,,,,,,,,,,,,,"31000US47540",,,"Wapakoneta, OH Micro Area",45729,"Wapakoneta, OH Micro Area",0
+"G47580","2015-2019","US",,,,,,,,,,,,,,,,"Warner Robins, GA Metro Area","47580",,,,,,,,,,,,,,,,,,,"31000US47580",,,"Warner Robins, GA Metro Area",180652,"Warner Robins, GA Metro Area",0
+"G47620","2015-2019","US",,,,,,,,,,,,,,,,"Warren, PA Micro Area","47620",,,,,,,,,,,,,,,,,,,"31000US47620",,,"Warren, PA Micro Area",39756,"Warren, PA Micro Area",0
+"G47660","2015-2019","US",,,,,,,,,,,,,,,,"Warrensburg, MO Micro Area; Kansas City-Overland Park-Kansas City, MO-KS CSA","47660",,,,,,,,,,,,,,,,,,,"31000US47660",,,"Warrensburg, MO Micro Area",53682,"Warrensburg, MO Micro Area",0
+"G47700","2015-2019","US",,,,,,,,,,,,,,,,"Warsaw, IN Micro Area","47700",,,,,,,,,,,,,,,,,,,"31000US47700",,,"Warsaw, IN Micro Area",79035,"Warsaw, IN Micro Area",0
+"G47780","2015-2019","US",,,,,,,,,,,,,,,,"Washington, IN Micro Area","47780",,,,,,,,,,,,,,,,,,,"31000US47780",,,"Washington, IN Micro Area",33120,"Washington, IN Micro Area",0
+"G47820","2015-2019","US",,,,,,,,,,,,,,,,"Washington, NC Micro Area; Greenville-Kinston-Washington, NC CSA","47820",,,,,,,,,,,,,,,,,,,"31000US47820",,,"Washington, NC Micro Area",47168,"Washington, NC Micro Area",0
+"G47900","2015-2019","US",,,,,,,,,,,,,,,,"Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area","47900",,,,,,,,,,,,,,,,,,,"31000US47900",,,"Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area",6196585,"Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area",0
+"G47920","2015-2019","US",,,,,,,,,,,,,,,,"Washington Court House, OH Micro Area; Columbus-Marion-Zanesville, OH CSA","47920",,,,,,,,,,,,,,,,,,,"31000US47920",,,"Washington Court House, OH Micro Area",28620,"Washington Court House, OH Micro Area",0
+"G47940","2015-2019","US",,,,,,,,,,,,,,,,"Waterloo-Cedar Falls, IA Metro Area","47940",,,,,,,,,,,,,,,,,,,"31000US47940",,,"Waterloo-Cedar Falls, IA Metro Area",169556,"Waterloo-Cedar Falls, IA Metro Area",0
+"G47980","2015-2019","US",,,,,,,,,,,,,,,,"Watertown, SD Micro Area","47980",,,,,,,,,,,,,,,,,,,"31000US47980",,,"Watertown, SD Micro Area",34051,"Watertown, SD Micro Area",0
+"G48020","2015-2019","US",,,,,,,,,,,,,,,,"Watertown-Fort Atkinson, WI Micro Area","48020",,,,,,,,,,,,,,,,,,,"31000US48020",,,"Watertown-Fort Atkinson, WI Micro Area",84701,"Watertown-Fort Atkinson, WI Micro Area",0
+"G48060","2015-2019","US",,,,,,,,,,,,,,,,"Watertown-Fort Drum, NY Metro Area","48060",,,,,,,,,,,,,,,,,,,"31000US48060",,,"Watertown-Fort Drum, NY Metro Area",112842,"Watertown-Fort Drum, NY Metro Area",0
+"G48100","2015-2019","US",,,,,,,,,,,,,,,,"Wauchula, FL Micro Area; Orlando-Lakeland-Deltona, FL CSA","48100",,,,,,,,,,,,,,,,,,,"31000US48100",,,"Wauchula, FL Micro Area",27131,"Wauchula, FL Micro Area",0
+"G48140","2015-2019","US",,,,,,,,,,,,,,,,"Wausau-Weston, WI Metro Area","48140",,,,,,,,,,,,,,,,,,,"31000US48140",,,"Wausau-Weston, WI Metro Area",163140,"Wausau-Weston, WI Metro Area",0
+"G48180","2015-2019","US",,,,,,,,,,,,,,,,"Waycross, GA Micro Area","48180",,,,,,,,,,,,,,,,,,,"31000US48180",,,"Waycross, GA Micro Area",54843,"Waycross, GA Micro Area",0
+"G48220","2015-2019","US",,,,,,,,,,,,,,,,"Weatherford, OK Micro Area","48220",,,,,,,,,,,,,,,,,,,"31000US48220",,,"Weatherford, OK Micro Area",29152,"Weatherford, OK Micro Area",0
+"G48260","2015-2019","US",,,,,,,,,,,,,,,,"Weirton-Steubenville, WV-OH Metro Area","48260",,,,,,,,,,,,,,,,,,,"31000US48260",,,"Weirton-Steubenville, WV-OH Metro Area",118213,"Weirton-Steubenville, WV-OH Metro Area",0
+"G48300","2015-2019","US",,,,,,,,,,,,,,,,"Wenatchee, WA Metro Area","48300",,,,,,,,,,,,,,,,,,,"31000US48300",,,"Wenatchee, WA Metro Area",118252,"Wenatchee, WA Metro Area",0
+"G48460","2015-2019","US",,,,,,,,,,,,,,,,"West Plains, MO Micro Area","48460",,,,,,,,,,,,,,,,,,,"31000US48460",,,"West Plains, MO Micro Area",40104,"West Plains, MO Micro Area",0
+"G48500","2015-2019","US",,,,,,,,,,,,,,,,"West Point, MS Micro Area; Columbus-West Point, MS CSA","48500",,,,,,,,,,,,,,,,,,,"31000US48500",,,"West Point, MS Micro Area",19640,"West Point, MS Micro Area",0
+"G48540","2015-2019","US",,,,,,,,,,,,,,,,"Wheeling, WV-OH Metro Area","48540",,,,,,,,,,,,,,,,,,,"31000US48540",,,"Wheeling, WV-OH Metro Area",141475,"Wheeling, WV-OH Metro Area",0
+"G48580","2015-2019","US",,,,,,,,,,,,,,,,"Whitewater, WI Micro Area","48580",,,,,,,,,,,,,,,,,,,"31000US48580",,,"Whitewater, WI Micro Area",103074,"Whitewater, WI Micro Area",0
+"G48620","2015-2019","US",,,,,,,,,,,,,,,,"Wichita, KS Metro Area","48620",,,,,,,,,,,,,,,,,,,"31000US48620",,,"Wichita, KS Metro Area",637690,"Wichita, KS Metro Area",0
+"G48660","2015-2019","US",,,,,,,,,,,,,,,,"Wichita Falls, TX Metro Area","48660",,,,,,,,,,,,,,,,,,,"31000US48660",,,"Wichita Falls, TX Metro Area",150715,"Wichita Falls, TX Metro Area",0
+"G48700","2015-2019","US",,,,,,,,,,,,,,,,"Williamsport, PA Metro Area","48700",,,,,,,,,,,,,,,,,,,"31000US48700",,,"Williamsport, PA Metro Area",114330,"Williamsport, PA Metro Area",0
+"G48780","2015-2019","US",,,,,,,,,,,,,,,,"Williston, ND Micro Area","48780",,,,,,,,,,,,,,,,,,,"31000US48780",,,"Williston, ND Micro Area",35208,"Williston, ND Micro Area",0
+"G48820","2015-2019","US",,,,,,,,,,,,,,,,"Willmar, MN Micro Area","48820",,,,,,,,,,,,,,,,,,,"31000US48820",,,"Willmar, MN Micro Area",42841,"Willmar, MN Micro Area",0
+"G48900","2015-2019","US",,,,,,,,,,,,,,,,"Wilmington, NC Metro Area","48900",,,,,,,,,,,,,,,,,,,"31000US48900",,,"Wilmington, NC Metro Area",288337,"Wilmington, NC Metro Area",0
+"G48940","2015-2019","US",,,,,,,,,,,,,,,,"Wilmington, OH Micro Area; Cincinnati-Wilmington-Maysville, OH-KY-IN CSA","48940",,,,,,,,,,,,,,,,,,,"31000US48940",,,"Wilmington, OH Micro Area",41957,"Wilmington, OH Micro Area",0
+"G48980","2015-2019","US",,,,,,,,,,,,,,,,"Wilson, NC Micro Area","48980",,,,,,,,,,,,,,,,,,,"31000US48980",,,"Wilson, NC Micro Area",81435,"Wilson, NC Micro Area",0
+"G49020","2015-2019","US",,,,,,,,,,,,,,,,"Winchester, VA-WV Metro Area","49020",,,,,,,,,,,,,,,,,,,"31000US49020",,,"Winchester, VA-WV Metro Area",137621,"Winchester, VA-WV Metro Area",0
+"G49060","2015-2019","US",,,,,,,,,,,,,,,,"Winfield, KS Micro Area; Wichita-Winfield, KS CSA","49060",,,,,,,,,,,,,,,,,,,"31000US49060",,,"Winfield, KS Micro Area",35351,"Winfield, KS Micro Area",0
+"G49080","2015-2019","US",,,,,,,,,,,,,,,,"Winnemucca, NV Micro Area","49080",,,,,,,,,,,,,,,,,,,"31000US49080",,,"Winnemucca, NV Micro Area",16828,"Winnemucca, NV Micro Area",0
+"G49100","2015-2019","US",,,,,,,,,,,,,,,,"Winona, MN Micro Area","49100",,,,,,,,,,,,,,,,,,,"31000US49100",,,"Winona, MN Micro Area",50725,"Winona, MN Micro Area",0
+"G49180","2015-2019","US",,,,,,,,,,,,,,,,"Winston-Salem, NC Metro Area","49180",,,,,,,,,,,,,,,,,,,"31000US49180",,,"Winston-Salem, NC Metro Area",666216,"Winston-Salem, NC Metro Area",0
+"G49220","2015-2019","US",,,,,,,,,,,,,,,,"Wisconsin Rapids-Marshfield, WI Micro Area","49220",,,,,,,,,,,,,,,,,,,"31000US49220",,,"Wisconsin Rapids-Marshfield, WI Micro Area",73112,"Wisconsin Rapids-Marshfield, WI Micro Area",0
+"G49260","2015-2019","US",,,,,,,,,,,,,,,,"Woodward, OK Micro Area","49260",,,,,,,,,,,,,,,,,,,"31000US49260",,,"Woodward, OK Micro Area",24742,"Woodward, OK Micro Area",0
+"G49300","2015-2019","US",,,,,,,,,,,,,,,,"Wooster, OH Micro Area","49300",,,,,,,,,,,,,,,,,,,"31000US49300",,,"Wooster, OH Micro Area",116099,"Wooster, OH Micro Area",0
+"G49340","2015-2019","US",,,,,,,,,,,,,,,,"Worcester, MA-CT Metro Area","49340",,,,,,,,,,,,,,,,,,,"31000US49340",,,"Worcester, MA-CT Metro Area",941338,"Worcester, MA-CT Metro Area",0
+"G49380","2015-2019","US",,,,,,,,,,,,,,,,"Worthington, MN Micro Area","49380",,,,,,,,,,,,,,,,,,,"31000US49380",,,"Worthington, MN Micro Area",21734,"Worthington, MN Micro Area",0
+"G49420","2015-2019","US",,,,,,,,,,,,,,,,"Yakima, WA Metro Area","49420",,,,,,,,,,,,,,,,,,,"31000US49420",,,"Yakima, WA Metro Area",249697,"Yakima, WA Metro Area",0
+"G49460","2015-2019","US",,,,,,,,,,,,,,,,"Yankton, SD Micro Area","49460",,,,,,,,,,,,,,,,,,,"31000US49460",,,"Yankton, SD Micro Area",22717,"Yankton, SD Micro Area",0
+"G49500","2015-2019","PR",,,,,,,,,,,,,,,,"Yauco, PR Metro Area","49500",,,,,,,,,,,,,,,,,,,"31000US49500",,,"Yauco, PR Metro Area",90618,"Yauco, PR Metro Area",0
+"G49620","2015-2019","US",,,,,,,,,,,,,,,,"York-Hanover, PA Metro Area","49620",,,,,,,,,,,,,,,,,,,"31000US49620",,,"York-Hanover, PA Metro Area",445565,"York-Hanover, PA Metro Area",0
+"G49660","2015-2019","US",,,,,,,,,,,,,,,,"Youngstown-Warren-Boardman, OH-PA Metro Area","49660",,,,,,,,,,,,,,,,,,,"31000US49660",,,"Youngstown-Warren-Boardman, OH-PA Metro Area",541846,"Youngstown-Warren-Boardman, OH-PA Metro Area",0
+"G49700","2015-2019","US",,,,,,,,,,,,,,,,"Yuba City, CA Metro Area","49700",,,,,,,,,,,,,,,,,,,"31000US49700",,,"Yuba City, CA Metro Area",172469,"Yuba City, CA Metro Area",0
+"G49740","2015-2019","US",,,,,,,,,,,,,,,,"Yuma, AZ Metro Area","49740",,,,,,,,,,,,,,,,,,,"31000US49740",,,"Yuma, AZ Metro Area",209468,"Yuma, AZ Metro Area",0
+"G49780","2015-2019","US",,,,,,,,,,,,,,,,"Zanesville, OH Micro Area","49780",,,,,,,,,,,,,,,,,,,"31000US49780",,,"Zanesville, OH Micro Area",86131,"Zanesville, OH Micro Area",0
+"G49820","2015-2019","US",,,,,,,,,,,,,,,,"Zapata, TX Micro Area","49820",,,,,,,,,,,,,,,,,,,"31000US49820",,,"Zapata, TX Micro Area",14304,"Zapata, TX Micro Area",0

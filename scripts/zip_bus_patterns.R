@@ -4,13 +4,21 @@
 # basline for the USPS business flows analysis part of the paper.
 ################################################################
 rm(list=ls())
-install.packages("censusapi")
-library(tidyverse); library(censusapi)
+## This function will check if a package is installed, and if not, install it
+pkgTest <- function(x) {
+  if (!require(x, character.only = TRUE))
+  {
+    install.packages(x, dep = TRUE);
+    if(!require(x, character.only = TRUE)) stop("Package not found")
+  }
+}
+
+## These lines load the required packages
+packages <- c("tidyverse", "censusapi")
+lapply(packages, pkgTest);
 
 #####Get Zip Code business patterns data#####
-
-# Add key to .Renviron
-key = '5f93f21dfff971a35463084cc328a3ed1ee4049d'
+source('./scripts/census-api.R')
 Sys.setenv(CENSUS_KEY=key)
 # Reload .Renviron
 readRenviron("~/.Renviron")
@@ -37,4 +45,4 @@ zbp <- zbp_2018 %>% filter(nchar(NAICS2017) == 3) %>% rename(NAICS = NAICS2017) 
             teleworkable_emp_mean = weighted.mean(teleworkable_emp, ESTAB),
             teleworkable_wage_mean = weighted.mean(teleworkable_wage, ESTAB))
 
-write_csv(zbp, '~/Documents/zillow/thesis/data/zbp_wfh.csv')
+write_csv(zbp, './data/zbp_wfh.csv')
