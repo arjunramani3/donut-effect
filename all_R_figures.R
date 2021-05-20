@@ -246,6 +246,7 @@ chars %>% filter(MetroShort %in% cities) %>%
         alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
   geom_line()+
+  ylim(-2, .35) +
   xlim(as.Date('2018-01-01'), as.Date('2021-04-01')) + 
   geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
   scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
@@ -531,7 +532,8 @@ grid_plot <- function (msa_group, msa_level, zip_group) {
             mutate(date = as.Date(date),
                    zhvi_pop = zhvi*`2019 Population`) %>%
             filter(date >= as.Date('2018-01-01')) %>%
-            group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE)) %>% 
+            group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE)) %>%
+            group_by(zip) %>% fill(zhvi_pop) %>% #fill remaining missing using adjacent values (front or back-end)
             group_by(category, date) %>%
             summarise(zhvi_pop = sum(zhvi_pop, na.rm = TRUE),
                       population = sum(`2019 Population`, na.rm = TRUE)) %>% 
