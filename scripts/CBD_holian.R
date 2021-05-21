@@ -8,7 +8,8 @@ library(rgdal)
 
 df <- readxl::read_excel('./data/external_data/holian_cbd_geocodes.xlsx', 
                          sheet = 'copy_of_merged_data2') %>%
-  rename(cbd_lat = CityHallLat, cbd_lon = CityHallLon) %>%
+  mutate(cbd_lat = ifelse(!is.na(Cen82lat), Cen82lat, CityHallLat),
+         cbd_lon = ifelse(!is.na(Cen82lon), Cen82lon, CityHallLon)) %>%
   filter(!is.na(cbd_lat) & !is.na(cbd_lon)) %>%
   separate(CBSA_name, c("MsaName", "end"), ', ', remove = FALSE) %>% 
   mutate(MetroShort = sub("-.*", "", MsaName),
