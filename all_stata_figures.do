@@ -158,10 +158,9 @@ gen log_density = log10(density2019)
 binscatter post_pct_change post_pop [fweight = population2], controls(pre_pct_change log_density) absorb(metroshort) ///
 	xtitle("Net inflow as a percent of population") ///
 	ytitle("Percent change rental index") ///
-	xsize(5) ysize(5) ///
 	graphregion(margin(medlarge))
 
-graph export "./figures-tables/appendix_a3a.png", replace
+graph export "./figures-tables/appendix_a2a.png", replace
  
 
 ///////////////////////////////
@@ -179,9 +178,8 @@ gen log_density = log10(density2019)
 binscatter post_pct_change post_pop [fweight = population2], controls(pre_pct_change log_density) absorb(metroshort)	///
 	xtitle("Net inflow as a percent of population") ///
 	ytitle("Percent change home value index") ///
-	xsize(5) ysize(5) ///
 	graphregion(margin(medlarge))
-graph export "./figures-tables/appendix_a3b.png", replace
+graph export "./figures-tables/appendix_a2b.png", replace
  
 
  

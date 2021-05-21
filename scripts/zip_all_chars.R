@@ -74,21 +74,6 @@ price <- read_csv('http://files.zillowstatic.com/research/public_v2/zhvi/Zip_zhv
   group_by(zip) %>%
   summarise(price_level = mean(zhvi, na.rm = TRUE))
 
-
-###### Get county level covid deaths from NYT
-nyt <- read_csv('https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv') %>% 
-    group_by(fips) %>% summarise(total_deaths = sum(deaths))
-
-#Get crosswalk from county-zip from HUD
-# https://www.huduser.gov/portal/datasets/usps_crosswalk.html
-county_to_zip <- read_csv('./data/external_data/county_zip_crosswalk.csv') %>%
-  rename(fips = COUNTY, zip = ZIP, ratio = RES_RATIO)
-
-covid <- nyt %>% inner_join(county_to_zip, by = "fips") %>%
-  group_by(fips, zip) %>% summarise(ratio = sum(ratio, na.rm = TRUE), total_deaths = sum(total_deaths, na.rm = TRUE)) %>%
-  mutate(weighted_deaths = ratio*total_deaths) %>%
-  group_by(zip) %>% summarise(total_deaths = sum(weighted_deaths, na.rm = TRUE))
-
 #zip code business patterns
 zbp <- read_csv('./data/zbp_wfh.csv') %>% 
   select(zip, estab_count) %>% mutate(zip = as.double(zip))
@@ -100,10 +85,8 @@ wfh_exp <- dens %>%
   left_join(pop, by = 'zip') %>%
   left_join(wfh, on = 'zip') %>%
   left_join(price, on = 'zip') %>%
-  left_join(covid, on = 'zip') %>%
   left_join(zbp, on = 'zip') %>%
-  mutate(deaths_capita = total_deaths/`2019 Population`,
-         density2019 = `2019 Population`/land_area)
+  mutate(density2019 = `2019 Population`/land_area)
 
 write_csv(wfh_exp, './data/zip_all_chars.csv')
 
