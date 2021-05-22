@@ -51,8 +51,7 @@ chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`), !is.na(dist_
   mutate(date = as.Date(date),
          zhvi_pop = zhvi*`2019 Population`) %>%
   filter(date >= as.Date('2018-01-01'), date < as.Date('2021-05-01')) %>%
-  group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE)) %>% 
-  group_by(zip) %>% fill(zhvi_pop) %>%
+  group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE, rule = 2)) %>% 
   group_by(category, date) %>%
   summarise(zhvi_pop = sum(zhvi_pop, na.rm = TRUE),
             population = sum(`2019 Population`, na.rm = TRUE)) %>% 
@@ -69,7 +68,7 @@ chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`), !is.na(dist_
         alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
   geom_line()+
-  xlim(as.Date('2018-01-01'), as.Date('2021-05-15')) + 
+  xlim(as.Date('2018-01-01'), as.Date('2021-05-01')) + 
   geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
   geom_dl(aes(label = type), method = list(dl.trans(x=x+1.5, y=y+.35),'last.bumpup', cex = 1.5, hjust=1)) +   
   scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
@@ -115,8 +114,7 @@ chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`), !is.na(dist_
   mutate(date = as.Date(date),
          zhvi_pop = zhvi*`2019 Population`) %>%
   filter(date >= as.Date('2018-01-01')) %>%
-  group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE)) %>% 
-  group_by(zip) %>% fill(zhvi_pop) %>%
+  group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE, rule = 2)) %>% 
   group_by(category, date) %>%
   summarise(zhvi_pop = sum(zhvi_pop, na.rm = TRUE),
             population = sum(`2019 Population`, na.rm = TRUE)) %>% 
@@ -133,7 +131,7 @@ chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`), !is.na(dist_
         alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
   geom_line()+
-  xlim(as.Date('2018-01-01'), as.Date('2021-04-15')) + 
+  xlim(as.Date('2018-01-01'), as.Date('2021-05-01')) + 
   geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
   scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
   scale_size_manual(values = c(1.8, 1), guide="none")+
@@ -185,8 +183,7 @@ chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`)) %>%
   inner_join(usps, by = 'zip') %>% 
   mutate(date = as.Date(date)) %>%
   filter(date >= as.Date('2018-01-01')) %>%
-  group_by(zip) %>% mutate(net_pop = na.approx(net_pop, na.rm=FALSE)) %>%
-  group_by(zip) %>% fill(net_pop) %>%
+  group_by(zip) %>% mutate(net_pop = na.approx(net_pop, na.rm=FALSE, rule = 2)) %>%
   group_by(category, date) %>%
   summarise(net_pop = sum(net_pop, na.rm = TRUE)/sum(`2019 Population`)*100) %>% 
   group_by(category) %>% mutate(net_pop = net_pop - net_pop[date == as.Date('2020-02-15')]) %>%
@@ -196,7 +193,7 @@ chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`)) %>%
         alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
   geom_line()+
-  xlim(as.Date('2018-01-01'), as.Date('2021-04-01')) + 
+  xlim(as.Date('2018-01-01'), as.Date('2021-05-01')) + 
   ylim(-3, .5) +
   geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
   scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
@@ -238,8 +235,7 @@ chars %>% filter(MetroShort %in% cities) %>%
   inner_join(usps, by = 'zip') %>% 
   mutate(date = as.Date(date)) %>%
   filter(date >= as.Date('2018-01-01')) %>%
-  group_by(zip) %>% mutate(net_bus = na.approx(net_bus, na.rm=FALSE)) %>%
-  group_by(zip) %>% fill(net_bus) %>%
+  group_by(zip) %>% mutate(net_bus = na.approx(net_bus, na.rm=FALSE, rule = 2)) %>%
   group_by(category, date) %>%
   summarise(net_bus = sum(net_bus, na.rm = TRUE)/sum(estab_count)*100) %>% 
   group_by(category) %>% mutate(net_bus = net_bus - net_bus[date == as.Date('2020-02-15')]) %>%
@@ -371,8 +367,7 @@ grid_plot <- function (msa_group, msa_level, zip_group) {
             mutate(date = as.Date(date),
                    zhvi_pop = zhvi*`2019 Population`) %>%
             filter(date >= as.Date('2018-01-01')) %>%
-            group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE)) %>% 
-            group_by(zip) %>% fill(zhvi_pop) %>%
+            group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE, rule = 2)) %>% 
             group_by(category, date) %>%
             summarise(zhvi_pop = sum(zhvi_pop, na.rm = TRUE),
                       population = sum(`2019 Population`, na.rm = TRUE)) %>% 
@@ -389,7 +384,7 @@ grid_plot <- function (msa_group, msa_level, zip_group) {
                   alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
             scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
             geom_line()+
-            xlim(as.Date('2018-01-01'), as.Date('2021-04-15')) + 
+            xlim(as.Date('2018-01-01'), as.Date('2021-05-01')) + 
             geom_vline(xintercept=as.Date('2020-02-29'), size=.5, color="black") + 
             geom_dl(aes(label = type), method = list(cex = 1,'last.bumpup')) +   
             scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
@@ -456,8 +451,7 @@ grid_plot <- function (msa_group, msa_level, zip_group) {
             inner_join(usps, by = 'zip') %>% 
             mutate(date = as.Date(date)) %>%
             filter(date >= as.Date('2018-01-01')) %>%
-            group_by(zip) %>% mutate(net_pop = na.approx(net_pop, na.rm=FALSE)) %>%
-            group_by(zip) %>% fill(net_pop) %>%
+            group_by(zip) %>% mutate(net_pop = na.approx(net_pop, na.rm=FALSE, rule = 2)) %>%
             group_by(category, date) %>%
             summarise(net_pop = sum(net_pop, na.rm = TRUE)/sum(`2019 Population`)*100) %>% 
             group_by(category) %>% mutate(net_pop = net_pop - net_pop[date == as.Date('2020-02-15')]) %>%
@@ -467,7 +461,7 @@ grid_plot <- function (msa_group, msa_level, zip_group) {
                   alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
             scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
             geom_line()+
-            xlim(as.Date('2018-01-01'), as.Date('2021-04-15')) + 
+            xlim(as.Date('2018-01-01'), as.Date('2021-05-01')) + 
             ylim(-2, .25) + 
             geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
             geom_dl(aes(label = name), method = list(cex = 1,'last.bumpup')) +   
@@ -537,8 +531,7 @@ grid_plot <- function (msa_group, msa_level, zip_group) {
             mutate(date = as.Date(date),
                    zhvi_pop = zhvi*`2019 Population`) %>%
             filter(date >= as.Date('2018-01-01')) %>%
-            group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE)) %>%
-            group_by(zip) %>% fill(zhvi_pop) %>%
+            group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE, rule = 2)) %>%
             group_by(category, date) %>%
             summarise(zhvi_pop = sum(zhvi_pop, na.rm = TRUE),
                       population = sum(`2019 Population`, na.rm = TRUE)) %>% 
@@ -555,6 +548,7 @@ grid_plot <- function (msa_group, msa_level, zip_group) {
                   alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
             scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
             geom_line()+
+            xlim(as.Date('2018-01-01'), as.Date('2021-05-01')) + 
             geom_vline(xintercept=as.Date('2020-02-29'), size=.5, color="black") + 
             geom_dl(aes(label = type), method = list(cex = 1,'last.bumpup')) +   
             scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
@@ -605,8 +599,7 @@ chars %>% filter(MetroShort %in% cities, !is.na(dist_to_cbd)) %>%
                                      TRUE ~ 'low'))) %>%
   inner_join(df, by = 'zip') %>% 
   mutate(date = as.Date(date)) %>%
-  group_by(zip) %>% mutate(zhvi = na.approx(zhvi, na.rm=FALSE)) %>%
-  group_by(zip) %>% fill(zhvi) %>%
+  group_by(zip) %>% mutate(zhvi = na.approx(zhvi, na.rm=FALSE, rule = 2)) %>%
   group_by(zip) %>% mutate(zhvi = zhvi/zhvi[date == as.Date('2020-02-15')]*100) %>%
   mutate(zhvi_pop = zhvi*`2019 Population`) %>%
   group_by(category, date) %>%
@@ -666,8 +659,7 @@ chars %>% filter(MetroShort %in% cities, !is.na(density2019), !is.na(dist_to_cbd
                                      TRUE ~ 'low'))) %>%
   inner_join(df2, by = 'zip') %>% 
   mutate(date = as.Date(date)) %>%
-  group_by(zip) %>% mutate(zhvi = na.approx(zhvi, na.rm=FALSE)) %>%
-  group_by(zip) %>% fill(zhvi) %>%
+  group_by(zip) %>% mutate(zhvi = na.approx(zhvi, na.rm=FALSE, rule = 2)) %>%
   group_by(zip) %>% mutate(zhvi = zhvi/zhvi[date == as.Date('2020-02-29')]*100) %>%
   mutate(zhvi_pop = zhvi*`2019 Population`) %>%
   group_by(category, date) %>%
@@ -686,7 +678,7 @@ chars %>% filter(MetroShort %in% cities, !is.na(density2019), !is.na(dist_to_cbd
         alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
   geom_line()+
-  xlim(as.Date('2018-01-01'), as.Date('2021-05-15')) + 
+  xlim(as.Date('2018-01-01'), as.Date('2021-05-01')) + 
   geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
   scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
   scale_size_manual(values = c(1.8, 1), guide="none")+
@@ -739,8 +731,7 @@ chars %>% filter(MetroShort %in% cities, !is.na(`2010 Population`), !is.na(dist_
   mutate(date = as.Date(date),
          zhvi_pop = zhvi*`2010 Population`) %>%
   filter(date >= as.Date('2000-07-01'), date < as.Date('2002-07-01')) %>%
-  group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE)) %>% 
-  group_by(zip) %>% fill(zhvi_pop) %>%
+  group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE, rule = 2)) %>% 
   group_by(category, date) %>%
   summarise(zhvi_pop = sum(zhvi_pop, na.rm = TRUE),
             population = sum(`2010 Population`, na.rm = TRUE)) %>% 
@@ -790,8 +781,7 @@ chars %>% filter(MetroShort %in% cities, !is.na(`2010 Population`), !is.na(dist_
   mutate(date = as.Date(date),
          zhvi_pop = zhvi*`2010 Population`) %>%
   filter(date >= as.Date('2007-01-01'), date < as.Date('2009-01-01')) %>%
-  group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE)) %>% 
-  group_by(zip) %>% fill(zhvi_pop) %>%
+  group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE, rule = 2)) %>% 
   group_by(category, date) %>%
   summarise(zhvi_pop = sum(zhvi_pop, na.rm = TRUE),
             population = sum(`2010 Population`, na.rm = TRUE)) %>% 

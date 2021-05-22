@@ -18,6 +18,6 @@ source('./scripts/zip_bus_patterns.R') #This script takes several minutes to run
 source('./scripts/zip_all_chars.R')
 source('./scripts/CBD_holian.R')
 source('./scripts/msa_chars.R')
-source('./scripts/create_zillow_panels.R')
-source('./scripts/create_usps_panel.R')
+source('./scripts/create_zillow.R')
+source('./scripts/create_usps.R')
 source('./scripts/create_zillow_usps.R')

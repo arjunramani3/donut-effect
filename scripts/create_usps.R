@@ -115,7 +115,7 @@ df3 <- df_all %>%
     post_temp = post_temp/`2019 Population`*100,
     post_perm = post_perm/`2019 Population`*100
   ) %>%
-  filter(!is.na(wfh_wage), !is.na(log(density2019)), !is.infinite(log(density2019)), !is.na(price_level),
+  filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
          land_area > .1, `2019 Population` > 100)
 
 ## Get pre-period percent growth
@@ -135,7 +135,7 @@ df4 <- df_all %>%
     pre_temp = pre_temp/`2019 Population`*100,
     pre_perm = pre_perm/`2019 Population`*100
   ) %>%
-  filter(!is.na(wfh_wage), !is.na(log(density2019)), !is.infinite(log(density2019)), !is.na(price_level),
+  filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
          land_area > .1, `2019 Population` > 100)
 
 ## Write all zips file to csv
@@ -152,7 +152,6 @@ df6 %>% filter(MetroShort %in% cities) %>%
 ###########################################
 
 metro_chars <- read_csv('./data/msa_all_chars.csv')
-cbsa_price <- read_csv('./data/cbsa_price_levels.csv')
 
 ## get post period pct growth
 df4 <- df_all %>% inner_join(chars, by = 'zip') %>%
@@ -177,7 +176,7 @@ df4 <- df_all %>% inner_join(chars, by = 'zip') %>%
     post_temp = post_temp/`2019 Population`*100,
     post_perm = post_perm/`2019 Population`*100
   ) %>%
-  filter(!is.na(wfh_wage), !is.na(log(density2019)), !is.infinite(log(density2019)), !is.na(price_level),
+  filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
          land_area > .1, `2019 Population` > 100)
 
 ## get pre period pct change
@@ -203,7 +202,7 @@ df5 <- df_all %>% inner_join(chars, by = 'zip') %>%
     pre_temp = pre_temp/`2019 Population`*100,
     pre_perm = pre_perm/`2019 Population`*100
   ) %>%
-  filter(!is.na(wfh_wage), !is.na(log(density2019)), !is.infinite(log(density2019)), !is.na(price_level),
+  filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
          land_area > .1, `2019 Population` > 100)
 
 df4 %>% select(MetroShort, post_net, post_bus, post_pop, post_temp, post_perm) %>% inner_join(df5, by = 'MetroShort') %>%

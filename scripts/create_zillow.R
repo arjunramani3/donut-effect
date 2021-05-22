@@ -44,23 +44,23 @@ df3 <- df2 %>% filter(date > as.Date('2017-01-01'))
 ## Get panel for pre-period
 df5 <- df3 %>% mutate(date = as.Date(date)) %>%
   group_by(zip) %>% mutate(
-    zhvi = na.approx(zhvi, na.rm=FALSE),
+    zhvi = na.approx(zhvi, na.rm=FALSE, rule = 2),
     pre_pct_change = (zhvi - lag(zhvi, 12))/((zhvi + lag(zhvi, 12))/2)*100
   ) %>% filter(date >= as.Date('2020-02-01'), date < as.Date('2021-03-01')) %>%
   group_by(zip) %>% summarise(pre_pct_change = mean(pre_pct_change, na.rm = TRUE)) %>%
   inner_join(chars, by = 'zip') %>%
-  filter(!is.na(wfh_wage), !is.na(log(density2019)), !is.infinite(log(density2019)),
+  filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
          `land_area` > .1, `2019 Population` > 100)
 
 ## Get panel for post-period
 df4 <- df3 %>% mutate(date = as.Date(date)) %>%
   group_by(zip) %>% mutate(
-    zhvi = na.approx(zhvi, na.rm=FALSE),
+    zhvi = na.approx(zhvi, na.rm=FALSE, rule = 2),
     post_pct_change = (zhvi - lag(zhvi, 12))/((zhvi + lag(zhvi, 12))/2)*100
   ) %>% filter(date >= as.Date('2021-02-01'), date < as.Date('2021-03-01')) %>%
   group_by(zip) %>% summarise(post_pct_change = mean(post_pct_change, na.rm = TRUE)) %>%
   inner_join(chars, by = 'zip') %>%
-  filter(!is.na(wfh_wage), !is.na(log(density2019)), !is.infinite(log(density2019)),
+  filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
          `land_area` > .1, `2019 Population` > 100)
 
 ## Merge, filter, and save (all metros)
@@ -95,7 +95,7 @@ df3 <- df %>% pivot_longer(!c(RegionID, SizeRank, MetroShort, RegionType, StateN
                            names_to = 'date', values_to = 'zhvi') %>% 
   mutate(date = as.Date(date)) %>%
   group_by(MetroShort) %>% mutate(
-    zhvi = na.approx(zhvi, na.rm=FALSE),
+    zhvi = na.approx(zhvi, na.rm=FALSE, rule = 2),
     post_pct_change = (zhvi - lag(zhvi, 12))/((zhvi + lag(zhvi, 12))/2)*100,
   ) %>% filter(date >= as.Date('2021-02-01'), date < as.Date('2021-03-01')) %>%
   group_by(MetroShort) %>% summarise(post_pct_change = mean(post_pct_change, na.rm = TRUE))
@@ -105,7 +105,7 @@ df4 <- df %>% pivot_longer(!c(RegionID, SizeRank, MetroShort, RegionType, StateN
                            names_to = 'date', values_to = 'zhvi') %>% 
   mutate(date = as.Date(date)) %>%
   group_by(MetroShort) %>% mutate(
-    zhvi = na.approx(zhvi, na.rm=FALSE),
+    zhvi = na.approx(zhvi, na.rm=FALSE, rule = 2),
     pre_pct_change = (zhvi - lag(zhvi, 12))/((zhvi + lag(zhvi, 12))/2)*100,
   ) %>% filter(date >= as.Date('2020-02-01'), date < as.Date('2020-03-01')) %>%
   group_by(MetroShort) %>% summarise(pre_pct_change = mean(pre_pct_change, na.rm = TRUE))
@@ -136,23 +136,23 @@ df <- df %>% rename(zip = 'RegionName') %>%
 ## create pre-period panel
 df3 <- df %>% mutate(date = as.Date(date)) %>%
   group_by(zip) %>% mutate(
-    zhvi = na.approx(zhvi, na.rm=FALSE),
+    zhvi = na.approx(zhvi, na.rm=FALSE, rule = 2),
     post_pct_change = (zhvi - lag(zhvi, 12))/((zhvi + lag(zhvi, 12))/2)*100
   ) %>% filter(date >= as.Date('2021-02-01'), date < as.Date('2021-03-01')) %>%
   group_by(zip) %>% summarise(post_pct_change = mean(post_pct_change, na.rm = TRUE)) %>%
   inner_join(chars, by = 'zip') %>%
-  filter(!is.na(wfh_wage), !is.na(log(density2019)), !is.infinite(log(density2019)),
+  filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
          `land_area` > .1, `2019 Population` > 100)
  
 ## Create post-period panel
 df4 <- df %>% mutate(date = as.Date(date)) %>%
   group_by(zip) %>% mutate(
-    zhvi = na.approx(zhvi, na.rm=FALSE),
+    zhvi = na.approx(zhvi, na.rm=FALSE, rule = 2),
     pre_pct_change = (zhvi - lag(zhvi, 12))/((zhvi + lag(zhvi, 12))/2)*100
   ) %>% filter(date >= as.Date('2020-02-01'), date < as.Date('2020-03-01')) %>%
   group_by(zip) %>% summarise(pre_pct_change = mean(pre_pct_change, na.rm = TRUE)) %>%
   inner_join(chars, by = 'zip') %>%
-  filter(!is.na(wfh_wage), !is.na(log(density2019)), !is.infinite(log(density2019)),
+  filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
          `land_area` > .1, `2019 Population` > 100)
 
 ## Write panel to CSV (with top 100 metros)
@@ -189,7 +189,7 @@ df3 <- df %>% pivot_longer(!c(RegionID, SizeRank, MetroShort, StateName),
                            names_to = 'date', values_to = 'zhvi') %>% 
   mutate(date = as.Date(as.yearmon(date)) + 14) %>%
   group_by(MetroShort) %>% mutate(
-    zhvi = na.approx(zhvi, na.rm=FALSE),
+    zhvi = na.approx(zhvi, na.rm=FALSE, rule = 2),
     post_pct_change = (zhvi - lag(zhvi, 12))/((zhvi + lag(zhvi, 12))/2)*100,
   ) %>% filter(date >= as.Date('2021-02-01'), date < as.Date('2021-03-01')) %>%
   group_by(MetroShort) %>% summarise(post_pct_change = mean(post_pct_change, na.rm = TRUE))
@@ -199,7 +199,7 @@ df4 <- df %>% pivot_longer(!c(RegionID, SizeRank, MetroShort, StateName),
                            names_to = 'date', values_to = 'zhvi') %>% 
   mutate(date = as.Date(as.yearmon(date)) + 14) %>%
   group_by(MetroShort) %>% mutate(
-    zhvi = na.approx(zhvi, na.rm=FALSE),
+    zhvi = na.approx(zhvi, na.rm=FALSE, rule = 2),
     pre_pct_change = (zhvi - lag(zhvi, 12))/((zhvi + lag(zhvi, 12))/2)*100,
   ) %>% filter(date >= as.Date('2020-02-01'), date < as.Date('2020-03-01')) %>%
   group_by(MetroShort) %>% summarise(pre_pct_change = mean(pre_pct_change, na.rm = TRUE))
