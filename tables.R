@@ -62,7 +62,7 @@ m7 <- lm(post_pct_change ~ pre_pct_change + log(density2019) + log(dist_to_cbd) 
 #https://dmyee.files.wordpress.com/2016/03/table_workshop.pdf
 stargazer(m0, m1, m2, m3, m4, m5, m6, m7, 
           se = list(rse(m1), rse(m2), rse(m3), rse(m4), rse(m5), rse(m6), rse(m7)),
-          #omit = c("MetroShort", 'pre_pct_change'),
+          omit = c("MetroShort", 'pre_pct_change'),
           omit.stat=c("adj.rsq", "ser","f"), type="html", out="./figures-tables/tab1.doc")
 
 

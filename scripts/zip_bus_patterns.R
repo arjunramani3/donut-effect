@@ -18,6 +18,7 @@ packages <- c("tidyverse", "censusapi")
 lapply(packages, pkgTest);
 
 #####Get Zip Code business patterns data#####
+# https://www.census.gov/data/developers/data-sets/cbp-nonemp-zbp/zbp-api.html
 source('./scripts/census-api.R')
 Sys.setenv(CENSUS_KEY=key)
 # Reload .Renviron

@@ -35,7 +35,7 @@ for (code in states$state_abbr) {
   cur <- read_csv(path) %>% mutate(tract = substr(h_geocode, 0, 11)) %>% 
     select(-c(h_geocode, createdate)) %>%
     group_by(tract) %>% summarise_all(sum) %>% 
-    pivot_longer(-tract, names_to = 'Variable', values_to = 'count') %>%
+    pivot_longer(!tract, names_to = 'Variable', values_to = 'count') %>%
     inner_join(lodes_naics, on = 'Variable')
   #merge with crosswalk and aggregate to zip code level
   cur <- cur %>% left_join(tract_to_zip, on = 'tract') %>%

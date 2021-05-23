@@ -35,7 +35,7 @@ chars <- read_csv('./data/zip_all_chars_cbd.csv')
 df2 <- df %>% rename(zip = 'RegionName', MsaShort = 'Metro') %>%
   mutate(MetroShort = sub("-.*", "", MsaShort),
          MetroShort = paste(MetroShort, State, sep = ', ')) %>%
-  select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
+  select(-c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
   pivot_longer(!c(zip, MetroShort), names_to = 'date', values_to = 'zhvi')
 
 ## filter to values past Jan 2017
@@ -50,7 +50,7 @@ df5 <- df3 %>% mutate(date = as.Date(date)) %>%
   group_by(zip) %>% summarise(pre_pct_change = mean(pre_pct_change, na.rm = TRUE)) %>%
   inner_join(chars, by = 'zip') %>%
   filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
-         `land_area` > .1, `2019 Population` > 100)
+         land_area > .1, `2019 Population` > 100)
 
 ## Get panel for post-period
 df4 <- df3 %>% mutate(date = as.Date(date)) %>%
@@ -61,7 +61,7 @@ df4 <- df3 %>% mutate(date = as.Date(date)) %>%
   group_by(zip) %>% summarise(post_pct_change = mean(post_pct_change, na.rm = TRUE)) %>%
   inner_join(chars, by = 'zip') %>%
   filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
-         `land_area` > .1, `2019 Population` > 100)
+         land_area > .1, `2019 Population` > 100)
 
 ## Merge, filter, and save (all metros)
 df6 <- df4 %>% select(zip, post_pct_change) %>% inner_join(df5, by = 'zip') %>%
@@ -129,7 +129,7 @@ cities <- c('San Francisco, CA', 'New York, NY', 'Chicago, IL', 'Boston, MA',
 
 ## Pivot from wide to long
 df <- df %>% rename(zip = 'RegionName') %>%
-  select(!c(RegionID, SizeRank, MsaName)) %>% 
+  select(-c(RegionID, SizeRank, MsaName)) %>% 
   pivot_longer(!zip, names_to = 'date', values_to = 'zhvi') %>%
   mutate(date = as.Date(as.yearmon(date)) + 14)
 
@@ -142,7 +142,7 @@ df3 <- df %>% mutate(date = as.Date(date)) %>%
   group_by(zip) %>% summarise(post_pct_change = mean(post_pct_change, na.rm = TRUE)) %>%
   inner_join(chars, by = 'zip') %>%
   filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
-         `land_area` > .1, `2019 Population` > 100)
+         land_area > .1, `2019 Population` > 100)
  
 ## Create post-period panel
 df4 <- df %>% mutate(date = as.Date(date)) %>%
@@ -153,7 +153,7 @@ df4 <- df %>% mutate(date = as.Date(date)) %>%
   group_by(zip) %>% summarise(pre_pct_change = mean(pre_pct_change, na.rm = TRUE)) %>%
   inner_join(chars, by = 'zip') %>%
   filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
-         `land_area` > .1, `2019 Population` > 100)
+         land_area > .1, `2019 Population` > 100)
 
 ## Write panel to CSV (with top 100 metros)
 df6 <- df3 %>% select(zip, post_pct_change) %>% inner_join(df4, by = 'zip') %>%

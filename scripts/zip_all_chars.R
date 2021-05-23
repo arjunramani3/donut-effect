@@ -65,15 +65,6 @@ wfh <- read_csv('./data/lodes_rac_wfh_zip_exposure.csv') %>%
   distinct(zip, .keep_all = TRUE) %>%
   mutate(zip = as.integer(zip))
 
-#Get price level data
-price <- read_csv('http://files.zillowstatic.com/research/public_v2/zhvi/Zip_zhvi_uc_sfr_tier_0.33_0.67_sm_sa_mon.csv', col_types = cols(RegionName = col_double())) %>% 
-  rename(zip = 'RegionName') %>%
-  select(!c(RegionID, SizeRank, RegionType, StateName, State, City, Metro, CountyName)) %>% 
-  pivot_longer(!zip, names_to = 'date', values_to = 'zhvi') %>%
-  filter(date >= as.Date('2019-01-01'), date < '2020-01-01') %>% 
-  group_by(zip) %>%
-  summarise(price_level = mean(zhvi, na.rm = TRUE))
-
 #zip code business patterns
 zbp <- read_csv('./data/zbp_wfh.csv') %>% 
   select(zip, estab_count) %>% mutate(zip = as.double(zip))
@@ -84,7 +75,6 @@ wfh_exp <- dens %>%
   left_join(cbsa_name, by = 'CBSA') %>%
   left_join(pop, by = 'zip') %>%
   left_join(wfh, on = 'zip') %>%
-  left_join(price, on = 'zip') %>%
   left_join(zbp, on = 'zip') %>%
   mutate(density2019 = `2019 Population`/land_area)
 

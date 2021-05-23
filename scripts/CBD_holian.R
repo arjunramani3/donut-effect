@@ -20,12 +20,11 @@ df <- readxl::read_excel('./data/external_data/holian_cbd_geocodes.xlsx',
   
 
 ###merge with zipcodes and get distance from CBD
-#https://public.opendatasoft.com/explore/dataset/us-zip-code-latitude-and-longitude/export/
+#https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html
 
-latlonzip <- read_delim('./data/external_data/us-zip-code-latitude-and-longitude.csv',
-                        delim = ';') %>%
-  select(Longitude, Latitude, Zip) %>%
-  rename(lon = Longitude, lat = Latitude, zip = Zip) %>%
+latlonzip <- read_tsv('./data/external_data/zcta_gaz.txt') %>%
+  select(GEOID, INTPTLAT, INTPTLONG) %>%
+  rename(lon = INTPTLONG, lat = INTPTLAT, zip = GEOID) %>%
   mutate(zip = as.integer(zip))
 
 ##bring in other zipcode chars
