@@ -4,7 +4,7 @@ Click here for the most recent draft of our working paper: https://papers.ssrn.c
 
 
 ## Replication file instructions
-This repository contains all data and scripts necessary to replicate the figures and tables found in the paper. 
+This repository contains all data and scripts necessary to replicate the figures and tables found in the paper. You may need R version 3.6.2 or later to successfully run.
 
 ### Creating all figures and tables from intermediate datasets
 
