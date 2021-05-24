@@ -1,6 +1,6 @@
 # donut-effect
 Replication code for "The Donut Effect of Covid-19 on Cities" by Arjun Ramani and Nicholas Bloom.
-Click here for the most recent draft of our working paper: 
+Click here for the most recent draft of our working paper: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3850758
 
 
 ## Replication file instructions
