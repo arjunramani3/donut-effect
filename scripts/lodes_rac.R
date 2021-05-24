@@ -33,7 +33,7 @@ for (code in states$state_abbr) {
   path = paste(root, code, '/rac/', code, '_rac_S000_JT00_2018.csv.gz', sep = '')
   #get tract, NAICS code panel of address counts
   cur <- read_csv(path) %>% mutate(tract = substr(h_geocode, 0, 11)) %>% 
-    select(-c(h_geocode, createdate)) %>%
+    select(!c(h_geocode, createdate)) %>%
     group_by(tract) %>% summarise_all(sum) %>% 
     pivot_longer(!tract, names_to = 'Variable', values_to = 'count') %>%
     inner_join(lodes_naics, on = 'Variable')

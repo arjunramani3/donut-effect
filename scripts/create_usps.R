@@ -89,7 +89,7 @@ df_all <- df_all %>% mutate(
 # Create zip pct change file from panel
 ###########################################
 chars <- read_csv('./data/zip_all_chars_cbd.csv', 
-                  col_types = cols('zip' = col_integer())) %>% select(-estab_count)
+                  col_types = cols('zip' = col_integer())) %>% select(!estab_count)
 bus_chars <- read_csv('./data/zbp_wfh.csv',
                       col_types = cols('zip' = col_integer()))
 chars <- chars %>% inner_join(bus_chars, by = 'zip')

@@ -35,7 +35,7 @@ chars <- read_csv('./data/zip_all_chars_cbd.csv')
 df2 <- df %>% rename(zip = 'RegionName', MsaShort = 'Metro') %>%
   mutate(MetroShort = sub("-.*", "", MsaShort),
          MetroShort = paste(MetroShort, State, sep = ', ')) %>%
-  select(-c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
+  select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
   pivot_longer(!c(zip, MetroShort), names_to = 'date', values_to = 'zhvi')
 
 ## filter to values past Jan 2017
@@ -129,7 +129,7 @@ cities <- c('San Francisco, CA', 'New York, NY', 'Chicago, IL', 'Boston, MA',
 
 ## Pivot from wide to long
 df <- df %>% rename(zip = 'RegionName') %>%
-  select(-c(RegionID, SizeRank, MsaName)) %>% 
+  select(!c(RegionID, SizeRank, MsaName)) %>% 
   pivot_longer(!zip, names_to = 'date', values_to = 'zhvi') %>%
   mutate(date = as.Date(as.yearmon(date)) + 14)
 

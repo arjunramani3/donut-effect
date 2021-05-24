@@ -37,7 +37,7 @@ setwd('~/Documents/zillow/thesis/donut-effect/')
 #read in zip code level rental index from Zillow
 df <- read_csv('https://files.zillowstatic.com/research/public_v2/zori/Zip_ZORI_AllHomesPlusMultifamily_Smoothed.csv', 
                col_types = cols(RegionName = col_double())) %>% rename(zip = 'RegionName') %>%
-  select(-c(RegionID, SizeRank, MsaName)) %>% 
+  select(!c(RegionID, SizeRank, MsaName)) %>% 
   pivot_longer(!zip, names_to = 'date', values_to = 'zori') %>%
   mutate(date = as.Date(as.yearmon(date)) + 14)
 #read in all zip code characteristics
@@ -108,7 +108,7 @@ df2 <- read_csv('http://files.zillowstatic.com/research/public_v2/zhvi/Zip_zhvi_
   rename(zip = 'RegionName', MsaShort = 'Metro') %>%
   mutate(MetroShort = sub("-.*", "", MsaShort),
          MetroShort = paste(MetroShort, State, sep = ', ')) %>%
-  select(-c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
+  select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
   pivot_longer(!c(zip, MetroShort), names_to = 'date', values_to = 'zhvi')
 
 #read in zip code characteristics
@@ -180,7 +180,7 @@ ggsave('./figures-tables/fig1b.png', plot = last_plot(), width = 10, height = 8)
 ###########################################
 #read in zip code characteristics
 chars <- read_csv('./data/zip_all_chars_cbd.csv', 
-                  col_types = cols('zip' = col_integer())) %>% select(-estab_count)
+                  col_types = cols('zip' = col_integer())) %>% select(!estab_count)
 #read in zip code level business establishment counts
 bus_chars <- read_csv('./data/zbp_wfh.csv',
                       col_types = cols('zip' = col_integer()))
@@ -358,7 +358,7 @@ df3 <- read_csv('http://files.zillowstatic.com/research/public_v2/zhvi/Zip_zhvi_
   rename(zip = 'RegionName', MsaShort = 'Metro') %>%
   mutate(MetroShort = sub("-.*", "", MsaShort),
          MetroShort = paste(MetroShort, State, sep = ', ')) %>%
-  select(-c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
+  select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
   pivot_longer(!c(zip, MetroShort), names_to = 'date', values_to = 'zhvi')
 
 #read in zip code characteristics
@@ -448,7 +448,7 @@ ggsave('./figures-tables/fig4.png', plot = last_plot(), width = 15, height = 6)
 ###########################################
 #read in zip code characteristics
 chars <- read_csv('./data/zip_all_chars_cbd.csv', 
-                  col_types = cols('zip' = col_integer())) %>% select(-estab_count)
+                  col_types = cols('zip' = col_integer())) %>% select(!estab_count)
 #read in business establishment counts
 bus_chars <- read_csv('./data/zbp_wfh.csv',
                       col_types = cols('zip' = col_integer()))
@@ -537,7 +537,7 @@ ggsave('./figures-tables/fig5.png', plot = last_plot(), width = 15, height = 6)
 #read in Zillow rental index data
 df <- read_csv('https://files.zillowstatic.com/research/public_v2/zori/Zip_ZORI_AllHomesPlusMultifamily_Smoothed.csv', 
                col_types = cols(RegionName = col_double())) %>% rename(zip = 'RegionName') %>%
-  select(-c(RegionID, SizeRank, MsaName)) %>% 
+  select(!c(RegionID, SizeRank, MsaName)) %>% 
   pivot_longer(!zip, names_to = 'date', values_to = 'zori') %>%
   mutate(date = as.Date(as.yearmon(date)) + 14)
 
@@ -629,7 +629,7 @@ ggsave('./figures-tables/appendix_a1.png', plot = last_plot(), width = 15, heigh
 #read in Zillow rental index data
 df <- read_csv('https://files.zillowstatic.com/research/public_v2/zori/Zip_ZORI_AllHomesPlusMultifamily_Smoothed.csv', 
                col_types = cols(RegionName = col_double())) %>% rename(zip = 'RegionName') %>%
-  select(-c(RegionID, SizeRank, MsaName)) %>% 
+  select(!c(RegionID, SizeRank, MsaName)) %>% 
   pivot_longer(!zip, names_to = 'date', values_to = 'zori') %>%
   mutate(date = as.Date(as.yearmon(date)) + 14)
 
@@ -695,7 +695,7 @@ df2 <- read_csv('http://files.zillowstatic.com/research/public_v2/zhvi/Zip_zhvi_
   rename(zip = 'RegionName', MsaShort = 'Metro') %>%
   mutate(MetroShort = sub("-.*", "", MsaShort),
          MetroShort = paste(MetroShort, State, sep = ', ')) %>%
-  select(-c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
+  select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
   pivot_longer(!c(zip, MetroShort), names_to = 'date', values_to = 'zhvi')
 
 #read in zip code characteristics
@@ -771,7 +771,7 @@ df2 <- read_csv('https://files.zillowstatic.com/research/public_v2/zhvi/Zip_zhvi
   rename(zip = 'RegionName', MsaShort = 'Metro') %>%
   mutate(MetroShort = sub("-.*", "", MsaShort),
          MetroShort = paste(MetroShort, State, sep = ', ')) %>%
-  select(-c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
+  select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
   pivot_longer(!c(zip, MetroShort), names_to = 'date', values_to = 'zhvi')
 
 #read in zip code characteristics
@@ -889,7 +889,7 @@ ggsave('./figures-tables/appendix_a4b.png', plot = last_plot(), width = 10, heig
 ###########################################
 #read in zip code characteristics
 chars <- read_csv('./data/zip_all_chars_cbd.csv', 
-                  col_types = cols('zip' = col_integer())) %>% select(-estab_count)
+                  col_types = cols('zip' = col_integer())) %>% select(!estab_count)
 #read in business establishment counts
 bus_chars <- read_csv('./data/zbp_wfh.csv',
                       col_types = cols('zip' = col_integer()))
@@ -1034,7 +1034,7 @@ ggsave('./figures-tables/appendix_a5b.png', plot = last_plot(), width = 10, heig
 ###########################################
 #read in zip code characteristics
 chars <- read_csv('./data/zip_all_chars_cbd.csv', 
-                  col_types = cols('zip' = col_integer())) %>% select(-estab_count)
+                  col_types = cols('zip' = col_integer())) %>% select(!estab_count)
 #read in business establishment counts
 bus_chars <- read_csv('./data/zbp_wfh.csv',
                       col_types = cols('zip' = col_integer()))
