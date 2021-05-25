@@ -305,7 +305,7 @@ ggsave('./figures-tables/fig2b.png', plot = last_plot(), width = 10, height = 8)
 library(choroplethrZip)
 
 #create dataset in format required for choroplehtrZip
-df5 <- read_csv('~/Documents/zillow/thesis/data/usps_panel_zips.csv', col_types = cols(zip = col_character())) %>%
+df5 <- read_csv('./data/usps_panel_zips.csv', col_types = cols(zip = col_character())) %>%
   mutate(value = round(post_pop, digits = 3),
          zip = ifelse(nchar(zip)==4, paste('0', zip, sep=''), zip)) %>%
   select(zip, value) %>%
@@ -775,7 +775,7 @@ df2 <- read_csv('https://files.zillowstatic.com/research/public_v2/zhvi/Zip_zhvi
   pivot_longer(!c(zip, MetroShort), names_to = 'date', values_to = 'zhvi')
 
 #read in zip code characteristics
-chars <- read_csv('~/Documents/zillow/thesis/data/zip_all_chars_cbd.csv')
+chars <- read_csv('./data/zip_all_chars_cbd.csv')
 
 #create dataset
 temp <- chars %>% filter(MetroShort %in% cities, !is.na(`2010 Population`), !is.na(dist_to_cbd)) %>%
