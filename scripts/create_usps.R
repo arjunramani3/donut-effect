@@ -78,8 +78,9 @@ df_all <- df_all %>% mutate(
   net_ind = `TOTAL INDIVIDUAL_1` - `TOTAL INDIVIDUAL`,
   net_perm = `TOTAL PERM_1` - `TOTAL PERM`,
   net_temp = `TOTAL TEMP_1` - `TOTAL TEMP`,
-  net_pop = net_fam + net_ind*household  # construct population estimate by multiplying avg
-                                         # household size by number of family+individual moves
+  net_pop = net_fam*household + net_ind  # construct population estimate by multiplying avg household size by number of family+individual moves
+                                         # We thank Curtis Long and Daniel Weagley for noticing we incorrectly multipled household*net_ind in a previous version
+                                         # of this script. This does not change our main results.
 ) %>%
   select(zip, date, CITY, STATE, net, net_bus, net_fam, net_ind, net_perm, net_temp, net_pop) %>%
   rename(city = CITY, state = STATE) %>%
