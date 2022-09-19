@@ -19,4 +19,7 @@ Some of the datasets used in this process must be downloaded from various locati
 - `create_all_datasets.R` to create the Zillow and USPS datasets
   - `create_all_datasets.R` has a dependency on `zip_bus_patterns.R` which sources from `scripts/census-api.R`. You must obtain a Census API key from https://www.census.gov/data/developers/guidance/api-user-guide.html and store the key in `scripts/census-api.R` by including a line as follows: `key = "INSERT_YOUR_KEY_HERE`
 
+### Branches
+- nber-wp contains code for the original May 2021 version of the NBER working paper
+- main contains code for the updated version of the paper (in-progress)
 
