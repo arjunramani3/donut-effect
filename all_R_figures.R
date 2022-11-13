@@ -1,7 +1,7 @@
 ###########################################
-# R_figures.R
+# all_R_figures.R
 # This script reads in the cleaned USPS and Zillow 
-# files, and creates figures
+# files, and creates figures for the paper
 ###########################################
 
 ## Preliminaries
@@ -28,6 +28,15 @@ cities <- c('San Francisco, CA', 'New York, NY', 'Chicago, IL', 'Boston, MA',
 black <- "#2E2D29"; cardinal <- "#B1040E"; teal <- "#66b2b2"; green <- "#228B22"
 options(repr.plot.width=10, repr.plot.height=8)
 
+#end date for figures
+end_date = '2022-09-01'
+end_date_long = '2022-12-01'
+
+## start and end date for for cumulations
+start_period = '2017-11-01' #start period of cumulation ending in 2020-03-01 exclusive
+end_period = '2022-07-01' #end period for cumulation starting in 2020-03-01 inclusive
+
+
 #set to your working directory
 setwd('~/Documents/zillow/thesis/donut-effect/')
 
@@ -35,38 +44,40 @@ setwd('~/Documents/zillow/thesis/donut-effect/')
 ## Figure 1(a) donut effect in rental market
 ###########################################
 #read in zip code level rental index from Zillow
-df <- read_csv('https://files.zillowstatic.com/research/public_v2/zori/Zip_ZORI_AllHomesPlusMultifamily_Smoothed.csv', 
+df <- read_csv('https://files.zillowstatic.com/research/public_csvs/zori/Zip_zori_sm_month.csv?t=1666834047', 
                col_types = cols(RegionName = col_double())) %>% rename(zip = 'RegionName') %>%
-  select(!c(RegionID, SizeRank, MsaName)) %>% 
+  dplyr::select(!c(RegionID, SizeRank, RegionType, StateName, State, City, Metro, CountyName)) %>% 
   pivot_longer(!zip, names_to = 'date', values_to = 'zori') %>%
-  mutate(date = as.Date(as.yearmon(date)) + 14)
+  mutate(date = as.Date(as.yearmon(date)) + 14) %>%
+  group_by(zip) %>% mutate(zori = na.approx(zori, na.rm=FALSE, rule = 2),
+                           triple = ifelse(zori/lag(zori, 12) > 3, 1, 0)) %>%
+  group_by(zip) %>% filter(all(triple==0 | is.na(triple))) ### filter out rows with 3x growth in rents (happens when there are several consecutive missing observations that zillow imputes)
+
 #read in all zip code characteristics
 chars <- read_csv('./data/zip_all_chars_cbd.csv')
 
 #construct dataset to plot
 temp <- chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`), !is.na(dist_to_cbd)) %>%
-  mutate(quantile_rank = ntile(density2019, 10),
-         category = ifelse(dist_to_cbd < 2000, 'cbd', 
-                           case_when(quantile_rank == 10 ~ 'high',
-                                     quantile_rank %in% c(6:9) ~ 'mid',
-                                     TRUE ~ 'low'))) %>%
+  mutate(quantile_rank = 'cbd', 
+         quantile_rank = replace(quantile_rank, dist_to_cbd >= 2000, ntile(density2019[dist_to_cbd>=2000], 10)),
+         category = ifelse(quantile_rank == 'cbd', 'city center',
+                           case_when(quantile_rank == 10 ~ 'high density',
+                                     quantile_rank %in% c(6:9) ~ 'suburb',
+                                     TRUE ~ 'exurb'))) %>%
   inner_join(df, by = 'zip') %>% 
   mutate(date = as.Date(date),
          zori_pop = zori*`2019 Population`) %>%
-  filter(date >= as.Date('2018-01-01'), date < as.Date('2021-05-01')) %>%
-  group_by(zip) %>% mutate(zori_pop = na.approx(zori_pop, na.rm=FALSE, rule = 2)) %>% 
+  filter(date >= as.Date('2018-01-01'), date < as.Date(end_date)) %>%
   group_by(category, date) %>%
   summarise(zori_pop = sum(zori_pop, na.rm = TRUE),
             population = sum(`2019 Population`, na.rm = TRUE)) %>% 
   mutate(zori = zori_pop/population) %>%
   group_by(category) %>% mutate(zori = zori/zori[date == as.Date('2020-02-15')]*100) %>%
   mutate(
-    val = zori, name = category,
-    type = case_when(str_detect(name, 'high') ~ 'high density',
-                     str_detect(name, 'mid') ~ 'mid density',
-                     str_detect(name, 'cbd') ~ 'CBD',
-                     TRUE ~ 'low density'), emph = "b"
+    val = zori, type = category, emph = "b"
   )
+
+temp %>% dplyr::select(category, type, date, zori) %>% write_csv('fig1a.csv')
 
 #make plot
 temp %>% ggplot(
@@ -74,7 +85,7 @@ temp %>% ggplot(
         alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
   geom_line()+
-  xlim(as.Date('2018-01-01'), as.Date('2021-05-30')) + 
+  xlim(as.Date('2018-01-01'), as.Date(end_date_long)) + 
   geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
   geom_dl(aes(label = type), method = list(dl.trans(x=x+1.7, y=y+.35),'last.bumpup', cex = 1.5, hjust=1)) +   
   scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
@@ -103,12 +114,12 @@ ggsave('./figures-tables/fig1a.png', plot = last_plot(), width = 10, height = 8)
 ## Figure 1(b) donut effect in purchase market
 ###########################################
 #read zip code level home value index for single family homes from Zillow
-df2 <- read_csv('http://files.zillowstatic.com/research/public_v2/zhvi/Zip_zhvi_uc_sfr_tier_0.33_0.67_sm_sa_mon.csv', 
+df2 <- read_csv('https://files.zillowstatic.com/research/public_csvs/zhvi/Zip_zhvi_uc_sfr_tier_0.33_0.67_sm_sa_month.csv?t=1631634893', 
                 col_types = cols(RegionName = col_double())) %>% 
   rename(zip = 'RegionName', MsaShort = 'Metro') %>%
   mutate(MetroShort = sub("-.*", "", MsaShort),
          MetroShort = paste(MetroShort, State, sep = ', ')) %>%
-  select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
+  dplyr::select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
   pivot_longer(!c(zip, MetroShort), names_to = 'date', values_to = 'zhvi')
 
 #read in zip code characteristics
@@ -116,15 +127,16 @@ chars <- read_csv('./data/zip_all_chars_cbd.csv')
 
 #construct dataset
 temp <- chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`), !is.na(dist_to_cbd)) %>%
-  mutate(quantile_rank = ntile(density2019, 10),
-         category = ifelse(dist_to_cbd < 2000, 'cbd', 
+  mutate(quantile_rank = 'cbd', 
+         quantile_rank = replace(quantile_rank, dist_to_cbd >= 2000, ntile(density2019[dist_to_cbd>=2000], 10)),
+         category = ifelse(quantile_rank == 'cbd', 'cbd',
                            case_when(quantile_rank == 10 ~ 'high',
                                      quantile_rank %in% c(6:9) ~ 'mid',
                                      TRUE ~ 'low'))) %>%
   inner_join(df2, by = 'zip') %>% 
   mutate(date = as.Date(date),
          zhvi_pop = zhvi*`2019 Population`) %>%
-  filter(date >= as.Date('2018-01-01'), date < as.Date('2021-05-01')) %>%
+  filter(date >= as.Date('2018-01-01'), date < as.Date(end_date)) %>%
   group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE, rule = 2)) %>% 
   group_by(category, date) %>%
   summarise(zhvi_pop = sum(zhvi_pop, na.rm = TRUE),
@@ -134,37 +146,29 @@ temp <- chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`), !is.
   mutate(
     val = zhvi, name = category,
     type = case_when(str_detect(name, 'high') ~ 'high density',
-                     str_detect(name, 'mid') ~ 'mid density',
-                     str_detect(name, 'cbd') ~ 'CBD',
-                     TRUE ~ 'low density'), emph = "b"
+                     str_detect(name, 'mid') ~ 'suburb',
+                     str_detect(name, 'cbd') ~ 'city center',
+                     TRUE ~ 'exurb'), emph = "b"
   )
 
-#make plot
 temp %>% ggplot(
-    aes(x=date, y = val, color = type, linetype = as.factor(emph), 
-        alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
+  aes(x=date, y = val, color = type, linetype = as.factor(emph), 
+      alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
   geom_line()+
-  xlim(as.Date('2018-01-01'), as.Date('2021-05-01')) + 
+  xlim(as.Date('2018-01-01'), as.Date(end_date_long)) + 
   geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
+  geom_dl(aes(label = type), method = list(dl.trans(x=x+1.7, y=y+.35),'last.bumpup', cex = 1.5, hjust=1)) +   
   scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
   scale_size_manual(values = c(1.8, 1), guide="none")+
   scale_alpha_manual(values = c(1, 0.8), guide="none")+
   scale_linetype(guide='none') +
   labs(x  = "", 
        y = "Home Value Index (Feb 2020=100)",
-       size = 7
-  )+    geom_text(label="Feb 2020", x=as.Date('2019-12-01'), y=104, size = 6, color = 'black',
+       size = 10
+  )+
+  geom_text(label="Feb 2020", x=as.Date('2019-12-01'), y=95, size = 6, color = 'black',
   ) +
-  geom_text(label="low density", x=as.Date('2020-11-01'), y=109, size = 6, color = black,
-  ) +
-  geom_text(label="mid density", x=as.Date('2021-02-15'), y=105.5, size = 6, color = green,
-  ) +
-  geom_text(label="high density", x=as.Date('2021-02-15'), y=102, size = 6, color = cardinal,
-  ) +
-  geom_text(label="CBD", x=as.Date('2020-12-01'), y=98, size = 6, color = teal,
-  ) +
-  
   theme_minimal()+
   theme(text = element_text(size=20),
         plot.title= element_text(hjust = 0.5, family = "serif"),
@@ -172,6 +176,7 @@ temp %>% ggplot(
         axis.text.x = element_text(size = 20),
         axis.text.y = element_text(size = 20)
   )
+
 #save plot
 ggsave('./figures-tables/fig1b.png', plot = last_plot(), width = 10, height = 8)
 
@@ -180,7 +185,7 @@ ggsave('./figures-tables/fig1b.png', plot = last_plot(), width = 10, height = 8)
 ###########################################
 #read in zip code characteristics
 chars <- read_csv('./data/zip_all_chars_cbd.csv', 
-                  col_types = cols('zip' = col_integer())) %>% select(!estab_count)
+                  col_types = cols('zip' = col_integer())) %>% dplyr::select(!estab_count)
 #read in zip code level business establishment counts
 bus_chars <- read_csv('./data/zbp_wfh.csv',
                       col_types = cols('zip' = col_integer()))
@@ -192,28 +197,33 @@ usps <- read_csv('./data/USPS_zips.csv')
 ## A. population flows
 #construct dataset
 temp <- chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`)) %>%
-  mutate(quantile_rank = ntile(density2019, 10),
-         category = if_else(dist_to_cbd <2000, 'cbd', 
-                            case_when(quantile_rank == 10 ~ 'high',
-                                      quantile_rank %in% c(6:9) ~ 'mid',
-                                      TRUE ~ 'low'))) %>%
+  mutate(quantile_rank = 'cbd', 
+         quantile_rank = replace(quantile_rank, dist_to_cbd >= 2000, ntile(density2019[dist_to_cbd>=2000], 10)),
+         category = ifelse(quantile_rank == 'cbd', 'city center',
+                           case_when(quantile_rank == 10 ~ 'high density',
+                                     quantile_rank %in% c(6:9) ~ 'suburb',
+                                     TRUE ~ 'exurb'))) %>%
   inner_join(usps, by = 'zip') %>% 
   mutate(date = as.Date(date)) %>%
-  filter(date >= as.Date('2018-01-01'), date < as.Date('2021-05-01')) %>%
+  filter(date >= as.Date('2018-01-01'), date < as.Date(end_date)) %>%
   group_by(zip) %>% mutate(net_pop = na.approx(net_pop, na.rm=FALSE, rule = 2)) %>%
   group_by(category, date) %>%
   summarise(net_pop = sum(net_pop, na.rm = TRUE)/sum(`2019 Population`)*100) %>% 
   group_by(category) %>% mutate(net_pop = net_pop - net_pop[date == as.Date('2020-02-15')]) %>%
   mutate(emph="b", val = net_pop, name = category)
+
+temp %>% dplyr::select(category, date, net_pop) %>% write_csv('fig2a.csv')
+
 #make plot
 temp %>% ggplot(
     aes(x=date, y = val, color = name, linetype = as.factor(emph), 
         alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
   geom_line()+
-  xlim(as.Date('2018-01-01'), as.Date('2021-05-01')) + 
-  ylim(-3, .5) +
+  xlim(as.Date('2018-01-01'), as.Date(end_date_long)) + 
+  ylim(-1, .25) + #(-2, .3)
   geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
+  geom_dl(aes(label = name), method = list(cex = 1.5, 'last.bumpup', cex = 1.5)) +   
   scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
   scale_size_manual(values = c(1.8, 1), guide="none")+
   scale_alpha_manual(values = c(1, 0.8), guide="none")+
@@ -222,16 +232,7 @@ temp %>% ggplot(
        y = "Deviations from Feb 2020 (% points)",
        size = 7
   )+
-  geom_text(label="Feb 2020", x=as.Date('2019-12-01'), y=-1, size = 6, color = 'black',
-  ) +
-  geom_text(label="low density", x=as.Date('2020-10-15'), y=.05, size = 6, color = black,
-  ) +
-  geom_text(label="mid density", x=as.Date('2020-10-15'), y=-.15, size = 6, color = green,
-  ) +
-  geom_text(label="high density", x=as.Date('2020-07-15'), y=-.32, size = 6, color = cardinal,
-  ) +
-  geom_text(label="CBD", x=as.Date('2020-11-15'), y=-.6, size = 6, color = teal,
-  ) +
+  geom_text(label="Feb 2020", x=as.Date('2019-11-01'), y=-.5, size = 6, color = 'black') +
   theme_minimal()+
   theme(text = element_text(size=20),
         plot.title= element_text(hjust = 0.5, family = "serif"),
@@ -245,14 +246,15 @@ ggsave('./figures-tables/fig2a.png', plot = last_plot(), width = 10, height = 8)
 ## B. Business flows
 #construct dataset
 temp <- chars %>% filter(MetroShort %in% cities) %>%
-  mutate(quantile_rank = ntile(density2019, 10),
-         category = if_else(dist_to_cbd <2000, 'cbd', 
-                            case_when(quantile_rank == 10 ~ 'high',
-                                      quantile_rank %in% c(6:9) ~ 'mid',
-                                      TRUE ~ 'low'))) %>%
+  mutate(quantile_rank = 'cbd', 
+         quantile_rank = replace(quantile_rank, dist_to_cbd >= 2000, ntile(density2019[dist_to_cbd>=2000], 10)),
+         category = ifelse(quantile_rank == 'cbd', 'city center',
+                           case_when(quantile_rank == 10 ~ 'high density',
+                                     quantile_rank %in% c(6:9) ~ 'suburb',
+                                     TRUE ~ 'exurb'))) %>%
   inner_join(usps, by = 'zip') %>% 
   mutate(date = as.Date(date)) %>%
-  filter(date >= as.Date('2018-01-01'), date < as.Date('2021-05-01')) %>%
+  filter(date >= as.Date('2018-01-01'), date < as.Date(end_date_long)) %>%
   group_by(zip) %>% mutate(net_bus = na.approx(net_bus, na.rm=FALSE, rule = 2)) %>%
   group_by(category, date) %>%
   summarise(net_bus = sum(net_bus, na.rm = TRUE)/sum(estab_count)*100) %>% 
@@ -265,8 +267,9 @@ temp %>% ggplot(
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
   geom_line()+
   ylim(-3, .5) +
-  xlim(as.Date('2018-01-01'), as.Date('2021-05-01')) + 
+  xlim(as.Date('2018-01-01'), as.Date(end_date_long)) + 
   geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
+  geom_dl(aes(label = name), method = list(cex = 1.5, 'last.bumpup', cex = 1.5)) +   
   scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
   scale_size_manual(values = c(1.8, 1), guide="none")+
   scale_alpha_manual(values = c(1, 0.8), guide="none")+
@@ -275,16 +278,7 @@ temp %>% ggplot(
        y = "Deviations from Feb 2020 (% points)",
        size = 7
   )+
-  geom_text(label="Feb 2020", x=as.Date('2019-12-01'), y=-1, size = 6, color = 'black',
-  ) +
-  geom_text(label="low density", x=as.Date('2020-11-15'), y=.2, size = 6, color = black,
-  ) +
-  geom_text(label="mid density", x=as.Date('2021-03-15'), y=-.2, size = 6, color = green,
-  ) +
-  geom_text(label="high density", x=as.Date('2020-08-15'), y=-.35, size = 6, color = cardinal,
-  ) +
-  geom_text(label="CBD", x=as.Date('2020-12-01'), y=-.55, size = 6, color = teal,
-  ) +
+  geom_text(label="Feb 2020", x=as.Date('2019-11-01'), y=-1, size = 6, color = 'black') +
   theme_minimal()+
   theme(text = element_text(size=20),
         plot.title= element_text(hjust = 0.5, family = "serif"),
@@ -308,9 +302,10 @@ library(choroplethrZip)
 df5 <- read_csv('./data/usps_panel_zips.csv', col_types = cols(zip = col_character())) %>%
   mutate(value = round(post_pop, digits = 3),
          zip = ifelse(nchar(zip)==4, paste('0', zip, sep=''), zip)) %>%
-  select(zip, value) %>%
+  dplyr::select(zip, value) %>%
   rename(region = zip) %>%
   filter(!is.na(zip), !is.na(value))
+
 
 ## Create New York map
 df_choro <- df5
@@ -348,17 +343,34 @@ choro$set_zoom_zip(state_zoom=NULL, county_zoom=c('6037', '6059'), msa_zoom=NULL
 choro$render()
 ggsave('./figures-tables/appendixa6_b.png', plot = last_plot(), width = 10, height = 8)
 
+## Create Philly map
+df_choro <- df5
+df_choro$value <- cut(df5$value, breaks = c(-30, -5, -2, -1, 0, 1, 2, 3, 15))
+choro = ZipChoropleth$new(df_choro)
+choro$ggplot_scale = scale_fill_brewer(name="Net inflows/pop (%)", palette = 'RdYlGn')
+choro$set_zoom_zip(state_zoom=NULL, county_zoom=NULL, msa_zoom='Philadelphia-Camden-Wilmington, PA-NJ-DE-MD', zip_zoom=NULL)
+choro$render()
+ggsave('./figures-tables/philly.png', plot = last_plot(), width = 10, height = 8)
+
+## Create Atlanta
+df_choro <- df5
+df_choro$value <- cut(df5$value, breaks = c(-110, -5, -2, -1, 0, 1, 2, 5, 110))
+choro = ZipChoropleth$new(df_choro)
+choro$ggplot_scale = scale_fill_brewer(name="Net inflows/pop (%)", palette = 'RdYlGn')
+choro$set_zoom_zip(state_zoom=NULL, county_zoom=NULL, msa_zoom='Atlanta-Sandy Springs-Roswell, GA', zip_zoom=NULL)
+choro$render()
+ggsave('./figures-tables/atl.png', plot = last_plot(), width = 10, height = 8)
 
 ###########################################
 ## Figure 4: heterogeneity in home price index across metros
 ###########################################
 #read in zip code level home value index for single family homes
-df3 <- read_csv('http://files.zillowstatic.com/research/public_v2/zhvi/Zip_zhvi_uc_sfr_tier_0.33_0.67_sm_sa_mon.csv', 
+df3 <- read_csv('https://files.zillowstatic.com/research/public_csvs/zhvi/Zip_zhvi_uc_sfr_tier_0.33_0.67_sm_sa_month.csv?t=1631634893', 
                 col_types = cols(RegionName = col_double())) %>% 
   rename(zip = 'RegionName', MsaShort = 'Metro') %>%
   mutate(MetroShort = sub("-.*", "", MsaShort),
          MetroShort = paste(MetroShort, State, sep = ', ')) %>%
-  select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
+  dplyr::select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
   pivot_longer(!c(zip, MetroShort), names_to = 'date', values_to = 'zhvi')
 
 #read in zip code characteristics
@@ -380,18 +392,19 @@ msa_chars <- msa_chars <- read_csv('./data/msa_all_chars.csv') %>% filter(!is.na
 grid_plot <- function (msa_group, msa_level, zip_group) {
   options(repr.plot.width=12, repr.plot.height=5)
   temp <- msa_chars %>% filter(get(msa_group) == msa_level) %>%
-            select(MetroShort, msa_pop_rank) %>%
+            dplyr::select(MetroShort, msa_pop_rank) %>%
             inner_join(chars, by = 'MetroShort') %>% 
             filter(!is.na(`2019 Population`), !is.na(dist_to_cbd)) %>%
-            mutate(quantile_rank = ntile(get(zip_group), 10),
-                   category = ifelse(dist_to_cbd < 2000, 'cbd', 
+            mutate(quantile_rank = 'cbd', 
+                   quantile_rank = replace(quantile_rank, dist_to_cbd >= 2000, ntile(get(zip_group)[dist_to_cbd>=2000], 10)),
+                   category = ifelse(quantile_rank == 'cbd', 'cbd',
                                      case_when(quantile_rank == 10 ~ 'high',
                                                quantile_rank %in% c(6:9) ~ 'mid',
                                                TRUE ~ 'low'))) %>%
             inner_join(df3, by = 'zip') %>% 
             mutate(date = as.Date(date),
                    zhvi_pop = zhvi*`2019 Population`) %>%
-            filter(date >= as.Date('2018-01-01'), date < as.Date('2021-05-01')) %>%
+            filter(date >= as.Date('2018-01-01'), date < as.Date(end_date)) %>%
             group_by(zip) %>% mutate(zhvi_pop = na.approx(zhvi_pop, na.rm=FALSE, rule = 2)) %>% 
             group_by(category, date) %>%
             summarise(zhvi_pop = sum(zhvi_pop, na.rm = TRUE),
@@ -401,16 +414,16 @@ grid_plot <- function (msa_group, msa_level, zip_group) {
             mutate(
               val = zhvi, name = category,
               type = case_when(str_detect(name, 'high') ~ 'high dens',
-                               str_detect(name, 'mid') ~ 'mid dens',
-                               str_detect(name, 'cbd') ~ 'CBD',
-                               TRUE ~ 'low dens'), emph = "b"
+                               str_detect(name, 'mid') ~ 'suburb',
+                               str_detect(name, 'cbd') ~ 'city center',
+                               TRUE ~ 'exurb'), emph = "b"
             ) 
     return(temp %>% ggplot(
               aes(x=date, y = val, color = type, linetype = as.factor(emph), 
                   alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
             scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
             geom_line()+
-            xlim(as.Date('2018-01-01'), as.Date('2021-05-01')) + 
+            xlim(as.Date('2018-01-01'), as.Date(end_date_long)) + 
             geom_vline(xintercept=as.Date('2020-02-29'), size=.5, color="black") + 
             geom_dl(aes(label = type), method = list(cex = 1,'last.bumpup')) +   
             scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
@@ -448,7 +461,7 @@ ggsave('./figures-tables/fig4.png', plot = last_plot(), width = 15, height = 6)
 ###########################################
 #read in zip code characteristics
 chars <- read_csv('./data/zip_all_chars_cbd.csv', 
-                  col_types = cols('zip' = col_integer())) %>% select(!estab_count)
+                  col_types = cols('zip' = col_integer())) %>% dplyr::select(!estab_count)
 #read in business establishment counts
 bus_chars <- read_csv('./data/zbp_wfh.csv',
                       col_types = cols('zip' = col_integer()))
@@ -471,17 +484,18 @@ msa_chars <- msa_chars <- read_csv('./data/msa_all_chars.csv') %>% filter(!is.na
 grid_plot <- function (msa_group, msa_level, zip_group) {
   options(repr.plot.width=12, repr.plot.height=5)
   temp <- msa_chars %>% filter(get(msa_group) == msa_level) %>%
-            select(MetroShort, msa_pop_rank) %>%
+            dplyr::select(MetroShort, msa_pop_rank) %>%
             inner_join(chars, by = 'MetroShort') %>% 
             filter(!is.na(`2019 Population`), !is.na(dist_to_cbd)) %>%
-            mutate(quantile_rank = ntile(get(zip_group), 10),
-                   category = if_else(dist_to_cbd <2000, 'cbd', 
-                                      case_when(quantile_rank == 10 ~ 'high',
-                                                quantile_rank %in% c(6:9) ~ 'mid',
-                                                TRUE ~ 'low'))) %>%
+            mutate(quantile_rank = 'cbd', 
+                   quantile_rank = replace(quantile_rank, dist_to_cbd >= 2000, ntile(get(zip_group)[dist_to_cbd>=2000], 10)),
+                   category = ifelse(quantile_rank == 'cbd', 'cbd',
+                                     case_when(quantile_rank == 10 ~ 'high',
+                                               quantile_rank %in% c(6:9) ~ 'mid',
+                                               TRUE ~ 'low'))) %>%
             inner_join(usps, by = 'zip') %>% 
             mutate(date = as.Date(date)) %>%
-            filter(date >= as.Date('2018-01-01'), date < as.Date('2021-05-01')) %>%
+            filter(date >= as.Date('2018-01-01'), date < as.Date(end_date)) %>%
             group_by(zip) %>% mutate(net_pop = na.approx(net_pop, na.rm=FALSE, rule = 2)) %>%
             group_by(category, date) %>%
             summarise(net_pop = sum(net_pop, na.rm = TRUE)/sum(`2019 Population`)*100) %>% 
@@ -489,17 +503,17 @@ grid_plot <- function (msa_group, msa_level, zip_group) {
             mutate(
               val = net_pop, name = category,
               type = case_when(str_detect(name, 'high') ~ 'high dens',
-                               str_detect(name, 'mid') ~ 'mid dens',
-                               str_detect(name, 'cbd') ~ 'CBD',
-                               TRUE ~ 'low dens'), emph = "b"
+                               str_detect(name, 'mid') ~ 'suburb',
+                               str_detect(name, 'cbd') ~ 'city center',
+                               TRUE ~ 'exurb'), emph = "b"
             )
   return(temp %>% ggplot(
               aes(x=date, y = val, color = type, linetype = as.factor(emph), 
                   alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
             scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
             geom_line()+
-            xlim(as.Date('2018-01-01'), as.Date('2021-05-01')) + 
-            ylim(-2, .25) + 
+            xlim(as.Date('2018-01-01'), as.Date(end_date_long)) + 
+            ylim(-1, .25) + 
             geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
             geom_dl(aes(label = type), method = list(cex = 1,'last.bumpup')) +   
             scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
@@ -535,11 +549,14 @@ ggsave('./figures-tables/fig5.png', plot = last_plot(), width = 15, height = 6)
 ## Appendix A1: Heterogeneity in rents
 ###########################################
 #read in Zillow rental index data
-df <- read_csv('https://files.zillowstatic.com/research/public_v2/zori/Zip_ZORI_AllHomesPlusMultifamily_Smoothed.csv', 
+df <- read_csv('https://files.zillowstatic.com/research/public_csvs/zori/Zip_zori_sm_month.csv?t=1666834047', 
                col_types = cols(RegionName = col_double())) %>% rename(zip = 'RegionName') %>%
-  select(!c(RegionID, SizeRank, MsaName)) %>% 
+  dplyr::select(!c(RegionID, SizeRank, MsaName)) %>% 
   pivot_longer(!zip, names_to = 'date', values_to = 'zori') %>%
-  mutate(date = as.Date(as.yearmon(date)) + 14)
+  mutate(date = as.Date(as.yearmon(date)) + 14) %>%
+  group_by(zip) %>% mutate(zori = na.approx(zori, na.rm=FALSE, rule = 2),
+                           triple = ifelse(zori/lag(zori, 12) > 3, 1, 0)) %>%
+  group_by(zip) %>% filter(all(triple==0 | is.na(triple))) ### filter out rows with 3x growth in rents (happens when there are several consecutive missing observations that zillow imputes)
 
 #read in zip code characteristics
 chars <- read_csv('./data/zip_all_chars_cbd.csv')
@@ -560,19 +577,19 @@ msa_chars <- msa_chars <- read_csv('./data/msa_all_chars.csv') %>% filter(!is.na
 grid_plot <- function (msa_group, msa_level, zip_group) {
   options(repr.plot.width=12, repr.plot.height=5)
   temp <- msa_chars %>% filter(get(msa_group) == msa_level) %>%
-            select(MetroShort, msa_pop_rank) %>%
+            dplyr::select(MetroShort, msa_pop_rank) %>%
             inner_join(chars, by = 'MetroShort') %>% 
             filter(!is.na(`2019 Population`), !is.na(dist_to_cbd)) %>%
-            mutate(quantile_rank = ntile(get(zip_group), 10),
-                   category = ifelse(dist_to_cbd < 2000, 'cbd', 
+            mutate(quantile_rank = 'cbd', 
+                   quantile_rank = replace(quantile_rank, dist_to_cbd >= 2000, ntile(get(zip_group)[dist_to_cbd>=2000], 10)),
+                   category = ifelse(quantile_rank == 'cbd', 'cbd',
                                      case_when(quantile_rank == 10 ~ 'high',
                                                quantile_rank %in% c(6:9) ~ 'mid',
                                                TRUE ~ 'low'))) %>%
             inner_join(df, by = 'zip') %>% 
             mutate(date = as.Date(date),
                    zori_pop = zori*`2019 Population`) %>%
-            filter(date >= as.Date('2018-01-01'), date < as.Date('2021-05-01')) %>%
-            group_by(zip) %>% mutate(zori_pop = na.approx(zori_pop, na.rm=FALSE, rule = 2)) %>%
+            filter(date >= as.Date('2018-01-01'), date < as.Date(end_date)) %>%
             group_by(category, date) %>%
             summarise(zori_pop = sum(zori_pop, na.rm = TRUE),
                       population = sum(`2019 Population`, na.rm = TRUE)) %>% 
@@ -581,16 +598,16 @@ grid_plot <- function (msa_group, msa_level, zip_group) {
             mutate(
               val = zori, name = category,
               type = case_when(str_detect(name, 'high') ~ 'high dens',
-                               str_detect(name, 'mid') ~ 'mid dens',
-                               str_detect(name, 'cbd') ~ 'CBD',
-                               TRUE ~ 'low dens'), emph = "b"
+                               str_detect(name, 'mid') ~ 'suburb',
+                               str_detect(name, 'cbd') ~ 'city center',
+                               TRUE ~ 'exurb'), emph = "b"
             )
   return(temp %>% ggplot(
               aes(x=date, y = val, color = type, linetype = as.factor(emph), 
                   alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
             scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
             geom_line()+
-            xlim(as.Date('2018-01-01'), as.Date('2021-05-01')) + 
+            xlim(as.Date('2018-01-01'), as.Date(end_date_long)) + 
             geom_vline(xintercept=as.Date('2020-02-29'), size=.5, color="black") + 
             geom_dl(aes(label = type), method = list(cex = 1,'last.bumpup')) +   
             scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
@@ -601,7 +618,7 @@ grid_plot <- function (msa_group, msa_level, zip_group) {
                  x  ="", 
                  y = ifelse(msa_level=='top12', 'Rental Index (Feb 2020=100)', '')
             )+
-            geom_text(label="Feb 2020", x=as.Date('2019-08-01'), y=105, size = 5, color = 'black') +
+            geom_text(label="Feb 2020", x=as.Date('2019-06-01'), y=105, size = 5, color = 'black') +
             coord_cartesian(clip = "off") + 
             theme_minimal()+
             theme(text = element_text(size=16),
@@ -627,25 +644,28 @@ ggsave('./figures-tables/appendix_a1.png', plot = last_plot(), width = 15, heigh
 ###########################################
 ## Part A. rental index
 #read in Zillow rental index data
-df <- read_csv('https://files.zillowstatic.com/research/public_v2/zori/Zip_ZORI_AllHomesPlusMultifamily_Smoothed.csv', 
+df <- read_csv('https://files.zillowstatic.com/research/public_csvs/zori/Zip_zori_sm_month.csv?t=1667147161', 
                col_types = cols(RegionName = col_double())) %>% rename(zip = 'RegionName') %>%
-  select(!c(RegionID, SizeRank, MsaName)) %>% 
+  dplyr::select(!c(RegionID, SizeRank, RegionType, StateName, State, City, Metro, CountyName)) %>% 
   pivot_longer(!zip, names_to = 'date', values_to = 'zori') %>%
-  mutate(date = as.Date(as.yearmon(date)) + 14)
+  mutate(date = as.Date(as.yearmon(date)) + 14) %>% 
+  group_by(zip) %>% mutate(zori = na.approx(zori, na.rm=FALSE, rule = 2),
+                           triple = ifelse(zori/lag(zori, 12) > 3, 1, 0)) %>%
+  group_by(zip) %>% filter(all(triple==0 | is.na(triple))) ### filter out rows with 3x growth in rents (happens when there are several consecutive missing observations that zillow imputes)
 
 #read in zip code characteristics
 chars <- read_csv('./data/zip_all_chars_cbd.csv')
 
 #create dataset
 temp <- chars %>% filter(MetroShort %in% cities, !is.na(dist_to_cbd)) %>%
-  mutate(quantile_rank = ntile(density2019, 10),
-         category = ifelse(dist_to_cbd < 2000, 'cbd', 
+  mutate(quantile_rank = 'cbd', 
+         quantile_rank = replace(quantile_rank, dist_to_cbd >= 2000, ntile(density2019[dist_to_cbd>=2000], 10)),
+         category = ifelse(quantile_rank == 'cbd', 'cbd',
                            case_when(quantile_rank == 10 ~ 'high',
                                      quantile_rank %in% c(6:9) ~ 'mid',
                                      TRUE ~ 'low'))) %>%
   inner_join(df, by = 'zip') %>% 
   mutate(date = as.Date(date)) %>%
-  group_by(zip) %>% mutate(zori = na.approx(zori, na.rm=FALSE, rule = 2)) %>%
   group_by(zip) %>% mutate(zori = zori/zori[date == as.Date('2020-02-15')]*100) %>%
   mutate(zori_pop = zori*`2019 Population`) %>%
   group_by(category, date) %>%
@@ -653,19 +673,19 @@ temp <- chars %>% filter(MetroShort %in% cities, !is.na(dist_to_cbd)) %>%
             population = sum(`2019 Population`, na.rm = TRUE)) %>% 
   mutate(val = zori_pop/population,
          name = category) %>%
-  filter(date >= as.Date('2018-01-01'), date < as.Date('2021-05-01')) %>%
+  filter(date >= as.Date('2018-01-01'), date < as.Date(end_date)) %>%
   mutate(
     type = case_when(str_detect(name, 'high') ~ 'high density',
-                     str_detect(name, 'mid') ~ 'mid density',
-                     str_detect(name, 'cbd') ~ 'CBD',
-                     TRUE ~ 'low density'), emph = "b"
+                     str_detect(name, 'mid') ~ 'suburb',
+                     str_detect(name, 'cbd') ~ 'city center',
+                     TRUE ~ 'exurb'), emph = "b"
   )
 temp %>% ggplot(
     aes(x=date, y = val, color = type, linetype = as.factor(emph), 
         alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
   geom_line()+
-  xlim(as.Date('2018-01-01'), as.Date('2021-05-30')) + 
+  xlim(as.Date('2018-01-01'), as.Date(end_date_long)) + 
   geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
   geom_dl(aes(label = type), method = list(dl.trans(x=x+1.7, y = y+.3),'last.bumpup', cex = 1.5, hjust=1)) +   
   scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
@@ -690,12 +710,12 @@ ggsave('./figures-tables/appendix_a3a.png', plot = last_plot(), width = 10, heig
 
 ## Part B. home value index
 #read in zip code level Zillow home value index data for single family homes
-df2 <- read_csv('http://files.zillowstatic.com/research/public_v2/zhvi/Zip_zhvi_uc_sfr_tier_0.33_0.67_sm_sa_mon.csv', 
+df2 <- read_csv('https://files.zillowstatic.com/research/public_csvs/zhvi/Zip_zhvi_uc_sfr_tier_0.33_0.67_sm_sa_month.csv', 
                 col_types = cols(RegionName = col_double())) %>% 
   rename(zip = 'RegionName', MsaShort = 'Metro') %>%
   mutate(MetroShort = sub("-.*", "", MsaShort),
          MetroShort = paste(MetroShort, State, sep = ', ')) %>%
-  select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
+  dplyr::select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
   pivot_longer(!c(zip, MetroShort), names_to = 'date', values_to = 'zhvi')
 
 #read in zip code characteristics
@@ -703,8 +723,9 @@ chars <- read_csv('./data/zip_all_chars_cbd.csv')
 
 #create dataset
 temp <- chars %>% filter(MetroShort %in% cities, !is.na(density2019), !is.na(dist_to_cbd), !is.na(`2019 Population`)) %>%
-  mutate(quantile_rank = ntile(density2019, 10),
-         category = ifelse(dist_to_cbd < 2000, 'cbd', 
+  mutate(quantile_rank = 'cbd', 
+         quantile_rank = replace(quantile_rank, dist_to_cbd >= 2000, ntile(density2019[dist_to_cbd>=2000], 10)),
+         category = ifelse(quantile_rank == 'cbd', 'cbd',
                            case_when(quantile_rank == 10 ~ 'high',
                                      quantile_rank %in% c(6:9) ~ 'mid',
                                      TRUE ~ 'low'))) %>%
@@ -718,12 +739,12 @@ temp <- chars %>% filter(MetroShort %in% cities, !is.na(density2019), !is.na(dis
             population = sum(`2019 Population`, na.rm = TRUE)) %>% 
   mutate(val = zhvi_pop/population,
          name = category) %>%
-  filter(date >= as.Date('2018-01-01'), date < as.Date('2021-05-01')) %>%
+  filter(date >= as.Date('2018-01-01'), date < as.Date(end_date)) %>%
   mutate(
     type = case_when(str_detect(name, 'high') ~ 'high density',
-                     str_detect(name, 'mid') ~ 'mid density',
+                     str_detect(name, 'mid') ~ 'suburb',
                      str_detect(name, 'cbd') ~ 'city center',
-                     TRUE ~ 'low density'), emph = "b"
+                     TRUE ~ 'exurb'), emph = "b"
   )
 #make plot
 temp %>% ggplot(
@@ -731,8 +752,9 @@ temp %>% ggplot(
         alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
   geom_line()+
-  xlim(as.Date('2018-01-01'), as.Date('2021-05-15')) + 
+  xlim(as.Date('2018-01-01'), as.Date(end_date_long)) + 
   geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
+  geom_dl(aes(label = type), method = list(dl.trans(x=x+1.7, y = y+.3),'last.bumpup', cex = 1.5, hjust=1)) +   
   scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
   scale_size_manual(values = c(1.8, 1), guide="none")+
   scale_alpha_manual(values = c(1, 0.8), guide="none")+
@@ -741,16 +763,7 @@ temp %>% ggplot(
        y = "Home Value Index (Feb 2020=100)",
        size = 7
   )+
-  geom_text(label="Feb 2020", x=as.Date('2019-12-01'), y=104, size = 6, color = 'black',
-  ) +
-  geom_text(label="low density", x=as.Date('2021-04-15'), y=108, size = 6, color = black,
-  ) +
-  geom_text(label="mid density", x=as.Date('2020-10-01'), y=109, size = 6, color = green,
-  ) +
-  geom_text(label="high density", x=as.Date('2021-01-25'), y=102.5, size = 6, color = cardinal,
-  ) +
-  geom_text(label="CBD", x=as.Date('2021-02-01'), y=100, size = 6, color = teal,
-  ) +
+  geom_text(label="Feb 2020", x=as.Date('2020-03-01'), y=104, size = 6, color = 'black') +
   theme_minimal()+
   theme(text = element_text(size=24),
         plot.title= element_text(hjust = 0.5, family = "serif"),
@@ -766,12 +779,12 @@ ggsave('./figures-tables/appendix_a3b.png', plot = last_plot(), width = 10, heig
 ###########################################
 ## A. 9/11
 #read in Zillow home value index
-df2 <- read_csv('https://files.zillowstatic.com/research/public_v2/zhvi/Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_mon.csv?t=1620068499', 
+df2 <- read_csv('https://files.zillowstatic.com/research/public_csvs/zhvi/Zip_zhvi_uc_sfr_tier_0.33_0.67_sm_sa_month.csv?t=1635201481', 
                 col_types = cols(RegionName = col_double())) %>% 
   rename(zip = 'RegionName', MsaShort = 'Metro') %>%
   mutate(MetroShort = sub("-.*", "", MsaShort),
          MetroShort = paste(MetroShort, State, sep = ', ')) %>%
-  select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
+  dplyr::select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
   pivot_longer(!c(zip, MetroShort), names_to = 'date', values_to = 'zhvi')
 
 #read in zip code characteristics
@@ -779,8 +792,9 @@ chars <- read_csv('./data/zip_all_chars_cbd.csv')
 
 #create dataset
 temp <- chars %>% filter(MetroShort %in% cities, !is.na(`2010 Population`), !is.na(dist_to_cbd)) %>%
-  mutate(quantile_rank = ntile(density2019, 10),
-         category = ifelse(dist_to_cbd < 2000, 'cbd', 
+  mutate(quantile_rank = 'cbd', 
+         quantile_rank = replace(quantile_rank, dist_to_cbd >= 2000, ntile(density2019[dist_to_cbd>=2000], 10)),
+         category = ifelse(quantile_rank == 'cbd', 'cbd',
                            case_when(quantile_rank == 10 ~ 'high',
                                      quantile_rank %in% c(6:9) ~ 'mid',
                                      TRUE ~ 'low'))) %>%
@@ -793,13 +807,13 @@ temp <- chars %>% filter(MetroShort %in% cities, !is.na(`2010 Population`), !is.
   summarise(zhvi_pop = sum(zhvi_pop, na.rm = TRUE),
             population = sum(`2010 Population`, na.rm = TRUE)) %>% 
   mutate(zhvi = zhvi_pop/population) %>%
-  group_by(category) %>% mutate(zhvi = zhvi/zhvi[date == as.Date('2001-08-31')]*100) %>%
+  group_by(category) %>% mutate(zhvi = zhvi/zhvi[date == as.Date('2001-06-30')]*100) %>%
   mutate(
     val = zhvi, name = category,
     type = case_when(str_detect(name, 'high') ~ 'high density',
-                     str_detect(name, 'mid') ~ 'mid density',
-                     str_detect(name, 'cbd') ~ 'CBD',
-                     TRUE ~ 'low density'), emph = "b"
+                     str_detect(name, 'mid') ~ 'suburb',
+                     str_detect(name, 'cbd') ~ 'city center',
+                     TRUE ~ 'exurb'), emph = "b"
   )
 
 #make plot
@@ -809,9 +823,9 @@ temp %>% ggplot(
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
   geom_line()+
   xlim(as.Date('2000-07-01'), as.Date('2002-12-30')) + 
-  geom_vline(xintercept=as.Date('2001-08-31'), size=.5, color="black") + 
-  scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
+  geom_vline(xintercept=as.Date('2001-06-30'), size=.5, color="black") + 
   geom_dl(aes(label = type), method = list(cex = 1, 'last.bumpup', cex = 1.5)) +   
+  scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
   scale_size_manual(values = c(1.8, 1), guide="none")+
   scale_alpha_manual(values = c(1, 0.8), guide="none")+
   scale_linetype(guide='none') +
@@ -833,8 +847,9 @@ ggsave('./figures-tables/appendix_a4a.png', plot = last_plot(), width = 10, heig
 ## B. Great Recession
 #create dataset
 temp <- chars %>% filter(MetroShort %in% cities, !is.na(`2010 Population`), !is.na(dist_to_cbd)) %>%
-  mutate(quantile_rank = ntile(density2019, 10),
-         category = ifelse(dist_to_cbd < 2000, 'cbd', 
+  mutate(quantile_rank = 'cbd', 
+         quantile_rank = replace(quantile_rank, dist_to_cbd >= 2000, ntile(density2019[dist_to_cbd>=2000], 10)),
+         category = ifelse(quantile_rank == 'cbd', 'cbd',
                            case_when(quantile_rank == 10 ~ 'high',
                                      quantile_rank %in% c(6:9) ~ 'mid',
                                      TRUE ~ 'low'))) %>%
@@ -851,9 +866,9 @@ temp <- chars %>% filter(MetroShort %in% cities, !is.na(`2010 Population`), !is.
   mutate(
     val = zhvi, name = category,
     type = case_when(str_detect(name, 'high') ~ 'high density',
-                     str_detect(name, 'mid') ~ 'mid density',
-                     str_detect(name, 'cbd') ~ 'CBD',
-                     TRUE ~ 'low density'), emph = "b"
+                     str_detect(name, 'mid') ~ 'suburb',
+                     str_detect(name, 'cbd') ~ 'city center',
+                     TRUE ~ 'exurb'), emph = "b"
   )
 #create plot
 temp %>% ggplot(
@@ -889,7 +904,7 @@ ggsave('./figures-tables/appendix_a4b.png', plot = last_plot(), width = 10, heig
 ###########################################
 #read in zip code characteristics
 chars <- read_csv('./data/zip_all_chars_cbd.csv', 
-                  col_types = cols('zip' = col_integer())) %>% select(!estab_count)
+                  col_types = cols('zip' = col_integer())) %>% dplyr::select(!estab_count)
 #read in business establishment counts
 bus_chars <- read_csv('./data/zbp_wfh.csv',
                       col_types = cols('zip' = col_integer()))
@@ -901,12 +916,12 @@ usps <- read_csv('./data/USPS_zips.csv')
 ## A. population flows
 #create dataset
 temp <- chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`)) %>%
-  mutate(quantile_rank = ntile(density, 10),
-         category = if_else(dist_to_cbd <2000, 'cbd', 
-                            case_when(quantile_rank == 10 ~ 'high',
-                                      quantile_rank %in% c(6:9) ~ 'mid',
-                                      TRUE ~ 'low'), case_when(quantile_rank == 10 ~ 'high', 
-                                                               quantile_rank %in% c(6:9) ~ 'mid', TRUE ~ 'low'))) %>%
+  mutate(quantile_rank = 'cbd', 
+         quantile_rank = replace(quantile_rank, dist_to_cbd >= 2000, ntile(density2019[dist_to_cbd>=2000], 10)),
+         category = ifelse(quantile_rank == 'cbd', 'city center',
+                           case_when(quantile_rank == 10 ~ 'high density',
+                                     quantile_rank %in% c(6:9) ~ 'suburb',
+                                     TRUE ~ 'exurb'))) %>%
   inner_join(usps, by = 'zip') %>% 
   mutate(date = as.Date(date)) %>%
   group_by(category, date) %>%
@@ -915,27 +930,26 @@ temp <- chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`)) %>%
             net_pop = sum(net_pop, na.rm = TRUE)/sum(`2019 Population`)*100,
   ) %>% 
   pivot_wider(id_cols = 'date', names_from = 'category', values_from = 'net_pop') %>% 
-  select(date, low, mid, high, cbd) %>% 
-  filter(date >= as.Date('2018-01-01'), date < as.Date('2021-05-01')) %>%
+  dplyr::select(date, `exurb`, `suburb`, `high density`, `city center`) %>% 
+  filter(date >= as.Date('2018-01-01')) %>%
   mutate (
-    
-    low = cumsum(low - low[date == as.Date('2020-02-15')]),
-    mid = cumsum(mid - mid[date == as.Date('2020-02-15')]),
-    high = cumsum(high - high[date == as.Date('2020-02-15')]),
-    cbd = cumsum(cbd - cbd[date == as.Date('2020-02-15')]),
+    exurb = cumsum(exurb - exurb[date == as.Date('2020-02-15')]),
+    suburb = cumsum(suburb - suburb[date == as.Date('2020-02-15')]),
+    `high density` = cumsum(`high density` - `high density`[date == as.Date('2020-02-15')]),
+    `city center` = cumsum(`city center` - `city center`[date == as.Date('2020-02-15')]),
   ) %>%
-  pivot_longer(c(low, mid, high, cbd),
+  pivot_longer(c(`exurb`, `suburb`, `high density`, `city center`),
                names_to = "name", values_to = "val") %>% 
-  mutate(emph = "b"
-  )
+  mutate(emph = "b", type=name)
 #create plot
 temp %>% ggplot(
     aes(x=date, y = val, color = name, linet_permype = as.factor(emph), 
         alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
   geom_line()+
-  xlim(as.Date('2018-01-01'), as.Date('2021-05-01')) + 
+  xlim(as.Date('2018-01-01'), as.Date(end_date_long)) + 
   geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
+  geom_dl(aes(label = type), method = list(cex = 1.5, 'last.bumpup', cex = 1.5)) +   
   scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
   scale_size_manual(values = c(1.5, 0.8), guide="none")+
   scale_alpha_manual(values = c(1, 0.8), guide="none")+
@@ -943,16 +957,7 @@ temp %>% ggplot(
   labs(x  = "", 
        y = "Deviations from Jan 2018 (% points)"
   )+
-  geom_text(label="Feb 2020", x=as.Date('2019-12-01'), y=-5, size = 6, color = 'black',
-  ) +
-  geom_text(label="low density", x=as.Date('2020-12-15'), y=.8, size = 6, color = black,
-  ) +
-  geom_text(label="mid density", x=as.Date('2020-12-15'), y=-1.5, size = 6, color = green,
-  ) +
-  geom_text(label="high density", x=as.Date('2020-12-15'), y=-7.5, size = 6, color = cardinal,
-  ) +
-  geom_text(label="CBD", x=as.Date('2021-01-15'), y=-14, size = 6, color = teal,
-  ) +
+  geom_text(label="Feb 2020", x=as.Date('2019-12-01'), y=-5, size = 6, color = 'black') +
   theme_minimal()+
   theme(text = element_text(size=20),
         plot.title= element_text(hjust = 0.5, family = "serif"),
@@ -966,38 +971,37 @@ ggsave('./figures-tables/appendix_a5a.png', plot = last_plot(), width = 10, heig
 ## B. business flows
 #create dataset
 temp <- chars %>% filter(MetroShort %in% cities, !is.na(`2019 Population`)) %>%
-  mutate(quantile_rank = ntile(density, 10),
-         category = if_else(dist_to_cbd <2000, 'cbd', 
-                            case_when(quantile_rank == 10 ~ 'high',
-                                      quantile_rank %in% c(6:9) ~ 'mid',
-                                      TRUE ~ 'low'), case_when(quantile_rank == 10 ~ 'high', 
-                                                               quantile_rank %in% c(6:9) ~ 'mid', TRUE ~ 'low'))) %>%
+  mutate(quantile_rank = 'cbd', 
+         quantile_rank = replace(quantile_rank, dist_to_cbd >= 2000, ntile(density2019[dist_to_cbd>=2000], 10)),
+         category = ifelse(quantile_rank == 'cbd', 'city center',
+                           case_when(quantile_rank == 10 ~ 'high density',
+                                     quantile_rank %in% c(6:9) ~ 'suburb',
+                                     TRUE ~ 'exurb'))) %>%
   inner_join(usps, by = 'zip') %>% 
   mutate(date = as.Date(date)) %>%
   group_by(category, date) %>%
   summarise(net_bus = sum(net_bus, na.rm = TRUE)/sum(estab_count)*100) %>% 
   pivot_wider(id_cols = 'date', names_from = 'category', values_from = 'net_bus') %>% 
-  select(date, low, mid, high, cbd) %>% 
-  filter(date >= as.Date('2018-01-01'), date < as.Date('2021-05-01')) %>%
+  dplyr::select(date, exurb, suburb, `high density`, `city center`) %>% 
+  filter(date >= as.Date('2018-01-01'), date < as.Date(end_date)) %>%
   mutate (
-    
-    low = cumsum(low - low[date == as.Date('2020-02-15')]),
-    mid = cumsum(mid - mid[date == as.Date('2020-02-15')]),
-    high = cumsum(high - high[date == as.Date('2020-02-15')]),
-    cbd = cumsum(cbd - cbd[date == as.Date('2020-02-15')]),
+    exurb = cumsum(exurb - exurb[date == as.Date('2020-02-15')]),
+    suburb = cumsum(suburb - suburb[date == as.Date('2020-02-15')]),
+    `high density` = cumsum(`high density` - `high density`[date == as.Date('2020-02-15')]),
+    `city center` = cumsum(`city center` - `city center`[date == as.Date('2020-02-15')]),
   ) %>%
-  pivot_longer(c(low, mid, high, cbd),
+  pivot_longer(c(`exurb`, `suburb`, `high density`, `city center`),
                names_to = "name", values_to = "val") %>% 
-  mutate(emph = "b"
-  )
+  mutate(emph = "b", type = name)
 #create plot
 temp %>% ggplot(
     aes(x=date, y = val, color = name, linet_permype = as.factor(emph), 
         alpha = as.factor(emph),size = as.factor(emph)), guide='none') +
   scale_x_date(date_labels="%Y",date_breaks  ="1 year") +
   geom_line()+
-  xlim(as.Date('2018-01-01'), as.Date('2021-05-01')) + 
+  xlim(as.Date('2018-01-01'), as.Date(end_date_long)) + 
   geom_vline(xintercept=as.Date('2020-02-15'), size=.5, color="black") + 
+  geom_dl(aes(label = type), method = list(cex = 1, 'last.bumpup', cex = 1.5)) +   
   scale_colour_manual(values = c(teal, cardinal, black, green), guide='none')+
   scale_size_manual(values = c(1.5, 0.8), guide="none")+
   scale_alpha_manual(values = c(1, 0.8), guide="none")+
@@ -1005,16 +1009,7 @@ temp %>% ggplot(
   labs(x  = "", 
        y = "Deviations from Jan 2018 (% points)"
   )+
-  geom_text(label="Feb 2020", x=as.Date('2019-12-01'), y=-5, size = 6, color = 'black',
-  ) +
-  geom_text(label="low density", x=as.Date('2020-12-15'), y=1, size = 6, color = black,
-  ) +
-  geom_text(label="mid density", x=as.Date('2020-12-15'), y=-.8, size = 6, color = green,
-  ) +
-  geom_text(label="high density", x=as.Date('2021-01-15'), y=-2.5, size = 6, color = cardinal,
-  ) +
-  geom_text(label="CBD", x=as.Date('2021-02-15'), y=-11, size = 6, color = teal,
-  ) +
+  geom_text(label="Feb 2020", x=as.Date('2020-03-01'), y=-5, size = 6, color = 'black') +
   theme_minimal()+
   theme(text = element_text(size=20),
         plot.title= element_text(hjust = 0.5, family = "serif"),
@@ -1034,7 +1029,7 @@ ggsave('./figures-tables/appendix_a5b.png', plot = last_plot(), width = 10, heig
 ###########################################
 #read in zip code characteristics
 chars <- read_csv('./data/zip_all_chars_cbd.csv', 
-                  col_types = cols('zip' = col_integer())) %>% select(!estab_count)
+                  col_types = cols('zip' = col_integer())) %>% dplyr::select(!estab_count)
 #read in business establishment counts
 bus_chars <- read_csv('./data/zbp_wfh.csv',
                       col_types = cols('zip' = col_integer()))
@@ -1043,27 +1038,28 @@ chars <- chars %>% inner_join(bus_chars, by = 'zip')
 #read in zip code month level USPS flow data
 usps <- read_csv('./data/USPS_zips.csv')
 
-#Calulate outflows from CBDs for post-Covid period (Feb 2020 - Feb 2021)
+#Calulate outflows from CBDs for post-Covid period (Feb 2020 - Dec 2021)
 inflow_post = chars %>% filter(MetroShort %in% cities, dist_to_cbd < 2000) %>%
-  inner_join(usps, by = 'zip') %>% filter(date >= as.Date('2020-03-01'), date < as.Date('2021-03-01')) %>% 
+  inner_join(usps, by = 'zip') %>% filter(date >= as.Date('2020-03-01'), date < as.Date(end_period)) %>% 
   summarise(net_inflow = sum(net_pop, na.rm = TRUE))
-#Calulate outflows from CBDs for pre-Covid period (Feb 2019 - Feb 2020)
+#Calulate outflows from CBDs for pre-Covid period (Apr 2018 - Feb 2020)
 inflow_pre = chars %>% filter(MetroShort %in% cities, dist_to_cbd < 2000) %>%
-  inner_join(usps, by = 'zip') %>% filter(date >= as.Date('2019-03-01'), date < as.Date('2020-03-01')) %>% 
+  inner_join(usps, by = 'zip') %>% filter(date >= as.Date(start_period), date < as.Date('2020-03-01')) %>% 
   summarise(net_inflow = sum(net_pop, na.rm = TRUE))
 pop = chars %>% filter(MetroShort %in% cities, dist_to_cbd < 2000) %>% summarise(pop = sum(`2019 Population`, na.rm = TRUE))
 print(c(inflow_pre, pop, inflow_pre/pop))
 print(c(inflow_post, pop, inflow_post/pop))
 
 
-#Calulate outflows from CBDs for post-Covid period (Feb 2020 - Feb 2021)
+#Calulate outflows from CBDs for post-Covid period (Feb 2020 - Dec 2021)
 inflow_post = chars %>% filter(MetroShort %in% cities, dist_to_cbd < 2000) %>%
-  inner_join(usps, by = 'zip') %>% filter(date >= as.Date('2020-03-01'), date < as.Date('2021-03-01')) %>% 
+  inner_join(usps, by = 'zip') %>% filter(date >= as.Date('2020-03-01'), date < as.Date(end_period)) %>% 
   summarise(net_inflow = sum(net_bus, na.rm = TRUE))
-#Calulate outflows from CBDs for pre-Covid period (Feb 2019 - Feb 2020)
+#Calulate outflows from CBDs for pre-Covid period (Apr 2018 - Feb 2020)
 inflow_pre = chars %>% filter(MetroShort %in% cities, dist_to_cbd < 2000) %>%
-  inner_join(usps, by = 'zip') %>% filter(date >= as.Date('2019-03-01'), date < as.Date('2020-03-01')) %>% 
+  inner_join(usps, by = 'zip') %>% filter(date >= as.Date(start_period), date < as.Date('2020-03-01')) %>% 
   summarise(net_inflow = sum(net_bus, na.rm = TRUE))
 stock = chars %>% filter(MetroShort %in% cities, dist_to_cbd < 2000) %>% summarise(stock = sum(estab_count, na.rm = TRUE))
 print(c(inflow_pre, stock, inflow_pre/stock))
 print(c(inflow_post, stock, inflow_post/stock))
+

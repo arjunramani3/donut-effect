@@ -3,6 +3,7 @@
 # that can WFH by combining WFH exposure scores at the 2-digit NCAIS level 
 # from Dingel and Neiman (2020) distribution of industries for residents from LODES
 #######################################
+setwd('~/Documents/zillow/thesis/donut-effect/')
 library(tidyverse)
 
 #####load state codes#####
@@ -11,7 +12,7 @@ states <- read_csv('https://raw.githubusercontent.com/kjhealy/fips-codes/master/
 
 #####load lodes data#####
 root <- 'https://lehd.ces.census.gov/data/lodes/LODES7/'
-#structure is root/[state]/[state]_rac/S000_JT00_2018.csv.gz
+#structure is root/[state]/[state]_rac/S000_JT00_2019.csv.gz
 
 #https://www.huduser.gov/portal/datasets/usps_crosswalk.html
 #crosswalk from tract to zip from HUDS
@@ -30,7 +31,7 @@ lodes_naics <- read_csv('./data/external_data/LODES-code-NAICS.csv') %>%
 all <- data.frame(zip = double(), wfh_wage = double(), wfh_emp = double())
 
 for (code in states$state_abbr) {
-  path = paste(root, code, '/rac/', code, '_rac_S000_JT00_2018.csv.gz', sep = '')
+  path = paste(root, code, '/rac/', code, '_rac_S000_JT00_2019.csv.gz', sep = '')
   #get tract, NAICS code panel of address counts
   cur <- read_csv(path) %>% mutate(tract = substr(h_geocode, 0, 11)) %>% 
     select(!c(h_geocode, createdate)) %>%

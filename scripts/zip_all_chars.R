@@ -5,8 +5,8 @@
 #pop density from splitwise
 #CBDs from wikipedia
 rm(list=ls())
+setwd('~/Documents/zillow/thesis/donut-effect/')
 library(tidyverse)
-
 
 #Get population density of zip codes
 #https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/2010-zcta-record-layout.html#par_textimage_5

@@ -25,9 +25,16 @@ cities <- c('San Francisco, CA', 'New York, NY', 'Chicago, IL', 'Boston, MA',
             'Los Angeles, CA', 'Washington, DC', 'Atlanta, GA', 'Miami, FL',
             'Philadelphia, PA', 'Dallas, TX', 'Houston, TX', 'Phoenix, AZ')
 
+#set to your working directory
+setwd('~/Documents/zillow/thesis/donut-effect/')
+
 ## Define avg number of individuals per household
 #https://www.census.gov/data/tables/time-series/demo/families/households.html
-household = 2.5
+household = 1.7
+
+## Define end date of analysis
+start_date = '2017-08-01' #start period of cumulation ending in 2020-03-01 exclusive
+end_date = '2022-10-01' #end period for cumulation starting in 2020-03-01 inclusive
 
 ## Create function to read USPS data
 read_USPS <- function(path) {
@@ -60,17 +67,18 @@ read_USPS <- function(path) {
   return(df)
 }
 
-## Read in USPS data (obtained through FOIA request but most recent years available on USPS website)
-df17 <- read_USPS('https://about.usps.com/who/legal/foia/documents/change-of-address-stats/Y2017.csv')
-df18 <- read_USPS('https://about.usps.com/who/legal/foia/documents/change-of-address-stats/Y2018.csv')
-df19 <- read_USPS('https://about.usps.com/who/legal/foia/documents/change-of-address-stats/Y2019.csv')
-df20 <- read_USPS('https://about.usps.com/who/legal/foia/documents/change-of-address-stats/Y2020.csv')
-df21 <- read_USPS('https://about.usps.com/who/legal/foia/documents/change-of-address-stats/Y2021.csv')
+## Read in USPS data (available at the USPS website's frequently requested datasets page)
+df17 <- read_USPS('~/Documents/zillow/thesis/data/external_data/USPS_online/Y2017.csv')
+df18 <- read_USPS('~/Documents/zillow/thesis/data/external_data/USPS_online/Y2018.csv')
+df19 <- read_USPS('~/Documents/zillow/thesis/data/external_data/USPS_online/Y2019.csv')
+df20 <- read_USPS('~/Documents/zillow/thesis/data/external_data/USPS_online/Y2020.csv')
+df21 <- read_USPS('~/Documents/zillow/thesis/data/external_data/USPS_online/Y2021.csv')
+df22 <- read_USPS('https://about.usps.com/who/legal/foia/documents/change-of-address-stats/Y2022.csv')
 
-df_all <- rbind(df17, df18, df19, df20, df21)
+df_all <- rbind(df17, df18, df19, df20, df21, df22)
 
 df_all <- df_all %>% mutate(
-  across(contains('TOTAL'), ~replace(., . ==  0 , 5)),
+  across(contains('TOTAL'), ~replace(., . ==  0 , 0)), #replace bottom-coded values (any value 0-10 is forced to 0) to 5
   zip = as.integer(zip),
   net = `TOTAL TO ZIP` - `TOTAL FROM ZIP`,
   net_bus = `TOTAL BUSINESS_1` - `TOTAL BUSINESS`,
@@ -78,7 +86,7 @@ df_all <- df_all %>% mutate(
   net_ind = `TOTAL INDIVIDUAL_1` - `TOTAL INDIVIDUAL`,
   net_perm = `TOTAL PERM_1` - `TOTAL PERM`,
   net_temp = `TOTAL TEMP_1` - `TOTAL TEMP`,
-  net_pop = net_fam + net_ind*household  # construct population estimate by multiplying avg
+  net_pop = net_ind + net_fam*household  # construct population estimate by multiplying avg
                                          # household size by number of family+individual moves
 ) %>%
   select(zip, date, CITY, STATE, net, net_bus, net_fam, net_ind, net_perm, net_temp, net_pop) %>%
@@ -100,7 +108,7 @@ cities <- c('San Francisco, CA', 'New York, NY', 'Chicago, IL', 'Boston, MA',
 
 ## Get post-period percent growth
 df3 <- df_all %>%
-  filter(date >= as.Date('2020-03-01'), date < as.Date('2021-03-01')) %>%
+  filter(date >= as.Date('2020-03-01'), date < as.Date(end_date)) %>%
   group_by(zip) %>% summarise(
     post_net = sum(net, na.rm = TRUE),
     post_bus = sum(net_bus, na.rm = TRUE),
@@ -120,7 +128,7 @@ df3 <- df_all %>%
 
 ## Get pre-period percent growth
 df4 <- df_all %>%
-  filter(date >= as.Date('2019-03-01'), date < as.Date('2020-03-01')) %>%
+  filter(date >= as.Date(start_date), date < as.Date('2020-03-01')) %>%
   group_by(zip) %>% summarise(
     pre_net = sum(net, na.rm = TRUE),
     pre_bus = sum(net_bus, na.rm = TRUE),
@@ -161,7 +169,7 @@ df4 <- df_all %>% inner_join(chars, by = 'zip') %>%
     net_pop = sum(net_pop, na.rm = TRUE),
     net_temp = sum(net_temp, na.rm = TRUE),
     net_perm = sum(net_perm, na.rm = TRUE)
-  ) %>% filter(date >= as.Date('2020-03-01'), date < as.Date('2021-03-01')) %>%
+  ) %>% filter(date >= as.Date('2020-03-01'), date < as.Date(end_date)) %>%
   group_by(MetroShort) %>% summarise(
     post_net = sum(net, na.rm = TRUE),
     post_bus = sum(net_bus, na.rm = TRUE),
@@ -187,7 +195,7 @@ df5 <- df_all %>% inner_join(chars, by = 'zip') %>%
     net_pop = sum(net_pop, na.rm = TRUE),
     net_temp = sum(net_temp, na.rm = TRUE),
     net_perm = sum(net_perm, na.rm = TRUE)
-  ) %>% filter(date >= as.Date('2019-03-01'), date < as.Date('2020-03-01')) %>%
+  ) %>% filter(date >= as.Date(start_date), date < as.Date('2020-03-01')) %>%
   group_by(MetroShort) %>% summarise(
     pre_net = sum(net, na.rm = TRUE),
     pre_bus = sum(net_bus, na.rm = TRUE),
@@ -207,3 +215,4 @@ df5 <- df_all %>% inner_join(chars, by = 'zip') %>%
 
 df4 %>% select(MetroShort, post_net, post_bus, post_pop, post_temp, post_perm) %>% inner_join(df5, by = 'MetroShort') %>%
   write_csv('./data/msa_USPS.csv')
+

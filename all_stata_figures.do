@@ -7,15 +7,15 @@ clear
 // Set working directory before creation of each figure
 cd "/Users/arjun/Documents/zillow/thesis/donut-effect"
 
-import delimited "./data/zhvi_panel_zips_top12.csv", stringcols(1 12) numericcols(6 7 8 9 10) 
+import delimited "./data/zhvi_panel_zips_top12.csv", stringcols(1 12) numericcols(2 3 6 7 8 9 10) 
 rename v13 population2
 gen log_density = log10(density2019)
 binscatter post_pct_change log_density [fweight = population2], controls(pre_pct_change) absorb(metroshort)	///
 	legend(off) ///
 	xtitle("Persons per sq mile") ///
 	ytitle("Percent change home value index") ///
-	yscale(range(6 12)) ///
-	ylabel(6 7 8 9 10 11 12) ///
+	yscale(range(15 25 30 35 40 45)) ///
+	ylabel(15 20 25 30 35 40 45) ///
 	xscale(range(2 5)) ///
 	xlabel(2 "100" 3 "1,000" 4 "10,000" 5 "100,000") ///
 	xsize(5) ysize(5) ///
@@ -40,8 +40,8 @@ binscatter post_pop log_density [fweight = population2], controls(pre_pop) absor
 	legend(off) ///
 	xtitle("Persons per sq mile") ///
 	ytitle("Net inflow as a percent of population") ///
-	yscale(range(-10 5)) ///
-	ylabel(-10 -5 0 5) ///	
+	yscale(range(-8 4)) ///
+	ylabel(-8 -6 -4 -2 0 2 4) ///	
 	xscale(range(2 5)) ///
 	xlabel(2 "100" 3 "1,000" 4 "10,000" 5 "100,000") ///
 	xsize(5) ysize(5) ///
@@ -65,8 +65,8 @@ binscatter post_bus log_density [fweight = population2], controls(pre_bus) absor
 	legend(off) ///
 	xtitle("Persons per sq mile") ///
 	ytitle("Net inflow as a percent of stock")  ///
-	yscale(range(-4 4)) ///
-	ylabel(-4 -2 0 2 4) ///
+	yscale(range(-8 8)) ///
+	ylabel(-8 -6 -4 -2 0 2 4 6 8) ///
 	xscale(range(2 5)) ///
 	xlabel(2 "100" 3 "1,000" 4 "10,000" 5 "100,000") ///
 	xsize(5) ysize(5) ///
@@ -88,8 +88,8 @@ gen log_density = log10(density2019)
 binscatter post_pct_change log_density [fweight = population2], controls(pre_pct_change)	///
 	xtitle("Persons per sq mile") ///
 	ytitle("Percent change home value index") ///
-	yscale(range(6 12)) ///
-	ylabel(6 7 8 9 10 11 12) ///
+	yscale(range(15 45)) ///
+	ylabel(15 20 25 30 35 40 45) ///
 	xscale(range(2 3)) ///
 	xlabel(2 "100" 3 "1,000") ///
 	xsize(5) ysize(5) ///
@@ -111,8 +111,8 @@ gen log_density = log10(density2019)
 binscatter post_pop log_density [fweight = population2], controls(pre_pop) ///
 	xtitle("Persons per sq mile") ///
 	ytitle("Net inflow as a percent of population") ///
-	yscale(range(-10 5)) ///
-	ylabel(-10 -5 0 5) ///
+	yscale(range(-8 4)) ///
+	ylabel(-8 -6 -4 -2 0 2 4) ///
 	xscale(range(2 3 4)) ///
 	xlabel(2 "100" 3 "1,000" 4 "10,000") ///
 	xsize(5) ysize(5) ///
@@ -135,8 +135,8 @@ gen log_density = log10(density2019)
 binscatter post_bus log_density [fweight = population2], controls(pre_bus)	///
 	xtitle("Persons per sq mile") ///
 	ytitle("Net inflow as a pecent of stock") ///
-	yscale(range(-4 4)) ///
-	ylabel(-4 -2 0 2 4) ///
+	yscale(range(-8 8)) ///
+	ylabel(-8 -6 -4 -2 0 2 4 6 8) ///
 	xscale(range(2 3 4)) ///
 	xlabel(2 "100" 3 "1,000" 4 "10,000") ///
 	xsize(5) ysize(5) ///

@@ -25,6 +25,9 @@ cities <- c('San Francisco, CA', 'New York, NY', 'Chicago, IL', 'Boston, MA',
             'Los Angeles, CA', 'Washington, DC', 'Atlanta, GA', 'Miami, FL',
             'Philadelphia, PA', 'Dallas, TX', 'Houston, TX', 'Phoenix, AZ')
 
+#set to your working directory
+setwd('~/Documents/zillow/thesis/donut-effect/')
+
 #read in zipcode level data from USPS and Zillow
 usps_zips <- read_csv('./data/usps_panel_zips_top12.csv')
 zori_zips <- read_csv('./data/zori_panel_zips_top12.csv')
