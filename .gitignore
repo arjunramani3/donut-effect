@@ -1,3 +1,7 @@
 census-api-local.R
 *.png
 *.doc
+
+###big datasets
+data/USPS_zips_no_impute.csv
+data/USPS_zips.csv
