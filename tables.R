@@ -65,8 +65,6 @@ stargazer(m0, m1, m2, m3, m4, m5, m6, m7,
           omit = c("MetroShort", 'pre_pct_change'),
           omit.stat=c("adj.rsq", "ser","f"), type="html", out="./figures-tables/tab1.doc")
 
-
-
 ################################################
 # Create Table 2: USPS
 ################################################
@@ -90,11 +88,3 @@ stargazer(m0, m1, m2, m3, m4, m5, m6, m7,
           se = list(rse(m1), rse(m2), rse(m3), rse(m4), rse(m5), rse(m6), rse(m7)),
           omit = c("MetroShort", 'pre_pop', 'pre_bus'),
           omit.stat=c("adj.rsq", "ser","f"), type="html", out="./figures-tables/tab2.doc")
-
-
-
-
-
-
-
-

@@ -29,9 +29,10 @@ cities <- c('San Francisco, CA', 'New York, NY', 'Chicago, IL', 'Boston, MA',
 setwd('~/Documents/zillow/thesis/donut-effect/')
 
 ## Define end date of analysis
-dif_period = 31 #number of months to calculate difs
-start_date = '2022-09-01'
-end_date = '2022-10-01'
+dif_pre_period = 12 #number of months for pre-trend (cap at 24m because of limitd historical data)
+dif_period = 24 #number of months to calculate difs
+start_date = '2022-02-01'
+end_date = '2022-03-01'
 
 ## Read in Zillow Home Value Index data
 df <- read_csv('https://files.zillowstatic.com/research/public_csvs/zhvi/Zip_zhvi_uc_sfr_tier_0.33_0.67_sm_sa_month.csv?t=1631634893', col_types = cols(RegionName = col_double()))
@@ -43,7 +44,7 @@ chars <- read_csv('./data/zip_all_chars_cbd.csv')
 df2 <- df %>% rename(zip = 'RegionName', MsaShort = 'Metro') %>%
   mutate(MetroShort = sub("-.*", "", MsaShort),
          MetroShort = paste(MetroShort, State, sep = ', ')) %>%
-  select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
+  dplyr::select(!c(RegionID, SizeRank, RegionType, StateName, State, City, CountyName, MsaShort)) %>%
   pivot_longer(!c(zip, MetroShort), names_to = 'date', values_to = 'zhvi')
 
 ## filter to values past Jan 2017
@@ -52,8 +53,8 @@ df3 <- df2 %>% filter(date > as.Date('2017-01-01'))
 ## Get panel for pre-period
 df5 <- df3 %>% mutate(date = as.Date(date)) %>%
   group_by(zip) %>% mutate(
-    zhvi = na.approx(zhvi, na.rm=FALSE, rule = 2),
-    pre_pct_change = (zhvi - lag(zhvi, dif_period))/((zhvi + lag(zhvi, dif_period))/2)*100
+    zhvi = na.approx(zhvi, na.rm=FALSE),
+    pre_pct_change = (zhvi - lag(zhvi, dif_pre_period))/((zhvi + lag(zhvi, dif_pre_period))/2)*100
   ) %>% filter(date >= as.Date('2020-02-01'), date < as.Date('2020-03-01')) %>%
   group_by(zip) %>% summarise(pre_pct_change = mean(pre_pct_change, na.rm = TRUE)) %>%
   inner_join(chars, by = 'zip') %>%
@@ -63,7 +64,7 @@ df5 <- df3 %>% mutate(date = as.Date(date)) %>%
 ## Get panel for post-period
 df4 <- df3 %>% mutate(date = as.Date(date)) %>%
   group_by(zip) %>% mutate(
-    zhvi = na.approx(zhvi, na.rm=FALSE, rule = 2),
+    zhvi = na.approx(zhvi, na.rm=FALSE),
     post_pct_change = (zhvi - lag(zhvi, dif_period))/((zhvi + lag(zhvi, dif_period))/2)*100
   ) %>% filter(date >= as.Date(start_date), date < as.Date(end_date)) %>%
   group_by(zip) %>% summarise(post_pct_change = mean(post_pct_change, na.rm = TRUE)) %>%
@@ -72,7 +73,7 @@ df4 <- df3 %>% mutate(date = as.Date(date)) %>%
          land_area > .1, `2019 Population` > 100)
 
 ## Merge, filter, and save (all metros)
-df6 <- df4 %>% select(zip, post_pct_change) %>% inner_join(df5, by = 'zip') %>%
+df6 <- df4 %>% dplyr::select(zip, post_pct_change) %>% inner_join(df5, by = 'zip') %>%
   filter(!is.na(dist_to_cbd), !is.na(log(density2019)), !is.infinite(log(density2019))) %>% 
   write_csv('./data/zhvi_panel_zips.csv')
 
@@ -103,7 +104,7 @@ df3 <- df %>% pivot_longer(!c(RegionID, SizeRank, MetroShort, RegionType, StateN
                            names_to = 'date', values_to = 'zhvi') %>% 
   mutate(date = as.Date(date)) %>%
   group_by(MetroShort) %>% mutate(
-    zhvi = na.approx(zhvi, na.rm=FALSE, rule = 2),
+    zhvi = na.approx(zhvi, na.rm=FALSE),
     post_pct_change = (zhvi - lag(zhvi, dif_period))/((zhvi + lag(zhvi, dif_period))/2)*100,
   ) %>% filter(date >= as.Date(start_date), date < as.Date(end_date)) %>%
   group_by(MetroShort) %>% summarise(post_pct_change = mean(post_pct_change, na.rm = TRUE))
@@ -113,8 +114,8 @@ df4 <- df %>% pivot_longer(!c(RegionID, SizeRank, MetroShort, RegionType, StateN
                            names_to = 'date', values_to = 'zhvi') %>% 
   mutate(date = as.Date(date)) %>%
   group_by(MetroShort) %>% mutate(
-    zhvi = na.approx(zhvi, na.rm=FALSE, rule = 2),
-    pre_pct_change = (zhvi - lag(zhvi, dif_period))/((zhvi + lag(zhvi, dif_period))/2)*100,
+    zhvi = na.approx(zhvi, na.rm=FALSE),
+    pre_pct_change = (zhvi - lag(zhvi, dif_pre_period))/((zhvi + lag(zhvi, dif_pre_period))/2)*100,
   ) %>% filter(date >= as.Date('2020-02-01'), date < as.Date('2020-03-01')) %>%
   group_by(MetroShort) %>% summarise(pre_pct_change = mean(pre_pct_change, na.rm = TRUE))
 
@@ -142,7 +143,7 @@ cities <- c('San Francisco, CA', 'New York, NY', 'Chicago, IL', 'Boston, MA',
 ## Create post-period panel
 df4 <- df %>% mutate(date = as.Date(date)) %>%
   group_by(zip) %>% mutate(
-    zori = na.approx(zori, na.rm=FALSE, rule = 2),
+    zori = na.approx(zori, na.rm=FALSE),
     post_pct_change = (zori - lag(zori, dif_period))/((zori + lag(zori, dif_period))/2)*100
   ) %>% filter(date >= as.Date(start_date), date < as.Date(end_date)) %>%
   group_by(zip) %>% summarise(post_pct_change = mean(post_pct_change, na.rm = TRUE)) %>%
@@ -153,8 +154,8 @@ df4 <- df %>% mutate(date = as.Date(date)) %>%
 ## create pre-period panel
 df3 <- df %>% mutate(date = as.Date(date)) %>%
   group_by(zip) %>% mutate(
-    zori = na.approx(zori, na.rm=FALSE, rule = 2),
-    pre_pct_change = (zori - lag(zori, dif_period))/((zori + lag(zori, dif_period))/2)*100
+    zori = na.approx(zori, na.rm=FALSE),
+    pre_pct_change = (zori - lag(zori, dif_pre_period))/((zori + lag(zori, dif_pre_period))/2)*100
   ) %>% filter(date >= as.Date('2020-02-01'), date < as.Date('2020-03-01')) %>%
   group_by(zip) %>% summarise(pre_pct_change = mean(pre_pct_change, na.rm = TRUE)) %>%
   inner_join(chars, by = 'zip') %>%
@@ -162,7 +163,7 @@ df3 <- df %>% mutate(date = as.Date(date)) %>%
          land_area > .1, `2019 Population` > 100)
 
 ## Write panel to CSV (with top 100 metros)
-df6 <- df4 %>% select(zip, post_pct_change) %>% inner_join(df3, by = 'zip') %>%
+df6 <- df4 %>% dplyr::select(zip, post_pct_change) %>% inner_join(df3, by = 'zip') %>%
   mutate(pp_growth = post_pct_change - pre_pct_change) %>%
   filter(!is.na(dist_to_cbd)) %>% 
   write_csv('./data/zori_panel_zips.csv')
@@ -182,7 +183,7 @@ df <- read_csv('https://files.zillowstatic.com/research/public_csvs/zori/Metro_z
   filter(!is.na(StateName)) %>%
   mutate(MetroShort = sub("-.*", "", MetroShort),
          MetroShort = paste(MetroShort, StateName, sep = ', ')) %>%
-  select(!c(RegionID, SizeRank, StateName, RegionType))
+  dplyr::select(!c(RegionID, SizeRank, StateName, RegionType))
 
 ###this doesn't work fix it
 
@@ -196,7 +197,7 @@ df3 <- df %>% pivot_longer(!MetroShort,
                            names_to = 'date', values_to = 'zori') %>% 
   mutate(date = as.Date(as.yearmon(date)) + 14) %>%
   group_by(MetroShort) %>% mutate(
-    zori = na.approx(zori, na.rm=FALSE, rule = 2),
+    zori = na.approx(zori, na.rm=FALSE),
     post_pct_change = (zori - lag(zori, dif_period))/((zori + lag(zori, dif_period))/2)*100,
   ) %>% filter(date >= as.Date(start_date), date < as.Date(end_date)) %>%
   group_by(MetroShort) %>% summarise(post_pct_change = mean(post_pct_change, na.rm = TRUE))
@@ -206,8 +207,8 @@ df4 <- df %>% pivot_longer(!MetroShort,
                            names_to = 'date', values_to = 'zori') %>% 
   mutate(date = as.Date(as.yearmon(date)) + 14) %>%
   group_by(MetroShort) %>% mutate(
-    zori = na.approx(zori, na.rm=FALSE, rule = 2),
-    pre_pct_change = (zori - lag(zori, dif_period))/((zori + lag(zori, dif_period))/2)*100,
+    zori = na.approx(zori, na.rm=FALSE),
+    pre_pct_change = (zori - lag(zori, dif_pre_period))/((zori + lag(zori, dif_pre_period))/2)*100,
   ) %>% filter(date >= as.Date('2020-02-01'), date < as.Date('2020-03-01')) %>%
   group_by(MetroShort) %>% summarise(pre_pct_change = mean(pre_pct_change, na.rm = TRUE))
 

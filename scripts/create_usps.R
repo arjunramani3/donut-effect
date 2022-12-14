@@ -78,7 +78,7 @@ df22 <- read_USPS('https://about.usps.com/who/legal/foia/documents/change-of-add
 df_all <- rbind(df17, df18, df19, df20, df21, df22)
 
 df_all <- df_all %>% mutate(
-  across(contains('TOTAL'), ~replace(., . ==  0 , 0)), #replace bottom-coded values (any value 0-10 is forced to 0) to 5
+  across(contains('TOTAL'), ~replace(., . ==  0 , 5)), #replace bottom-coded values (any value 0-10 is forced to 0) to 5
   zip = as.integer(zip),
   net = `TOTAL TO ZIP` - `TOTAL FROM ZIP`,
   net_bus = `TOTAL BUSINESS_1` - `TOTAL BUSINESS`,
@@ -86,16 +86,10 @@ df_all <- df_all %>% mutate(
   net_ind = `TOTAL INDIVIDUAL_1` - `TOTAL INDIVIDUAL`,
   net_perm = `TOTAL PERM_1` - `TOTAL PERM`,
   net_temp = `TOTAL TEMP_1` - `TOTAL TEMP`,
-<<<<<<< HEAD
-  net_pop = net_ind + net_fam*household  # construct population estimate by multiplying avg
-                                         # household size by number of family+individual moves
-=======
   net_pop = net_fam*household + net_ind  # construct population estimate by multiplying avg household size by number of family+individual moves
                                          # We thank Curtis Long and Daniel Weagley for noticing we incorrectly multipled household*net_ind in a previous version
                                          # of this script. This does not change our main results.
->>>>>>> 00a6f08b573404a11446cc53cdca16dc9386d7cd
-) %>%
-  select(zip, date, CITY, STATE, net, net_bus, net_fam, net_ind, net_perm, net_temp, net_pop) %>%
+) %>% dplyr::select(zip, date, CITY, STATE, net, net_bus, net_fam, net_ind, net_perm, net_temp, net_pop) %>%
   rename(city = CITY, state = STATE) %>%
   write_csv('./data/USPS_zips.csv')
 
@@ -103,7 +97,7 @@ df_all <- df_all %>% mutate(
 # Create zip pct change file from panel
 ###########################################
 chars <- read_csv('./data/zip_all_chars_cbd.csv', 
-                  col_types = cols('zip' = col_integer())) %>% select(!estab_count)
+                  col_types = cols('zip' = col_integer())) %>% dplyr::select(!estab_count)
 bus_chars <- read_csv('./data/zbp_wfh.csv',
                       col_types = cols('zip' = col_integer()))
 chars <- chars %>% inner_join(bus_chars, by = 'zip')
@@ -153,7 +147,7 @@ df4 <- df_all %>%
          land_area > .1, `2019 Population` > 100)
 
 ## Write all zips file to csv
-df6 <- df3 %>% select(zip, post_net, post_bus, post_pop, post_temp, post_perm) %>% inner_join(df4, by = 'zip') %>%
+df6 <- df3 %>% dplyr::select(zip, post_net, post_bus, post_pop, post_temp, post_perm) %>% inner_join(df4, by = 'zip') %>%
   filter(!is.na(dist_to_cbd)) %>%
   write_csv('./data/usps_panel_zips.csv')
 
@@ -219,6 +213,6 @@ df5 <- df_all %>% inner_join(chars, by = 'zip') %>%
   filter(!is.na(wfh_emp), !is.na(log(density2019)), !is.infinite(log(density2019)),
          land_area > .1, `2019 Population` > 100)
 
-df4 %>% select(MetroShort, post_net, post_bus, post_pop, post_temp, post_perm) %>% inner_join(df5, by = 'MetroShort') %>%
+df4 %>% dplyr::select(MetroShort, post_net, post_bus, post_pop, post_temp, post_perm) %>% inner_join(df5, by = 'MetroShort') %>%
   write_csv('./data/msa_USPS.csv')
 
